@@ -47,6 +47,8 @@ jobs:
           uv run --locked ruff check .
           uv run --locked ruff format --check .
       - name: Fetch and verify the pinned CPU embedding model
+        env:
+          DATABASE_URL: postgresql+psycopg://opspilot:disposable-ci-only@127.0.0.1:${{ job.services.postgres.ports['5432'] }}/opspilot
         run: uv run --locked python -m scripts.knowledge download-model
       - name: Test against real PostgreSQL
         env:
