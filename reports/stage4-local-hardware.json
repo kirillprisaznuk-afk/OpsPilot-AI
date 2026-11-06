@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-10-28T15:04:55.0410545Z",
+  "ram_gib": 15.26,
+  "free_ram_gib": 0.8,
+  "cpu": {
+    "Name": "AMD Ryzen 7 8845HS w/ Radeon 780M Graphics",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16
+  },
+  "free_storage_gib": 148.04,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU, 6141 MiB, 3633 MiB, 2288 MiB, 592.82"
+}

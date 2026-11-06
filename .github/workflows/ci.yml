@@ -1,0 +1,82 @@
+name: Validate OpsPilot
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    services:
+      postgres:
+        image: pgvector/pgvector:0.8.7-pg17-bookworm@sha256:ac08538c6f8b9904c33c8224c5e5706dbe760aca29db1d096972b4052c22a75d
+        env:
+          POSTGRES_DB: opspilot
+          POSTGRES_USER: opspilot
+          POSTGRES_PASSWORD: disposable-ci-only
+        ports:
+          - 5432/tcp
+        options: >-
+          --health-cmd "pg_isready -U opspilot -d opspilot"
+          --health-interval 5s --health-timeout 4s --health-retries 20
+    env:
+      PYTHONPATH: backend:.
+      EMBEDDING_CACHE: .models/minilm
+      LLM_PROVIDER: ollama
+      HYBRID_LLM_ENABLED: 'false'
+      HYBRID_ALLOW_LEGACY: 'false'
+      HF_HUB_DISABLE_IMPLICIT_TOKEN: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@94527f2e458b27549849d47d273a16bec83a01e9 # v7
+        with:
+          version: '0.12.23'
+          enable-cache: false
+      - name: Install locked Python dependencies
+        run: uv sync --locked --python 3.12
+      - name: Check Python style
+        run: |
+          uv run --locked ruff check .
+          uv run --locked ruff format --check .
+      - name: Fetch and verify the pinned CPU embedding model
+        run: uv run --locked python -m scripts.knowledge download-model
+      - name: Test against real PostgreSQL
+        env:
+          DATABASE_URL: postgresql+psycopg://opspilot:disposable-ci-only@127.0.0.1:${{ job.services.postgres.ports['5432'] }}/opspilot
+        run: uv run --locked pytest -q
+
+  frontend:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: frontend
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+      NODE_OPTIONS: --max-old-space-size=1536
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install locked frontend dependencies
+        run: |
+          npm install --global pnpm@11.25.0
+          pnpm install --frozen-lockfile
+      - name: Validate the frontend
+        run: |
+          pnpm typecheck
+          pnpm lint
+          pnpm test
+          pnpm build

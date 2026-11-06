@@ -1,0 +1,471 @@
+{
+  "baseline_fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+  "business_before": {
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": {
+      "A_procurement_to_customer": {
+        "supplier_id": 1,
+        "purchase_order_id": 1,
+        "receipt_id": 185,
+        "movement_id": 332,
+        "shortage_id": 16,
+        "sales_order_id": 1,
+        "fulfilment_id": 149,
+        "incident_id": 16,
+        "task_id": 16,
+        "promised_on": "2025-10-08",
+        "received_on": "2025-10-20",
+        "customer_promise": "2025-10-10",
+        "fulfilled_on": "2025-10-20"
+      },
+      "B_warehouse_capacity": {
+        "warehouse_id": 1,
+        "sales_order_id": 822,
+        "incident_id": 1729,
+        "expense_id": 104,
+        "amount": "120.00",
+        "task_id": 1729,
+        "status": "escalated"
+      },
+      "C_contract_concern": {
+        "contract_id": 1,
+        "supplier_id": 1,
+        "on_time_target": "95.00",
+        "due_orders": 72,
+        "on_time_orders": 24,
+        "observed_percent": "33.33"
+      },
+      "D_invoice_review": {
+        "invoice_id": 37,
+        "purchase_order_id": 37,
+        "amount": "9053.43",
+        "purchase_value": "9028.43",
+        "incident_id": 1153,
+        "task_id": 1153,
+        "status": "disputed"
+      },
+      "E_overdue_workload": {
+        "department_id": 1,
+        "name": "Operations",
+        "overdue_tasks": 123,
+        "owners": 8
+      }
+    }
+  },
+  "index_before": {
+    "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+    "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+    "chunks": 44,
+    "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+    "ids": [
+      "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+      "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+      "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+      "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+      "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+      "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+      "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+      "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+      "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+      "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+      "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+      "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+      "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+      "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+      "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+      "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+      "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+      "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+      "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+      "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+      "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+      "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+      "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+      "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+      "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+      "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+      "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+      "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+      "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+      "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+      "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+      "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+      "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+      "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+      "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+      "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+      "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+      "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+      "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+      "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+      "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+      "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+      "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+      "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+    ]
+  },
+  "migration": "0003",
+  "pgvector": "0.8.7",
+  "retrieval_quality_unchanged": true,
+  "reader_role": "opspilot_agent_reader",
+  "reader_isolation": "repeatable read",
+  "reader_transaction": "on",
+  "prior_live_before": {
+    "status": {
+      "state": "ready",
+      "documents": 44,
+      "versions": 44,
+      "chunks": 44,
+      "configuration": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "parser": "markdown-sections-v1",
+        "backend": "onnx-cpu-float32",
+        "pooling": "attention_mask_mean",
+        "distance": "cosine",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "max_tokens": 256,
+        "normalization": "L2",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "configured_model": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "pooling": "attention_mask_mean",
+        "normalization": "L2",
+        "distance": "cosine",
+        "max_tokens": 256,
+        "backend": "onnx-cpu-float32",
+        "parser": "markdown-sections-v1",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "model_cached": true,
+      "index_bytes": 778240,
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00"
+    },
+    "search_median_ms": {
+      "keyword": 16.421,
+      "vector": 41.93,
+      "hybrid": 40.417
+    },
+    "retrieved_citations": {
+      "keyword": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "vector": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "hybrid": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ]
+    },
+    "context_median_ms": 90.364,
+    "context_tokens": 5395,
+    "all_retrieval_modes": true,
+    "policy_and_supplier_sources": true,
+    "multi_document": true,
+    "effective_date_filtering": true,
+    "no_answer": true,
+    "citation_resolution": true,
+    "analytics_domains_identical": 10
+  },
+  "agent_before": {
+    "status": {
+      "state": "configured_unverified",
+      "provider": "ollama",
+      "model": "qwen3.5:4b",
+      "local_profile": {
+        "compact_transport": true,
+        "reference_output": true,
+        "model_selected_catalogue": true,
+        "context_tokens": 32768,
+        "gpu_layers": null,
+        "batch_tokens": 128
+      },
+      "read_only": true,
+      "live_validation": "not_performed_by_status",
+      "limits": {
+        "llm_calls": 6,
+        "tool_calls": 12,
+        "request_seconds": 90.0
+      },
+      "conversation_storage": "single-process memory, bounded history; lost on restart",
+      "authentication": "not_implemented_local_demo_only"
+    },
+    "tools": 17,
+    "query_invoked": false
+  },
+  "all_citations_resolved": 44,
+  "prior_live_after": {
+    "status": {
+      "state": "ready",
+      "documents": 44,
+      "versions": 44,
+      "chunks": 44,
+      "configuration": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "parser": "markdown-sections-v1",
+        "backend": "onnx-cpu-float32",
+        "pooling": "attention_mask_mean",
+        "distance": "cosine",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "max_tokens": 256,
+        "normalization": "L2",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "configured_model": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "pooling": "attention_mask_mean",
+        "normalization": "L2",
+        "distance": "cosine",
+        "max_tokens": 256,
+        "backend": "onnx-cpu-float32",
+        "parser": "markdown-sections-v1",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "model_cached": true,
+      "index_bytes": 778240,
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00"
+    },
+    "search_median_ms": {
+      "keyword": 13.566,
+      "vector": 24.228,
+      "hybrid": 22.447
+    },
+    "retrieved_citations": {
+      "keyword": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "vector": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "hybrid": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ]
+    },
+    "context_median_ms": 96.063,
+    "context_tokens": 5395,
+    "all_retrieval_modes": true,
+    "policy_and_supplier_sources": true,
+    "multi_document": true,
+    "effective_date_filtering": true,
+    "no_answer": true,
+    "citation_resolution": true,
+    "analytics_domains_identical": 10
+  },
+  "agent_after": {
+    "status": {
+      "state": "configured_unverified",
+      "provider": "ollama",
+      "model": "qwen3.5:4b",
+      "local_profile": {
+        "compact_transport": true,
+        "reference_output": true,
+        "model_selected_catalogue": true,
+        "context_tokens": 32768,
+        "gpu_layers": null,
+        "batch_tokens": 128
+      },
+      "read_only": true,
+      "live_validation": "not_performed_by_status",
+      "limits": {
+        "llm_calls": 6,
+        "tool_calls": 12,
+        "request_seconds": 90.0
+      },
+      "conversation_storage": "single-process memory, bounded history; lost on restart",
+      "authentication": "not_implemented_local_demo_only"
+    },
+    "tools": 17,
+    "query_invoked": false
+  },
+  "business_after": {
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": {
+      "A_procurement_to_customer": {
+        "supplier_id": 1,
+        "purchase_order_id": 1,
+        "receipt_id": 185,
+        "movement_id": 332,
+        "shortage_id": 16,
+        "sales_order_id": 1,
+        "fulfilment_id": 149,
+        "incident_id": 16,
+        "task_id": 16,
+        "promised_on": "2025-10-08",
+        "received_on": "2025-10-20",
+        "customer_promise": "2025-10-10",
+        "fulfilled_on": "2025-10-20"
+      },
+      "B_warehouse_capacity": {
+        "warehouse_id": 1,
+        "sales_order_id": 822,
+        "incident_id": 1729,
+        "expense_id": 104,
+        "amount": "120.00",
+        "task_id": 1729,
+        "status": "escalated"
+      },
+      "C_contract_concern": {
+        "contract_id": 1,
+        "supplier_id": 1,
+        "on_time_target": "95.00",
+        "due_orders": 72,
+        "on_time_orders": 24,
+        "observed_percent": "33.33"
+      },
+      "D_invoice_review": {
+        "invoice_id": 37,
+        "purchase_order_id": 37,
+        "amount": "9053.43",
+        "purchase_value": "9028.43",
+        "incident_id": 1153,
+        "task_id": 1153,
+        "status": "disputed"
+      },
+      "E_overdue_workload": {
+        "department_id": 1,
+        "name": "Operations",
+        "overdue_tasks": 123,
+        "owners": 8
+      }
+    }
+  },
+  "index_after": {
+    "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+    "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+    "chunks": 44,
+    "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+    "ids": [
+      "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+      "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+      "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+      "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+      "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+      "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+      "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+      "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+      "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+      "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+      "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+      "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+      "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+      "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+      "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+      "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+      "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+      "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+      "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+      "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+      "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+      "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+      "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+      "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+      "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+      "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+      "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+      "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+      "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+      "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+      "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+      "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+      "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+      "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+      "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+      "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+      "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+      "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+      "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+      "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+      "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+      "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+      "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+      "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+    ]
+  },
+  "unrelated_containers_preserved": [
+    "/productpulse-local-frontend-1",
+    "/productpulse-local-api-1",
+    "/productpulse-local-seed-1",
+    "/productpulse-local-migrate-1",
+    "/productpulse-local-db-1",
+    "/productpulse-stage1-smoke-api-1",
+    "/productpulse-stage1-smoke-seed-1",
+    "/productpulse-stage1-smoke-migrate-1",
+    "/productpulse-stage1-smoke-db-1",
+    "/yummy-flow-local-postgres-1"
+  ],
+  "restart_executed": true,
+  "prior_stages_runtime_passed": true,
+  "test_database_cleanup": true,
+  "live_llm_acceptance": "NOT_RUN",
+  "ready_for_stage5": false
+}

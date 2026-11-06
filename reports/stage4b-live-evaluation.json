@@ -1,0 +1,159 @@
+{
+  "mode": "live_local",
+  "cases": [
+    {
+      "id": "A01",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "A02",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "A03",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "A06",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "A22",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "A23",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "A25",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "A27",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B01",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B02",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B03",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B04",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B05",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B06",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B07",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B08",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B09",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B10",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B11",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B12",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B13",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B14",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    },
+    {
+      "id": "B15",
+      "execution": "NOT_RUN",
+      "reason": "BLOCKED_RESOURCE_PRESSURE"
+    }
+  ],
+  "ready_for_stage5": false,
+  "semantic_review_required": true,
+  "runtime_status": {
+    "state": "configured_unverified",
+    "provider": "ollama",
+    "model": "qwen3.5:4b",
+    "local_profile": {
+      "compact_transport": true,
+      "reference_output": true,
+      "model_selected_catalogue": true,
+      "context_tokens": 32768,
+      "gpu_layers": null
+    },
+    "read_only": true,
+    "live_validation": "not_performed_by_status",
+    "limits": {
+      "llm_calls": 6,
+      "tool_calls": 12,
+      "request_seconds": 90.0
+    },
+    "conversation_storage": "single-process memory, bounded history; lost on restart",
+    "authentication": "not_implemented_local_demo_only"
+  },
+  "hardware": {
+    "model": "qwen3.5:4b",
+    "admitted": false,
+    "reasons": [
+      "Free physical RAM is below the measured profile's 1.5 GiB margin",
+      "Insufficient free GPU memory for the measured Qwen 4B profile"
+    ],
+    "free_ram_gib": 0.547,
+    "total_ram_gib": 15.265,
+    "free_vram_mib": 2252,
+    "total_vram_mib": 6141,
+    "loaded_model": null,
+    "minimum_free_ram_gib": 1.5,
+    "minimum_free_vram_mib": 4096
+  },
+  "live_status": "BLOCKED_RESOURCE_PRESSURE"
+}

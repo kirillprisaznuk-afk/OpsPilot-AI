@@ -1,0 +1,659 @@
+{
+  "generated_at": "2026-11-02T20:25:52.626406+00:00",
+  "stage": "4B",
+  "status": "IMPLEMENTED_REGRESSION_PASSED_LIVE_ACCEPTANCE_BLOCKED",
+  "ready_for_stage5": false,
+  "git": {
+    "base_checkpoint": "010e145b86892f68114bc70be2f30d1c95e44dda",
+    "branch": "codex/stage-4b-reliability",
+    "local_commit": "This artifact is included in the Stage 4B checkpoint; actual commit hash is supplied in the handoff and git HEAD.",
+    "published": false
+  },
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "348",
+    "time": "121.516",
+    "timestamp": "2026-11-02T20:10:12.801558+00:00",
+    "hostname": "Pume",
+    "test_module_counts": {
+      "backend.tests.test_agent": 73,
+      "backend.tests.test_agent_provider": 9,
+      "backend.tests.test_agent_reliability": 48,
+      "backend.tests.test_analytics_api": 74,
+      "backend.tests.test_analytics_numerical": 24,
+      "backend.tests.test_api": 17,
+      "backend.tests.test_generator": 16,
+      "backend.tests.test_knowledge": 33,
+      "backend.tests.test_ollama_provider": 36,
+      "backend.tests.test_postgres": 18
+    },
+    "existing_tests_preserved": 300,
+    "new_reliability_tests": 48,
+    "postgres_integration": "executed; no skips",
+    "llm_transport_tests": "offline; not inference"
+  },
+  "checks": {
+    "ruff": {
+      "command": [
+        ".venv/Scripts/ruff.exe",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!"
+    },
+    "format": {
+      "command": [
+        ".venv/Scripts/ruff.exe",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "180 files already formatted"
+    },
+    "diff": {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": ""
+    }
+  },
+  "runtime": {
+    "compose_build": "PASSED; only api rebuilt/recreated",
+    "health": [
+      {
+        "Name": "opspilot-stage1-api-1",
+        "Health": "healthy",
+        "State": "running",
+        "Image": "opspilot-stage1-api"
+      },
+      {
+        "Name": "opspilot-stage1-db-1",
+        "Health": "healthy",
+        "State": "running",
+        "Image": "pgvector/pgvector:0.8.7-pg17-bookworm@sha256:ac08538c6f8b9904c33c8224c5e5706dbe760aca29db1d096972b4052c22a75d"
+      }
+    ],
+    "deployed_agent_hashes_match": true,
+    "alembic_current": {
+      "returncode": 0,
+      "stdout": "0003 (head)\n",
+      "stderr": ""
+    },
+    "alembic_check": {
+      "returncode": 0,
+      "stdout": "No new upgrade operations detected.\n",
+      "stderr": ""
+    },
+    "cloud_disabled_log_present": true,
+    "ollama_version": {
+      "version": "0.40.12"
+    },
+    "profile": {
+      "state": "configured_unverified",
+      "provider": "ollama",
+      "model": "qwen3.5:4b",
+      "local_profile": {
+        "compact_transport": true,
+        "reference_output": true,
+        "model_selected_catalogue": true,
+        "context_tokens": 32768,
+        "gpu_layers": null
+      },
+      "read_only": true,
+      "live_validation": "not_performed_by_status",
+      "limits": {
+        "llm_calls": 6,
+        "tool_calls": 12,
+        "request_seconds": 90.0
+      },
+      "conversation_storage": "single-process memory, bounded history; lost on restart",
+      "authentication": "not_implemented_local_demo_only"
+    },
+    "resident_models": {
+      "models": []
+    }
+  },
+  "preservation": {
+    "fingerprint_before": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "fingerprint_after": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": [
+      "A_procurement_to_customer",
+      "B_warehouse_capacity",
+      "C_contract_concern",
+      "D_invoice_review",
+      "E_overdue_workload"
+    ],
+    "migration": "0003",
+    "pgvector": "0.8.7",
+    "index_unchanged": true,
+    "all_citations_resolved": 44,
+    "retrieval_quality_unchanged": true,
+    "prior_stages_runtime_passed": true,
+    "restart_executed": true,
+    "unrelated_containers_preserved": [
+      "/productpulse-local-frontend-1",
+      "/productpulse-local-api-1",
+      "/productpulse-local-seed-1",
+      "/productpulse-local-migrate-1",
+      "/productpulse-local-db-1",
+      "/productpulse-stage1-smoke-api-1",
+      "/productpulse-stage1-smoke-seed-1",
+      "/productpulse-stage1-smoke-migrate-1",
+      "/productpulse-stage1-smoke-db-1",
+      "/yummy-flow-local-postgres-1"
+    ],
+    "test_database_cleanup": true,
+    "reader_role": "opspilot_agent_reader",
+    "reader_transaction": "on",
+    "reader_isolation": "repeatable read"
+  },
+  "oracle_preparation": {
+    "cases": 23,
+    "errors": 0,
+    "real_postgres_and_rag": true,
+    "live_inference": false
+  },
+  "final_live_evaluation": {
+    "status": "BLOCKED_RESOURCE_PRESSURE",
+    "cases": 23,
+    "executed_model_cases": 0,
+    "not_run": [
+      "A01",
+      "A02",
+      "A03",
+      "A06",
+      "A22",
+      "A23",
+      "A25",
+      "A27",
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B09",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15"
+    ],
+    "unseen_cases": 15,
+    "unseen_model_cases_executed": 0,
+    "hardware": {
+      "model": "qwen3.5:4b",
+      "admitted": false,
+      "reasons": [
+        "Free physical RAM is below the measured profile's 1.5 GiB margin",
+        "Insufficient free GPU memory for the measured Qwen 4B profile"
+      ],
+      "free_ram_gib": 0.547,
+      "total_ram_gib": 15.265,
+      "free_vram_mib": 2252,
+      "total_vram_mib": 6141,
+      "loaded_model": null,
+      "minimum_free_ram_gib": 1.5,
+      "minimum_free_vram_mib": 4096
+    },
+    "business_factuality_rate": null,
+    "semantic_error_rate": null,
+    "invalid_argument_rate": null,
+    "unsupported_claim_rate": null,
+    "final_token_reduction": null,
+    "final_latency_change": null,
+    "semantic_review": "not possible without final responses"
+  },
+  "final_runtime_refusals": [
+    {
+      "id": "A25",
+      "wall_ms": 5.86,
+      "status": "refused",
+      "model_calls": 0,
+      "tool_calls": 0,
+      "tokens": 0
+    },
+    {
+      "id": "A27",
+      "wall_ms": 5.024,
+      "status": "refused",
+      "model_calls": 0,
+      "tool_calls": 0,
+      "tokens": 0
+    }
+  ],
+  "intermediate_real_model_results": {
+    "A01": {
+      "status": "provider_error",
+      "termination_reason": "provider_timeout",
+      "elapsed_ms": 43025.567,
+      "known_tokens": 1102,
+      "usage_complete": false,
+      "model_calls": 2,
+      "tool_attempts": 0,
+      "tool_successes": 0,
+      "error_codes": [],
+      "rounds": [
+        {
+          "phase": "selection",
+          "input_tokens": 1057,
+          "output_tokens": 45,
+          "request_bytes": 6636,
+          "selected_tools": [
+            "get_supplier_performance",
+            "search_corporate_knowledge",
+            "investigate_business_entity"
+          ],
+          "required_document_types": [
+            "supplier_agreement",
+            "policy"
+          ],
+          "thinking_emitted": false
+        }
+      ]
+    },
+    "A02": {
+      "status": "validation_failed",
+      "termination_reason": "tool_execution_failed",
+      "elapsed_ms": 84057.707,
+      "known_tokens": 8668,
+      "usage_complete": true,
+      "model_calls": 5,
+      "tool_attempts": 3,
+      "tool_successes": 0,
+      "error_codes": [
+        "tool_result_limit",
+        "tool_result_limit",
+        "tool_retry_exhausted"
+      ],
+      "rounds": [
+        {
+          "phase": "selection",
+          "input_tokens": 1049,
+          "output_tokens": 25,
+          "request_bytes": 6591,
+          "selected_tools": [
+            "compare_suppliers"
+          ],
+          "required_document_types": [],
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 1694,
+          "output_tokens": 159,
+          "cached_input_tokens": 0,
+          "request_bytes": 7574,
+          "tool_schema_bytes": 1460,
+          "output_schema_bytes": 2,
+          "messages_bytes": 6015,
+          "load_ms": 15.3928,
+          "prompt_eval_ms": 11053.978,
+          "generation_ms": 12627.016,
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 1904,
+          "output_tokens": 159,
+          "cached_input_tokens": 1182,
+          "request_bytes": 8117,
+          "tool_schema_bytes": 1460,
+          "output_schema_bytes": 2,
+          "messages_bytes": 6591,
+          "load_ms": 21.4847,
+          "prompt_eval_ms": 4298.521,
+          "generation_ms": 11669.126,
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 2114,
+          "output_tokens": 158,
+          "cached_input_tokens": 1392,
+          "request_bytes": 8660,
+          "tool_schema_bytes": 1460,
+          "output_schema_bytes": 2,
+          "messages_bytes": 7167,
+          "load_ms": 15.2697,
+          "prompt_eval_ms": 4643.74,
+          "generation_ms": 12491.667,
+          "thinking_emitted": false
+        },
+        {
+          "phase": "final",
+          "input_tokens": 1291,
+          "output_tokens": 115,
+          "cached_input_tokens": 0,
+          "request_bytes": 7631,
+          "tool_schema_bytes": 2,
+          "output_schema_bytes": 1294,
+          "messages_bytes": 6271,
+          "load_ms": 13.2081,
+          "prompt_eval_ms": 8290.543,
+          "generation_ms": 8414.178,
+          "thinking_emitted": false
+        }
+      ]
+    },
+    "A03": {
+      "status": "provider_error",
+      "termination_reason": "provider_timeout",
+      "elapsed_ms": 60409.499,
+      "known_tokens": 3213,
+      "usage_complete": false,
+      "model_calls": 3,
+      "tool_attempts": 1,
+      "tool_successes": 1,
+      "error_codes": [],
+      "rounds": [
+        {
+          "phase": "selection",
+          "input_tokens": 1051,
+          "output_tokens": 64,
+          "request_bytes": 6584,
+          "selected_tools": [
+            "get_customer_fulfilment",
+            "investigate_business_entity"
+          ],
+          "required_document_types": [
+            "policy",
+            "supplier_agreement"
+          ],
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 2041,
+          "output_tokens": 57,
+          "cached_input_tokens": 0,
+          "request_bytes": 8958,
+          "tool_schema_bytes": 2885,
+          "output_schema_bytes": 2,
+          "messages_bytes": 6076,
+          "load_ms": 17.5391,
+          "prompt_eval_ms": 13319.828,
+          "generation_ms": 4682.572,
+          "thinking_emitted": false
+        }
+      ]
+    },
+    "A06": {
+      "status": "provider_error",
+      "termination_reason": "provider_timeout",
+      "elapsed_ms": 79921.186,
+      "known_tokens": 6459,
+      "usage_complete": false,
+      "model_calls": 4,
+      "tool_attempts": 2,
+      "tool_successes": 2,
+      "error_codes": [],
+      "rounds": [
+        {
+          "phase": "selection",
+          "input_tokens": 1049,
+          "output_tokens": 35,
+          "request_bytes": 6603,
+          "selected_tools": [
+            "search_corporate_knowledge"
+          ],
+          "required_document_types": [
+            "policy",
+            "supplier_agreement"
+          ],
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 1907,
+          "output_tokens": 45,
+          "cached_input_tokens": 0,
+          "request_bytes": 8264,
+          "tool_schema_bytes": 2092,
+          "output_schema_bytes": 2,
+          "messages_bytes": 6095,
+          "load_ms": 16.6515,
+          "prompt_eval_ms": 12428.653,
+          "generation_ms": 3381.95,
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 3378,
+          "output_tokens": 45,
+          "cached_input_tokens": 1395,
+          "request_bytes": 12468,
+          "tool_schema_bytes": 2092,
+          "output_schema_bytes": 2,
+          "messages_bytes": 10318,
+          "load_ms": 13.0744,
+          "prompt_eval_ms": 12303.391,
+          "generation_ms": 3786.331,
+          "thinking_emitted": false
+        }
+      ]
+    },
+    "A22": {
+      "status": "provider_error",
+      "termination_reason": "provider_timeout",
+      "elapsed_ms": 55636.888,
+      "known_tokens": 2676,
+      "usage_complete": false,
+      "model_calls": 3,
+      "tool_attempts": 1,
+      "tool_successes": 1,
+      "error_codes": [],
+      "rounds": [
+        {
+          "phase": "selection",
+          "input_tokens": 1048,
+          "output_tokens": 27,
+          "request_bytes": 6558,
+          "selected_tools": [
+            "get_enterprise_overview"
+          ],
+          "required_document_types": [],
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 1535,
+          "output_tokens": 66,
+          "cached_input_tokens": 0,
+          "request_bytes": 6882,
+          "tool_schema_bytes": 762,
+          "output_schema_bytes": 2,
+          "messages_bytes": 5982,
+          "load_ms": 15.2165,
+          "prompt_eval_ms": 9934.328,
+          "generation_ms": 5302.538,
+          "thinking_emitted": false
+        }
+      ]
+    },
+    "A23": {
+      "status": "insufficient_evidence",
+      "termination_reason": "final_response_verified",
+      "elapsed_ms": 44130.054,
+      "known_tokens": 4869,
+      "usage_complete": true,
+      "model_calls": 3,
+      "tool_attempts": 1,
+      "tool_successes": 1,
+      "error_codes": [],
+      "rounds": [
+        {
+          "phase": "selection",
+          "input_tokens": 1045,
+          "output_tokens": 32,
+          "request_bytes": 6567,
+          "selected_tools": [
+            "search_corporate_knowledge"
+          ],
+          "required_document_types": [
+            "policy",
+            "policy"
+          ],
+          "thinking_emitted": false
+        },
+        {
+          "phase": "tools",
+          "input_tokens": 1896,
+          "output_tokens": 44,
+          "cached_input_tokens": 0,
+          "request_bytes": 8192,
+          "tool_schema_bytes": 2092,
+          "output_schema_bytes": 2,
+          "messages_bytes": 6023,
+          "load_ms": 14.5485,
+          "prompt_eval_ms": 12279.445,
+          "generation_ms": 3463.432,
+          "thinking_emitted": false
+        },
+        {
+          "phase": "final",
+          "input_tokens": 1751,
+          "output_tokens": 101,
+          "cached_input_tokens": 0,
+          "request_bytes": 9509,
+          "tool_schema_bytes": 2,
+          "output_schema_bytes": 1298,
+          "messages_bytes": 8146,
+          "load_ms": 13.355,
+          "prompt_eval_ms": 10460.801,
+          "generation_ms": 7220.073,
+          "thinking_emitted": false
+        }
+      ]
+    },
+    "A25": {
+      "status": "refused",
+      "termination_reason": "unsupported_execution_business_write",
+      "elapsed_ms": 9.318,
+      "known_tokens": 0,
+      "usage_complete": true,
+      "model_calls": 0,
+      "tool_attempts": 0,
+      "tool_successes": 0,
+      "error_codes": [],
+      "rounds": []
+    },
+    "A27": {
+      "status": "refused",
+      "termination_reason": "unsupported_execution_secret_access",
+      "elapsed_ms": 7.091,
+      "known_tokens": 0,
+      "usage_complete": true,
+      "model_calls": 0,
+      "tool_attempts": 0,
+      "tool_successes": 0,
+      "error_codes": [],
+      "rounds": []
+    }
+  },
+  "limitations": [
+    "Final focused-schema/short-reference candidate has no complete live acceptance under current memory pressure.",
+    "Intermediate projection-only A01 completed but used more tokens/time; no universal efficiency win.",
+    "Earlier selected-catalogue A23 used fewer tokens/errors but higher latency under shared load.",
+    "Typed and lexical checks strengthen rejection but do not prove full semantic entailment.",
+    "Candidate tool selection and reference output default false; explicitly enabled locally for evaluation.",
+    "No alternative model benchmark; forced GPU-layers experiment reverted."
+  ],
+  "user_action": "Close FC26 yourself or free >=1.5 GiB physical RAM and >=4096 MiB VRAM for this cold Qwen4B evaluation profile. Then check resources, warm existing Ollama, run all 23 cases and manually review findings/quotations. No install, key or subscription required.",
+  "known_nonacceptance_attempts": [
+    "Restricted host socket checks failed permission; authorized local retry succeeded.",
+    "Container uv run alembic attempted dev package installation and failed permission; --no-sync used successfully against existing environment."
+  ],
+  "primary_report": "docs/STAGE4B_REPORT.md",
+  "latest_resume": {
+    "date": "2026-11-03",
+    "checkpoint": "52169e584875ea329d4fabe3ea4212d01ac6585c",
+    "status": "BLOCKED_RESOURCE_PRESSURE",
+    "hardware": {
+      "model": "qwen3.5:4b",
+      "admitted": false,
+      "reasons": [
+        "Free physical RAM is below the measured profile's 1.5 GiB margin"
+      ],
+      "free_ram_gib": 0.877,
+      "total_ram_gib": 15.265,
+      "free_vram_mib": 5913,
+      "total_vram_mib": 6141,
+      "loaded_model": null,
+      "minimum_free_ram_gib": 1.5,
+      "minimum_free_vram_mib": 4096
+    },
+    "live_scenarios_executed": 0,
+    "original_cases_not_run": 8,
+    "unseen_cases_not_run": 15,
+    "model_loaded": false,
+    "local_metadata_verified": true,
+    "fingerprint_unchanged": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "rag_vectors_unchanged": true,
+    "readiness": {
+      "status": "ready"
+    },
+    "unrelated_containers_preserved": 10,
+    "code_changes": false,
+    "full_regression": "NOT_RERUN; prior checkpoint 348 passed",
+    "token_latency_comparison": "No new inference; unavailable",
+    "evidence": [
+      "reports/stage4b-resume-resource-check.json",
+      "reports/stage4b-resume-verification.json"
+    ],
+    "user_action": "Free at least another 0.623 GiB RAM (approximately 638 MiB) to exceed the existing 1.5 GiB margin, then recheck, warm existing model and run the sequential evaluator.",
+    "ready_for_stage5": false
+  },
+  "latest_autonomous_acceptance": {
+    "date": "2026-11-03",
+    "base_checkpoint": "523d1ccb4f35b734960bd9dab37168e2d3b11418",
+    "status": "BACKEND_REGRESSION_PASSED_REAL_MODEL_ACCEPTANCE_FAILED",
+    "tests_passed": 352,
+    "report": "docs/STAGE4B_REPORT.md",
+    "machine_report": "reports/stage4b-autonomous-closure.json",
+    "ready_for_stage5": false
+  }
+}

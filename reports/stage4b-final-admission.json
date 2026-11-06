@@ -1,0 +1,178 @@
+{
+  "mode": "live_local",
+  "cases": [
+    {
+      "id": "A01",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "A02",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "A03",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "A06",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "A22",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "A23",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "A25",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "A27",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B01",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B02",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B03",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B04",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B05",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B06",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B07",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B08",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B09",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B10",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B11",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B12",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B13",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B14",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    },
+    {
+      "id": "B15",
+      "execution": "NOT_RUN",
+      "reason": "Resource check only"
+    }
+  ],
+  "ready_for_stage5": false,
+  "semantic_review_required": true,
+  "runtime_status": {
+    "state": "configured_unverified",
+    "provider": "ollama",
+    "model": "qwen3.5:2b-q4_K_M",
+    "local_profile": {
+      "compact_transport": true,
+      "reference_output": true,
+      "model_selected_catalogue": true,
+      "context_tokens": 8192,
+      "gpu_layers": null,
+      "batch_tokens": 128
+    },
+    "read_only": true,
+    "live_validation": "not_performed_by_status",
+    "limits": {
+      "llm_calls": 6,
+      "tool_calls": 12,
+      "request_seconds": 90.0
+    },
+    "conversation_storage": "single-process memory, bounded history; lost on restart",
+    "authentication": "not_implemented_local_demo_only"
+  },
+  "hardware": {
+    "model": "qwen3.5:2b-q4_K_M",
+    "admitted": false,
+    "reasons": [
+      "Free physical RAM is below the measured profile's 1.5 GiB margin"
+    ],
+    "free_ram_gib": 1.265,
+    "total_ram_gib": 15.265,
+    "free_vram_mib": 3634,
+    "total_vram_mib": 6141,
+    "loaded_model": {
+      "name": "qwen3.5:2b-q4_K_M",
+      "model": "qwen3.5:2b-q4_K_M",
+      "size": 1598816254,
+      "digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "1.9B",
+        "quantization_level": "Q4_K_M"
+      },
+      "expires_at": "2026-11-03T15:47:22.9803164Z",
+      "size_vram": 1598816254,
+      "context_length": 8192,
+      "runner": "llamacpp"
+    },
+    "minimum_free_ram_gib": 1.5,
+    "minimum_free_vram_mib": 512
+  },
+  "live_status": "BLOCKED_RESOURCE_PRESSURE"
+}

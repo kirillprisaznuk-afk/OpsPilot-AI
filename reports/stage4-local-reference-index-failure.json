@@ -1,0 +1,268 @@
+{
+  "mode": "live",
+  "cases": [
+    {
+      "id": "A01",
+      "status": "validation_failed",
+      "tool_selection_expected_subset": false,
+      "valid_tool_argument_fraction": 0.6666666666666666,
+      "citation_resolution": null,
+      "known_numeric_evidence": [
+        false,
+        false
+      ],
+      "required_document_codes_found": false,
+      "required_document_codes_cited": false,
+      "expected_status_matched": null,
+      "usage": {
+        "provider_round_ms": [
+          9283.875,
+          1261.649,
+          7649.944
+        ],
+        "input_tokens": 19860,
+        "output_tokens": 593,
+        "total_tokens": 20453,
+        "cached_input_tokens": 9221,
+        "llm_calls": 3,
+        "tool_calls": 3,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": 0.0,
+        "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+        "elapsed_ms": 21548.667
+      },
+      "elapsed_ms": 21567.68,
+      "response": {
+        "request_id": "4ab9ea2a8dad44c7b4cc367c8611ca7b",
+        "conversation_id": "d122f8ae554b49f280a782d012f9587b",
+        "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+        "as_of": "2026-09-30",
+        "status": "validation_failed",
+        "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+        "key_findings": [],
+        "evidence": [
+          {
+            "evidence_id": "ev_4ab9ea2a8d_1",
+            "tool_name": "search_corporate_knowledge",
+            "arguments": {
+              "query": "escalation procedure for supplier delays",
+              "mode": "hybrid",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": "policy",
+                "department_id": 5,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "as_of": "2026-09-30",
+            "payload": {
+              "query": "escalation procedure for supplier delays",
+              "retrieval_mode": "hybrid",
+              "as_of": "2026-09-30",
+              "status": "low_confidence",
+              "insufficient_evidence": true,
+              "evidence": [],
+              "eligible_versions": 1,
+              "model_configuration": {
+                "model": "sentence-transformers/all-MiniLM-L6-v2",
+                "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+                "dimension": 384,
+                "pooling": "attention_mask_mean",
+                "normalization": "L2",
+                "distance": "cosine",
+                "max_tokens": 256,
+                "backend": "onnx-cpu-float32",
+                "parser": "markdown-sections-v1",
+                "tokenizer_truncation": "reject_over_256"
+              },
+              "ranking": {
+                "method": "reciprocal_rank_fusion",
+                "rrf_k": 60,
+                "candidate_limit_per_method": 100,
+                "minimum_cosine_similarity": 0.45,
+                "semantic_gate_applies_to": "vector_only_candidates"
+              },
+              "limitations": [
+                "Ranking is relevance evidence, not answer completeness or probability.",
+                "No answer generation, legal interpretation, authorization or tool execution.",
+                "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+              ]
+            },
+            "trust": "untrusted_tool_data"
+          },
+          {
+            "evidence_id": "ev_4ab9ea2a8d_2",
+            "tool_name": "search_corporate_knowledge",
+            "arguments": {
+              "query": "contractual SLA for on-time delivery for office products",
+              "mode": "keyword",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": "supplier_agreement",
+                "department_id": 5,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "as_of": "2026-09-30",
+            "payload": {
+              "query": "contractual SLA for on-time delivery for office products",
+              "retrieval_mode": "keyword",
+              "as_of": "2026-09-30",
+              "status": "no_effective_documents",
+              "insufficient_evidence": true,
+              "evidence": [],
+              "eligible_versions": 0,
+              "model_configuration": {
+                "model": "sentence-transformers/all-MiniLM-L6-v2",
+                "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+                "dimension": 384,
+                "pooling": "attention_mask_mean",
+                "normalization": "L2",
+                "distance": "cosine",
+                "max_tokens": 256,
+                "backend": "onnx-cpu-float32",
+                "parser": "markdown-sections-v1",
+                "tokenizer_truncation": "reject_over_256"
+              },
+              "ranking": {
+                "method": "keyword",
+                "rrf_k": null,
+                "candidate_limit_per_method": 100,
+                "minimum_cosine_similarity": null,
+                "semantic_gate_applies_to": "vector_only_candidates"
+              },
+              "limitations": [
+                "Ranking is relevance evidence, not answer completeness or probability.",
+                "No answer generation, legal interpretation, authorization or tool execution.",
+                "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+              ]
+            },
+            "trust": "untrusted_tool_data"
+          }
+        ],
+        "citations": [],
+        "tool_trace": [
+          {
+            "call_id": "1a0baab3d5ea43a287f12998e288d754",
+            "tool": "get_supplier_performance",
+            "arguments": {
+              "supplier_id": 1,
+              "query": {
+                "start_date": "2025-10-01",
+                "end_date": "2026-09-30",
+                "as_of": "2026-09-30",
+                "supplier_id": null,
+                "warehouse_id": null,
+                "product_id": null,
+                "product_category": "office",
+                "supplier_category": null,
+                "department_id": null,
+                "employee_id": null,
+                "incident_category": "supplier_delay",
+                "priority": "normal",
+                "group_by": "product",
+                "sort": "id",
+                "direction": "asc",
+                "limit": 50,
+                "offset": 0,
+                "include_trends": true,
+                "include_comparison": true
+              }
+            },
+            "status": "error",
+            "elapsed_ms": 27.552,
+            "evidence_id": null,
+            "error_code": "tool_input_or_source_error",
+            "duplicate": false
+          },
+          {
+            "call_id": "2f35a7dc1685462480fcb6a0f5ed588a",
+            "tool": "search_corporate_knowledge",
+            "arguments": {
+              "query": "escalation procedure for supplier delays",
+              "mode": "hybrid",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": "policy",
+                "department_id": 5,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "status": "success",
+            "elapsed_ms": 3145.328,
+            "evidence_id": "ev_4ab9ea2a8d_1",
+            "error_code": null,
+            "duplicate": false
+          },
+          {
+            "call_id": "fb7611a42b2541928f0f0490a9c012ae",
+            "tool": "search_corporate_knowledge",
+            "arguments": {
+              "query": "contractual SLA for on-time delivery for office products",
+              "mode": "keyword",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": "supplier_agreement",
+                "department_id": 5,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "status": "success",
+            "elapsed_ms": 10.306,
+            "evidence_id": "ev_4ab9ea2a8d_2",
+            "error_code": null,
+            "duplicate": false
+          }
+        ],
+        "limitations": [
+          "Use source references rather than numeric claims in prose.",
+          "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+        ],
+        "follow_up_questions": [],
+        "usage": {
+          "provider_round_ms": [
+            9283.875,
+            1261.649,
+            7649.944
+          ],
+          "input_tokens": 19860,
+          "output_tokens": 593,
+          "total_tokens": 20453,
+          "cached_input_tokens": 9221,
+          "llm_calls": 3,
+          "tool_calls": 3,
+          "provider_usage_complete": true,
+          "estimated_cost_usd": 0.0,
+          "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+          "elapsed_ms": 21548.667
+        },
+        "termination_reason": "unverified_numerical_prose",
+        "model": "qwen3:4b-instruct",
+        "execution_mode": "live"
+      }
+    }
+  ],
+  "completed_investigation_fraction": 0,
+  "provider": "ollama",
+  "model": "qwen3:4b-instruct"
+}

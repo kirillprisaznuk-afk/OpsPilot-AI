@@ -1,0 +1,32 @@
+{
+  "optional_live_inference": "BLOCKED",
+  "hardware": {
+    "free_ram_gib": 1.707,
+    "free_commit_gib": 27.09,
+    "owner_verified": false,
+    "admitted": false,
+    "loaded_model": null,
+    "reasons": [
+      "Local Ollama API is unavailable"
+    ]
+  },
+  "fallback": {
+    "status": "completed",
+    "execution": {
+      "planned_steps": 3,
+      "executed_steps": 3,
+      "duplicates_avoided": 0,
+      "sql_tool_ms": 65.188,
+      "rag_tool_ms": 49.951,
+      "model_role": "none",
+      "model_state": "unavailable_or_invalid",
+      "model_error": "resource_admission_blocked",
+      "model_request_bytes": 0,
+      "fallback_used": true
+    },
+    "tools": 4,
+    "llm_calls": 0,
+    "citations": 2,
+    "response_origin": "verified_structured_facts"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "mode": "live",
+  "cases": [
+    {
+      "id": "A02",
+      "status": "insufficient_evidence",
+      "tool_selection_expected_subset": false,
+      "valid_tool_argument_fraction": 0.0,
+      "citation_resolution": null,
+      "known_numeric_evidence": [],
+      "known_numeric_rendered": [],
+      "required_document_codes_found": true,
+      "required_document_codes_cited": true,
+      "expected_status_matched": null,
+      "usage": {
+        "provider_round_ms": [
+          6401.011,
+          3495.726,
+          3480.03,
+          3455.328,
+          2421.983
+        ],
+        "input_tokens": 26566,
+        "output_tokens": 441,
+        "total_tokens": 27007,
+        "cached_input_tokens": 16552,
+        "llm_calls": 5,
+        "tool_calls": 4,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": 0.0,
+        "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+        "elapsed_ms": 20682.249
+      },
+      "elapsed_ms": 20771.907,
+      "response": {
+        "request_id": "642a1e04a4284f72823d3c6d04d867ef",
+        "conversation_id": "4ea81fff0b9d443bbaf34ada06c325ca",
+        "question": "Which suppliers have the weakest on-time delivery performance?",
+        "as_of": "2026-09-30",
+        "status": "insufficient_evidence",
+        "answer": "The available evidence is insufficient to establish the requested facts.",
+        "key_findings": [],
+        "evidence": [],
+        "citations": [],
+        "tool_trace": [
+          {
+            "call_id": "4faea5f03ba54b908a7b85c54220c0f9",
+            "tool": "compare_suppliers",
+            "arguments": {
+              "start_date": "2025-10-01",
+              "end_date": "2026-09-30",
+              "as_of": "2026-09-30",
+              "supplier_id": null,
+              "warehouse_id": null,
+              "product_id": null,
+              "product_category": null,
+              "supplier_category": null,
+              "department_id": null,
+              "employee_id": null,
+              "incident_category": null,
+              "priority": null,
+              "group_by": null,
+              "sort": "on_time_rate",
+              "direction": "asc",
+              "limit": 5,
+              "offset": 0,
+              "include_trends": false,
+              "include_comparison": false
+            },
+            "status": "error",
+            "elapsed_ms": 202.932,
+            "evidence_id": null,
+            "error_code": "tool_result_limit",
+            "duplicate": false
+          },
+          {
+            "call_id": "a92059addea84193b31bf9e3ea485a6b",
+            "tool": "compare_suppliers",
+            "arguments": {
+              "start_date": "2025-10-01",
+              "end_date": "2026-09-30",
+              "as_of": "2026-09-30",
+              "supplier_id": null,
+              "warehouse_id": null,
+              "product_id": null,
+              "product_category": null,
+              "supplier_category": null,
+              "department_id": null,
+              "employee_id": null,
+              "incident_category": null,
+              "priority": null,
+              "group_by": null,
+              "sort": "on_time_rate",
+              "direction": "asc",
+              "limit": 20,
+              "offset": 0,
+              "include_trends": false,
+              "include_comparison": false
+            },
+            "status": "error",
+            "elapsed_ms": 142.747,
+            "evidence_id": null,
+            "error_code": "tool_result_limit",
+            "duplicate": false
+          },
+          {
+            "call_id": "cabc52205eff4ec4b1bf7acd631f2de2",
+            "tool": "compare_suppliers",
+            "arguments": {
+              "start_date": "2025-10-01",
+              "end_date": "2026-09-30",
+              "as_of": "2026-09-30",
+              "supplier_id": null,
+              "warehouse_id": null,
+              "product_id": null,
+              "product_category": null,
+              "supplier_category": null,
+              "department_id": null,
+              "employee_id": null,
+              "incident_category": null,
+              "priority": null,
+              "group_by": null,
+              "sort": "on_time_rate",
+              "direction": "asc",
+              "limit": 10,
+              "offset": 0,
+              "include_trends": false,
+              "include_comparison": false
+            },
+            "status": "error",
+            "elapsed_ms": 131.849,
+            "evidence_id": null,
+            "error_code": "tool_result_limit",
+            "duplicate": false
+          },
+          {
+            "call_id": "6e898de802904361b77e978d15134a0b",
+            "tool": "compare_suppliers",
+            "arguments": {
+              "start_date": "2025-10-01",
+              "end_date": "2026-09-30",
+              "as_of": "2026-09-30",
+              "supplier_id": null,
+              "warehouse_id": null,
+              "product_id": null,
+              "product_category": null,
+              "supplier_category": null,
+              "department_id": null,
+              "employee_id": null,
+              "incident_category": null,
+              "priority": null,
+              "group_by": null,
+              "sort": "on_time_rate",
+              "direction": "asc",
+              "limit": 5,
+              "offset": 0,
+              "include_trends": false,
+              "include_comparison": false
+            },
+            "status": "error",
+            "elapsed_ms": 154.711,
+            "evidence_id": null,
+            "error_code": "tool_result_limit",
+            "duplicate": false
+          }
+        ],
+        "limitations": [
+          "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+        ],
+        "follow_up_questions": [
+          "Please specify a supplier category or geographic region to narrow the search and retrieve specific performance data."
+        ],
+        "usage": {
+          "provider_round_ms": [
+            6401.011,
+            3495.726,
+            3480.03,
+            3455.328,
+            2421.983
+          ],
+          "input_tokens": 26566,
+          "output_tokens": 441,
+          "total_tokens": 27007,
+          "cached_input_tokens": 16552,
+          "llm_calls": 5,
+          "tool_calls": 4,
+          "provider_usage_complete": true,
+          "estimated_cost_usd": 0.0,
+          "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+          "elapsed_ms": 20682.249
+        },
+        "termination_reason": "final_response_verified",
+        "model": "qwen3.5:4b",
+        "execution_mode": "live"
+      }
+    }
+  ],
+  "completed_investigation_fraction": 0,
+  "provider": "ollama",
+  "model": "qwen3.5:4b"
+}

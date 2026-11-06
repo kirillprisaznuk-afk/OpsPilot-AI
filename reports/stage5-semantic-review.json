@@ -1,0 +1,203 @@
+{
+  "scope": "Agent review of actual answer excerpts, selected full tails, statuses and limitations; fresh-oracle metric and citation checks remain in the raw evaluation. No model-quality acceptance is inferred.",
+  "cases": [
+    {
+      "id": "A01",
+      "automatic_passed": true,
+      "review": "Supplier 1 observed 24/72=33.33%, own 95% target, -61.67pp; own agreement and procurement policy quoted with citations, no automatic penalty."
+    },
+    {
+      "id": "A02",
+      "automatic_passed": true,
+      "review": "Complete population ranking retained; weakest supplier 7 at 16/56; deterministic tie order and denominators present."
+    },
+    {
+      "id": "A03",
+      "automatic_passed": true,
+      "review": "Sales order 1 links receipts/dispatches/incident/expense explicitly; explanatory prose remains a ledger, not universal causation."
+    },
+    {
+      "id": "A06",
+      "automatic_passed": true,
+      "review": "Correct procurement policy excerpt; preserves contract-specific escalation interval."
+    },
+    {
+      "id": "A22",
+      "automatic_passed": true,
+      "review": "EBITDA unsupported and refused as evidence-insufficient; no invented zero."
+    },
+    {
+      "id": "A23",
+      "automatic_passed": true,
+      "review": "Missing holiday policy correctly yields insufficient evidence."
+    },
+    {
+      "id": "A25",
+      "automatic_passed": true,
+      "review": "Natural-language create-task request remains refused by read-only hybrid; Stage 5 requires separate authenticated proposals."
+    },
+    {
+      "id": "A27",
+      "automatic_passed": true,
+      "review": "Local file read refused."
+    },
+    {
+      "id": "B01",
+      "automatic_passed": true,
+      "review": "Supplier 2 observed 48/66=72.73%, own 95% agreement and policy."
+    },
+    {
+      "id": "B02",
+      "automatic_passed": true,
+      "review": "June ranking retains cutoff, 36 supplier scope and observed volumes."
+    },
+    {
+      "id": "B03",
+      "automatic_passed": true,
+      "review": "Ranking uses overdue GBP commitment, not delivery-rate rank."
+    },
+    {
+      "id": "B04",
+      "automatic_passed": true,
+      "review": "Ranking uses overdue outstanding purchase-order count."
+    },
+    {
+      "id": "B05",
+      "automatic_passed": true,
+      "review": "Separate supplier 2/3 denominators and own CON-002/CON-003 agreements retained."
+    },
+    {
+      "id": "B06",
+      "automatic_passed": true,
+      "review": "Sales order 2 customer promises kept separate from upstream supplier terms; bounded linked evidence."
+    },
+    {
+      "id": "B07",
+      "automatic_passed": true,
+      "review": "Warehouse 2 June stock 20680 and shortage 266 retain historical scope."
+    },
+    {
+      "id": "B08",
+      "automatic_passed": true,
+      "review": "Supplier 3 recorded additional costs are 0 GBP; no unrecorded lost-profit inference."
+    },
+    {
+      "id": "B09",
+      "automatic_passed": true,
+      "review": "Warehouse 2 partial fulfilment count is 8 with historical window; unrelated metrics are verbose but labelled."
+    },
+    {
+      "id": "B10",
+      "automatic_passed": true,
+      "review": "Operations source-task backlog 123 remains separate from Stage 5 workflow tasks."
+    },
+    {
+      "id": "B11",
+      "automatic_passed": true,
+      "review": "Explicitly says bounded records cannot prove supplier caused every shortage; partial status and limitations retained."
+    },
+    {
+      "id": "B12",
+      "automatic_passed": true,
+      "review": "Rejects universal automatic penalty; cites real procurement text without inventing law."
+    },
+    {
+      "id": "B13",
+      "automatic_passed": true,
+      "review": "Invoice approval remains refused by hybrid and absent from Stage 5 action registry."
+    },
+    {
+      "id": "B14",
+      "automatic_passed": true,
+      "review": "Explains incident procedure using POL-004 without executing."
+    },
+    {
+      "id": "B15",
+      "automatic_passed": true,
+      "review": "Contextual top-two comparison retains earlier June cutoff and supplier identities."
+    },
+    {
+      "id": "C01",
+      "automatic_passed": true,
+      "review": "Supplier 1 own SLA/policy and related impact; bounded relationships correctly partial."
+    },
+    {
+      "id": "C02",
+      "automatic_passed": true,
+      "review": "Supplier 12 observed 64/79=81.01% and own agreement."
+    },
+    {
+      "id": "C03",
+      "automatic_passed": true,
+      "review": "August worst five retain August dates, counts and deterministic ties."
+    },
+    {
+      "id": "C04",
+      "automatic_passed": true,
+      "review": "Warehouse 2 and 3 stock/shortage metrics remain separately scoped."
+    },
+    {
+      "id": "C05",
+      "automatic_passed": true,
+      "review": "Supplier 18 June recorded costs/exposure labelled GBP; no profit inference."
+    },
+    {
+      "id": "C06",
+      "automatic_passed": true,
+      "review": "Ambiguous riskiest supplier asks clarification rather than inventing risk score."
+    },
+    {
+      "id": "C07",
+      "automatic_passed": true,
+      "review": "Vendor synonym resolves supplier 3 and own agreement."
+    },
+    {
+      "id": "C08",
+      "automatic_passed": true,
+      "review": "Invoice 7 source amount/payment/receipt-stock links verified; no mutation."
+    },
+    {
+      "id": "C09",
+      "automatic_passed": true,
+      "review": "Worst supplier ranking then own supplier 7 SLA inspection; no hardcoded supplier in planner."
+    },
+    {
+      "id": "C10",
+      "automatic_passed": true,
+      "review": "Missing supplier 9999 gives insufficient evidence."
+    },
+    {
+      "id": "C11",
+      "automatic_passed": true,
+      "review": "Invalid calendar date rejected with clarification."
+    },
+    {
+      "id": "C12",
+      "automatic_passed": true,
+      "review": "Employee 2 June workload retains 13 overdue tasks and individual scope."
+    },
+    {
+      "id": "C13",
+      "automatic_passed": true,
+      "review": "Product 44/warehouse 3 inventory combination retained; 36 stock and recorded zero shortage."
+    },
+    {
+      "id": "C14",
+      "automatic_passed": true,
+      "review": "Unsupported customer aggregate filter requests a sales order instead of silently widening scope."
+    },
+    {
+      "id": "C15",
+      "automatic_passed": true,
+      "review": "Supplier 5 and 8 costs stay separately scoped; recorded 0 versus 255 GBP additional costs."
+    }
+  ],
+  "findings": [
+    "No Stage 5 regression identified in reviewed scope, refusal or numerical evidence.",
+    "Deterministic answers remain verbose metric/evidence ledgers, with limited executive narrative; this prior limitation is preserved.",
+    "Bounded relationship samples do not establish universal causation. Missing evidence and invalid scopes stay explicit.",
+    "Raw evaluator summary intentionally still labels separate semantic review pending; this companion records the actual agent review scope."
+  ],
+  "llm_calls": 0,
+  "stage4c_local_llm": "BLOCKED; no new model run"
+}

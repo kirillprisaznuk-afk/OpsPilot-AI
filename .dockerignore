@@ -1,0 +1,13 @@
+.git
+.env
+.models
+.venv
+.uv-cache
+.local-tools
+.local-pg
+.local-pg-validated
+.pytest_cache
+.ruff_cache
+**/__pycache__
+reports
+frontend

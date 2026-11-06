@@ -1,0 +1,31 @@
+{
+  "stopped_project_start_ms": 23054.0,
+  "running_project_start_ms": 3623.0,
+  "cold_readiness": {
+    "api_ready_ms": 13523.0,
+    "frontend_login_ms": 18013.0
+  },
+  "samples_per_mode": 1,
+  "power_shell": "7.6.5",
+  "stop_left_no_running_project_containers": true,
+  "config_and_generated_accounts_preserved": true,
+  "repeat_setup_refused": true,
+  "status": [
+    "Frontend: http://127.0.0.1:3118",
+    "API: http://127.0.0.1:8018",
+    "api running healthy",
+    "db running healthy",
+    "frontend running healthy",
+    "Database/API: available",
+    "Knowledge: 44 documents, 44 chunks",
+    "Intelligence: available",
+    "Workflow: restricted database connection ready",
+    "Browser sign-in: available",
+    "Experimental Ollama: unavailable; deterministic mode needs no model"
+  ],
+  "container_memory_samples": [
+    "opspilot-release-test-api-1|124.9MiB / 7.391GiB",
+    "opspilot-release-test-db-1|25.14MiB / 7.391GiB",
+    "opspilot-release-test-frontend-1|48.83MiB / 7.391GiB"
+  ]
+}

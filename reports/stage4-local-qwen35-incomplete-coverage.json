@@ -1,0 +1,1364 @@
+{
+  "request_id": "4e6b5cf2bc4b47658459d512f6904b1c",
+  "conversation_id": null,
+  "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+  "as_of": "2026-09-30",
+  "status": "completed",
+  "answer": "Supplier on-time performance is significantly below the contractual target. [ev_4e6b5cf2bc_2]\nprocurement.on_time_rate: 33.33 percent (period 2025-10-01 to 2026-09-30; as of 2026-09-30) [ev_4e6b5cf2bc_2]\ntarget_percent: 95.00 percent (period 2025-10-01 to 2026-09-30; as of 2026-09-30) [ev_4e6b5cf2bc_2]\nThe contract specifies escalation after  calendar days past promise. [ev_4e6b5cf2bc_3]\nSources: kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1\nVerified source excerpt [kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1]: \"## Instructions and terms\\n\\nSupplier: Amberwick Office Works (synthetic)\\n\\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\\n\"",
+  "key_findings": [
+    {
+      "text": "Supplier on-time performance is significantly below the contractual target.",
+      "evidence_ids": [
+        "ev_4e6b5cf2bc_2"
+      ],
+      "metrics": [
+        {
+          "evidence_id": "ev_4e6b5cf2bc_2",
+          "pointer": "/breakdowns/0/metrics/on_time_rate",
+          "metric": "procurement.on_time_rate",
+          "value": "33.33",
+          "unit": "percent",
+          "numerator": 24,
+          "denominator": 72,
+          "status": "available",
+          "time_basis": "Order-date cohort; mature promises at as_of",
+          "grain": "purchase order",
+          "limitations": [],
+          "comparison": null,
+          "window": {
+            "observation_start": "2025-10-01",
+            "observation_end": "2026-09-30",
+            "as_of": "2026-09-30",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_4e6b5cf2bc_2",
+          "pointer": "/contracts/0/target_percent",
+          "metric": "target_percent",
+          "value": "95.00",
+          "unit": "percent",
+          "window": {
+            "observation_start": "2025-10-01",
+            "observation_end": "2026-09-30",
+            "as_of": "2026-09-30",
+            "timezone": "UTC"
+          }
+        }
+      ],
+      "citation_ids": [],
+      "quotations": []
+    },
+    {
+      "text": "The contract specifies escalation after  calendar days past promise.",
+      "evidence_ids": [
+        "ev_4e6b5cf2bc_3"
+      ],
+      "metrics": [],
+      "citation_ids": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "quotations": [
+        {
+          "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+          "text": "## Instructions and terms\n\nSupplier: Amberwick Office Works (synthetic)\n\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+          "trust": "untrusted_source_data"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev_4e6b5cf2bc_1",
+      "tool_name": "resolve_business_entity",
+      "arguments": {
+        "entity_type": "supplier",
+        "term": "1",
+        "as_of": "2026-09-30"
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "status": "resolved",
+        "matches": [
+          {
+            "entity_type": "supplier",
+            "entity_id": 1,
+            "name": "Amberwick Office Works (synthetic)"
+          }
+        ],
+        "total_matches": 1,
+        "truncated": false
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_4e6b5cf2bc_2",
+      "tool_name": "get_supplier_performance",
+      "arguments": {
+        "supplier_id": 1,
+        "query": {
+          "start_date": "2025-10-01",
+          "end_date": "2026-09-30",
+          "as_of": "2026-09-30",
+          "supplier_id": null,
+          "warehouse_id": null,
+          "product_id": null,
+          "product_category": null,
+          "supplier_category": null,
+          "department_id": null,
+          "employee_id": null,
+          "incident_category": null,
+          "priority": null,
+          "group_by": null,
+          "sort": "id",
+          "direction": "asc",
+          "limit": 5,
+          "offset": 0,
+          "include_trends": false,
+          "include_comparison": false
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "domain": "suppliers",
+        "window": {
+          "observation_start": "2025-10-01",
+          "observation_end": "2026-09-30",
+          "as_of": "2026-09-30",
+          "timezone": "UTC"
+        },
+        "filters": {
+          "supplier_id": 1
+        },
+        "metrics": {
+          "completed_in_period": {
+            "metric": "procurement.completed_in_period",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Completion-event flow in selected period",
+            "grain": "purchase order",
+            "limitations": [],
+            "comparison": null
+          },
+          "purchase_orders": {
+            "metric": "procurement.purchase_orders",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "order_value": {
+            "metric": "procurement.order_value",
+            "value": "710052.22",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "ordered_units": {
+            "metric": "procurement.ordered_units",
+            "value": 10082,
+            "unit": "units",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "received_units": {
+            "metric": "procurement.received_units",
+            "value": 10082,
+            "unit": "units",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "outstanding_units": {
+            "metric": "procurement.outstanding_units",
+            "value": 0,
+            "unit": "units",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "completed_orders": {
+            "metric": "procurement.completed_orders",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "due_orders": {
+            "metric": "procurement.due_orders",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "on_time_orders": {
+            "metric": "procurement.on_time_orders",
+            "value": 24,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "late_orders": {
+            "metric": "procurement.late_orders",
+            "value": 48,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "overdue_outstanding_orders": {
+            "metric": "procurement.overdue_outstanding_orders",
+            "value": 0,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "open_orders": {
+            "metric": "procurement.open_orders",
+            "value": 0,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "partial_orders": {
+            "metric": "procurement.partial_orders",
+            "value": 0,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "split_receipt_orders": {
+            "metric": "procurement.split_receipt_orders",
+            "value": 11,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "open_commitment": {
+            "metric": "procurement.open_commitment",
+            "value": "0.00",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "overdue_commitment": {
+            "metric": "procurement.overdue_commitment",
+            "value": "0.00",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "average_lateness": {
+            "metric": "procurement.average_lateness",
+            "value": "7.79",
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "median_lateness": {
+            "metric": "procurement.median_lateness",
+            "value": "7.00",
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "average_overdue_age": {
+            "metric": "procurement.average_overdue_age",
+            "value": null,
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "undefined",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "average_lead_time": {
+            "metric": "procurement.average_lead_time",
+            "value": "10.11",
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "receipt_events": {
+            "metric": "procurement.receipt_events",
+            "value": 165,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "punctual_receipts": {
+            "metric": "procurement.punctual_receipts",
+            "value": 56,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "on_time_rate": {
+            "metric": "procurement.on_time_rate",
+            "value": "33.33",
+            "unit": "percent",
+            "numerator": 24,
+            "denominator": 72,
+            "status": "available",
+            "time_basis": "Order-date cohort; mature promises at as_of",
+            "grain": "purchase order",
+            "limitations": [],
+            "comparison": null
+          },
+          "receipt_punctuality_rate": {
+            "metric": "procurement.receipt_punctuality_rate",
+            "value": "33.94",
+            "unit": "percent",
+            "numerator": "56",
+            "denominator": "165",
+            "status": "available",
+            "time_basis": "Order-date cohort; receipts visible at as_of",
+            "grain": "receipt event",
+            "limitations": [],
+            "comparison": null
+          },
+          "additional_linked_costs": {
+            "metric": "suppliers.additional_linked_costs",
+            "value": "1275.00",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Expense events within selected period",
+            "grain": "expense event",
+            "limitations": [],
+            "comparison": null
+          }
+        },
+        "breakdowns": [
+          {
+            "entity_type": "supplier",
+            "entity_id": 1,
+            "label": "Amberwick Office Works (synthetic)",
+            "metrics": {
+              "completed_in_period": {
+                "metric": "procurement.completed_in_period",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Completion-event flow in selected period",
+                "grain": "purchase order",
+                "limitations": [],
+                "comparison": null
+              },
+              "purchase_orders": {
+                "metric": "procurement.purchase_orders",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "order_value": {
+                "metric": "procurement.order_value",
+                "value": "710052.22",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "ordered_units": {
+                "metric": "procurement.ordered_units",
+                "value": 10082,
+                "unit": "units",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "received_units": {
+                "metric": "procurement.received_units",
+                "value": 10082,
+                "unit": "units",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "outstanding_units": {
+                "metric": "procurement.outstanding_units",
+                "value": 0,
+                "unit": "units",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "completed_orders": {
+                "metric": "procurement.completed_orders",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "due_orders": {
+                "metric": "procurement.due_orders",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "on_time_orders": {
+                "metric": "procurement.on_time_orders",
+                "value": 24,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "late_orders": {
+                "metric": "procurement.late_orders",
+                "value": 48,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "overdue_outstanding_orders": {
+                "metric": "procurement.overdue_outstanding_orders",
+                "value": 0,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "open_orders": {
+                "metric": "procurement.open_orders",
+                "value": 0,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "partial_orders": {
+                "metric": "procurement.partial_orders",
+                "value": 0,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "split_receipt_orders": {
+                "metric": "procurement.split_receipt_orders",
+                "value": 11,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "open_commitment": {
+                "metric": "procurement.open_commitment",
+                "value": "0.00",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "overdue_commitment": {
+                "metric": "procurement.overdue_commitment",
+                "value": "0.00",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "average_lateness": {
+                "metric": "procurement.average_lateness",
+                "value": "7.79",
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "median_lateness": {
+                "metric": "procurement.median_lateness",
+                "value": "7.00",
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "average_overdue_age": {
+                "metric": "procurement.average_overdue_age",
+                "value": null,
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "undefined",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "average_lead_time": {
+                "metric": "procurement.average_lead_time",
+                "value": "10.11",
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "receipt_events": {
+                "metric": "procurement.receipt_events",
+                "value": 165,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "punctual_receipts": {
+                "metric": "procurement.punctual_receipts",
+                "value": 56,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "on_time_rate": {
+                "metric": "procurement.on_time_rate",
+                "value": "33.33",
+                "unit": "percent",
+                "numerator": 24,
+                "denominator": 72,
+                "status": "available",
+                "time_basis": "Order-date cohort; mature promises at as_of",
+                "grain": "purchase order",
+                "limitations": [],
+                "comparison": null
+              },
+              "receipt_punctuality_rate": {
+                "metric": "procurement.receipt_punctuality_rate",
+                "value": "33.94",
+                "unit": "percent",
+                "numerator": "56",
+                "denominator": "165",
+                "status": "available",
+                "time_basis": "Order-date cohort; receipts visible at as_of",
+                "grain": "receipt event",
+                "limitations": [],
+                "comparison": null
+              },
+              "additional_linked_costs": {
+                "metric": "suppliers.additional_linked_costs",
+                "value": "1275.00",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Expense events within selected period",
+                "grain": "expense event",
+                "limitations": [],
+                "comparison": null
+              },
+              "sla_target_percent": {
+                "metric": "suppliers.sla_target_percent",
+                "value": "95.00",
+                "unit": "percent",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order cohort and effective contracts; no legal breach determination",
+                "grain": "supplier",
+                "limitations": [],
+                "comparison": null
+              },
+              "sla_gap": {
+                "metric": "suppliers.sla_gap",
+                "value": "-61.67",
+                "unit": "percentage_points",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order cohort and effective contracts; no legal breach determination",
+                "grain": "supplier",
+                "limitations": [],
+                "comparison": null
+              }
+            }
+          }
+        ],
+        "trends": [],
+        "total_segments": 1,
+        "limit": 5,
+        "offset": 0,
+        "contracts": [
+          {
+            "contract_id": 1,
+            "supplier_id": 1,
+            "reference": "NS-CON-001",
+            "effective_date": "2025-10-01",
+            "expires_on": "2026-09-30",
+            "target_percent": "95.00",
+            "observed_percent": "33.33",
+            "gap_percentage_points": "-61.67",
+            "due_orders": 72,
+            "on_time_orders": 24,
+            "potential_operational_concern": true,
+            "legal_breach_established": false
+          }
+        ],
+        "price_bands": [],
+        "cost_categories": [],
+        "limitations": [
+          "SLA concerns are operational observations, never legal breach findings.",
+          "Targets differing across contracts remain separate; no blended target is invented.",
+          "Contract assessments are bounded to 100 across the current supplier page."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_4e6b5cf2bc_3",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "Amberwick Office Works contract agreement",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "Amberwick Office Works contract agreement",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "evidence_found",
+        "insufficient_evidence": false,
+        "evidence": [
+          {
+            "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+            "document_id": 1,
+            "document_version_id": 1,
+            "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nSupplier: Amberwick Office Works (synthetic)\n\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "rank": 1,
+            "score": 0.0125,
+            "lexical_score": 0.0125,
+            "cosine_similarity": null,
+            "retrieval_method": "keyword",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 1,
+              "code": "CON-001",
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "document_type": "supplier_agreement",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": 1,
+              "contract_reference": "NS-CON-001",
+              "supplier_id": 1,
+              "supplier": "Amberwick Office Works (synthetic)",
+              "version_id": 1,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326"
+            },
+            "citation": {
+              "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "document_id": 1,
+              "document_version_id": 1,
+              "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 16,
+              "effective_on": "2025-10-01",
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "text_sha256": "0069cdace0d826543637a924a0b0dbda7755e3db1145a59a9b0445e73ba09085",
+              "source_reference": "/api/v1/knowledge/documents/1/versions/1"
+            },
+            "source_provenance": {
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          }
+        ],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_4e6b5cf2bc_4",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "escalation procedure supplier delay internal policy",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "escalation procedure supplier delay internal policy",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_4e6b5cf2bc_5",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "NS-CON-001 supplier_agreement",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "NS-CON-001 supplier_agreement",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_4e6b5cf2bc_6",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal policy escalation procedure supplier delay",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "internal policy escalation procedure supplier delay",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_4e6b5cf2bc_7",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal policy escalation procedure",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "internal policy escalation procedure",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    }
+  ],
+  "citations": [
+    {
+      "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+      "document_id": 1,
+      "document_version_id": 1,
+      "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+      "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+      "version": 1,
+      "section": [
+        "Instructions and terms"
+      ],
+      "line_start": 12,
+      "line_end": 16,
+      "effective_on": "2025-10-01",
+      "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+      "text_sha256": "0069cdace0d826543637a924a0b0dbda7755e3db1145a59a9b0445e73ba09085",
+      "source_reference": "/api/v1/knowledge/documents/1/versions/1"
+    }
+  ],
+  "tool_trace": [
+    {
+      "call_id": "d8786154375844bbb0297dccb240a79e",
+      "tool": "resolve_business_entity",
+      "arguments": {
+        "entity_type": "supplier",
+        "term": "1",
+        "as_of": "2026-09-30"
+      },
+      "status": "success",
+      "elapsed_ms": 484.0,
+      "evidence_id": "ev_4e6b5cf2bc_1",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "521a5c2313664cd2af7a87f3754b51fc",
+      "tool": "get_supplier_performance",
+      "arguments": {
+        "supplier_id": 1,
+        "query": {
+          "start_date": "2025-10-01",
+          "end_date": "2026-09-30",
+          "as_of": "2026-09-30",
+          "supplier_id": null,
+          "warehouse_id": null,
+          "product_id": null,
+          "product_category": null,
+          "supplier_category": null,
+          "department_id": null,
+          "employee_id": null,
+          "incident_category": null,
+          "priority": null,
+          "group_by": null,
+          "sort": "id",
+          "direction": "asc",
+          "limit": 5,
+          "offset": 0,
+          "include_trends": false,
+          "include_comparison": false
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 235.0,
+      "evidence_id": "ev_4e6b5cf2bc_2",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "745d63b17eb94dc6856ede0e0ee1b354",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "Amberwick Office Works contract agreement",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 110.0,
+      "evidence_id": "ev_4e6b5cf2bc_3",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "db52f4f6d96e4b8aac9ce383433982ba",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "escalation procedure supplier delay internal policy",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 78.0,
+      "evidence_id": "ev_4e6b5cf2bc_4",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "f4aea0f2e15f459e8984d01c520e2b66",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "NS-CON-001 supplier_agreement",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 32.0,
+      "evidence_id": "ev_4e6b5cf2bc_5",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "3a0644dba0474df6a61a3a68739046df",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal policy escalation procedure supplier delay",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 31.0,
+      "evidence_id": "ev_4e6b5cf2bc_6",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "6989c9b357fe45cb8f62869ba1031271",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "NS-CON-001 supplier_agreement",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 0.0,
+      "evidence_id": "ev_4e6b5cf2bc_5",
+      "error_code": null,
+      "duplicate": true
+    },
+    {
+      "call_id": "278363ea31aa491f8c3100eb7b656f81",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal policy escalation procedure",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 31.0,
+      "evidence_id": "ev_4e6b5cf2bc_7",
+      "error_code": null,
+      "duplicate": false
+    }
+  ],
+  "limitations": [
+    "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+  ],
+  "follow_up_questions": [],
+  "usage": {
+    "provider_round_ms": [
+      3797.0,
+      3187.0,
+      4859.0,
+      5250.0,
+      11172.0
+    ],
+    "input_tokens": 48372,
+    "output_tokens": 723,
+    "total_tokens": 49095,
+    "cached_input_tokens": 21832,
+    "llm_calls": 5,
+    "tool_calls": 8,
+    "provider_usage_complete": true,
+    "estimated_cost_usd": 0.0,
+    "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+    "elapsed_ms": 29391.0
+  },
+  "termination_reason": "final_response_verified",
+  "model": "qwen3.5:4b",
+  "execution_mode": "live"
+}

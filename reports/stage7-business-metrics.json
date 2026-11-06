@@ -1,0 +1,99 @@
+{
+  "full": {
+    "procurement": {
+      "purchase_orders": 2400,
+      "due_orders": 2400,
+      "on_time_orders": 1678,
+      "late_orders": 708,
+      "open_commitment": "141686.31",
+      "overdue_commitment": "141686.31",
+      "on_time_rate": "69.92"
+    },
+    "inventory": {
+      "stock_on_hand": 99213
+    },
+    "fulfilment": {
+      "outstanding_units": "543"
+    },
+    "finance": {
+      "invoice_value": "25910489.78",
+      "paid_amount": "22849059.09",
+      "outstanding_amount": "3061430.69",
+      "overdue_amount": "1661843.19",
+      "operating_expenses": "244555.00",
+      "additional_costs": "16555.00"
+    },
+    "workforce": {
+      "total_tasks": 1793,
+      "open_tasks": 175,
+      "overdue_tasks": 175,
+      "unknown_status_tasks": 0
+    },
+    "incidents": {
+      "total_incidents": 1793,
+      "open_incidents": 175
+    },
+    "department_1": {
+      "total_tasks": 1196,
+      "open_tasks": 123,
+      "overdue_tasks": 123,
+      "unknown_status_tasks": 0
+    },
+    "employee_1": {
+      "total_tasks": 150,
+      "open_tasks": 13,
+      "overdue_tasks": 13,
+      "unknown_status_tasks": 0
+    }
+  },
+  "august": {
+    "procurement": {
+      "purchase_orders": 200,
+      "due_orders": 165,
+      "on_time_orders": 110,
+      "late_orders": 37,
+      "open_commitment": "462554.08",
+      "overdue_commitment": "159772.87",
+      "on_time_rate": "66.67"
+    },
+    "inventory": {
+      "stock_on_hand": 90082
+    },
+    "fulfilment": {
+      "outstanding_units": "360"
+    },
+    "finance": {
+      "invoice_value": "2019275.97",
+      "paid_amount": "594469.59",
+      "outstanding_amount": "1424806.38",
+      "overdue_amount": "0.00",
+      "operating_expenses": "19340.00",
+      "additional_costs": "340.00"
+    },
+    "workforce": {
+      "total_tasks": 1723,
+      "open_tasks": 183,
+      "overdue_tasks": 161,
+      "unknown_status_tasks": 0
+    },
+    "incidents": {
+      "total_incidents": 1723,
+      "open_incidents": 183
+    },
+    "department_1": {
+      "total_tasks": 1153,
+      "open_tasks": 128,
+      "overdue_tasks": 116,
+      "unknown_status_tasks": 0
+    },
+    "employee_1": {
+      "total_tasks": 142,
+      "open_tasks": 17,
+      "overdue_tasks": 13,
+      "unknown_status_tasks": 0
+    }
+  },
+  "date_errors": 3,
+  "empty_population_rate": "undefined",
+  "passed": true
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "suffix": "<think>\n\n</think>\n\n",
+    "response": {
+      "model": "qwen3:4b",
+      "created_at": "2026-10-28T14:28:03.7611445Z",
+      "response": "Okay, the user said \"Say ready.\" So I need to respond with \"ready\" as instructed. Let me check if there's any context or hidden meaning here. The user might be testing if I follow simple instructions. Since they just want me",
+      "done": true,
+      "done_reason": "length",
+      "total_duration": 8349722700,
+      "load_duration": 7277932000,
+      "prompt_eval_count": 15,
+      "prompt_eval_cached_count": 0,
+      "prompt_eval_duration": 195032000,
+      "eval_count": 50,
+      "eval_duration": 866421000
+    }
+  },
+  {
+    "suffix": "",
+    "response": {
+      "model": "qwen3:4b",
+      "created_at": "2026-10-28T14:28:04.6259114Z",
+      "response": "",
+      "thinking": "Okay, the user said \"Say ready.\" So I need to respond with \"ready\" as per their instruction. Let me check if there's any context I'm missing. The user is probably testing if I can follow simple commands. They",
+      "done": true,
+      "done_reason": "length",
+      "total_duration": 860842300,
+      "load_duration": 9766900,
+      "prompt_eval_count": 11,
+      "prompt_eval_cached_count": 10,
+      "prompt_eval_duration": 17203000,
+      "eval_count": 50,
+      "eval_duration": 825338000
+    }
+  },
+  {
+    "suffix": "<think>\n\n</think>\n",
+    "response": {
+      "model": "qwen3:4b",
+      "created_at": "2026-10-28T14:28:16.6668087Z",
+      "response": "Okay, the user said \"Say ready.\" So I need to respond with \"ready\" as instructed. Let me check if there's any context or previous messages. The user just said \"Say ready.\" so I should simply reply with \"ready\"",
+      "done": true,
+      "done_reason": "length",
+      "total_duration": 12038704800,
+      "load_duration": 9038300,
+      "prompt_eval_count": 15,
+      "prompt_eval_cached_count": 12,
+      "prompt_eval_duration": 11172410000,
+      "eval_count": 50,
+      "eval_duration": 848223000
+    }
+  }
+]

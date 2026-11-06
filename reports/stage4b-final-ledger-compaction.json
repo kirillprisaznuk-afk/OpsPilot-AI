@@ -1,0 +1,16 @@
+[
+  {
+    "id": "A01",
+    "canonical_ledger_bytes": 65034,
+    "lossless_projected_bytes": 55976,
+    "reduction_percent": 13.93,
+    "roundtrip_equal": true
+  },
+  {
+    "id": "A02",
+    "canonical_ledger_bytes": 94295,
+    "lossless_projected_bytes": 79941,
+    "reduction_percent": 15.22,
+    "roundtrip_equal": true
+  }
+]

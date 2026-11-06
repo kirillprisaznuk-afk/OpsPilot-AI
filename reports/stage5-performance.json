@@ -1,0 +1,81 @@
+{
+  "authentication": {
+    "samples": 6,
+    "median_ms": 136.91,
+    "max_ms": 684.02
+  },
+  "create": {
+    "samples": 9,
+    "median_ms": 50.09,
+    "max_ms": 413.74
+  },
+  "submit": {
+    "samples": 10,
+    "median_ms": 47.96,
+    "max_ms": 451.83
+  },
+  "approve": {
+    "samples": 9,
+    "median_ms": 52.17,
+    "max_ms": 60.77
+  },
+  "execute": {
+    "samples": 14,
+    "median_ms": 219.205,
+    "max_ms": 417.8
+  },
+  "list_proposals": {
+    "samples": 1,
+    "median_ms": 128.42,
+    "max_ms": 128.42
+  },
+  "list_tasks": {
+    "samples": 1,
+    "median_ms": 33.84,
+    "max_ms": 33.84
+  },
+  "list_audit": {
+    "samples": 1,
+    "median_ms": 31.98,
+    "max_ms": 31.98
+  },
+  "real_supplier_contract_policy_investigation": {
+    "samples": 1,
+    "median_ms": 3824.43,
+    "max_ms": 3824.43
+  },
+  "proposal_review_detail": {
+    "samples": 5,
+    "median_ms": 28.027,
+    "max_ms": 36.321,
+    "all_ms": [
+      36.321,
+      29.212,
+      28.027,
+      27.763,
+      27.946
+    ]
+  },
+  "workflow_execution_transaction": {
+    "samples": 14,
+    "median_ms": 135.6775,
+    "max_ms": 398.914,
+    "all_ms": [
+      398.914,
+      52.355,
+      45.34,
+      51.536,
+      52.148,
+      48.328,
+      356.314,
+      49.552,
+      153.524,
+      130.746,
+      140.609,
+      166.852,
+      159.45,
+      183.113
+    ],
+    "definition": "Workflow unit through commit, including pool/role setup and lock waits; excludes separate auth dependency. Includes concurrent receipt replays."
+  }
+}

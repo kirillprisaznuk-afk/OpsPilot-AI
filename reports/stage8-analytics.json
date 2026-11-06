@@ -1,0 +1,110 @@
+{
+  "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+  "migration": "0004",
+  "original_integrity": {
+    "validated": true,
+    "counts": {
+      "business_roles": 6,
+      "customers": 120,
+      "departments": 6,
+      "document_versions": 44,
+      "documents": 44,
+      "employees": 48,
+      "fulfilments": 4768,
+      "goods_receipts": 5447,
+      "incidents": 1793,
+      "operational_expenses": 216,
+      "payments": 2210,
+      "products": 200,
+      "purchase_order_lines": 4799,
+      "purchase_orders": 2400,
+      "responsibilities": 48,
+      "sales_order_lines": 3599,
+      "sales_orders": 1800,
+      "shortages": 1144,
+      "stock_movements": 10215,
+      "supplier_contracts": 36,
+      "supplier_invoices": 2386,
+      "suppliers": 36,
+      "task_status_history": 3527,
+      "tasks": 1793,
+      "warehouses": 4
+    },
+    "closing_stock_units": 99213,
+    "period": "2025-10-01/2026-09-30"
+  },
+  "reconciliations": {
+    "overview_domains": true,
+    "supplier_detail_comparison": true,
+    "purchase_service_population": true,
+    "invoice_paid_outstanding": true,
+    "stock_ledger": true,
+    "sales_order_quantities": true,
+    "warehouse_stock": true
+  },
+  "investigations": {
+    "supplier": {
+      "entity_id": 1,
+      "total_evidence": 2292,
+      "returned_evidence": 100
+    },
+    "purchase_order": {
+      "entity_id": 1,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "sales_order": {
+      "entity_id": 1,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "shortage": {
+      "entity_id": 16,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "warehouse": {
+      "entity_id": 1,
+      "total_evidence": 17767,
+      "returned_evidence": 100
+    },
+    "incident": {
+      "entity_id": 16,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "invoice": {
+      "entity_id": 37,
+      "total_evidence": 19,
+      "returned_evidence": 19
+    },
+    "department": {
+      "entity_id": 1,
+      "total_evidence": 29419,
+      "returned_evidence": 100
+    },
+    "task": {
+      "entity_id": 16,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "product": {
+      "entity_id": 1,
+      "total_evidence": 37,
+      "returned_evidence": 37
+    }
+  },
+  "api_median_ms": {
+    "overview": 249.385,
+    "procurement": 154.927,
+    "suppliers": 210.781,
+    "inventory": 167.052,
+    "warehouses": 416.274,
+    "fulfilment": 196.605,
+    "finance": 137.062,
+    "workforce": 99.402,
+    "incidents": 106.997,
+    "insights": 281.398
+  },
+  "source_scenarios_verified": 5
+}

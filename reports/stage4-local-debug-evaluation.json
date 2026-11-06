@@ -1,0 +1,411 @@
+{
+  "request_id": "a6dc8111998549959db6690204e68817",
+  "conversation_id": null,
+  "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+  "as_of": "2026-09-30",
+  "status": "validation_failed",
+  "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+  "key_findings": [],
+  "evidence": [
+    {
+      "evidence_id": "ev_a6dc811199_1",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "escalation procedure for supplier on-time performance",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "escalation procedure for supplier on-time performance",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_a6dc811199_2",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "supplier on-time performance SLA contract terms",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_a6dc811199_3",
+      "tool_name": "resolve_business_entity",
+      "arguments": {
+        "entity_type": "supplier",
+        "term": "1",
+        "as_of": "2026-09-30"
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "status": "resolved",
+        "matches": [
+          {
+            "entity_type": "supplier",
+            "entity_id": 1,
+            "name": "Amberwick Office Works (synthetic)"
+          }
+        ],
+        "total_matches": 1,
+        "truncated": false
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_a6dc811199_4",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": 1,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "supplier on-time performance SLA contract terms",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 1,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_a6dc811199_5",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "on-time performance SLA terms",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": 1,
+          "document_type": "supplier_agreement",
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "on-time performance SLA terms",
+        "retrieval_mode": "keyword",
+        "as_of": "2026-09-30",
+        "status": "no_matches",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 1,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "keyword",
+          "rrf_k": null,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": null,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    }
+  ],
+  "citations": [],
+  "tool_trace": [
+    {
+      "call_id": "cd41ecee072e48af9abde4e36c071288",
+      "tool": "get_supplier_performance",
+      "arguments": null,
+      "status": "error",
+      "elapsed_ms": 31.0,
+      "evidence_id": null,
+      "error_code": "invalid_arguments",
+      "duplicate": false
+    },
+    {
+      "call_id": "1d9f64eac89043b583c9a82775a92bfb",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "escalation procedure for supplier on-time performance",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 625.0,
+      "evidence_id": "ev_a6dc811199_1",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "24c08c7ead9b4618b97730e49364a95b",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 32.0,
+      "evidence_id": "ev_a6dc811199_2",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "be7f30638b7749e78e8ad8269192ff98",
+      "tool": "get_supplier_performance",
+      "arguments": null,
+      "status": "error",
+      "elapsed_ms": 0.0,
+      "evidence_id": null,
+      "error_code": "invalid_arguments",
+      "duplicate": false
+    },
+    {
+      "call_id": "f6fb71e1fb9e4ba6ba8afc46adb9b34c",
+      "tool": "resolve_business_entity",
+      "arguments": {
+        "entity_type": "supplier",
+        "term": "1",
+        "as_of": "2026-09-30"
+      },
+      "status": "success",
+      "elapsed_ms": 31.0,
+      "evidence_id": "ev_a6dc811199_3",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "3e3f2eb78f7c48c78cc8dd867155ccf6",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": 1,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 15.0,
+      "evidence_id": "ev_a6dc811199_4",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "f5cb357056d44133a0ab6b2b2db1c8e1",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "on-time performance SLA terms",
+        "mode": "keyword",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": 1,
+          "document_type": "supplier_agreement",
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 15.0,
+      "evidence_id": "ev_a6dc811199_5",
+      "error_code": null,
+      "duplicate": false
+    }
+  ],
+  "limitations": [
+    "Use source references rather than numeric claims in prose.",
+    "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+  ],
+  "follow_up_questions": [],
+  "usage": {
+    "provider_round_ms": [
+      3578.0,
+      1406.0,
+      1016.0,
+      1438.0,
+      1704.0,
+      6484.0
+    ],
+    "input_tokens": 32385,
+    "output_tokens": 603,
+    "total_tokens": 32988,
+    "cached_input_tokens": 26397,
+    "llm_calls": 6,
+    "tool_calls": 7,
+    "provider_usage_complete": true,
+    "estimated_cost_usd": 0.0,
+    "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+    "elapsed_ms": 16469.0
+  },
+  "termination_reason": "unverified_numerical_prose",
+  "model": "qwen3:4b-instruct",
+  "execution_mode": "live"
+}

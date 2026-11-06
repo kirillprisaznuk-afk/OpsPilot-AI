@@ -1,0 +1,1144 @@
+{
+  "request_id": "ef9774bdc850435e8ad3fd35279c7658",
+  "conversation_id": null,
+  "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+  "as_of": "2026-09-30",
+  "status": "provider_error",
+  "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+  "key_findings": [],
+  "evidence": [
+    {
+      "evidence_id": "ev_ef9774bdc8_1",
+      "tool_name": "get_supplier_performance",
+      "arguments": {
+        "supplier_id": 1,
+        "query": {
+          "start_date": "2025-10-01",
+          "end_date": "2026-09-30",
+          "as_of": "2026-09-30",
+          "supplier_id": null,
+          "warehouse_id": null,
+          "product_id": null,
+          "product_category": null,
+          "supplier_category": null,
+          "department_id": null,
+          "employee_id": null,
+          "incident_category": null,
+          "priority": null,
+          "group_by": null,
+          "sort": "id",
+          "direction": "asc",
+          "limit": 5,
+          "offset": 0,
+          "include_trends": false,
+          "include_comparison": false
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "domain": "suppliers",
+        "window": {
+          "observation_start": "2025-10-01",
+          "observation_end": "2026-09-30",
+          "as_of": "2026-09-30",
+          "timezone": "UTC"
+        },
+        "filters": {
+          "supplier_id": 1
+        },
+        "metrics": {
+          "completed_in_period": {
+            "metric": "procurement.completed_in_period",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Completion-event flow in selected period",
+            "grain": "purchase order",
+            "limitations": [],
+            "comparison": null
+          },
+          "purchase_orders": {
+            "metric": "procurement.purchase_orders",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "order_value": {
+            "metric": "procurement.order_value",
+            "value": "710052.22",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "ordered_units": {
+            "metric": "procurement.ordered_units",
+            "value": 10082,
+            "unit": "units",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "received_units": {
+            "metric": "procurement.received_units",
+            "value": 10082,
+            "unit": "units",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "outstanding_units": {
+            "metric": "procurement.outstanding_units",
+            "value": 0,
+            "unit": "units",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "completed_orders": {
+            "metric": "procurement.completed_orders",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "due_orders": {
+            "metric": "procurement.due_orders",
+            "value": 72,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "on_time_orders": {
+            "metric": "procurement.on_time_orders",
+            "value": 24,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "late_orders": {
+            "metric": "procurement.late_orders",
+            "value": 48,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "overdue_outstanding_orders": {
+            "metric": "procurement.overdue_outstanding_orders",
+            "value": 0,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "open_orders": {
+            "metric": "procurement.open_orders",
+            "value": 0,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "partial_orders": {
+            "metric": "procurement.partial_orders",
+            "value": 0,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "split_receipt_orders": {
+            "metric": "procurement.split_receipt_orders",
+            "value": 11,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "open_commitment": {
+            "metric": "procurement.open_commitment",
+            "value": "0.00",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "overdue_commitment": {
+            "metric": "procurement.overdue_commitment",
+            "value": "0.00",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "average_lateness": {
+            "metric": "procurement.average_lateness",
+            "value": "7.79",
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "median_lateness": {
+            "metric": "procurement.median_lateness",
+            "value": "7.00",
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "average_overdue_age": {
+            "metric": "procurement.average_overdue_age",
+            "value": null,
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "undefined",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "average_lead_time": {
+            "metric": "procurement.average_lead_time",
+            "value": "10.11",
+            "unit": "days",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "receipt_events": {
+            "metric": "procurement.receipt_events",
+            "value": 165,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "punctual_receipts": {
+            "metric": "procurement.punctual_receipts",
+            "value": 56,
+            "unit": "count",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "comparison": null
+          },
+          "on_time_rate": {
+            "metric": "procurement.on_time_rate",
+            "value": "33.33",
+            "unit": "percent",
+            "numerator": 24,
+            "denominator": 72,
+            "status": "available",
+            "time_basis": "Order-date cohort; mature promises at as_of",
+            "grain": "purchase order",
+            "limitations": [],
+            "comparison": null
+          },
+          "receipt_punctuality_rate": {
+            "metric": "procurement.receipt_punctuality_rate",
+            "value": "33.94",
+            "unit": "percent",
+            "numerator": "56",
+            "denominator": "165",
+            "status": "available",
+            "time_basis": "Order-date cohort; receipts visible at as_of",
+            "grain": "receipt event",
+            "limitations": [],
+            "comparison": null
+          },
+          "additional_linked_costs": {
+            "metric": "suppliers.additional_linked_costs",
+            "value": "1275.00",
+            "unit": "GBP",
+            "numerator": null,
+            "denominator": null,
+            "status": "available",
+            "time_basis": "Expense events within selected period",
+            "grain": "expense event",
+            "limitations": [],
+            "comparison": null
+          }
+        },
+        "breakdowns": [
+          {
+            "entity_type": "supplier",
+            "entity_id": 1,
+            "label": "Amberwick Office Works (synthetic)",
+            "metrics": {
+              "completed_in_period": {
+                "metric": "procurement.completed_in_period",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Completion-event flow in selected period",
+                "grain": "purchase order",
+                "limitations": [],
+                "comparison": null
+              },
+              "purchase_orders": {
+                "metric": "procurement.purchase_orders",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "order_value": {
+                "metric": "procurement.order_value",
+                "value": "710052.22",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "ordered_units": {
+                "metric": "procurement.ordered_units",
+                "value": 10082,
+                "unit": "units",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "received_units": {
+                "metric": "procurement.received_units",
+                "value": 10082,
+                "unit": "units",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "outstanding_units": {
+                "metric": "procurement.outstanding_units",
+                "value": 0,
+                "unit": "units",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "completed_orders": {
+                "metric": "procurement.completed_orders",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "due_orders": {
+                "metric": "procurement.due_orders",
+                "value": 72,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "on_time_orders": {
+                "metric": "procurement.on_time_orders",
+                "value": 24,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "late_orders": {
+                "metric": "procurement.late_orders",
+                "value": 48,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "overdue_outstanding_orders": {
+                "metric": "procurement.overdue_outstanding_orders",
+                "value": 0,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "open_orders": {
+                "metric": "procurement.open_orders",
+                "value": 0,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "partial_orders": {
+                "metric": "procurement.partial_orders",
+                "value": 0,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "split_receipt_orders": {
+                "metric": "procurement.split_receipt_orders",
+                "value": 11,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "open_commitment": {
+                "metric": "procurement.open_commitment",
+                "value": "0.00",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "overdue_commitment": {
+                "metric": "procurement.overdue_commitment",
+                "value": "0.00",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "average_lateness": {
+                "metric": "procurement.average_lateness",
+                "value": "7.79",
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "median_lateness": {
+                "metric": "procurement.median_lateness",
+                "value": "7.00",
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "average_overdue_age": {
+                "metric": "procurement.average_overdue_age",
+                "value": null,
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "undefined",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "average_lead_time": {
+                "metric": "procurement.average_lead_time",
+                "value": "10.11",
+                "unit": "days",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "receipt_events": {
+                "metric": "procurement.receipt_events",
+                "value": 165,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "punctual_receipts": {
+                "metric": "procurement.punctual_receipts",
+                "value": 56,
+                "unit": "count",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order-date cohort; outcomes censored at as_of",
+                "grain": "purchase order (money/units: selected lines)",
+                "limitations": [],
+                "comparison": null
+              },
+              "on_time_rate": {
+                "metric": "procurement.on_time_rate",
+                "value": "33.33",
+                "unit": "percent",
+                "numerator": 24,
+                "denominator": 72,
+                "status": "available",
+                "time_basis": "Order-date cohort; mature promises at as_of",
+                "grain": "purchase order",
+                "limitations": [],
+                "comparison": null
+              },
+              "receipt_punctuality_rate": {
+                "metric": "procurement.receipt_punctuality_rate",
+                "value": "33.94",
+                "unit": "percent",
+                "numerator": "56",
+                "denominator": "165",
+                "status": "available",
+                "time_basis": "Order-date cohort; receipts visible at as_of",
+                "grain": "receipt event",
+                "limitations": [],
+                "comparison": null
+              },
+              "additional_linked_costs": {
+                "metric": "suppliers.additional_linked_costs",
+                "value": "1275.00",
+                "unit": "GBP",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Expense events within selected period",
+                "grain": "expense event",
+                "limitations": [],
+                "comparison": null
+              },
+              "sla_target_percent": {
+                "metric": "suppliers.sla_target_percent",
+                "value": "95.00",
+                "unit": "percent",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order cohort and effective contracts; no legal breach determination",
+                "grain": "supplier",
+                "limitations": [],
+                "comparison": null
+              },
+              "sla_gap": {
+                "metric": "suppliers.sla_gap",
+                "value": "-61.67",
+                "unit": "percentage_points",
+                "numerator": null,
+                "denominator": null,
+                "status": "available",
+                "time_basis": "Order cohort and effective contracts; no legal breach determination",
+                "grain": "supplier",
+                "limitations": [],
+                "comparison": null
+              }
+            }
+          }
+        ],
+        "trends": [],
+        "total_segments": 1,
+        "limit": 5,
+        "offset": 0,
+        "contracts": [
+          {
+            "contract_id": 1,
+            "supplier_id": 1,
+            "reference": "NS-CON-001",
+            "effective_date": "2025-10-01",
+            "expires_on": "2026-09-30",
+            "target_percent": "95.00",
+            "observed_percent": "33.33",
+            "gap_percentage_points": "-61.67",
+            "due_orders": 72,
+            "on_time_orders": 24,
+            "potential_operational_concern": true,
+            "legal_breach_established": false
+          }
+        ],
+        "price_bands": [],
+        "cost_categories": [],
+        "limitations": [
+          "SLA concerns are operational observations, never legal breach findings.",
+          "Targets differing across contracts remain separate; no blended target is invented.",
+          "Contract assessments are bounded to 100 across the current supplier page."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_ef9774bdc8_2",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal escalation procedure for supplier on-time performance",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "internal escalation procedure for supplier on-time performance",
+        "retrieval_mode": "hybrid",
+        "as_of": "2026-09-30",
+        "status": "evidence_found",
+        "insufficient_evidence": false,
+        "evidence": [
+          {
+            "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+            "document_id": 37,
+            "document_version_id": 37,
+            "title": "Procurement procedure",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nRecord promised dates against the applicable supplier contract. Escalate missed receipts after the contract escalation interval; never revise the original promise.\n",
+            "rank": 1,
+            "score": 0.01639344262295082,
+            "lexical_score": null,
+            "cosine_similarity": 0.5158110126087977,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 37,
+              "code": "POL-001",
+              "title": "Procurement procedure",
+              "document_type": "policy",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": null,
+              "contract_reference": null,
+              "supplier_id": null,
+              "supplier": null,
+              "version_id": 37,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563"
+            },
+            "citation": {
+              "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "document_id": 37,
+              "document_version_id": 37,
+              "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "title": "Procurement procedure",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 14,
+              "effective_on": "2025-10-01",
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "text_sha256": "ba353ed7c06fe52243d7543c983c59f6cddb2cec398d843a6a364c51109cc778",
+              "source_reference": "/api/v1/knowledge/documents/37/versions/37"
+            },
+            "source_provenance": {
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          }
+        ],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "reciprocal_rank_fusion",
+          "rrf_k": 60,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": 0.45,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_ef9774bdc8_3",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "supplier on-time performance SLA contract terms",
+        "retrieval_mode": "hybrid",
+        "as_of": "2026-09-30",
+        "status": "low_confidence",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "reciprocal_rank_fusion",
+          "rrf_k": 60,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": 0.45,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_ef9774bdc8_4",
+      "tool_name": "get_document_details",
+      "arguments": {
+        "document_id": 37,
+        "version_id": null,
+        "as_of": "2026-09-30"
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "metadata": {
+          "document_id": 37,
+          "code": "POL-001",
+          "title": "Procurement procedure",
+          "document_type": "policy",
+          "department_id": 2,
+          "department": "Procurement",
+          "contract_id": null,
+          "contract_reference": null,
+          "supplier_id": null,
+          "supplier": null,
+          "version_id": 37,
+          "version": 1,
+          "effective_on": "2025-10-01",
+          "sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563"
+        },
+        "text": "# Procurement procedure\n\n**SYNTHETIC \u2014 fictional Northstar Supply demonstration only.**\n\n- Document ID: POL-001\n- Type: policy\n- Version: 1\n- Effective date: 2025-10-01\n- Department: Procurement\n- Contract ID: N/A\n\n## Instructions and terms\n\nRecord promised dates against the applicable supplier contract. Escalate missed receipts after the contract escalation interval; never revise the original promise.\n",
+        "line_start": 1,
+        "line_end": 14,
+        "verified": true
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_ef9774bdc8_5",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": "NS-CON-001"
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "supplier on-time performance SLA contract terms",
+        "retrieval_mode": "hybrid",
+        "as_of": "2026-09-30",
+        "status": "low_confidence",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 1,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "reciprocal_rank_fusion",
+          "rrf_k": 60,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": 0.45,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    }
+  ],
+  "citations": [],
+  "tool_trace": [
+    {
+      "call_id": "b2abc57b955c4b51bd3459e2f24710f8",
+      "tool": "get_supplier_performance",
+      "arguments": {
+        "supplier_id": 1,
+        "query": {
+          "start_date": "2025-10-01",
+          "end_date": "2026-09-30",
+          "as_of": "2026-09-30",
+          "supplier_id": null,
+          "warehouse_id": null,
+          "product_id": null,
+          "product_category": null,
+          "supplier_category": null,
+          "department_id": null,
+          "employee_id": null,
+          "incident_category": null,
+          "priority": null,
+          "group_by": null,
+          "sort": "id",
+          "direction": "asc",
+          "limit": 5,
+          "offset": 0,
+          "include_trends": false,
+          "include_comparison": false
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 750.0,
+      "evidence_id": "ev_ef9774bdc8_1",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "fc36515cb8704ef995fac41c9058df04",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal escalation procedure for supplier on-time performance",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 704.0,
+      "evidence_id": "ev_ef9774bdc8_2",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "f23ec1a238d44790a880185b2b5d7ad6",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 46.0,
+      "evidence_id": "ev_ef9774bdc8_3",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "5f76445d72c041209191370bd8ed7394",
+      "tool": "get_document_details",
+      "arguments": {
+        "document_id": 37,
+        "version_id": null,
+        "as_of": "2026-09-30"
+      },
+      "status": "success",
+      "elapsed_ms": 31.0,
+      "evidence_id": "ev_ef9774bdc8_4",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "3a0fdbd601314fa1b712abfa0ce0fe15",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier on-time performance SLA contract terms",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": "NS-CON-001"
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 32.0,
+      "evidence_id": "ev_ef9774bdc8_5",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "c7d5b5e5358d4f5fb4ca3ff5451634bd",
+      "tool": "get_document_details",
+      "arguments": {
+        "document_id": 37,
+        "version_id": null,
+        "as_of": "2026-09-30"
+      },
+      "status": "success",
+      "elapsed_ms": 0.0,
+      "evidence_id": "ev_ef9774bdc8_4",
+      "error_code": null,
+      "duplicate": true
+    },
+    {
+      "call_id": "75a4082b5e684c0e9cc58e998bcf3cb9",
+      "tool": "get_document_details",
+      "arguments": {
+        "document_id": 37,
+        "version_id": null,
+        "as_of": "2026-09-30"
+      },
+      "status": "success",
+      "elapsed_ms": 0.0,
+      "evidence_id": "ev_ef9774bdc8_4",
+      "error_code": null,
+      "duplicate": true
+    }
+  ],
+  "limitations": [
+    "Local Ollama rejected the request; check its model and logs.",
+    "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+  ],
+  "follow_up_questions": [],
+  "usage": {
+    "provider_round_ms": [
+      6781.0,
+      5266.0,
+      3203.0,
+      2359.0,
+      2219.0
+    ],
+    "input_tokens": 58437,
+    "output_tokens": 328,
+    "total_tokens": 58765,
+    "cached_input_tokens": 47000,
+    "llm_calls": 6,
+    "tool_calls": 7,
+    "provider_usage_complete": false,
+    "estimated_cost_usd": null,
+    "cost_basis": "Unavailable: a provider attempt did not supply usage.",
+    "elapsed_ms": 40641.0
+  },
+  "termination_reason": "provider_request_rejected",
+  "model": "opspilot-qwen3:4b",
+  "execution_mode": "live"
+}

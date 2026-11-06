@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-11-03T16:46:56.142932+00:00",
+  "hardware": {
+    "model": "qwen3.5:4b",
+    "admitted": false,
+    "reasons": [
+      "Free physical RAM is below the measured profile's RAM margin"
+    ],
+    "free_ram_gib": 0.856,
+    "total_ram_gib": 15.265,
+    "free_vram_mib": 5913,
+    "total_vram_mib": 6141,
+    "loaded_model": null,
+    "minimum_free_ram_gib": 1.5,
+    "minimum_free_vram_mib": 4096
+  },
+  "inference_attempted": false,
+  "cold_margin_unchanged_gib": 1.5
+}

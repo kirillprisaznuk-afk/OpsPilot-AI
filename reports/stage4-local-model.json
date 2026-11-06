@@ -1,0 +1,231 @@
+{
+  "version": {
+    "version": "0.40.12"
+  },
+  "tags": {
+    "models": [
+      {
+        "name": "qwen3:4b",
+        "model": "qwen3:4b",
+        "modified_at": "2026-10-28T14:20:34.5432335Z",
+        "size": 2497293931,
+        "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 262144,
+          "embedding_length": 2560,
+          "runner": "ggml"
+        },
+        "capabilities": [
+          "completion",
+          "tools",
+          "thinking"
+        ]
+      }
+    ]
+  },
+  "model_info": {
+    "parameters": "repeat_penalty                 1\nstop                           \"<|im_start|>\"\nstop                           \"<|im_end|>\"\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95",
+    "template_source": "go_template",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "4.0B",
+      "quantization_level": "Q4_K_M"
+    },
+    "model_info": {
+      "general.architecture": "qwen3",
+      "general.basename": "Qwen3",
+      "general.file_type": 15,
+      "general.finetune": "Thinking",
+      "general.license": "apache-2.0",
+      "general.license.link": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507/blob/main/LICENSE",
+      "general.parameter_count": 4022468096,
+      "general.quantization_version": 2,
+      "general.size_label": "4B",
+      "general.tags": [
+        "text-generation"
+      ],
+      "general.type": "model",
+      "general.version": "2507",
+      "qwen3.attention.head_count": 32,
+      "qwen3.attention.head_count_kv": 8,
+      "qwen3.attention.key_length": 128,
+      "qwen3.attention.layer_norm_rms_epsilon": 1e-06,
+      "qwen3.attention.value_length": 128,
+      "qwen3.block_count": 36,
+      "qwen3.context_length": 262144,
+      "qwen3.embedding_length": 2560,
+      "qwen3.feed_forward_length": 9728,
+      "qwen3.rope.freq_base": 5000000,
+      "tokenizer.ggml.add_bos_token": false,
+      "tokenizer.ggml.bos_token_id": 151643,
+      "tokenizer.ggml.eos_token_id": 151645,
+      "tokenizer.ggml.merges": [],
+      "tokenizer.ggml.model": "gpt2",
+      "tokenizer.ggml.padding_token_id": 151643,
+      "tokenizer.ggml.pre": "qwen2",
+      "tokenizer.ggml.token_type": [],
+      "tokenizer.ggml.tokens": []
+    },
+    "capabilities": [
+      "completion",
+      "tools",
+      "thinking"
+    ]
+  },
+  "cold_probe_seconds": 107.42187780002132,
+  "cold_probe": {
+    "model": "qwen3:4b",
+    "created_at": "2026-10-28T14:22:32.9707914Z",
+    "message": {
+      "role": "assistant",
+      "content": "Okay, the user said \"Say ready.\" So I need to respond with \"ready\" as per their instruction. Let me check if there's any context I"
+    },
+    "done": true,
+    "done_reason": "length",
+    "total_duration": 107419352600,
+    "load_duration": 56954921100,
+    "prompt_eval_count": 13,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 46001172000,
+    "eval_count": 32,
+    "eval_duration": 4427496000
+  },
+  "/v1/models/qwen3:4b": {
+    "http_status": 200,
+    "body": {
+      "id": "qwen3:4b",
+      "object": "model",
+      "created": 1793197234,
+      "owned_by": "library"
+    },
+    "seconds": 0.020050799939781427
+  },
+  "/v1/responses": {
+    "http_status": 200,
+    "body": {
+      "id": "resp_863255",
+      "object": "response",
+      "created_at": 1793197361,
+      "completed_at": 1793197361,
+      "status": "completed",
+      "incomplete_details": null,
+      "model": "qwen3:4b",
+      "previous_response_id": null,
+      "instructions": null,
+      "output": [
+        {
+          "id": "rs_resp_863255",
+          "type": "reasoning",
+          "summary": [
+            {
+              "type": "summary_text",
+              "text": "We are to output a JSON string that contains the word \"ready\"\n The problem says: \"Say ready as JSON.\"\n We can create a JSON object that has"
+            }
+          ],
+          "encrypted_content": "We are to output a JSON string that contains the word \"ready\"\n The problem says: \"Say ready as JSON.\"\n We can create a JSON object that has"
+        },
+        {
+          "id": "msg_233990",
+          "type": "message",
+          "status": "completed",
+          "role": "assistant",
+          "content": [
+            {
+              "type": "output_text",
+              "text": "",
+              "annotations": [],
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "error": null,
+      "tools": [],
+      "tool_choice": "auto",
+      "truncation": "disabled",
+      "parallel_tool_calls": true,
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "name": "probe",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "ready": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "ready"
+            ],
+            "additionalProperties": false
+          },
+          "strict": true
+        }
+      },
+      "top_p": 1,
+      "presence_penalty": 0,
+      "frequency_penalty": 0,
+      "top_logprobs": 0,
+      "temperature": 1,
+      "reasoning": null,
+      "usage": {
+        "input_tokens": 15,
+        "output_tokens": 32,
+        "total_tokens": 47,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "max_output_tokens": 32,
+      "max_tool_calls": null,
+      "store": false,
+      "background": false,
+      "service_tier": "default",
+      "metadata": {},
+      "safety_identifier": null,
+      "prompt_cache_key": null
+    },
+    "seconds": 8.525932800024748
+  },
+  "processes": {
+    "models": [
+      {
+        "name": "qwen3:4b",
+        "model": "qwen3:4b",
+        "size": 3896508415,
+        "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-10-28T14:27:41.5175918Z",
+        "size_vram": 3896508415,
+        "context_length": 16384,
+        "runner": "llamacpp"
+      }
+    ]
+  }
+}

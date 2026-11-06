@@ -1,0 +1,225 @@
+{
+  "checked_at": "2026-11-03T09:49:20.258565+00:00",
+  "checkpoint": "52169e584875ea329d4fabe3ea4212d01ac6585c",
+  "local_provider_metadata_verified_without_inference": true,
+  "model_loading_attempted": false,
+  "live_scenarios_executed": 0,
+  "ready_for_stage5": false,
+  "business": {
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": {
+      "A_procurement_to_customer": {
+        "supplier_id": 1,
+        "purchase_order_id": 1,
+        "receipt_id": 185,
+        "movement_id": 332,
+        "shortage_id": 16,
+        "sales_order_id": 1,
+        "fulfilment_id": 149,
+        "incident_id": 16,
+        "task_id": 16,
+        "promised_on": "2025-10-08",
+        "received_on": "2025-10-20",
+        "customer_promise": "2025-10-10",
+        "fulfilled_on": "2025-10-20"
+      },
+      "B_warehouse_capacity": {
+        "warehouse_id": 1,
+        "sales_order_id": 822,
+        "incident_id": 1729,
+        "expense_id": 104,
+        "amount": "120.00",
+        "task_id": 1729,
+        "status": "escalated"
+      },
+      "C_contract_concern": {
+        "contract_id": 1,
+        "supplier_id": 1,
+        "on_time_target": "95.00",
+        "due_orders": 72,
+        "on_time_orders": 24,
+        "observed_percent": "33.33"
+      },
+      "D_invoice_review": {
+        "invoice_id": 37,
+        "purchase_order_id": 37,
+        "amount": "9053.43",
+        "purchase_value": "9028.43",
+        "incident_id": 1153,
+        "task_id": 1153,
+        "status": "disputed"
+      },
+      "E_overdue_workload": {
+        "department_id": 1,
+        "name": "Operations",
+        "overdue_tasks": 123,
+        "owners": 8
+      }
+    }
+  },
+  "vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+  "chunk_count": 44,
+  "migration": "Not queried via agent: metadata access is intentionally restricted; API readiness verifies migration head.",
+  "reader": {
+    "role": "opspilot_agent_reader",
+    "read_only": "on"
+  },
+  "ready": {
+    "status": "ready"
+  },
+  "knowledge_status": {
+    "state": "ready",
+    "documents": 44,
+    "versions": 44,
+    "chunks": 44,
+    "configuration": {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "parser": "markdown-sections-v1",
+      "backend": "onnx-cpu-float32",
+      "pooling": "attention_mask_mean",
+      "distance": "cosine",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "dimension": 384,
+      "max_tokens": 256,
+      "normalization": "L2",
+      "tokenizer_truncation": "reject_over_256"
+    },
+    "configured_model": {
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "dimension": 384,
+      "pooling": "attention_mask_mean",
+      "normalization": "L2",
+      "distance": "cosine",
+      "max_tokens": 256,
+      "backend": "onnx-cpu-float32",
+      "parser": "markdown-sections-v1",
+      "tokenizer_truncation": "reject_over_256"
+    },
+    "model_cached": true,
+    "index_bytes": 778240,
+    "indexed_at": "2026-10-27T23:37:44.214291+00:00"
+  },
+  "version": {
+    "version": "0.40.12"
+  },
+  "model": {
+    "name": "qwen3.5:4b",
+    "model": "qwen3.5:4b",
+    "modified_at": "2026-10-28T15:33:53.0808648Z",
+    "size": 3324173934,
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ]
+  },
+  "resident_models": {
+    "models": []
+  },
+  "model_metadata": {
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ],
+    "remote_model": null,
+    "remote_host": null
+  },
+  "cloud_disabled_log": true,
+  "unrelated_containers_preserved": [
+    "/productpulse-local-frontend-1",
+    "/productpulse-local-api-1",
+    "/productpulse-local-seed-1",
+    "/productpulse-local-migrate-1",
+    "/productpulse-local-db-1",
+    "/productpulse-stage1-smoke-api-1",
+    "/productpulse-stage1-smoke-seed-1",
+    "/productpulse-stage1-smoke-migrate-1",
+    "/productpulse-stage1-smoke-db-1",
+    "/yummy-flow-local-postgres-1"
+  ],
+  "prior_volumes_and_networks_preserved": true,
+  "hardware": {
+    "model": "qwen3.5:4b",
+    "admitted": false,
+    "reasons": [
+      "Free physical RAM is below the measured profile's 1.5 GiB margin"
+    ],
+    "free_ram_gib": 0.877,
+    "total_ram_gib": 15.265,
+    "free_vram_mib": 5913,
+    "total_vram_mib": 6141,
+    "loaded_model": null,
+    "minimum_free_ram_gib": 1.5,
+    "minimum_free_vram_mib": 4096
+  },
+  "full_regression": "NOT_RERUN: no application code changes; previous checkpoint has 348 passes",
+  "token_and_latency_comparison": "NOT_AVAILABLE: no model query permitted by resource admission",
+  "listener": {
+    "address": "127.0.0.1",
+    "port": 11434,
+    "owning_process": 9328,
+    "executable": "[workspace]/.local-tools/ollama/ollama.exe",
+    "source": "Get-NetTCPConnection and Win32_Process read-only inspection"
+  }
+}

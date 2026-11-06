@@ -1,0 +1,81 @@
+{
+  "starting_commit": "6fd4f09d3595c231f4884f9e6f5bfb90e4ac069c",
+  "branch": "codex/stage-4c-hybrid",
+  "implementation_commit": "4798560612466c2890451b934fa5f5fb32e06ec4",
+  "tests": {
+    "tests": "401",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "118.029"
+  },
+  "deterministic_cases": {
+    "cases": 38,
+    "automatic_passed": 38,
+    "llm_calls": 0,
+    "reported_tokens": 0,
+    "median_http_ms": 110.13649997767061,
+    "max_http_ms": 3879.4291999656707,
+    "real_model_interpretations": 0,
+    "semantic_review": "reviewed_with_stated_limits"
+  },
+  "hybrid_http_fallback_cases": {
+    "cases": 38,
+    "automatic_passed": 38,
+    "llm_calls": 0,
+    "reported_tokens": 0,
+    "median_http_ms": 118.12180001288652,
+    "max_http_ms": 1460.4101000586525,
+    "real_model_interpretations": 0,
+    "semantic_review": "reviewed_with_stated_limits"
+  },
+  "real_local_model_quality": "BLOCKED",
+  "legacy_agent": "EXPERIMENTAL_NOT_RUN_IN_STAGE4C",
+  "fingerprint_before": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+  "fingerprint_after": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+  "restart_executed": true,
+  "original_stages_runtime_passed": true,
+  "all_citations_resolved": 44,
+  "unrelated_containers_preserved": [
+    "/productpulse-local-frontend-1",
+    "/productpulse-local-api-1",
+    "/productpulse-local-seed-1",
+    "/productpulse-local-migrate-1",
+    "/productpulse-local-db-1",
+    "/productpulse-stage1-smoke-api-1",
+    "/productpulse-stage1-smoke-seed-1",
+    "/productpulse-stage1-smoke-migrate-1",
+    "/productpulse-stage1-smoke-db-1",
+    "/yummy-flow-local-postgres-1"
+  ],
+  "decisions": {
+    "deterministic_engine_accepted": "YES",
+    "hybrid_local_llm_accepted": "BLOCKED",
+    "stage4c_accepted": "NO",
+    "ready_for_stage5": "NO"
+  },
+  "remaining_blocker": {
+    "status": "BLOCKED",
+    "measurement": {
+      "model": "qwen3.5:2b-q4_K_M",
+      "admitted": false,
+      "reasons": [
+        "Free physical RAM is below the measured profile's RAM margin"
+      ],
+      "free_ram_gib": 1.178,
+      "total_ram_gib": 15.265,
+      "free_vram_mib": 5626,
+      "total_vram_mib": 6141,
+      "loaded_model": null,
+      "minimum_free_ram_gib": 1.5,
+      "minimum_free_vram_mib": 4096,
+      "free_commit_gib": 13.009,
+      "measured_at": 1793834120.1329453,
+      "owner_verified": true
+    },
+    "inference_attempted": false
+  },
+  "published": false,
+  "stage5_implementation": false,
+  "documentation_commit": "Final local HEAD, reported in handoff; no application changes."
+}

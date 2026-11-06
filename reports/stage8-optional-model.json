@@ -1,0 +1,11 @@
+{
+  "retrieval_quality_unchanged": true,
+  "retrieval_queries": 42,
+  "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+  "hybrid_result": "completed",
+  "model_error": "local_language_disabled",
+  "fallback_used": true,
+  "llm_calls": 0,
+  "model_request_bytes": 0,
+  "citations": 2
+}

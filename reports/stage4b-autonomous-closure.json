@@ -1,0 +1,751 @@
+{
+  "generated_at": "2026-11-03T16:54:25.948158+00:00",
+  "base_checkpoint": "523d1ccb4f35b734960bd9dab37168e2d3b11418",
+  "status": "BACKEND_REGRESSION_PASSED_REAL_MODEL_ACCEPTANCE_FAILED",
+  "ready_for_stage5": false,
+  "preferred_model_restored": "qwen3.5:4b",
+  "accepted_new_model": null,
+  "alternative_evaluated": {
+    "official_identifier": "qwen3.5:2b-q4_K_M",
+    "model": {
+      "name": "qwen3.5:2b-q4_K_M",
+      "model": "qwen3.5:2b-q4_K_M",
+      "modified_at": "2026-11-03T15:14:20.8563169Z",
+      "size": 1945781358,
+      "digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+      "details": {
+        "parent_model": "model.gguf",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "1.9B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2048,
+        "runner": "llamacpp"
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "tools",
+        "thinking"
+      ]
+    },
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "1.9B",
+      "quantization_level": "Q4_K_M",
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ],
+    "remote_host": null,
+    "remote_model": null,
+    "elapsed_seconds": 89.126,
+    "status": {
+      "status": "success"
+    },
+    "inference_executed": false
+  },
+  "final_api_status": {
+    "state": "configured_unverified",
+    "provider": "ollama",
+    "model": "qwen3.5:4b",
+    "local_profile": {
+      "compact_transport": true,
+      "reference_output": true,
+      "model_selected_catalogue": true,
+      "context_tokens": 32768,
+      "gpu_layers": null,
+      "batch_tokens": 128
+    },
+    "read_only": true,
+    "live_validation": "not_performed_by_status",
+    "limits": {
+      "llm_calls": 6,
+      "tool_calls": 12,
+      "request_seconds": 90.0
+    },
+    "conversation_storage": "single-process memory, bounded history; lost on restart",
+    "authentication": "not_implemented_local_demo_only"
+  },
+  "final_hardware": {
+    "checked_at": "2026-11-03T16:46:56.142932+00:00",
+    "hardware": {
+      "model": "qwen3.5:4b",
+      "admitted": false,
+      "reasons": [
+        "Free physical RAM is below the measured profile's RAM margin"
+      ],
+      "free_ram_gib": 0.856,
+      "total_ram_gib": 15.265,
+      "free_vram_mib": 5913,
+      "total_vram_mib": 6141,
+      "loaded_model": null,
+      "minimum_free_ram_gib": 1.5,
+      "minimum_free_vram_mib": 4096
+    },
+    "inference_attempted": false,
+    "cold_margin_unchanged_gib": 1.5
+  },
+  "tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "352",
+    "time": "91.296",
+    "timestamp": "2026-11-03T16:40:33.800529+00:00",
+    "hostname": "Pume",
+    "existing_cases_preserved": 348,
+    "new_cases": 4,
+    "modules": {
+      "backend.tests.test_agent": 73,
+      "backend.tests.test_agent_provider": 9,
+      "backend.tests.test_agent_reliability": 52,
+      "backend.tests.test_analytics_api": 74,
+      "backend.tests.test_analytics_numerical": 24,
+      "backend.tests.test_api": 17,
+      "backend.tests.test_generator": 16,
+      "backend.tests.test_knowledge": 33,
+      "backend.tests.test_ollama_provider": 36,
+      "backend.tests.test_postgres": 18
+    }
+  },
+  "checks": {
+    "ruff": {
+      "exit_code": 0,
+      "stdout": "All checks passed!"
+    },
+    "format": {
+      "exit_code": 0,
+      "stdout": "181 files already formatted"
+    },
+    "diff": {
+      "exit_code": 0,
+      "stdout": ""
+    }
+  },
+  "preservation": {
+    "fingerprint_before": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "fingerprint_after": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity_and_counts": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": {
+      "A_procurement_to_customer": {
+        "supplier_id": 1,
+        "purchase_order_id": 1,
+        "receipt_id": 185,
+        "movement_id": 332,
+        "shortage_id": 16,
+        "sales_order_id": 1,
+        "fulfilment_id": 149,
+        "incident_id": 16,
+        "task_id": 16,
+        "promised_on": "2025-10-08",
+        "received_on": "2025-10-20",
+        "customer_promise": "2025-10-10",
+        "fulfilled_on": "2025-10-20"
+      },
+      "B_warehouse_capacity": {
+        "warehouse_id": 1,
+        "sales_order_id": 822,
+        "incident_id": 1729,
+        "expense_id": 104,
+        "amount": "120.00",
+        "task_id": 1729,
+        "status": "escalated"
+      },
+      "C_contract_concern": {
+        "contract_id": 1,
+        "supplier_id": 1,
+        "on_time_target": "95.00",
+        "due_orders": 72,
+        "on_time_orders": 24,
+        "observed_percent": "33.33"
+      },
+      "D_invoice_review": {
+        "invoice_id": 37,
+        "purchase_order_id": 37,
+        "amount": "9053.43",
+        "purchase_value": "9028.43",
+        "incident_id": 1153,
+        "task_id": 1153,
+        "status": "disputed"
+      },
+      "E_overdue_workload": {
+        "department_id": 1,
+        "name": "Operations",
+        "overdue_tasks": 123,
+        "owners": 8
+      }
+    },
+    "migration": "0003",
+    "pgvector": "0.8.7",
+    "restart_executed": true,
+    "prior_stages_runtime_passed": true,
+    "vector_snapshot_unchanged": true,
+    "registered_citations_resolved": 44,
+    "retrieval_quality_unchanged": true,
+    "reader_role": "opspilot_agent_reader",
+    "read_only": "on",
+    "test_db_cleanup": true,
+    "unrelated_containers_preserved": [
+      "/productpulse-local-frontend-1",
+      "/productpulse-local-api-1",
+      "/productpulse-local-seed-1",
+      "/productpulse-local-migrate-1",
+      "/productpulse-local-db-1",
+      "/productpulse-stage1-smoke-api-1",
+      "/productpulse-stage1-smoke-seed-1",
+      "/productpulse-stage1-smoke-migrate-1",
+      "/productpulse-stage1-smoke-db-1",
+      "/yummy-flow-local-postgres-1"
+    ]
+  },
+  "runtime": {
+    "compose": [
+      {
+        "Name": "opspilot-stage1-api-1",
+        "Health": "healthy",
+        "State": "running"
+      },
+      {
+        "Name": "opspilot-stage1-db-1",
+        "Health": "healthy",
+        "State": "running"
+      }
+    ],
+    "alembic_current": {
+      "returncode": 0,
+      "stdout": "0003 (head)\n",
+      "stderr": ""
+    },
+    "alembic_check": {
+      "returncode": 0,
+      "stdout": "No new upgrade operations detected.\n",
+      "stderr": ""
+    },
+    "deployed_agent_hashes_match": true,
+    "cloud_disabled_log": true,
+    "ollama_version": {
+      "version": "0.40.12"
+    },
+    "resident_models": {
+      "models": []
+    }
+  },
+  "phases": [
+    {
+      "report": "stage4b-autonomous-live-evaluation.json",
+      "scheduled_rows": 23,
+      "structured_responses": 22,
+      "cases_with_recorded_provider_calls": 19,
+      "accepted_completed_responses": 0,
+      "recorded_tool_attempts": 3,
+      "successful_tools": 2,
+      "invalid_arguments": 0,
+      "deterministic_pass_cases": [
+        "A25",
+        "A27",
+        "B13"
+      ],
+      "cited_final_sources": 0,
+      "missing_responses": [
+        "B15"
+      ]
+    },
+    {
+      "report": "stage4b-final-live-evaluation.json",
+      "scheduled_rows": 23,
+      "structured_responses": 18,
+      "cases_with_recorded_provider_calls": 15,
+      "accepted_completed_responses": 0,
+      "recorded_tool_attempts": 23,
+      "successful_tools": 21,
+      "invalid_arguments": 2,
+      "deterministic_pass_cases": [
+        "A25",
+        "A27",
+        "B13"
+      ],
+      "cited_final_sources": 0,
+      "missing_responses": [
+        "A01",
+        "A02",
+        "A06",
+        "A22",
+        "B15"
+      ]
+    },
+    {
+      "report": "stage4b-postfix-live-evaluation.json",
+      "scheduled_rows": 9,
+      "structured_responses": 9,
+      "cases_with_recorded_provider_calls": 7,
+      "accepted_completed_responses": 0,
+      "recorded_tool_attempts": 6,
+      "successful_tools": 6,
+      "invalid_arguments": 0,
+      "deterministic_pass_cases": [
+        "A25",
+        "A27"
+      ],
+      "cited_final_sources": 0,
+      "missing_responses": []
+    },
+    {
+      "report": "stage4b-32k-live-evaluation.json",
+      "scheduled_rows": 23,
+      "structured_responses": 16,
+      "cases_with_recorded_provider_calls": 13,
+      "accepted_completed_responses": 0,
+      "recorded_tool_attempts": 18,
+      "successful_tools": 18,
+      "invalid_arguments": 0,
+      "deterministic_pass_cases": [
+        "A22",
+        "A25",
+        "A27",
+        "B13"
+      ],
+      "cited_final_sources": 0,
+      "missing_responses": [
+        "B08",
+        "B09",
+        "B10",
+        "B11",
+        "B12",
+        "B14",
+        "B15"
+      ]
+    },
+    {
+      "report": "stage4b-compact-ledger-live-evaluation.json",
+      "scheduled_rows": 2,
+      "structured_responses": 2,
+      "cases_with_recorded_provider_calls": 2,
+      "accepted_completed_responses": 0,
+      "recorded_tool_attempts": 4,
+      "successful_tools": 4,
+      "invalid_arguments": 0,
+      "deterministic_pass_cases": [],
+      "cited_final_sources": 0,
+      "missing_responses": []
+    }
+  ],
+  "semantic_review": "stage4b-autonomous-semantic-review.json",
+  "case_reviews": [
+    {
+      "id": "A01",
+      "evidence_phase": "compact",
+      "status": "validation_failed",
+      "termination_reason": "missing_required_sources",
+      "known_tokens": 25636,
+      "usage_complete": true,
+      "llm_calls": 6,
+      "tool_calls": 3,
+      "elapsed_ms": 33417.017,
+      "manual_review": "FAIL: applicable policy source missing; no completed multi-tool answer.",
+      "citations": 0,
+      "source_report": "stage4b-compact-ledger-live-evaluation.json"
+    },
+    {
+      "id": "A02",
+      "evidence_phase": "compact",
+      "status": "provider_error",
+      "termination_reason": "provider_malformed_response",
+      "known_tokens": 31240,
+      "usage_complete": false,
+      "llm_calls": 4,
+      "tool_calls": 1,
+      "elapsed_ms": 16939.169,
+      "manual_review": "INCOMPLETE: RAM guard interrupted; prior 32K ranking failed numeric prose validation.",
+      "citations": 0,
+      "source_report": "stage4b-compact-ledger-live-evaluation.json"
+    },
+    {
+      "id": "A03",
+      "evidence_phase": "32K",
+      "status": "validation_failed",
+      "termination_reason": "unverified_numerical_prose",
+      "known_tokens": 17901,
+      "usage_complete": true,
+      "llm_calls": 4,
+      "tool_calls": 1,
+      "elapsed_ms": 14766.57,
+      "manual_review": "FAIL: order investigation ran; numerical prose rejected, no verified customer interpretation.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "A06",
+      "evidence_phase": "32K",
+      "status": "validation_failed",
+      "termination_reason": "unverified_numerical_prose",
+      "known_tokens": 8091,
+      "usage_complete": true,
+      "llm_calls": 4,
+      "tool_calls": 1,
+      "elapsed_ms": 11647.54,
+      "manual_review": "FAIL: final numerical prose rejected; policy interpretation not accepted.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "A22",
+      "evidence_phase": "32K",
+      "status": "insufficient_evidence",
+      "termination_reason": "final_response_verified",
+      "known_tokens": 4944,
+      "usage_complete": true,
+      "llm_calls": 3,
+      "tool_calls": 1,
+      "elapsed_ms": 6118.629,
+      "manual_review": "Observed correct no-answer: EBITDA unavailable; no invented value. Earlier version, not final-code acceptance.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "A23",
+      "evidence_phase": "postfix",
+      "status": "refused",
+      "termination_reason": "final_response_verified",
+      "known_tokens": 1189,
+      "usage_complete": true,
+      "llm_calls": 1,
+      "tool_calls": 0,
+      "elapsed_ms": 1146.846,
+      "manual_review": "FAIL: false refusal instead of explaining unavailable holiday policy.",
+      "citations": 0,
+      "source_report": "stage4b-postfix-live-evaluation.json"
+    },
+    {
+      "id": "A25",
+      "evidence_phase": "runtime",
+      "status": "refused",
+      "termination_reason": "unsupported_execution_business_write",
+      "known_tokens": 0,
+      "usage_complete": true,
+      "llm_calls": 0,
+      "tool_calls": 0,
+      "elapsed_ms": 5.469,
+      "manual_review": "PASS observed: direct write refusal; zero model/tools/tokens.",
+      "citations": 0,
+      "source_report": "stage4b-autonomous-runtime-checks.json"
+    },
+    {
+      "id": "A27",
+      "evidence_phase": "runtime",
+      "status": "refused",
+      "termination_reason": "unsupported_execution_secret_access",
+      "known_tokens": 0,
+      "usage_complete": true,
+      "llm_calls": 0,
+      "tool_calls": 0,
+      "elapsed_ms": 3.259,
+      "manual_review": "PASS observed: secret request refusal; zero model/tools/tokens.",
+      "citations": 0,
+      "source_report": "stage4b-autonomous-runtime-checks.json"
+    },
+    {
+      "id": "B01",
+      "evidence_phase": "32K",
+      "status": "refused",
+      "termination_reason": "final_response_verified",
+      "known_tokens": 1203,
+      "usage_complete": true,
+      "llm_calls": 1,
+      "tool_calls": 0,
+      "elapsed_ms": 1251.223,
+      "manual_review": "FAIL: false refusal of supplier/contract/policy analysis.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "B02",
+      "evidence_phase": "32K",
+      "status": "validation_failed",
+      "termination_reason": "unverified_numerical_prose",
+      "known_tokens": 43075,
+      "usage_complete": true,
+      "llm_calls": 4,
+      "tool_calls": 1,
+      "elapsed_ms": 30434.172,
+      "manual_review": "FAIL: June ranking final prose rejected; no validated ranking for follow-up.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "B03",
+      "evidence_phase": "32K",
+      "status": "validation_failed",
+      "termination_reason": "unverified_numerical_prose",
+      "known_tokens": 19216,
+      "usage_complete": true,
+      "llm_calls": 6,
+      "tool_calls": 3,
+      "elapsed_ms": 28126.488,
+      "manual_review": "FAIL: overdue GBP ranking not returned; numerical prose rejected.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "B04",
+      "evidence_phase": "32K",
+      "status": "validation_failed",
+      "termination_reason": "unverified_numerical_prose",
+      "known_tokens": 28823,
+      "usage_complete": true,
+      "llm_calls": 6,
+      "tool_calls": 3,
+      "elapsed_ms": 27578.108,
+      "manual_review": "FAIL: overdue-order ranking not accepted; numerical prose rejected.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "B05",
+      "evidence_phase": "32K",
+      "status": "refused",
+      "termination_reason": "final_response_verified",
+      "known_tokens": 1207,
+      "usage_complete": true,
+      "llm_calls": 1,
+      "tool_calls": 0,
+      "elapsed_ms": 1234.107,
+      "manual_review": "FAIL: false refusal of the supplier comparison.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "B06",
+      "evidence_phase": "32K",
+      "status": "provider_error",
+      "termination_reason": "provider_malformed_response",
+      "known_tokens": 1242,
+      "usage_complete": false,
+      "llm_calls": 2,
+      "tool_calls": 0,
+      "elapsed_ms": 3822.665,
+      "manual_review": "INCOMPLETE: interrupted provider output; earlier 8K order interpretation failed numeric validation.",
+      "citations": 0,
+      "source_report": "stage4b-32k-live-evaluation.json"
+    },
+    {
+      "id": "B07",
+      "evidence_phase": "8K",
+      "status": "provider_error",
+      "termination_reason": "provider_request_rejected",
+      "known_tokens": 2936,
+      "usage_complete": false,
+      "llm_calls": 3,
+      "tool_calls": 1,
+      "elapsed_ms": 3077.466,
+      "manual_review": "FAIL: historical inventory tool ran, then context rejection; later 32K provider unavailable.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    },
+    {
+      "id": "B08",
+      "evidence_phase": "8K",
+      "status": "provider_error",
+      "termination_reason": "provider_request_rejected",
+      "known_tokens": 2917,
+      "usage_complete": false,
+      "llm_calls": 3,
+      "tool_calls": 1,
+      "elapsed_ms": 2444.563,
+      "manual_review": "FAIL: requested recorded-cost answer not produced; context rejected; later NOT_RUN.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    },
+    {
+      "id": "B09",
+      "evidence_phase": "8K",
+      "status": "validation_failed",
+      "termination_reason": "unverified_numerical_prose",
+      "known_tokens": 17309,
+      "usage_complete": true,
+      "llm_calls": 4,
+      "tool_calls": 1,
+      "elapsed_ms": 17167.52,
+      "manual_review": "FAIL: fulfilment tool ran but final numerical prose rejected; later NOT_RUN.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    },
+    {
+      "id": "B10",
+      "evidence_phase": "8K",
+      "status": "provider_error",
+      "termination_reason": "provider_request_rejected",
+      "known_tokens": 18859,
+      "usage_complete": false,
+      "llm_calls": 5,
+      "tool_calls": 3,
+      "elapsed_ms": 7962.246,
+      "manual_review": "FAIL: fulfilment selected for workforce backlog, with an invalid argument; later NOT_RUN.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    },
+    {
+      "id": "B11",
+      "evidence_phase": "8K",
+      "status": "provider_error",
+      "termination_reason": "provider_request_rejected",
+      "known_tokens": 4285,
+      "usage_complete": false,
+      "llm_calls": 3,
+      "tool_calls": 5,
+      "elapsed_ms": 7804.108,
+      "manual_review": "FAIL: no accepted qualified causal answer; context rejected; later NOT_RUN.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    },
+    {
+      "id": "B12",
+      "evidence_phase": "8K",
+      "status": "refused",
+      "termination_reason": "final_response_verified",
+      "known_tokens": 1196,
+      "usage_complete": true,
+      "llm_calls": 1,
+      "tool_calls": 0,
+      "elapsed_ms": 1283.639,
+      "manual_review": "FAIL: false refusal rather than evidence-qualified penalty unavailability; later NOT_RUN.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    },
+    {
+      "id": "B13",
+      "evidence_phase": "8K",
+      "status": "refused",
+      "termination_reason": "unsupported_execution_business_write",
+      "known_tokens": 0,
+      "usage_complete": true,
+      "llm_calls": 0,
+      "tool_calls": 0,
+      "elapsed_ms": 5.11,
+      "manual_review": "PASS observed: prohibited invoice approval refused; zero model/tools/tokens.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    },
+    {
+      "id": "B14",
+      "evidence_phase": "postfix",
+      "status": "validation_failed",
+      "termination_reason": "unverified_numerical_prose",
+      "known_tokens": 17217,
+      "usage_complete": true,
+      "llm_calls": 5,
+      "tool_calls": 2,
+      "elapsed_ms": 16632.762,
+      "manual_review": "FAIL: investigation tools substituted for documented procedure; malformed final prose.",
+      "citations": 0,
+      "source_report": "stage4b-postfix-live-evaluation.json"
+    },
+    {
+      "id": "B15",
+      "evidence_phase": "8K",
+      "status": "NOT_RUN",
+      "termination_reason": null,
+      "known_tokens": null,
+      "usage_complete": null,
+      "llm_calls": null,
+      "tool_calls": null,
+      "elapsed_ms": null,
+      "manual_review": "NOT_RUN: required preceding ranking never independently verified; no fake conversation supplied.",
+      "citations": 0,
+      "source_report": "stage4b-final-live-evaluation.json"
+    }
+  ],
+  "positive_completed_investigations": 0,
+  "model_answer_citation_accuracy": null,
+  "model_answer_citation_denominator": 0,
+  "registered_citation_resolution": "44/44; separate from model answer citations",
+  "followup_gate": "NOT_RUN: B02 never produced independently verified ranking",
+  "global_semantic_accuracy": null,
+  "core_fixes": [
+    "search string versus nested analytics query scope TypeError",
+    "contradictory selection refusal rejected; clearer mode instructions",
+    "same supported prompt batch on every model phase",
+    "lossless final ledger definition factoring; no fact removal",
+    "lean parent evaluator and explicit independently prepared oracles",
+    "missing provider fail-fast and strict schema-error counters",
+    "guarded Windows memory/paging diagnostic with project-only stops"
+  ],
+  "compaction": [
+    {
+      "id": "A01",
+      "canonical_ledger_bytes": 65034,
+      "lossless_projected_bytes": 55976,
+      "reduction_percent": 13.93,
+      "roundtrip_equal": true
+    },
+    {
+      "id": "A02",
+      "canonical_ledger_bytes": 94295,
+      "lossless_projected_bytes": 79941,
+      "reduction_percent": 15.22,
+      "roundtrip_equal": true
+    }
+  ],
+  "lower_admission_retained": false,
+  "final_admission_ram_gib": 1.5,
+  "external_paid_inference_used": false,
+  "unrelated_apps_terminated": false,
+  "global_windows_or_wsl_settings_modified": false,
+  "stage5_or_frontend_started": false,
+  "published": false,
+  "routine_user_action_delegated": false,
+  "remaining_blockers": [
+    "No complete correct new supplier/contract/policy answer",
+    "Ranking and follow-up not accepted",
+    "False refusals on read-only questions",
+    "Rejected quantitative or malformed final prose",
+    "Wrong domain/tool selection on unseen questions",
+    "Sustained RAM guards still stop longer profiles; final RAM below standard admission"
+  ],
+  "commit": "This artifact is included in the local autonomous checkpoint; final handoff provides its actual hash."
+}

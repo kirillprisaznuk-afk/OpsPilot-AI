@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b-q4_K_M",
+  "admitted": false,
+  "reasons": [
+    "Free physical RAM is below the measured profile's RAM margin"
+  ],
+  "free_ram_gib": 0.425,
+  "total_ram_gib": 15.265,
+  "free_vram_mib": 5897,
+  "total_vram_mib": 6141,
+  "loaded_model": null,
+  "minimum_free_ram_gib": 1.5,
+  "minimum_free_vram_mib": 4096,
+  "measured_at": 1793832343.9489703,
+  "owner_verified": true
+}

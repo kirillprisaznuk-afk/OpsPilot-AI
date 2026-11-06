@@ -1,0 +1,21 @@
+{
+  "status": "BLOCKED",
+  "measurement": {
+    "model": "qwen3.5:2b-q4_K_M",
+    "admitted": false,
+    "reasons": [
+      "Free physical RAM is below the measured profile's RAM margin"
+    ],
+    "free_ram_gib": 1.178,
+    "total_ram_gib": 15.265,
+    "free_vram_mib": 5626,
+    "total_vram_mib": 6141,
+    "loaded_model": null,
+    "minimum_free_ram_gib": 1.5,
+    "minimum_free_vram_mib": 4096,
+    "free_commit_gib": 13.009,
+    "measured_at": 1793834120.1329453,
+    "owner_verified": true
+  },
+  "inference_attempted": false
+}

@@ -1,0 +1,717 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 172.04
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 115.45
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 119.6
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 109.99
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 109.98
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 108.66
+    },
+    {
+      "check": "anonymous_denied",
+      "status": 401,
+      "expected": 401,
+      "elapsed_ms": 13.73,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "viewer_write_denied",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 29.92,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "draft",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 67.36,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=52.390"
+    },
+    {
+      "check": "execute",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 39.57,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "immutable",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 29.05,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 46.21,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=30.961"
+    },
+    {
+      "check": "approve",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 30.24,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "approve",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 25.71,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "reject",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 47.02,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=32.362"
+    },
+    {
+      "check": "execute",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 38.22,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "real_supplier_contract_policy_investigation",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 879.28,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=319.611"
+    },
+    {
+      "check": "recommendation_no_write",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 313.99,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 344.74,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=328.115"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 334.35,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=318.985"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 53.4,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=39.501"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 395.36,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=379.994"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 48.68,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=32.226"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 44.78,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=26.588"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 44.08,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=30.981"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 74.1,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=58.769"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 39.83,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=27.596"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 42.53,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=25.363"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 48.89,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=32.614"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 57.47,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=44.833"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.92,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=30.377"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 44.22,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=28.101"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.74,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=32.342"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 58.42,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=41.687"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 38.69,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=26.215"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.34,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=28.282"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 51.87,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=37.459"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 60.29,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=45.851"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 43.16,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=28.797"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 46.55,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=30.909"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.37,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=29.094"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 54.86,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=41.715"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 341.52,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=322.919"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 330.34,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=316.453"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 59.55,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=42.953"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 380.08,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=365.905"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 49.15,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=33.659"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 51.03,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=32.720"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 47.55,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=32.500"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 53.5,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=41.057"
+    },
+    {
+      "check": "cross_scope_task_denied",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 32.04,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "forged_fact_denied",
+      "status": 422,
+      "expected": 422,
+      "elapsed_ms": 315.41,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.74,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=30.944"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 42.68,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=27.368"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 44.94,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=28.788"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 199.23,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=153.053"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 218.35,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=140.508"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 231.24,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=121.104"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 250.07,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=136.161"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 268.88,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=153.480"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 282.79,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=159.086"
+    },
+    {
+      "check": "idempotent_create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 51.38,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=37.925"
+    },
+    {
+      "check": "idempotent_create_retry",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 33.23,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=16.949"
+    },
+    {
+      "check": "key_conflict",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 29.83,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_tasks",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 31.3,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_proposals",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 138.41,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_escalations",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 31.0,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_audit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 30.37,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_actions",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 26.84,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_policy",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 26.95,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "read_persisted_task",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 30.43,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "operational_summary",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 46.79,
+      "passed": true,
+      "server_timing": null
+    }
+  ],
+  "successful_operation_timings": {
+    "authentication": {
+      "samples": 6,
+      "median_ms": 112.72,
+      "max_ms": 172.04,
+      "failed": 0
+    },
+    "create": {
+      "samples": 9,
+      "median_ms": 45.92,
+      "max_ms": 344.74,
+      "failed": 0
+    },
+    "submit": {
+      "samples": 10,
+      "median_ms": 45.78,
+      "max_ms": 334.35,
+      "failed": 0
+    },
+    "approve": {
+      "samples": 9,
+      "median_ms": 47.55,
+      "max_ms": 59.55,
+      "failed": 0
+    },
+    "execute": {
+      "samples": 14,
+      "median_ms": 208.79,
+      "max_ms": 395.36,
+      "failed": 0
+    },
+    "list_audit": {
+      "samples": 1,
+      "median_ms": 30.37,
+      "max_ms": 30.37,
+      "failed": 0
+    }
+  },
+  "concurrency": {
+    "requests": 6,
+    "distinct_receipts": 1,
+    "tasks": 1,
+    "execution_id": "3c075f43-61e7-4794-ad22-f661fdbf9d71"
+  },
+  "action_receipts": [
+    {
+      "type": "CREATE_WORKFLOW_TASK",
+      "status": "COMPLETED",
+      "proposal_id": "da6d4b2c-14a6-47bf-9a13-e5796bf97a5c",
+      "receipt_id": "5a04cefb-4034-4efd-b155-d12ca977271a",
+      "distinct_approver": true,
+      "audit_events": [
+        "7c5de978-d8c9-4ad8-80d0-c30b760ffa27",
+        "7fc6787f-4efd-4947-a2c9-80e7bf8c4529",
+        "0e27faa3-b783-49dd-959a-08aea2390692"
+      ]
+    },
+    {
+      "type": "ASSIGN_WORKFLOW_TASK",
+      "status": "COMPLETED",
+      "proposal_id": "58c1e283-7989-4437-8402-e9ecb77ef113",
+      "receipt_id": "edb4ff22-1f5a-483e-8d03-16acd089e328",
+      "distinct_approver": true,
+      "audit_events": [
+        "81644e35-7a58-43ea-b8d9-4ba30de00383",
+        "c5ab4a4a-77ba-4357-b5db-4c486fff170b",
+        "04f13e41-5609-4470-806c-1592307b2dc9"
+      ]
+    },
+    {
+      "type": "UPDATE_WORKFLOW_TASK_PRIORITY",
+      "status": "COMPLETED",
+      "proposal_id": "7cf8060d-be3e-46c9-bf23-bf1d79634747",
+      "receipt_id": "22f164fc-d22c-4d45-b471-895d8edbbd25",
+      "distinct_approver": true,
+      "audit_events": [
+        "1a520c89-d175-48fb-ae0a-8daeb8be7341",
+        "1b8d87fe-b7d8-4024-b447-116116469f18",
+        "7056cf37-62d0-4539-8fdf-2ce9b465ccc1"
+      ]
+    },
+    {
+      "type": "UPDATE_WORKFLOW_TASK_DUE_DATE",
+      "status": "COMPLETED",
+      "proposal_id": "8effd071-9711-4bbe-813c-2e8fd5a30c31",
+      "receipt_id": "5ff4bfed-9d8d-4861-9745-64152e85b4ad",
+      "distinct_approver": true,
+      "audit_events": [
+        "6e7fbb94-d4e7-439d-a3d1-32b04b1e7600",
+        "37d517a0-cf7a-4b2b-b190-d26ff1ee7296",
+        "eeaf6f39-bd55-41ef-b0c8-edb77a71a1af"
+      ]
+    },
+    {
+      "type": "ADD_WORKFLOW_TASK_NOTE",
+      "status": "COMPLETED",
+      "proposal_id": "64b91121-c782-4f4b-98a4-47d92cd1f8bb",
+      "receipt_id": "29cc8e65-fbc2-46ea-af8b-a175753e1061",
+      "distinct_approver": true,
+      "audit_events": [
+        "710ff097-8807-49c5-910c-32455b09244f",
+        "dcb5ae60-fbe8-4894-8612-677975a3cbe0",
+        "4c00166d-a747-4adc-81c2-932f3fb804db"
+      ]
+    },
+    {
+      "type": "UPDATE_WORKFLOW_TASK_STATUS",
+      "status": "COMPLETED",
+      "proposal_id": "6eea2995-0a56-446e-913f-adebf62cb6c9",
+      "receipt_id": "7aeaa115-5db7-4010-85b1-a5f4da274020",
+      "distinct_approver": true,
+      "audit_events": [
+        "46bc0be3-221e-4452-af26-b013e30a6add",
+        "d16e44d0-43d1-4fd9-bd83-93d4527ef83d",
+        "917a1224-ef69-4739-b4f0-a2d0eaa3023f"
+      ]
+    },
+    {
+      "type": "CREATE_INTERNAL_ESCALATION",
+      "status": "COMPLETED",
+      "proposal_id": "6dd55936-8a85-4b0b-a72b-f17ca044338e",
+      "receipt_id": "4a95691a-6cbe-4e09-9e79-ab5a4dcce04b",
+      "distinct_approver": true,
+      "audit_events": [
+        "e7deac0f-cd96-4413-bb56-602ff96bba99",
+        "ce402b76-6dfd-4086-bf61-7f523e2af5e5",
+        "50428ccf-6010-46f8-9325-f7ee2a17078f"
+      ]
+    },
+    {
+      "type": "CLOSE_INTERNAL_ESCALATION",
+      "status": "COMPLETED",
+      "proposal_id": "3a35db1c-05ef-44c1-8a4c-d7fa6f912af4",
+      "receipt_id": "dea846f6-2342-472f-bd5e-7931ba2f8f30",
+      "distinct_approver": true,
+      "audit_events": [
+        "118aaca5-a0d7-420c-9285-4d77ba889c89",
+        "a13c30f6-b5f6-4ba3-ac5d-9dba52f7a017",
+        "7e26fb2e-75ba-4190-b330-7fc08c188242"
+      ]
+    }
+  ]
+}

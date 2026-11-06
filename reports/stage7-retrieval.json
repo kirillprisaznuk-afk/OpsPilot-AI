@@ -1,0 +1,3558 @@
+{
+  "dataset_version": 1,
+  "queries": 42,
+  "model": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "dimension": 384,
+    "pooling": "attention_mask_mean",
+    "normalization": "L2",
+    "distance": "cosine",
+    "max_tokens": 256,
+    "backend": "onnx-cpu-float32",
+    "parser": "markdown-sections-v1",
+    "tokenizer_truncation": "reject_over_256"
+  },
+  "modes": {
+    "keyword": {
+      "answerable_queries": 35,
+      "negative_queries": 7,
+      "recall_at_1": 0.5428571428571428,
+      "recall_at_3": 0.6,
+      "recall_at_5": 0.6,
+      "mrr_at_5": 0.6,
+      "precision_at_5": 0.14285714285714288,
+      "ndcg_at_5": 0.6,
+      "citation_resolution_accuracy": 1.0,
+      "no_answer_accuracy": 1,
+      "latency_median_ms": 11.142,
+      "latency_p95_ms": 13.444,
+      "first_query_ms": 23.004,
+      "cases": [
+        {
+          "id": "Q01",
+          "query": "Procurement procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.004
+        },
+        {
+          "id": "Q02",
+          "query": "When should procurement escalate missed receipts and preserve the original promise?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 9.339
+        },
+        {
+          "id": "Q03",
+          "query": "How do buyers retain promised supplier dates?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 11.257
+        },
+        {
+          "id": "Q04",
+          "query": "Warehouse receiving procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 13.444
+        },
+        {
+          "id": "Q05",
+          "query": "How should warehouse staff record partial receipts and reject over-receipts?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 12.394
+        },
+        {
+          "id": "Q06",
+          "query": "What ledger entry is required for an accepted receipt?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 11.725
+        },
+        {
+          "id": "Q07",
+          "query": "Inventory control policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.329
+        },
+        {
+          "id": "Q08",
+          "query": "Can inventory issues exceed the units physically available?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 10.354
+        },
+        {
+          "id": "Q09",
+          "query": "How are backorders and outstanding quantities recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 9.516
+        },
+        {
+          "id": "Q10",
+          "query": "Incident escalation procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.33
+        },
+        {
+          "id": "Q11",
+          "query": "Who reviews high severity incidents unresolved for seven days?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 10.72
+        },
+        {
+          "id": "Q12",
+          "query": "How should an incident be assigned to a department and corrective task?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.824
+        },
+        {
+          "id": "Q13",
+          "query": "Payment review policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.347
+        },
+        {
+          "id": "Q14",
+          "query": "How should discrepant supplier bills be handled?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 10.211
+        },
+        {
+          "id": "Q15",
+          "query": "How should partial payments and invoice discrepancies be recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 10.056
+        },
+        {
+          "id": "Q16",
+          "query": "Incident response instructions",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.811
+        },
+        {
+          "id": "Q17",
+          "query": "What evidence must be preserved when closing operational incidents?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 8.868
+        },
+        {
+          "id": "Q18",
+          "query": "How often are overdue corrective tasks reviewed?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 8.201
+        },
+        {
+          "id": "Q19",
+          "query": "Customer fulfilment policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.469
+        },
+        {
+          "id": "Q20",
+          "query": "Are customer promises dispatch commitments or arrival estimates?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 12.83
+        },
+        {
+          "id": "Q21",
+          "query": "Which customer policy covers FIFO backorders and partial dispatches?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 11.567
+        },
+        {
+          "id": "Q22",
+          "query": "Capacity pressure instruction",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 10.221
+        },
+        {
+          "id": "Q23",
+          "query": "How long is the Midlands handling queue during declared pressure?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 9.048
+        },
+        {
+          "id": "Q24",
+          "query": "How is approved warehouse overtime recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 10.794
+        },
+        {
+          "id": "Q25",
+          "query": "Amberwick Office Works delivery target",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 12.496
+        },
+        {
+          "id": "Q26",
+          "query": "Amberwick Industrial Supply payment terms",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 10.502
+        },
+        {
+          "id": "Q27",
+          "query": "Amberwick Technology Trade escalation interval",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 9.128
+        },
+        {
+          "id": "Q28",
+          "query": "What receipt target applies to this supplier?",
+          "kind": "supplier_filtered",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 8.672
+        },
+        {
+          "id": "Q29",
+          "query": "How many days from invoice issue until payment?",
+          "kind": "supplier_filtered",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "no_matches",
+          "elapsed_ms": 6.996
+        },
+        {
+          "id": "Q30",
+          "query": "NS-CON-003",
+          "kind": "identifier",
+          "expected": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.848
+        },
+        {
+          "id": "Q31",
+          "query": "\"NS-CON-001\" OR \"Procurement procedure\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.748
+        },
+        {
+          "id": "Q32",
+          "query": "\"Warehouse receiving procedure\" OR \"Inventory control policy\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ],
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 11.96
+        },
+        {
+          "id": "Q33",
+          "query": "\"Incident escalation procedure\" OR \"Incident response instructions\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 12.397
+        },
+        {
+          "id": "Q34",
+          "query": "\"Payment review policy\" OR \"NS-CON-002\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 16.327
+        },
+        {
+          "id": "Q35",
+          "query": "What is the annual leave allowance?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_matches",
+          "elapsed_ms": 8.946
+        },
+        {
+          "id": "Q36",
+          "query": "Quantum entanglement teleportation",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_matches",
+          "elapsed_ms": 11.027
+        },
+        {
+          "id": "Q37",
+          "query": "Who won the football world cup?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_matches",
+          "elapsed_ms": 12.101
+        },
+        {
+          "id": "Q38",
+          "query": "What are the employee pension contribution percentages?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_matches",
+          "elapsed_ms": 8.966
+        },
+        {
+          "id": "Q39",
+          "query": "What monetary approval limit applies to purchasing managers?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_matches",
+          "elapsed_ms": 10.484
+        },
+        {
+          "id": "Q40",
+          "query": "Which cybersecurity password rotation policy applies?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_matches",
+          "elapsed_ms": 9.792
+        },
+        {
+          "id": "Q41",
+          "query": "Procurement procedure",
+          "kind": "historical_not_effective",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_effective_documents",
+          "elapsed_ms": 6.217
+        },
+        {
+          "id": "Q42",
+          "query": "Warehouse receiving procedure",
+          "kind": "historical_effective",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 13.25
+        }
+      ]
+    },
+    "vector": {
+      "answerable_queries": 35,
+      "negative_queries": 7,
+      "recall_at_1": 0.8142857142857143,
+      "recall_at_3": 0.8714285714285714,
+      "recall_at_5": 0.8714285714285714,
+      "mrr_at_5": 0.8714285714285714,
+      "precision_at_5": 0.18857142857142858,
+      "ndcg_at_5": 0.8641164841810547,
+      "citation_resolution_accuracy": 1.0,
+      "no_answer_accuracy": 1,
+      "latency_median_ms": 21.9175,
+      "latency_p95_ms": 29.578,
+      "first_query_ms": 485.469,
+      "cases": [
+        {
+          "id": "Q01",
+          "query": "Procurement procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ],
+            [
+              "CON-036",
+              "Instructions and terms"
+            ],
+            [
+              "CON-024",
+              "Instructions and terms"
+            ],
+            [
+              "CON-012",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 485.469
+        },
+        {
+          "id": "Q02",
+          "query": "When should procurement escalate missed receipts and preserve the original promise?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ],
+            [
+              "CON-036",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.938
+        },
+        {
+          "id": "Q03",
+          "query": "How do buyers retain promised supplier dates?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 20.246
+        },
+        {
+          "id": "Q04",
+          "query": "Warehouse receiving procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 21.637
+        },
+        {
+          "id": "Q05",
+          "query": "How should warehouse staff record partial receipts and reject over-receipts?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 24.298
+        },
+        {
+          "id": "Q06",
+          "query": "What ledger entry is required for an accepted receipt?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.901
+        },
+        {
+          "id": "Q07",
+          "query": "Inventory control policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 20.294
+        },
+        {
+          "id": "Q08",
+          "query": "Can inventory issues exceed the units physically available?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 21.893
+        },
+        {
+          "id": "Q09",
+          "query": "How are backorders and outstanding quantities recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 19.685
+        },
+        {
+          "id": "Q10",
+          "query": "Incident escalation procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 22.903
+        },
+        {
+          "id": "Q11",
+          "query": "Who reviews high severity incidents unresolved for seven days?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.522
+        },
+        {
+          "id": "Q12",
+          "query": "How should an incident be assigned to a department and corrective task?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 24.353
+        },
+        {
+          "id": "Q13",
+          "query": "Payment review policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 21.942
+        },
+        {
+          "id": "Q14",
+          "query": "How should discrepant supplier bills be handled?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 20.88
+        },
+        {
+          "id": "Q15",
+          "query": "How should partial payments and invoice discrepancies be recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.75
+        },
+        {
+          "id": "Q16",
+          "query": "Incident response instructions",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 20.249
+        },
+        {
+          "id": "Q17",
+          "query": "What evidence must be preserved when closing operational incidents?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 26.905
+        },
+        {
+          "id": "Q18",
+          "query": "How often are overdue corrective tasks reviewed?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.814
+        },
+        {
+          "id": "Q19",
+          "query": "Customer fulfilment policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 20.65
+        },
+        {
+          "id": "Q20",
+          "query": "Are customer promises dispatch commitments or arrival estimates?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 20.154
+        },
+        {
+          "id": "Q21",
+          "query": "Which customer policy covers FIFO backorders and partial dispatches?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ],
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 21.604
+        },
+        {
+          "id": "Q22",
+          "query": "Capacity pressure instruction",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 17.574
+        },
+        {
+          "id": "Q23",
+          "query": "How long is the Midlands handling queue during declared pressure?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 22.883
+        },
+        {
+          "id": "Q24",
+          "query": "How is approved warehouse overtime recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ],
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.636
+        },
+        {
+          "id": "Q25",
+          "query": "Amberwick Office Works delivery target",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-004",
+              "Instructions and terms"
+            ],
+            [
+              "CON-001",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ],
+            [
+              "CON-005",
+              "Instructions and terms"
+            ],
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 0.5,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 0.6309297535714575,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.548
+        },
+        {
+          "id": "Q26",
+          "query": "Amberwick Industrial Supply payment terms",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "CON-004",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ],
+            [
+              "CON-005",
+              "Instructions and terms"
+            ],
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 27.627
+        },
+        {
+          "id": "Q27",
+          "query": "Amberwick Technology Trade escalation interval",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ],
+            [
+              "CON-004",
+              "Instructions and terms"
+            ],
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ],
+            [
+              "CON-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 35.452
+        },
+        {
+          "id": "Q28",
+          "query": "What receipt target applies to this supplier?",
+          "kind": "supplier_filtered",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 17.444
+        },
+        {
+          "id": "Q29",
+          "query": "How many days from invoice issue until payment?",
+          "kind": "supplier_filtered",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "low_confidence",
+          "elapsed_ms": 16.619
+        },
+        {
+          "id": "Q30",
+          "query": "NS-CON-003",
+          "kind": "identifier",
+          "expected": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "low_confidence",
+          "elapsed_ms": 21.516
+        },
+        {
+          "id": "Q31",
+          "query": "\"NS-CON-001\" OR \"Procurement procedure\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-012",
+              "Instructions and terms"
+            ],
+            [
+              "CON-030",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ],
+            [
+              "CON-018",
+              "Instructions and terms"
+            ],
+            [
+              "CON-036",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.38
+        },
+        {
+          "id": "Q32",
+          "query": "\"Warehouse receiving procedure\" OR \"Inventory control policy\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 22.182
+        },
+        {
+          "id": "Q33",
+          "query": "\"Incident escalation procedure\" OR \"Incident response instructions\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 29.578
+        },
+        {
+          "id": "Q34",
+          "query": "\"Payment review policy\" OR \"NS-CON-002\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ],
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 0.5,
+            "5": 0.5
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 0.6131471927654584,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 24.094
+        },
+        {
+          "id": "Q35",
+          "query": "What is the annual leave allowance?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 17.738
+        },
+        {
+          "id": "Q36",
+          "query": "Quantum entanglement teleportation",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 20.57
+        },
+        {
+          "id": "Q37",
+          "query": "Who won the football world cup?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 19.801
+        },
+        {
+          "id": "Q38",
+          "query": "What are the employee pension contribution percentages?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 18.697
+        },
+        {
+          "id": "Q39",
+          "query": "What monetary approval limit applies to purchasing managers?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 27.191
+        },
+        {
+          "id": "Q40",
+          "query": "Which cybersecurity password rotation policy applies?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 20.234
+        },
+        {
+          "id": "Q41",
+          "query": "Procurement procedure",
+          "kind": "historical_not_effective",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_effective_documents",
+          "elapsed_ms": 5.844
+        },
+        {
+          "id": "Q42",
+          "query": "Warehouse receiving procedure",
+          "kind": "historical_effective",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 17.044
+        }
+      ]
+    },
+    "hybrid": {
+      "answerable_queries": 35,
+      "negative_queries": 7,
+      "recall_at_1": 0.8857142857142857,
+      "recall_at_3": 0.9428571428571428,
+      "recall_at_5": 0.9428571428571428,
+      "mrr_at_5": 0.9428571428571428,
+      "precision_at_5": 0.21142857142857144,
+      "ndcg_at_5": 0.9428571428571428,
+      "citation_resolution_accuracy": 1.0,
+      "no_answer_accuracy": 1,
+      "latency_median_ms": 24.419,
+      "latency_p95_ms": 28.876,
+      "first_query_ms": 26.488,
+      "cases": [
+        {
+          "id": "Q01",
+          "query": "Procurement procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ],
+            [
+              "CON-036",
+              "Instructions and terms"
+            ],
+            [
+              "CON-024",
+              "Instructions and terms"
+            ],
+            [
+              "CON-012",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 26.488
+        },
+        {
+          "id": "Q02",
+          "query": "When should procurement escalate missed receipts and preserve the original promise?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ],
+            [
+              "CON-036",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 24.172
+        },
+        {
+          "id": "Q03",
+          "query": "How do buyers retain promised supplier dates?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.539
+        },
+        {
+          "id": "Q04",
+          "query": "Warehouse receiving procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.575
+        },
+        {
+          "id": "Q05",
+          "query": "How should warehouse staff record partial receipts and reject over-receipts?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.937
+        },
+        {
+          "id": "Q06",
+          "query": "What ledger entry is required for an accepted receipt?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.272
+        },
+        {
+          "id": "Q07",
+          "query": "Inventory control policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 21.634
+        },
+        {
+          "id": "Q08",
+          "query": "Can inventory issues exceed the units physically available?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 22.945
+        },
+        {
+          "id": "Q09",
+          "query": "How are backorders and outstanding quantities recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 26.222
+        },
+        {
+          "id": "Q10",
+          "query": "Incident escalation procedure",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 28.005
+        },
+        {
+          "id": "Q11",
+          "query": "Who reviews high severity incidents unresolved for seven days?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 27.351
+        },
+        {
+          "id": "Q12",
+          "query": "How should an incident be assigned to a department and corrective task?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.117
+        },
+        {
+          "id": "Q13",
+          "query": "Payment review policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.335
+        },
+        {
+          "id": "Q14",
+          "query": "How should discrepant supplier bills be handled?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.164
+        },
+        {
+          "id": "Q15",
+          "query": "How should partial payments and invoice discrepancies be recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.272
+        },
+        {
+          "id": "Q16",
+          "query": "Incident response instructions",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.003
+        },
+        {
+          "id": "Q17",
+          "query": "What evidence must be preserved when closing operational incidents?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 22.28
+        },
+        {
+          "id": "Q18",
+          "query": "How often are overdue corrective tasks reviewed?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-004",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 27.729
+        },
+        {
+          "id": "Q19",
+          "query": "Customer fulfilment policy",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 22.297
+        },
+        {
+          "id": "Q20",
+          "query": "Are customer promises dispatch commitments or arrival estimates?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 26.711
+        },
+        {
+          "id": "Q21",
+          "query": "Which customer policy covers FIFO backorders and partial dispatches?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-007",
+              "Instructions and terms"
+            ],
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.984
+        },
+        {
+          "id": "Q22",
+          "query": "Capacity pressure instruction",
+          "kind": "exact",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 21.38
+        },
+        {
+          "id": "Q23",
+          "query": "How long is the Midlands handling queue during declared pressure?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 24.666
+        },
+        {
+          "id": "Q24",
+          "query": "How is approved warehouse overtime recorded?",
+          "kind": "paraphrase",
+          "expected": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-008",
+              "Instructions and terms"
+            ],
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 26.556
+        },
+        {
+          "id": "Q25",
+          "query": "Amberwick Office Works delivery target",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ],
+            [
+              "CON-004",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ],
+            [
+              "CON-005",
+              "Instructions and terms"
+            ],
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 27.558
+        },
+        {
+          "id": "Q26",
+          "query": "Amberwick Industrial Supply payment terms",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "CON-004",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ],
+            [
+              "CON-005",
+              "Instructions and terms"
+            ],
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 28.94
+        },
+        {
+          "id": "Q27",
+          "query": "Amberwick Technology Trade escalation interval",
+          "kind": "supplier_name",
+          "expected": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ],
+            [
+              "CON-004",
+              "Instructions and terms"
+            ],
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ],
+            [
+              "CON-005",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 27.26
+        },
+        {
+          "id": "Q28",
+          "query": "What receipt target applies to this supplier?",
+          "kind": "supplier_filtered",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 18.58
+        },
+        {
+          "id": "Q29",
+          "query": "How many days from invoice issue until payment?",
+          "kind": "supplier_filtered",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [],
+          "recall": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0
+          },
+          "reciprocal_rank": 0,
+          "precision_at_5": 0.0,
+          "ndcg_at_5": 0.0,
+          "no_answer_correct": null,
+          "status": "low_confidence",
+          "elapsed_ms": 15.372
+        },
+        {
+          "id": "Q30",
+          "query": "NS-CON-003",
+          "kind": "identifier",
+          "expected": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-003",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 29.33
+        },
+        {
+          "id": "Q31",
+          "query": "\"NS-CON-001\" OR \"Procurement procedure\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "CON-001",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ],
+            [
+              "CON-012",
+              "Instructions and terms"
+            ],
+            [
+              "CON-030",
+              "Instructions and terms"
+            ],
+            [
+              "CON-006",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 28.095
+        },
+        {
+          "id": "Q32",
+          "query": "\"Warehouse receiving procedure\" OR \"Inventory control policy\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-003",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-003",
+              "Instructions and terms"
+            ],
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 25.858
+        },
+        {
+          "id": "Q33",
+          "query": "\"Incident escalation procedure\" OR \"Incident response instructions\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-006",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-006",
+              "Instructions and terms"
+            ],
+            [
+              "POL-004",
+              "Instructions and terms"
+            ],
+            [
+              "POL-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 23.927
+        },
+        {
+          "id": "Q34",
+          "query": "\"Payment review policy\" OR \"NS-CON-002\"",
+          "kind": "cross_document",
+          "expected": [
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "POL-005",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-005",
+              "Instructions and terms"
+            ],
+            [
+              "CON-002",
+              "Instructions and terms"
+            ],
+            [
+              "CON-001",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 0.5,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.4,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 28.015
+        },
+        {
+          "id": "Q35",
+          "query": "What is the annual leave allowance?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 25.39
+        },
+        {
+          "id": "Q36",
+          "query": "Quantum entanglement teleportation",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 22.678
+        },
+        {
+          "id": "Q37",
+          "query": "Who won the football world cup?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 22.741
+        },
+        {
+          "id": "Q38",
+          "query": "What are the employee pension contribution percentages?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 21.369
+        },
+        {
+          "id": "Q39",
+          "query": "What monetary approval limit applies to purchasing managers?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 21.196
+        },
+        {
+          "id": "Q40",
+          "query": "Which cybersecurity password rotation policy applies?",
+          "kind": "no_answer",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "low_confidence",
+          "elapsed_ms": 28.876
+        },
+        {
+          "id": "Q41",
+          "query": "Procurement procedure",
+          "kind": "historical_not_effective",
+          "expected": [],
+          "retrieved": [],
+          "recall": null,
+          "reciprocal_rank": null,
+          "precision_at_5": null,
+          "ndcg_at_5": null,
+          "no_answer_correct": true,
+          "status": "no_effective_documents",
+          "elapsed_ms": 5.606
+        },
+        {
+          "id": "Q42",
+          "query": "Warehouse receiving procedure",
+          "kind": "historical_effective",
+          "expected": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "retrieved": [
+            [
+              "POL-002",
+              "Instructions and terms"
+            ]
+          ],
+          "recall": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0
+          },
+          "reciprocal_rank": 1.0,
+          "precision_at_5": 0.2,
+          "ndcg_at_5": 1.0,
+          "no_answer_correct": null,
+          "status": "evidence_found",
+          "elapsed_ms": 20.327
+        }
+      ]
+    }
+  }
+}

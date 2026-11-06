@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "http_checks": 72,
+  "http_latency": {
+    "samples": 72,
+    "median_ms": 57.53,
+    "max_ms": 1031.21
+  },
+  "concurrency": {
+    "requests": 6,
+    "distinct_receipts": 1,
+    "tasks": 1,
+    "execution_id": "1a309519-f623-4087-87eb-d404916a27d2"
+  },
+  "timings": {
+    "authentication": {
+      "samples": 6,
+      "median_ms": 117.55,
+      "max_ms": 141.19,
+      "failed": 0
+    },
+    "create": {
+      "samples": 9,
+      "median_ms": 62.14,
+      "max_ms": 455.61,
+      "failed": 0
+    },
+    "submit": {
+      "samples": 10,
+      "median_ms": 51.19,
+      "max_ms": 436.53,
+      "failed": 0
+    },
+    "approve": {
+      "samples": 9,
+      "median_ms": 53.5,
+      "max_ms": 69.74,
+      "failed": 0
+    },
+    "execute": {
+      "samples": 14,
+      "median_ms": 222.59,
+      "max_ms": 408.07,
+      "failed": 0
+    },
+    "list_audit": {
+      "samples": 1,
+      "median_ms": 35.71,
+      "max_ms": 35.71,
+      "failed": 0
+    }
+  },
+  "receipts": [
+    {
+      "action": "CREATE_WORKFLOW_TASK",
+      "status": "COMPLETED",
+      "receipt_id": "12d4ef7c-3e0f-4031-8910-09faedad7fd7"
+    },
+    {
+      "action": "ASSIGN_WORKFLOW_TASK",
+      "status": "COMPLETED",
+      "receipt_id": "d1b466f3-5239-438b-9f56-af7baee57e20"
+    },
+    {
+      "action": "UPDATE_WORKFLOW_TASK_PRIORITY",
+      "status": "COMPLETED",
+      "receipt_id": "892c1e96-705a-48eb-a6f4-d6c536ff7987"
+    },
+    {
+      "action": "UPDATE_WORKFLOW_TASK_DUE_DATE",
+      "status": "COMPLETED",
+      "receipt_id": "6df8a000-8cda-4ca0-81d1-530fd38b64ca"
+    },
+    {
+      "action": "ADD_WORKFLOW_TASK_NOTE",
+      "status": "COMPLETED",
+      "receipt_id": "31d49f9a-28bd-4a0d-ba11-a7b8684cfc4e"
+    },
+    {
+      "action": "UPDATE_WORKFLOW_TASK_STATUS",
+      "status": "COMPLETED",
+      "receipt_id": "3b09ad31-f028-462a-b354-52562c3e1a6b"
+    },
+    {
+      "action": "CREATE_INTERNAL_ESCALATION",
+      "status": "COMPLETED",
+      "receipt_id": "6c3a2862-3b69-47f7-a808-80e1596d9b19"
+    },
+    {
+      "action": "CLOSE_INTERNAL_ESCALATION",
+      "status": "COMPLETED",
+      "receipt_id": "42bf9921-87d4-49e5-9449-67380aacd314"
+    }
+  ]
+}

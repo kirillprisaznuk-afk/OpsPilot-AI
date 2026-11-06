@@ -1,0 +1,211 @@
+{
+  "summary": {
+    "cases": 38,
+    "automatic_passed": 38,
+    "llm_calls": 0,
+    "reported_tokens": 0,
+    "median_http_ms": 114.37520000072254,
+    "max_http_ms": 1598.7874999991618,
+    "real_model_interpretations": 0
+  },
+  "status_counts": {
+    "completed": 26,
+    "insufficient_evidence": 3,
+    "refused": 3,
+    "partial": 3,
+    "clarification_required": 3
+  },
+  "tool_oracle_comparisons": 129,
+  "cases": [
+    {
+      "id": "A01",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "A02",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "A03",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "A06",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "A22",
+      "status": "insufficient_evidence",
+      "passed": true
+    },
+    {
+      "id": "A23",
+      "status": "insufficient_evidence",
+      "passed": true
+    },
+    {
+      "id": "A25",
+      "status": "refused",
+      "passed": true
+    },
+    {
+      "id": "A27",
+      "status": "refused",
+      "passed": true
+    },
+    {
+      "id": "B01",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B02",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B03",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B04",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B05",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B06",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B07",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B08",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B09",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B10",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B11",
+      "status": "partial",
+      "passed": true
+    },
+    {
+      "id": "B12",
+      "status": "partial",
+      "passed": true
+    },
+    {
+      "id": "B13",
+      "status": "refused",
+      "passed": true
+    },
+    {
+      "id": "B14",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "B15",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C01",
+      "status": "partial",
+      "passed": true
+    },
+    {
+      "id": "C02",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C03",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C04",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C05",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C06",
+      "status": "clarification_required",
+      "passed": true
+    },
+    {
+      "id": "C07",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C08",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C09",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C10",
+      "status": "insufficient_evidence",
+      "passed": true
+    },
+    {
+      "id": "C11",
+      "status": "clarification_required",
+      "passed": true
+    },
+    {
+      "id": "C12",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C13",
+      "status": "completed",
+      "passed": true
+    },
+    {
+      "id": "C14",
+      "status": "clarification_required",
+      "passed": true
+    },
+    {
+      "id": "C15",
+      "status": "completed",
+      "passed": true
+    }
+  ]
+}

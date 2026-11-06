@@ -1,0 +1,144 @@
+{
+  "migration": "0004",
+  "pgvector": "0.8.7",
+  "source_fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+  "retrieval_quality_unchanged": true,
+  "read_only_role": "opspilot_agent_reader",
+  "read_only_transaction": "on",
+  "all_citations_resolved": 44,
+  "read_only_agent_tools": 17,
+  "live_prior_checks": {
+    "status": {
+      "state": "ready",
+      "documents": 44,
+      "versions": 44,
+      "chunks": 44,
+      "configuration": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "parser": "markdown-sections-v1",
+        "backend": "onnx-cpu-float32",
+        "pooling": "attention_mask_mean",
+        "distance": "cosine",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "max_tokens": 256,
+        "normalization": "L2",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "configured_model": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "pooling": "attention_mask_mean",
+        "normalization": "L2",
+        "distance": "cosine",
+        "max_tokens": 256,
+        "backend": "onnx-cpu-float32",
+        "parser": "markdown-sections-v1",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "model_cached": true,
+      "index_bytes": 778240,
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00"
+    },
+    "search_median_ms": {
+      "keyword": 15.934,
+      "vector": 27.86,
+      "hybrid": 21.228
+    },
+    "retrieved_citations": {
+      "keyword": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "vector": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "hybrid": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ]
+    },
+    "context_median_ms": 121.11,
+    "context_tokens": 5395,
+    "all_retrieval_modes": true,
+    "policy_and_supplier_sources": true,
+    "multi_document": true,
+    "effective_date_filtering": true,
+    "no_answer": true,
+    "citation_resolution": true,
+    "analytics_domains_identical": 10
+  },
+  "unrelated_containers_preserved_count": 10,
+  "stage2_reconciliations": {
+    "overview_domains": true,
+    "supplier_detail_comparison": true,
+    "purchase_service_population": true,
+    "invoice_paid_outstanding": true,
+    "stock_ledger": true,
+    "sales_order_quantities": true,
+    "warehouse_stock": true
+  },
+  "stage2_investigations": {
+    "supplier": {
+      "entity_id": 1,
+      "total_evidence": 2292,
+      "returned_evidence": 100
+    },
+    "purchase_order": {
+      "entity_id": 1,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "sales_order": {
+      "entity_id": 1,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "shortage": {
+      "entity_id": 16,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "warehouse": {
+      "entity_id": 1,
+      "total_evidence": 17767,
+      "returned_evidence": 100
+    },
+    "incident": {
+      "entity_id": 16,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "invoice": {
+      "entity_id": 37,
+      "total_evidence": 19,
+      "returned_evidence": 19
+    },
+    "department": {
+      "entity_id": 1,
+      "total_evidence": 29419,
+      "returned_evidence": 100
+    },
+    "task": {
+      "entity_id": 16,
+      "total_evidence": 35,
+      "returned_evidence": 35
+    },
+    "product": {
+      "entity_id": 1,
+      "total_evidence": 37,
+      "returned_evidence": 37
+    }
+  },
+  "stage2_api_median_ms": {
+    "overview": 271.898,
+    "procurement": 148.522,
+    "suppliers": 216.697,
+    "inventory": 241.973,
+    "warehouses": 459.162,
+    "fulfilment": 253.01,
+    "finance": 132.105,
+    "workforce": 95.878,
+    "incidents": 94.426,
+    "insights": 289.119
+  }
+}

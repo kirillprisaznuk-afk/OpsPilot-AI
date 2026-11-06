@@ -1,0 +1,143 @@
+{
+  "npm_advisory_counts_after_override": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "python_audited_runtime_packages": 49,
+  "python_known_runtime_advisories": 0,
+  "installed_frontend_package_versions_reviewed": 461,
+  "frontend_licenses": {
+    "MPL-2.0": 4,
+    "Apache-2.0": 25,
+    "MIT": 384,
+    "ISC": 29,
+    "BSD-2-Clause": 7,
+    "0BSD": 1,
+    "BSD-3-Clause": 3,
+    "BlueOak-1.0.0": 2,
+    "Python-2.0": 1,
+    "CC-BY-4.0": 1,
+    "CC0-1.0": 1,
+    "(MIT OR CC0-1.0)": 1,
+    "MIT AND ISC AND BSD-3-Clause": 1,
+    "Apache-2.0 AND LGPL-3.0-or-later": 1
+  },
+  "frontend_direct_runtime_licenses": {
+    "@radix-ui/react-dialog": [
+      {
+        "version": "1.3.1",
+        "license": "MIT"
+      }
+    ],
+    "@radix-ui/react-tooltip": [
+      {
+        "version": "1.4.1",
+        "license": "MIT"
+      }
+    ],
+    "@tanstack/react-query": [
+      {
+        "version": "5.105.3",
+        "license": "MIT"
+      }
+    ],
+    "clsx": [
+      {
+        "version": "2.1.1",
+        "license": "MIT"
+      }
+    ],
+    "lucide-react": [
+      {
+        "version": "1.69.0",
+        "license": "ISC"
+      }
+    ],
+    "next": [
+      {
+        "version": "16.4.5",
+        "license": "MIT"
+      }
+    ],
+    "react": [
+      {
+        "version": "19.3.1",
+        "license": "MIT"
+      }
+    ],
+    "react-dom": [
+      {
+        "version": "19.3.1",
+        "license": "MIT"
+      }
+    ],
+    "recharts": [
+      {
+        "version": "3.10.1",
+        "license": "MIT"
+      }
+    ],
+    "zod": [
+      {
+        "version": "4.6.7",
+        "license": "MIT"
+      }
+    ]
+  },
+  "python_runtime_licenses": {
+    "alembic": "MIT",
+    "annotated-doc": "MIT",
+    "annotated-types": "MIT",
+    "anyio": "MIT",
+    "argon2-cffi": "MIT",
+    "argon2-cffi-bindings": "MIT",
+    "certifi": "Mozilla Public License 2.0 (MPL 2.0)",
+    "cffi": "MIT-0",
+    "click": "BSD-3-Clause",
+    "colorama": "BSD License",
+    "distro": "Apache Software License",
+    "fastapi": "MIT",
+    "filelock": "MIT",
+    "flatbuffers": "Apache Software License",
+    "fsspec": "BSD-3-Clause",
+    "greenlet": "MIT AND PSF-2.0",
+    "h11": "MIT License",
+    "hf-xet": "Apache-2.0",
+    "httpcore": "BSD-3-Clause",
+    "httpx": "BSD License",
+    "huggingface-hub": "Apache Software License",
+    "idna": "BSD-3-Clause",
+    "jiter": "MIT",
+    "mako": "MIT",
+    "markupsafe": "BSD-3-Clause",
+    "numpy": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0",
+    "onnxruntime": "MIT License",
+    "openai": "Apache Software License",
+    "opentelemetry-api": "Apache-2.0",
+    "packaging": "Apache-2.0 OR BSD-2-Clause",
+    "pgvector": "MIT",
+    "protobuf": "3-Clause BSD License",
+    "psycopg": "LGPL-3.0-only",
+    "psycopg-binary": "LGPL-3.0-only",
+    "pycparser": "BSD-3-Clause",
+    "pydantic": "MIT",
+    "pydantic-core": "MIT",
+    "pydantic-settings": "MIT",
+    "python-dotenv": "BSD-3-Clause",
+    "pyyaml": "MIT License",
+    "sniffio": "MIT License / Apache Software License",
+    "sqlalchemy": "MIT",
+    "starlette": "BSD-3-Clause",
+    "tokenizers": "Apache Software License",
+    "tqdm": "MPL-2.0 AND MIT",
+    "typing-extensions": "PSF-2.0",
+    "typing-inspection": "MIT",
+    "tzdata": "Apache-2.0",
+    "uvicorn": "BSD-3-Clause"
+  },
+  "embedding_model_license": "Apache-2.0 per upstream model card; downloaded separately, not packaged",
+  "source_project_license": "not selected"
+}

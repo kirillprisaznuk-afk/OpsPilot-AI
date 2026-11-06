@@ -1,0 +1,44 @@
+{
+  "seconds": 12.582752600079402,
+  "response": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-10-29T13:22:32.0043369Z",
+    "message": {
+      "role": "assistant",
+      "content": "Ready when you are"
+    },
+    "done": true,
+    "done_reason": "length",
+    "total_duration": 12567888900,
+    "load_duration": 12036781800,
+    "prompt_eval_count": 15,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 402527000,
+    "eval_count": 4,
+    "eval_duration": 73882000
+  },
+  "ps": {
+    "models": [
+      {
+        "name": "qwen3.5:4b",
+        "model": "qwen3.5:4b",
+        "size": 3725884128,
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "4.2B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-10-29T13:52:32.0049184Z",
+        "size_vram": 3725884128,
+        "context_length": 32768,
+        "runner": "llamacpp"
+      }
+    ]
+  }
+}

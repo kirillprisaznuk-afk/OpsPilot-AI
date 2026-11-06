@@ -1,0 +1,291 @@
+{
+  "mode": "live",
+  "cases": [
+    {
+      "id": "A01",
+      "status": "validation_failed",
+      "tool_selection_expected_subset": false,
+      "valid_tool_argument_fraction": 0.2857142857142857,
+      "citation_resolution": null,
+      "known_numeric_evidence": [
+        false,
+        false
+      ],
+      "required_document_codes_found": false,
+      "required_document_codes_cited": false,
+      "expected_status_matched": null,
+      "usage": {
+        "provider_round_ms": [
+          5381.555,
+          1439.456,
+          965.835,
+          965.697,
+          975.054,
+          5281.881
+        ],
+        "input_tokens": 30589,
+        "output_tokens": 514,
+        "total_tokens": 31103,
+        "cached_input_tokens": 21616,
+        "llm_calls": 6,
+        "tool_calls": 7,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": 0.0,
+        "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+        "elapsed_ms": 15565.122
+      },
+      "elapsed_ms": 15646.74,
+      "response": {
+        "request_id": "85c33feacd7b4693b8efeaf6ca665139",
+        "conversation_id": "7668296c34534e05959e504c4668d1ba",
+        "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+        "as_of": "2026-09-30",
+        "status": "validation_failed",
+        "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+        "key_findings": [],
+        "evidence": [
+          {
+            "evidence_id": "ev_85c33feacd_1",
+            "tool_name": "search_corporate_knowledge",
+            "arguments": {
+              "query": "escalation procedure for supplier on-time performance",
+              "mode": "keyword",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": null,
+                "department_id": null,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "as_of": "2026-09-30",
+            "payload": {
+              "query": "escalation procedure for supplier on-time performance",
+              "retrieval_mode": "keyword",
+              "as_of": "2026-09-30",
+              "status": "no_matches",
+              "insufficient_evidence": true,
+              "evidence": [],
+              "eligible_versions": 44,
+              "model_configuration": {
+                "model": "sentence-transformers/all-MiniLM-L6-v2",
+                "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+                "dimension": 384,
+                "pooling": "attention_mask_mean",
+                "normalization": "L2",
+                "distance": "cosine",
+                "max_tokens": 256,
+                "backend": "onnx-cpu-float32",
+                "parser": "markdown-sections-v1",
+                "tokenizer_truncation": "reject_over_256"
+              },
+              "ranking": {
+                "method": "keyword",
+                "rrf_k": null,
+                "candidate_limit_per_method": 100,
+                "minimum_cosine_similarity": null,
+                "semantic_gate_applies_to": "vector_only_candidates"
+              },
+              "limitations": [
+                "Ranking is relevance evidence, not answer completeness or probability.",
+                "No answer generation, legal interpretation, authorization or tool execution.",
+                "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+              ]
+            },
+            "trust": "untrusted_tool_data"
+          },
+          {
+            "evidence_id": "ev_85c33feacd_2",
+            "tool_name": "search_corporate_knowledge",
+            "arguments": {
+              "query": "supplier on-time performance SLA contract terms",
+              "mode": "keyword",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": null,
+                "department_id": null,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "as_of": "2026-09-30",
+            "payload": {
+              "query": "supplier on-time performance SLA contract terms",
+              "retrieval_mode": "keyword",
+              "as_of": "2026-09-30",
+              "status": "no_matches",
+              "insufficient_evidence": true,
+              "evidence": [],
+              "eligible_versions": 44,
+              "model_configuration": {
+                "model": "sentence-transformers/all-MiniLM-L6-v2",
+                "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+                "dimension": 384,
+                "pooling": "attention_mask_mean",
+                "normalization": "L2",
+                "distance": "cosine",
+                "max_tokens": 256,
+                "backend": "onnx-cpu-float32",
+                "parser": "markdown-sections-v1",
+                "tokenizer_truncation": "reject_over_256"
+              },
+              "ranking": {
+                "method": "keyword",
+                "rrf_k": null,
+                "candidate_limit_per_method": 100,
+                "minimum_cosine_similarity": null,
+                "semantic_gate_applies_to": "vector_only_candidates"
+              },
+              "limitations": [
+                "Ranking is relevance evidence, not answer completeness or probability.",
+                "No answer generation, legal interpretation, authorization or tool execution.",
+                "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+              ]
+            },
+            "trust": "untrusted_tool_data"
+          }
+        ],
+        "citations": [],
+        "tool_trace": [
+          {
+            "call_id": "8d8842361d1e41ba9d9c5d21aa85f4f0",
+            "tool": "get_supplier_performance",
+            "arguments": null,
+            "status": "error",
+            "elapsed_ms": 14.075,
+            "evidence_id": null,
+            "error_code": "invalid_arguments",
+            "duplicate": false
+          },
+          {
+            "call_id": "df9b40c27e0244efa2c6975feb192eab",
+            "tool": "search_corporate_knowledge",
+            "arguments": {
+              "query": "escalation procedure for supplier on-time performance",
+              "mode": "keyword",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": null,
+                "department_id": null,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "status": "success",
+            "elapsed_ms": 121.191,
+            "evidence_id": "ev_85c33feacd_1",
+            "error_code": null,
+            "duplicate": false
+          },
+          {
+            "call_id": "42d6882bf0774037a9f3c87a307766f1",
+            "tool": "search_corporate_knowledge",
+            "arguments": {
+              "query": "supplier on-time performance SLA contract terms",
+              "mode": "keyword",
+              "top_k": 5,
+              "as_of": "2026-09-30",
+              "filters": {
+                "supplier_id": null,
+                "document_type": null,
+                "department_id": null,
+                "document_id": null,
+                "version_id": null,
+                "contract_id": null,
+                "contract_reference": null
+              }
+            },
+            "status": "success",
+            "elapsed_ms": 22.222,
+            "evidence_id": "ev_85c33feacd_2",
+            "error_code": null,
+            "duplicate": false
+          },
+          {
+            "call_id": "c8e2eb16a1ad459785b5ad75ca603c05",
+            "tool": "get_supplier_performance",
+            "arguments": null,
+            "status": "error",
+            "elapsed_ms": 0.33,
+            "evidence_id": null,
+            "error_code": "invalid_arguments",
+            "duplicate": false
+          },
+          {
+            "call_id": "ec9640ece38b46e486f02478c6d29d2f",
+            "tool": "resolve_business_entity",
+            "arguments": null,
+            "status": "error",
+            "elapsed_ms": 1.975,
+            "evidence_id": null,
+            "error_code": "invalid_arguments",
+            "duplicate": false
+          },
+          {
+            "call_id": "3b0858c98952488e95597d3c2823a1c3",
+            "tool": "resolve_business_entity",
+            "arguments": null,
+            "status": "error",
+            "elapsed_ms": 0.161,
+            "evidence_id": null,
+            "error_code": "invalid_arguments",
+            "duplicate": false
+          },
+          {
+            "call_id": "149e070c951a4659a7679ad1a2db92a5",
+            "tool": "resolve_business_entity",
+            "arguments": null,
+            "status": "error",
+            "elapsed_ms": 0.159,
+            "evidence_id": null,
+            "error_code": "invalid_arguments",
+            "duplicate": false
+          }
+        ],
+        "limitations": [
+          "Use source references rather than numeric claims in prose.",
+          "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+        ],
+        "follow_up_questions": [],
+        "usage": {
+          "provider_round_ms": [
+            5381.555,
+            1439.456,
+            965.835,
+            965.697,
+            975.054,
+            5281.881
+          ],
+          "input_tokens": 30589,
+          "output_tokens": 514,
+          "total_tokens": 31103,
+          "cached_input_tokens": 21616,
+          "llm_calls": 6,
+          "tool_calls": 7,
+          "provider_usage_complete": true,
+          "estimated_cost_usd": 0.0,
+          "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+          "elapsed_ms": 15565.122
+        },
+        "termination_reason": "unverified_numerical_prose",
+        "model": "qwen3:4b-instruct",
+        "execution_mode": "live"
+      }
+    }
+  ],
+  "completed_investigation_fraction": 0,
+  "provider": "ollama",
+  "model": "qwen3:4b-instruct"
+}

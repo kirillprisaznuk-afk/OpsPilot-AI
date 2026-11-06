@@ -1,0 +1,65 @@
+{
+  "selected_model": {
+    "name": "qwen3.5:4b",
+    "model": "qwen3.5:4b",
+    "modified_at": "2026-10-28T15:33:53.0808648Z",
+    "size": 3324173934,
+    "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "4.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ]
+  },
+  "logical_processors": 16,
+  "free_storage_gib": 155.361,
+  "loaded": {
+    "models": [
+      {
+        "name": "qwen3.5:4b",
+        "model": "qwen3.5:4b",
+        "size": 3725884128,
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "4.2B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-02T17:32:37.4442775Z",
+        "size_vram": 3725884128,
+        "context_length": 32768,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "ram_gib": 15.265,
+  "cores": 8,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU, 6141 MiB, 4317 MiB, 592.82",
+  "free_ram_gib": 1.521,
+  "no_cloud_log_observed": true,
+  "ollama": {
+    "version": "0.40.12"
+  },
+  "cpu": "AMD Ryzen 7 8845HS w/ Radeon 780M Graphics",
+  "measured_utc": "2026-11-02T17:23:22.5663386Z",
+  "local_only": true
+}

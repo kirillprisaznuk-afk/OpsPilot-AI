@@ -1,0 +1,82 @@
+{
+  "environment": "Windows 11",
+  "target": "authenticated production Compose gateway on Windows loopback",
+  "samples_per_operation": 20,
+  "maximum_concurrency": 2,
+  "ram_stop_threshold_gib": 1,
+  "warmup_excluded": true,
+  "memory_before": {
+    "ram_gib": 1.162,
+    "commit_gib": 24.583
+  },
+  "operations": {
+    "dashboard_overview": {
+      "samples": 20,
+      "successes": 20,
+      "failures": [],
+      "warmup_failure": null,
+      "median_ms": 280.5,
+      "p95_ms": 317.1,
+      "max_ms": 372.1
+    },
+    "supplier_detail": {
+      "samples": 20,
+      "successes": 20,
+      "failures": [],
+      "warmup_failure": null,
+      "median_ms": 103.6,
+      "p95_ms": 121.1,
+      "max_ms": 123.1
+    },
+    "warehouse_analytics": {
+      "samples": 20,
+      "successes": 20,
+      "failures": [],
+      "warmup_failure": null,
+      "median_ms": 129.1,
+      "p95_ms": 266.0,
+      "max_ms": 268.0
+    },
+    "knowledge_hybrid": {
+      "samples": 20,
+      "successes": 20,
+      "failures": [],
+      "warmup_failure": null,
+      "median_ms": 76.7,
+      "p95_ms": 84.5,
+      "max_ms": 88.7
+    },
+    "deterministic_investigation": {
+      "samples": 20,
+      "successes": 20,
+      "failures": [],
+      "warmup_failure": null,
+      "median_ms": 270.7,
+      "p95_ms": 373.5,
+      "max_ms": 375.8
+    },
+    "scoped_tasks": {
+      "samples": 20,
+      "successes": 20,
+      "failures": [],
+      "warmup_failure": null,
+      "median_ms": 67.5,
+      "p95_ms": 80.3,
+      "max_ms": 80.9
+    },
+    "scoped_audit_paged": {
+      "samples": 20,
+      "successes": 20,
+      "failures": [],
+      "warmup_failure": null,
+      "median_ms": 72.9,
+      "p95_ms": 82.4,
+      "max_ms": 87.9
+    }
+  },
+  "login_ms_single_sample": 318.8,
+  "memory_after": {
+    "ram_gib": 1.079,
+    "commit_gib": 24.711
+  }
+}

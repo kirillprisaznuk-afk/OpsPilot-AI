@@ -1,0 +1,229 @@
+{
+  "validation_date": "2026-10-27",
+  "stage1_checkpoint": "8e6685e1c739fe55b6984c237974dfa2005d24e3",
+  "desktop_version": "4.93.0 (240920)",
+  "engine_version": "29.8.1",
+  "platform": "linux/amd64",
+  "root_cause": "Docker Desktop failed before engine startup while renaming an inaccessible zero-byte AF_UNIX runtime reparse point, engine.sock.",
+  "recovery": "Stopped only verified failed Docker Desktop processes after graceful stop timed out; preserved the socket-only parent directory intact; restarted Desktop normally.",
+  "preserved_directory": "docker-secrets-engine.opspilot-preserved-20261027-a7534b0c",
+  "settings_edits_by_agent": false,
+  "desktop_settings_hash_changed_during_normal_startup": true,
+  "destructive_recovery": false,
+  "compose_configuration_valid": true,
+  "api_image_build_passed": true,
+  "image_user": "opspilot",
+  "postgres_container_health": "healthy",
+  "migration_head": "0002",
+  "seed_passed": true,
+  "seed_seconds": 11.201,
+  "api_container_health": "healthy",
+  "api_blocker": null,
+  "ready_for_stage2": true,
+  "application_code_changed": false,
+  "necessary_build_context_fix": [
+    "exclude .local-tools",
+    ".local-pg",
+    ".local-pg-validated"
+  ],
+  "counts": {
+    "business_roles": 6,
+    "customers": 120,
+    "departments": 6,
+    "document_versions": 44,
+    "documents": 44,
+    "employees": 48,
+    "fulfilments": 4768,
+    "goods_receipts": 5447,
+    "incidents": 1793,
+    "operational_expenses": 216,
+    "payments": 2210,
+    "products": 200,
+    "purchase_order_lines": 4799,
+    "purchase_orders": 2400,
+    "responsibilities": 48,
+    "sales_order_lines": 3599,
+    "sales_orders": 1800,
+    "shortages": 1144,
+    "stock_movements": 10215,
+    "supplier_contracts": 36,
+    "supplier_invoices": 2386,
+    "suppliers": 36,
+    "task_status_history": 3527,
+    "tasks": 1793,
+    "warehouses": 4,
+    "seed_runs": 1
+  },
+  "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+  "scenarios": {
+    "A_procurement_to_customer": {
+      "supplier_id": 1,
+      "purchase_order_id": 1,
+      "receipt_id": 185,
+      "movement_id": 332,
+      "shortage_id": 16,
+      "sales_order_id": 1,
+      "fulfilment_id": 149,
+      "incident_id": 16,
+      "task_id": 16,
+      "promised_on": "2025-10-08",
+      "received_on": "2025-10-20",
+      "customer_promise": "2025-10-10",
+      "fulfilled_on": "2025-10-20"
+    },
+    "B_warehouse_capacity": {
+      "warehouse_id": 1,
+      "sales_order_id": 822,
+      "incident_id": 1729,
+      "expense_id": 104,
+      "amount": "120.00",
+      "task_id": 1729,
+      "status": "escalated"
+    },
+    "C_contract_concern": {
+      "contract_id": 1,
+      "supplier_id": 1,
+      "on_time_target": "95.00",
+      "due_orders": 72,
+      "on_time_orders": 24,
+      "observed_percent": "33.33"
+    },
+    "D_invoice_review": {
+      "invoice_id": 37,
+      "purchase_order_id": 37,
+      "amount": "9053.43",
+      "purchase_value": "9028.43",
+      "incident_id": 1153,
+      "task_id": 1153,
+      "status": "disputed"
+    },
+    "E_overdue_workload": {
+      "department_id": 1,
+      "name": "Operations",
+      "overdue_tasks": 123,
+      "owners": 8
+    }
+  },
+  "database_restart_persistence": {
+    "verified": true,
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "counts_unchanged": true,
+    "seed_runs": 1,
+    "database_started_at_after_restart": "2026-10-27 20:37:18.429238+00:00",
+    "same_database_container": true,
+    "same_persistent_volume": true
+  },
+  "unrelated_resources": {
+    "unchanged_unrelated_containers": 10,
+    "all_existing_volumes_retained": true,
+    "all_existing_networks_retained": true
+  },
+  "full_test_results": {
+    "tests": "51",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "58.321"
+  },
+  "ruff_lint": "passed",
+  "ruff_format": "passed",
+  "live_http_before_restart": {
+    "base_url": "http://127.0.0.1:8001",
+    "checks": {
+      "/health": 200,
+      "/ready": 200,
+      "/api/v1/demo/summary": 200,
+      "/api/v1/catalog/suppliers": 200,
+      "/api/v1/catalog/warehouses": 200,
+      "/api/v1/catalog/products": 200,
+      "/api/v1/operations/incidents": 200,
+      "/api/v1/operations/tasks": 200,
+      "timeline_purchase": 200,
+      "timeline_sales": 200,
+      "/api/v1/catalog/products?limit=0": 422,
+      "/api/v1/operations/orders/999999/timeline": 404,
+      "write_attempt": 405
+    },
+    "all_counts_match": true,
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7"
+  },
+  "live_http_after_restart": {
+    "base_url": "http://127.0.0.1:8001",
+    "checks": {
+      "/health": 200,
+      "/ready": 200,
+      "/api/v1/demo/summary": 200,
+      "/api/v1/catalog/suppliers": 200,
+      "/api/v1/catalog/warehouses": 200,
+      "/api/v1/catalog/products": 200,
+      "/api/v1/operations/incidents": 200,
+      "/api/v1/operations/tasks": 200,
+      "timeline_purchase": 200,
+      "timeline_sales": 200,
+      "/api/v1/catalog/products?limit=0": 422,
+      "/api/v1/operations/orders/999999/timeline": 404,
+      "write_attempt": 405
+    },
+    "all_counts_match": true,
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7"
+  },
+  "approved_host_api_port": 8001,
+  "api_container_port": 8000,
+  "host_port_change_authorized_by_user": true,
+  "former_api_port_conflict": "ProductPulse host port 8000 preserved; OpsPilot moved to host port 8001.",
+  "remaining_blockers": [],
+  "compose_runtime_passed": true,
+  "both_services_restart_passed": true,
+  "runtime_after_restart": {
+    "db": {
+      "id": "6e05a92c824116a173308dba9661bb4065b7303bd97301507eb86f1ac45bf403",
+      "image_id": "sha256:858bb5e98eed02eb8cafbcdc007f9a65d1b613972028944a8ec2133ccaf80d27",
+      "status": "running",
+      "health": "healthy",
+      "started_at": "2026-10-27T20:37:17.790416985Z",
+      "ports": {
+        "5432/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "55432"
+          }
+        ]
+      },
+      "mounts": [
+        {
+          "Destination": "/var/lib/postgresql/data",
+          "Driver": "local",
+          "Mode": "rw",
+          "Name": "opspilot-stage1_opspilot_pgdata",
+          "Propagation": "",
+          "RW": true,
+          "Source": "/var/lib/docker/volumes/opspilot-stage1_opspilot_pgdata/_data",
+          "Type": "volume"
+        }
+      ]
+    },
+    "api": {
+      "id": "42e7d7aa0d6e10336d7252d58a6285ff979e6cf805c39951e187add1e55051dc",
+      "image_id": "sha256:f0935b7610b617e3ca2c7656b06cc2dd49a91cda8d159fd91bbfa91877f64dda",
+      "status": "running",
+      "health": "healthy",
+      "started_at": "2026-10-27T20:37:18.238270681Z",
+      "ports": {
+        "8000/tcp": [
+          {
+            "HostIp": "127.0.0.1",
+            "HostPort": "8001"
+          }
+        ]
+      },
+      "mounts": []
+    }
+  },
+  "full_tests_run_after_services_restart": true,
+  "seed_reproducibility": {
+    "matches_native_baseline": true,
+    "before_after_restart_match": true,
+    "counts_unchanged": true,
+    "no_reseed_during_restart": true
+  }
+}

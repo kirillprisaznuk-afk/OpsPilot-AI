@@ -1,0 +1,118 @@
+{
+  "mode": "live",
+  "cases": [
+    {
+      "id": "A01",
+      "status": "refused",
+      "tool_selection_expected_subset": false,
+      "valid_tool_argument_fraction": null,
+      "citation_resolution": null,
+      "known_numeric_evidence": [
+        false,
+        false
+      ],
+      "known_numeric_rendered": [
+        false,
+        false
+      ],
+      "required_document_codes_found": false,
+      "required_document_codes_cited": false,
+      "expected_status_matched": null,
+      "usage": {
+        "provider_round_ms": [
+          3323.989
+        ],
+        "provider_rounds": [
+          {
+            "phase": "selection",
+            "input_tokens": 1125,
+            "output_tokens": 38,
+            "request_bytes": 8878,
+            "cached_input_tokens": 0,
+            "load_ms": 10.3938,
+            "prompt_eval_ms": 631.432,
+            "generation_ms": 1533.155,
+            "thinking_emitted": false,
+            "selected_tools": [
+              "get_supplier_performance"
+            ],
+            "required_document_types": [
+              "supplier_agreement",
+              "policy"
+            ],
+            "metric_names": []
+          }
+        ],
+        "input_tokens": 1125,
+        "output_tokens": 38,
+        "total_tokens": 1163,
+        "cached_input_tokens": 0,
+        "llm_calls": 1,
+        "tool_calls": 0,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": 0.0,
+        "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+        "elapsed_ms": 3562.132
+      },
+      "elapsed_ms": 3588.119,
+      "response": {
+        "request_id": "54d38b0f3a4b458c8443ab8699525a1c",
+        "conversation_id": "7e8d09c9e17a4b4c91bc5ce30de93f10",
+        "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+        "as_of": "2026-09-30",
+        "status": "refused",
+        "answer": "The requested action is outside the approved read-only capabilities.",
+        "key_findings": [],
+        "evidence": [],
+        "citations": [],
+        "tool_trace": [],
+        "limitations": [
+          "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+        ],
+        "follow_up_questions": [],
+        "usage": {
+          "provider_round_ms": [
+            3323.989
+          ],
+          "provider_rounds": [
+            {
+              "phase": "selection",
+              "input_tokens": 1125,
+              "output_tokens": 38,
+              "request_bytes": 8878,
+              "cached_input_tokens": 0,
+              "load_ms": 10.3938,
+              "prompt_eval_ms": 631.432,
+              "generation_ms": 1533.155,
+              "thinking_emitted": false,
+              "selected_tools": [
+                "get_supplier_performance"
+              ],
+              "required_document_types": [
+                "supplier_agreement",
+                "policy"
+              ],
+              "metric_names": []
+            }
+          ],
+          "input_tokens": 1125,
+          "output_tokens": 38,
+          "total_tokens": 1163,
+          "cached_input_tokens": 0,
+          "llm_calls": 1,
+          "tool_calls": 0,
+          "provider_usage_complete": true,
+          "estimated_cost_usd": 0.0,
+          "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+          "elapsed_ms": 3562.132
+        },
+        "termination_reason": "final_response_verified",
+        "model": "qwen3.5:2b-q4_K_M",
+        "execution_mode": "live"
+      }
+    }
+  ],
+  "completed_investigation_fraction": 0,
+  "provider": "ollama",
+  "model": "qwen3.5:2b-q4_K_M"
+}

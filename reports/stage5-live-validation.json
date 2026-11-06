@@ -1,0 +1,2491 @@
+{
+  "started_at": "2026-11-05T15:45:10.929053+00:00",
+  "checks": [
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 684.02
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 145.57
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 128.25
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 120.29
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 114.62
+    },
+    {
+      "check": "authentication",
+      "status": 200,
+      "expected": 200,
+      "passed": true,
+      "elapsed_ms": 148.55
+    },
+    {
+      "check": "anonymous_denied",
+      "status": 401,
+      "expected": 401,
+      "elapsed_ms": 20.22,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "viewer_write_denied",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 48.91,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "draft",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 72.42,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=55.904"
+    },
+    {
+      "check": "execute",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 46.34,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "immutable",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 32.2,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 50.22,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=34.084"
+    },
+    {
+      "check": "approve",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 31.44,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "approve",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 31.74,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "reject",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 47.93,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=33.429"
+    },
+    {
+      "check": "execute",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 37.88,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "real_supplier_contract_policy_investigation",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 3824.43,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=364.713"
+    },
+    {
+      "check": "recommendation_no_write",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 375.27,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 376.31,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=360.114"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 369.59,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=351.663"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 57.04,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=40.824"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 417.8,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=398.914"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 53.96,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=36.589"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 47.47,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=33.389"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 48.67,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=33.417"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 69.59,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=52.355"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 49.1,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=31.632"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 41.08,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=26.553"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 49.38,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=33.011"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 59.37,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=45.340"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 43.67,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=29.030"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 47.4,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=29.936"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 58.88,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=43.810"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 69.8,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=51.536"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.06,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=30.437"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 50.33,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=31.876"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 58.0,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=39.794"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 65.93,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=52.148"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 41.81,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=28.693"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.26,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=29.585"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 49.19,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=36.523"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 63.34,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=48.328"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 413.74,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=397.172"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 451.83,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=432.642"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 43.53,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=29.533"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 372.33,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=356.314"
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 50.09,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=35.326"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.53,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=30.325"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 52.17,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=37.664"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 65.27,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=49.552"
+    },
+    {
+      "check": "cross_scope_task_denied",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 34.12,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "forged_fact_denied",
+      "status": 422,
+      "expected": 422,
+      "elapsed_ms": 372.79,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 54.74,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=36.074"
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 48.45,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=31.280"
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 60.77,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=39.439"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 208.58,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=153.524"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 229.83,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=130.746"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 245.64,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=140.609"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 266.09,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=166.852"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 281.25,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=159.450"
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 296.55,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=183.113"
+    },
+    {
+      "check": "idempotent_create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 53.45,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=35.982"
+    },
+    {
+      "check": "idempotent_create_retry",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 34.26,
+      "passed": true,
+      "server_timing": "workflow_tx;dur=16.305"
+    },
+    {
+      "check": "key_conflict",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 30.82,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_tasks",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 33.84,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_proposals",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 128.42,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_escalations",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 33.29,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_audit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 31.98,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_actions",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 27.0,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "list_policy",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 22.92,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "read_persisted_task",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 34.4,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "operational_summary",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 49.31,
+      "passed": true,
+      "server_timing": null
+    },
+    {
+      "check": "session_survives_restart",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 103.62,
+      "passed": true,
+      "server_timing": null
+    }
+  ],
+  "llm_calls": 0,
+  "approvals": "Explicit HTTP decisions by distinct authenticated synthetic demo human identities; no model approvals.",
+  "before": {
+    "source": {
+      "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+      "integrity": {
+        "validated": true,
+        "counts": {
+          "business_roles": 6,
+          "customers": 120,
+          "departments": 6,
+          "document_versions": 44,
+          "documents": 44,
+          "employees": 48,
+          "fulfilments": 4768,
+          "goods_receipts": 5447,
+          "incidents": 1793,
+          "operational_expenses": 216,
+          "payments": 2210,
+          "products": 200,
+          "purchase_order_lines": 4799,
+          "purchase_orders": 2400,
+          "responsibilities": 48,
+          "sales_order_lines": 3599,
+          "sales_orders": 1800,
+          "shortages": 1144,
+          "stock_movements": 10215,
+          "supplier_contracts": 36,
+          "supplier_invoices": 2386,
+          "suppliers": 36,
+          "task_status_history": 3527,
+          "tasks": 1793,
+          "warehouses": 4
+        },
+        "closing_stock_units": 99213,
+        "period": "2025-10-01/2026-09-30"
+      },
+      "scenarios": {
+        "A_procurement_to_customer": {
+          "supplier_id": 1,
+          "purchase_order_id": 1,
+          "receipt_id": 185,
+          "movement_id": 332,
+          "shortage_id": 16,
+          "sales_order_id": 1,
+          "fulfilment_id": 149,
+          "incident_id": 16,
+          "task_id": 16,
+          "promised_on": "2025-10-08",
+          "received_on": "2025-10-20",
+          "customer_promise": "2025-10-10",
+          "fulfilled_on": "2025-10-20"
+        },
+        "B_warehouse_capacity": {
+          "warehouse_id": 1,
+          "sales_order_id": 822,
+          "incident_id": 1729,
+          "expense_id": 104,
+          "amount": "120.00",
+          "task_id": 1729,
+          "status": "escalated"
+        },
+        "C_contract_concern": {
+          "contract_id": 1,
+          "supplier_id": 1,
+          "on_time_target": "95.00",
+          "due_orders": 72,
+          "on_time_orders": 24,
+          "observed_percent": "33.33"
+        },
+        "D_invoice_review": {
+          "invoice_id": 37,
+          "purchase_order_id": 37,
+          "amount": "9053.43",
+          "purchase_value": "9028.43",
+          "incident_id": 1153,
+          "task_id": 1153,
+          "status": "disputed"
+        },
+        "E_overdue_workload": {
+          "department_id": 1,
+          "name": "Operations",
+          "overdue_tasks": 123,
+          "owners": 8
+        }
+      }
+    },
+    "index": {
+      "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+      "chunks": 44,
+      "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+      "ids": [
+        "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+        "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+        "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+        "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+        "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+        "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+        "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+        "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+        "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+        "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+        "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+        "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+        "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+        "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+        "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+        "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+        "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+        "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+        "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+        "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+        "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+        "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+        "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+        "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+        "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+        "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+        "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+        "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+        "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+        "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+        "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+        "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+        "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+        "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+        "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+        "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+        "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+        "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+        "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+        "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+        "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+        "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+        "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+        "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+      ]
+    },
+    "workflow": {
+      "workflow_subjects": {
+        "count": 1,
+        "digest": "1f1dd1a9c0e957c2b703387c6da701fb332b927269dd2fd589b79662df0f9d7f"
+      },
+      "workflow_evidence": {
+        "count": 1,
+        "digest": "f2ddb268af97511a6f422521a05e2bfdfb5a4c5c00efa3d3fb0cf9ac66dc791f"
+      },
+      "workflow_idempotency_records": {
+        "count": 50,
+        "digest": "52f86da04f103b07c45d4097d25f2bed079106a03a77f54a434505ba01144793"
+      },
+      "workflow_policies": {
+        "count": 1,
+        "digest": "f29563d21d420d1f040ce129cf8cd4417d7037fdafee4bf66b0227afd54d0c34"
+      },
+      "workflow_policy_control": {
+        "count": 1,
+        "digest": "8b9d9c9a99a82587d0fdf014e2c5ba477f7badf6468c9709ad77440c8ae98e49"
+      },
+      "workflow_proposals": {
+        "count": 11,
+        "digest": "9fd131371815809d42aceed4afbf3ea308c7c9e01ea40bafe61a5564733d3043"
+      },
+      "workflow_approvals": {
+        "count": 10,
+        "digest": "1573e11a3e9b0f42fa7efbc2e26c98ec59eb0b6a0180e90eeba01ed344deb95b"
+      },
+      "workflow_executions": {
+        "count": 9,
+        "digest": "e9bc49ca253c8e97a0c8e91ec73b1b2473fd524323bb7aa8f5b76a2c68fabe09"
+      },
+      "workflow_tasks": {
+        "count": 2,
+        "digest": "c223dda96d3305f8f96c492f83ba4325fff187221323e20dba915ed9f370c4c9"
+      },
+      "workflow_escalations": {
+        "count": 1,
+        "digest": "87c931d58e5b19865ea44a99d8388fe60cf7741c72524b652e7e702d61b2619b"
+      },
+      "workflow_task_assignments": {
+        "count": 3,
+        "digest": "2a2dc035be33cbdd2902b35b02b97ce43d47f0a515390754235b909740256645"
+      },
+      "workflow_task_notes": {
+        "count": 1,
+        "digest": "b45069bd4d7ade252704d0c8f890857b009c3451d2c95fe26f8355066456d8a6"
+      }
+    },
+    "audit_count": 82,
+    "audit_digest": "aad953a8b76c1baa13440c0a137a8cb94b6c3caf82786bf263db4700d28a08ad",
+    "migration": "0004"
+  },
+  "rejection_proposal_id": "920cd9ed-6f93-4c39-8456-bba85ce76cf9",
+  "investigation": {
+    "id": "047ab48c-71e8-43cb-915d-9627ed97969f",
+    "created_by": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "subject_id": "10a5bc6a-c2f1-463c-930c-aa07613a2227",
+    "department_id": 1,
+    "payload": {
+      "answer": "Evidence-based analytical response; local language synthesis is limited.\n\nSupplier: Amberwick Office Works (synthetic) (ID 1)\n\nProcurement: due orders: 72 count; period 2025-10-01 to 2026-09-30, as of 2026-09-30 [ev_ee2136089a0c41f9:/metrics/due_orders]\n\nProcurement: on time orders: 24 count; period 2025-10-01 to 2026-09-30, as of 2026-09-30 [ev_ee2136089a0c41f9:/metrics/on_time_orders]\n\nProcurement: on time rate: 33.33%; numerator 24, denominator 72; period 2025-10-01 to 2026-09-30, as of 2026-09-30 [ev_ee2136089a0c41f9:/metrics/on_time_rate]\n\nObserved percent: 33.33%; numerator 24, denominator 72; period 2025-10-01 to 2026-09-30, as of 2026-09-30; Operational target comparison is not legal breach. [ev_ee2136089a0c41f9:/contracts/0/observed_percent]\n\nTarget percent: 95.00%; period 2025-10-01 to 2026-09-30, as of 2026-09-30; Operational target comparison is not legal breach. [ev_ee2136089a0c41f9:/contracts/0/target_percent]\n\nGap percentage points: -61.67 percentage points; period 2025-10-01 to 2026-09-30, as of 2026-09-30; Operational target comparison is not legal breach. [ev_ee2136089a0c41f9:/contracts/0/gap_percentage_points]\n\nAmberwick Office Works (synthetic): observed supplier delivery performance is below the applicable target. This is an operational comparison; legal breach is not established.\n\nSource CON-001: Agreement \u2014 Amberwick Office Works (synthetic); supplier_agreement; effective 2025-10-01. Citation kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1.\n\nVerified source excerpt (untrusted document content):\n## Instructions and terms\n\nSupplier: Amberwick Office Works (synthetic)\n\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n\n\nSource POL-001: Procurement procedure; policy; effective 2025-10-01. Citation kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712.\n\nVerified source excerpt (untrusted document content):\n## Instructions and terms\n\nRecord promised dates against the applicable supplier contract. Escalate missed receipts after the contract escalation interval; never revise the original promise.\n",
+      "as_of": "2026-09-30",
+      "authority": "Verified historical evidence; never an approval or execution instruction.",
+      "citations": [
+        {
+          "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+          "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+          "document_id": 1,
+          "document_version_id": 1,
+          "effective_on": "2025-10-01",
+          "line_end": 16,
+          "line_start": 12,
+          "section": [
+            "Instructions and terms"
+          ],
+          "source_reference": "/api/v1/knowledge/documents/1/versions/1",
+          "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+          "text_sha256": "0069cdace0d826543637a924a0b0dbda7755e3db1145a59a9b0445e73ba09085",
+          "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+          "version": 1
+        },
+        {
+          "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+          "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+          "document_id": 37,
+          "document_version_id": 37,
+          "effective_on": "2025-10-01",
+          "line_end": 14,
+          "line_start": 12,
+          "section": [
+            "Instructions and terms"
+          ],
+          "source_reference": "/api/v1/knowledge/documents/37/versions/37",
+          "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+          "text_sha256": "ba353ed7c06fe52243d7543c983c59f6cddb2cec398d843a6a364c51109cc778",
+          "title": "Procurement procedure",
+          "version": 1
+        }
+      ],
+      "facts": [
+        {
+          "evidence_id": "ev_ee2136089a0c41f9",
+          "fact_id": "fact_1ff67d60f3d1154e",
+          "kind": "metric",
+          "pointer": "/metrics/due_orders",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_ee2136089a0c41f9",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "comparison": null,
+            "denominator": null,
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "metric": "procurement.due_orders",
+            "numerator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "unit": "count",
+            "value": 72
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_ee2136089a0c41f9",
+          "fact_id": "fact_593cdcaec6e444a3",
+          "kind": "metric",
+          "pointer": "/metrics/on_time_orders",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_ee2136089a0c41f9",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "comparison": null,
+            "denominator": null,
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "metric": "procurement.on_time_orders",
+            "numerator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "unit": "count",
+            "value": 24
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_ee2136089a0c41f9",
+          "fact_id": "fact_762c6c6fc6aa2599",
+          "kind": "metric",
+          "pointer": "/metrics/on_time_rate",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_ee2136089a0c41f9",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "comparison": null,
+            "denominator": 72,
+            "grain": "purchase order",
+            "limitations": [],
+            "metric": "procurement.on_time_rate",
+            "numerator": 24,
+            "status": "available",
+            "time_basis": "Order-date cohort; mature promises at as_of",
+            "unit": "percent",
+            "value": "33.33"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_ee2136089a0c41f9",
+          "fact_id": "fact_c1cba8d6296389fc",
+          "kind": "metric",
+          "pointer": "/contracts/0/observed_percent",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_ee2136089a0c41f9",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "denominator": 72,
+            "grain": "supplier contract",
+            "limitations": [
+              "Operational target comparison is not legal breach."
+            ],
+            "metric": "observed_percent",
+            "numerator": 24,
+            "status": "available",
+            "time_basis": "Effective agreement within the observation window.",
+            "unit": "percent",
+            "value": "33.33"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_ee2136089a0c41f9",
+          "fact_id": "fact_8a3d76c9e1ecdcdd",
+          "kind": "metric",
+          "pointer": "/contracts/0/target_percent",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_ee2136089a0c41f9",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "grain": "supplier contract",
+            "limitations": [
+              "Operational target comparison is not legal breach."
+            ],
+            "metric": "target_percent",
+            "status": "available",
+            "time_basis": "Effective agreement within the observation window.",
+            "unit": "percent",
+            "value": "95.00"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_ee2136089a0c41f9",
+          "fact_id": "fact_918595aa9c3967aa",
+          "kind": "metric",
+          "pointer": "/contracts/0/gap_percentage_points",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_ee2136089a0c41f9",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "grain": "supplier contract",
+            "limitations": [
+              "Operational target comparison is not legal breach."
+            ],
+            "metric": "gap_percentage_points",
+            "status": "available",
+            "time_basis": "Effective agreement within the observation window.",
+            "unit": "percentage_points",
+            "value": "-61.67"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_f1f8f18375d74c30",
+          "fact_id": "fact_2064b0110179dec6",
+          "kind": "document",
+          "pointer": "/evidence/0",
+          "scope": {
+            "as_of": "2026-09-30",
+            "filters": {
+              "contract_id": 1,
+              "contract_reference": null,
+              "department_id": null,
+              "document_id": null,
+              "document_type": "supplier_agreement",
+              "supplier_id": 1,
+              "version_id": null
+            },
+            "mode": "hybrid",
+            "query": "NS-CON-001",
+            "top_k": 2
+          },
+          "source_tool": "search_corporate_knowledge",
+          "subject": null,
+          "subject_evidence_id": null,
+          "subject_pointer": null,
+          "value": {
+            "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+            "citation": {
+              "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "document_id": 1,
+              "document_version_id": 1,
+              "effective_on": "2025-10-01",
+              "line_end": 16,
+              "line_start": 12,
+              "section": [
+                "Instructions and terms"
+              ],
+              "source_reference": "/api/v1/knowledge/documents/1/versions/1",
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "text_sha256": "0069cdace0d826543637a924a0b0dbda7755e3db1145a59a9b0445e73ba09085",
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "version": 1
+            },
+            "cosine_similarity": 0.3347492218017578,
+            "document_id": 1,
+            "document_version_id": 1,
+            "effective_date": "2025-10-01",
+            "lexical_score": 0.2,
+            "metadata": {
+              "code": "CON-001",
+              "contract_id": 1,
+              "contract_reference": "NS-CON-001",
+              "department": "Procurement",
+              "department_id": 2,
+              "document_id": 1,
+              "document_type": "supplier_agreement",
+              "effective_on": "2025-10-01",
+              "sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "supplier": "Amberwick Office Works (synthetic)",
+              "supplier_id": 1,
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "version": 1,
+              "version_id": 1
+            },
+            "rank": 1,
+            "retrieval_method": "hybrid",
+            "score": 0.03278688524590164,
+            "section": [
+              "Instructions and terms"
+            ],
+            "source_provenance": {
+              "content_role": "untrusted_evidence",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326"
+            },
+            "suspicious_content": false,
+            "text": "## Instructions and terms\n\nSupplier: Amberwick Office Works (synthetic)\n\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+            "trust": "untrusted_source_data"
+          },
+          "verified": true,
+          "window": null
+        },
+        {
+          "evidence_id": "ev_22b6a573f4654394",
+          "fact_id": "fact_f51c48759fafbf25",
+          "kind": "document",
+          "pointer": "/evidence/0",
+          "scope": {
+            "as_of": "2026-09-30",
+            "filters": {
+              "contract_id": null,
+              "contract_reference": null,
+              "department_id": null,
+              "document_id": 37,
+              "document_type": "policy",
+              "supplier_id": null,
+              "version_id": null
+            },
+            "mode": "hybrid",
+            "query": "procurement procedure escalation",
+            "top_k": 2
+          },
+          "source_tool": "search_corporate_knowledge",
+          "subject": null,
+          "subject_evidence_id": null,
+          "subject_pointer": null,
+          "value": {
+            "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+            "citation": {
+              "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "document_id": 37,
+              "document_version_id": 37,
+              "effective_on": "2025-10-01",
+              "line_end": 14,
+              "line_start": 12,
+              "section": [
+                "Instructions and terms"
+              ],
+              "source_reference": "/api/v1/knowledge/documents/37/versions/37",
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "text_sha256": "ba353ed7c06fe52243d7543c983c59f6cddb2cec398d843a6a364c51109cc778",
+              "title": "Procurement procedure",
+              "version": 1
+            },
+            "cosine_similarity": 0.6534668207168626,
+            "document_id": 37,
+            "document_version_id": 37,
+            "effective_date": "2025-10-01",
+            "lexical_score": 0.008333334,
+            "metadata": {
+              "code": "POL-001",
+              "contract_id": null,
+              "contract_reference": null,
+              "department": "Procurement",
+              "department_id": 2,
+              "document_id": 37,
+              "document_type": "policy",
+              "effective_on": "2025-10-01",
+              "sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "supplier": null,
+              "supplier_id": null,
+              "title": "Procurement procedure",
+              "version": 1,
+              "version_id": 37
+            },
+            "rank": 1,
+            "retrieval_method": "hybrid",
+            "score": 0.03278688524590164,
+            "section": [
+              "Instructions and terms"
+            ],
+            "source_provenance": {
+              "content_role": "untrusted_evidence",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563"
+            },
+            "suspicious_content": false,
+            "text": "## Instructions and terms\n\nRecord promised dates against the applicable supplier contract. Escalate missed receipts after the contract escalation interval; never revise the original promise.\n",
+            "title": "Procurement procedure",
+            "trust": "untrusted_source_data"
+          },
+          "verified": true,
+          "window": null
+        }
+      ],
+      "limitations": [],
+      "llm_calls": 0,
+      "mode": "DETERMINISTIC",
+      "question": "Compare Supplier 1 delivery performance against its contractual SLA and escalation policy.",
+      "source_state": "b941ff53b78734ac6e820b9753e42328a337f84552d6409fb8df6ba3423ce30b",
+      "status": "completed",
+      "subject": {
+        "entity_id": 1,
+        "kind": "supplier"
+      },
+      "tool_calls": 4
+    },
+    "digest": "0c93a51da408929d71c35bb79cdeeb0ac8f01442419cfbcc3cbb1c6945c0a1ed",
+    "created_at": "2026-11-05T15:45:22.338545Z",
+    "expires_at": "2026-11-06T15:45:22.685069Z"
+  },
+  "happy_proposal": {
+    "id": "79433474-e9e3-4a4e-9559-4e40ceea7dc6",
+    "proposer_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "department_id": 1,
+    "subject_id": "10a5bc6a-c2f1-463c-930c-aa07613a2227",
+    "evidence_id": "047ab48c-71e8-43cb-915d-9627ed97969f",
+    "previous_id": null,
+    "version": 1,
+    "action_type": "CREATE_WORKFLOW_TASK",
+    "source_type": "DETERMINISTIC_RECOMMENDATION",
+    "material": {
+      "action": {
+        "description": "Review the verified observation; no contractual breach inferred.",
+        "due_at": "2026-11-07T15:45:22.706083Z",
+        "employee_id": null,
+        "priority": "high",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        },
+        "title": "Investigate verified supplier gap",
+        "type": "CREATE_WORKFLOW_TASK"
+      },
+      "business_context": "Due date, priority and assignment are proposed settings; they are not inferred contractual requirements.",
+      "department_id": 1,
+      "evidence": {
+        "as_of": "2026-09-30",
+        "digest": "0c93a51da408929d71c35bb79cdeeb0ac8f01442419cfbcc3cbb1c6945c0a1ed",
+        "fact_ids": [
+          "fact_918595aa9c3967aa"
+        ],
+        "id": "047ab48c-71e8-43cb-915d-9627ed97969f",
+        "limitations": []
+      },
+      "expires_at": "2026-11-05T17:45:23.436937+00:00",
+      "policy": {
+        "approval_validity_minutes": 60,
+        "max_validity_hours": 24,
+        "origin": "Stage 5 local-demo application governance, not corporate contract law",
+        "proposer_authz_version": 3,
+        "required_approvals": 1,
+        "reviewer_roles": [
+          "WORKFLOW_APPROVER",
+          "WORKFLOW_ADMIN"
+        ],
+        "risk": "moderate_internal",
+        "scopes": [
+          1
+        ],
+        "separation_of_duties": true,
+        "version": 1
+      },
+      "preconditions": {
+        "business_state": "4c51247b60fdcbf56881840fb3aa366e6f16489855717277166dac07f7b4bdcb"
+      },
+      "proposer_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+      "reason": "Review the identified verified operational concern.",
+      "revision": 1,
+      "source_type": "DETERMINISTIC_RECOMMENDATION",
+      "subject": {
+        "entity_id": 1,
+        "kind": "supplier"
+      }
+    },
+    "digest": "a974e47bcfd4e58b959641c91d957b7dba782bd11eeb67e553f8592034f455b6",
+    "status": "DRAFT",
+    "effective_status": "DRAFT",
+    "stale": false,
+    "approval_policy_current": true,
+    "created_at": "2026-11-05T15:45:23.094861Z",
+    "updated_at": "2026-11-05T15:45:23.094861Z",
+    "expires_at": "2026-11-05T17:45:23.436937Z",
+    "approvals": [],
+    "executions": [],
+    "limitations": [
+      "Internal demo governance; this is not a contractual penalty or external commitment.",
+      "Proposed due dates and priorities are operational settings requiring human review."
+    ]
+  },
+  "happy_receipt": {
+    "id": "34aaa7d8-60c9-4322-9e9f-46a063c8e87c",
+    "proposal_id": "79433474-e9e3-4a4e-9559-4e40ceea7dc6",
+    "actor_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+    "status": "COMPLETED",
+    "result": {
+      "action": "CREATE_WORKFLOW_TASK",
+      "after": {
+        "completed_at": null,
+        "department_id": 1,
+        "due_at": "2026-11-07T15:45:22.706083+00:00",
+        "employee_id": null,
+        "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+        "priority": "high",
+        "status": "open",
+        "version": 1
+      },
+      "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+      "audit_events": [
+        "a7b77e66-c388-410f-befc-3a8e2f9d1b74",
+        "b335bba3-8e7b-4892-8a95-d98a5f41c806",
+        "72ec8538-665b-44df-8f8a-2ff8d59f583f"
+      ],
+      "before": {},
+      "idempotency_key": "6f55af1e-8066-495f-aada-222114cb7cc3",
+      "limitations": [
+        "Internal workflow state only; no external side effects."
+      ],
+      "objects": {
+        "task_id": "3003ead9-dd59-43c7-b725-06b2909a1e4e"
+      },
+      "proposal_digest": "a974e47bcfd4e58b959641c91d957b7dba782bd11eeb67e553f8592034f455b6",
+      "subject": {
+        "entity_id": 1,
+        "kind": "supplier"
+      }
+    },
+    "error_code": null,
+    "created_at": "2026-11-05T15:45:23.898666Z",
+    "finished_at": "2026-11-05T15:45:24.274705Z"
+  },
+  "action_receipts": [
+    {
+      "id": "34aaa7d8-60c9-4322-9e9f-46a063c8e87c",
+      "proposal_id": "79433474-e9e3-4a4e-9559-4e40ceea7dc6",
+      "actor_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "CREATE_WORKFLOW_TASK",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:45:22.706083+00:00",
+          "employee_id": null,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "high",
+          "status": "open",
+          "version": 1
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "a7b77e66-c388-410f-befc-3a8e2f9d1b74",
+          "b335bba3-8e7b-4892-8a95-d98a5f41c806",
+          "72ec8538-665b-44df-8f8a-2ff8d59f583f"
+        ],
+        "before": {},
+        "idempotency_key": "6f55af1e-8066-495f-aada-222114cb7cc3",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "3003ead9-dd59-43c7-b725-06b2909a1e4e"
+        },
+        "proposal_digest": "a974e47bcfd4e58b959641c91d957b7dba782bd11eeb67e553f8592034f455b6",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:23.898666Z",
+      "finished_at": "2026-11-05T15:45:24.274705Z"
+    },
+    {
+      "id": "7de12c1e-abeb-445f-a8f3-6b794f61e4d4",
+      "proposal_id": "cc1baf3a-fe4d-4eca-af1c-3d7d7ca9f3ee",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "ASSIGN_WORKFLOW_TASK",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:45:22.706083+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "high",
+          "status": "open",
+          "version": 2
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "ebe8ca67-02ae-43f5-a2b1-50f70cacd054",
+          "88e0219c-141d-4b58-b97a-1b63749c759a",
+          "e0b38482-087c-4226-b5ef-51434d8d3ac0"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:45:22.706083+00:00",
+          "employee_id": null,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "high",
+          "status": "open",
+          "version": 1
+        },
+        "idempotency_key": "1f4ca77b-51f5-46ec-aeb8-f31ba9a582a1",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "3003ead9-dd59-43c7-b725-06b2909a1e4e"
+        },
+        "proposal_digest": "74234ea1bf11dd13a7eae3f82823608c9e4278ea7a36c000513c0feed7f0902a",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:24.472436Z",
+      "finished_at": "2026-11-05T15:45:24.517200Z"
+    },
+    {
+      "id": "08eb1306-59a8-4d60-8958-ba6e556c8ba4",
+      "proposal_id": "fc51815f-2310-47a3-a082-3e42076af4c9",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "UPDATE_WORKFLOW_TASK_PRIORITY",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:45:22.706083+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "urgent",
+          "status": "open",
+          "version": 3
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "f9fe5658-cbbb-4d32-bbd7-e7e6248bb551",
+          "4a2b15b9-888a-4a1e-94f2-45e69460bc68",
+          "4e03d154-c212-4b80-bc5e-a1a9ec6e255a"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:45:22.706083+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "high",
+          "status": "open",
+          "version": 2
+        },
+        "idempotency_key": "8f55fcf9-88e0-4ea5-939b-2fb604fbbd5f",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "3003ead9-dd59-43c7-b725-06b2909a1e4e"
+        },
+        "proposal_digest": "ff38d91ce396775cf9e3eb068af44c7ba69e383f14aa0e43f099fc84a79f18cb",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:24.679092Z",
+      "finished_at": "2026-11-05T15:45:24.716517Z"
+    },
+    {
+      "id": "e0b7ece8-7a23-4e37-8ed8-2c72677e04a1",
+      "proposal_id": "85ce4567-fb2d-4fac-b749-f272de2e99c6",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "UPDATE_WORKFLOW_TASK_DUE_DATE",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:24.307907+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "urgent",
+          "status": "open",
+          "version": 4
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "3fa71608-5c70-468e-8ff4-44bd7067f466",
+          "4816209f-a084-496c-b0c0-20bd61d60493",
+          "11933a44-0c78-435a-b66c-d07bf69c217f"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:45:22.706083+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "urgent",
+          "status": "open",
+          "version": 3
+        },
+        "idempotency_key": "7865a9fd-0430-4cdd-af2f-99d9aba186c7",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "3003ead9-dd59-43c7-b725-06b2909a1e4e"
+        },
+        "proposal_digest": "bed272d888d49eaff2c3db3761743c2581ee40f3d54f3035a42084b7db79444c",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:24.892420Z",
+      "finished_at": "2026-11-05T15:45:24.935033Z"
+    },
+    {
+      "id": "adc61e36-51f6-4b5b-b132-528c1f31189b",
+      "proposal_id": "1ef86a99-d604-4c5c-8abc-243c8f879536",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "ADD_WORKFLOW_TASK_NOTE",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:24.307907+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "urgent",
+          "status": "open",
+          "version": 5
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "99459e41-2a22-440a-bf44-39196429975c",
+          "8a8c49c8-960e-4f99-96c5-23c85d97af84",
+          "6be4f565-9030-4e0f-a09e-553294f0abed"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:24.307907+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "urgent",
+          "status": "open",
+          "version": 4
+        },
+        "idempotency_key": "bf50922a-b068-4b17-9963-bf8a47bc8873",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "note_id": "adac789d-2661-4a70-8093-21aca2dad819",
+          "task_id": "3003ead9-dd59-43c7-b725-06b2909a1e4e"
+        },
+        "proposal_digest": "50d3a14ed83864f728121b590b4ab693efa8b0e8fa18503c928321ba33a522ef",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:25.112062Z",
+      "finished_at": "2026-11-05T15:45:25.154443Z"
+    },
+    {
+      "id": "a81430e6-786b-4883-9580-7a9966b5894e",
+      "proposal_id": "b2bb9027-b832-4033-a91d-53971be8cbdd",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "UPDATE_WORKFLOW_TASK_STATUS",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:24.307907+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "urgent",
+          "status": "active",
+          "version": 6
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "1604bb3f-47e9-4d07-8c12-fe124f25eded",
+          "aef0b10f-fdf0-408e-ad42-291c37892f2a",
+          "a1bca73f-ea58-4ca0-bec5-baf51f6495fc"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:24.307907+00:00",
+          "employee_id": 1,
+          "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+          "priority": "urgent",
+          "status": "open",
+          "version": 5
+        },
+        "idempotency_key": "f71b34b9-7ad8-4f09-923c-2cfead5f5bb4",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "3003ead9-dd59-43c7-b725-06b2909a1e4e"
+        },
+        "proposal_digest": "d0c2af7f5fe5cf032300d3696211c73492addb6c52c43151cda2b37446f0e30e",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:25.315801Z",
+      "finished_at": "2026-11-05T15:45:25.353932Z"
+    },
+    {
+      "id": "acb883e6-c044-475b-9619-c623243829bb",
+      "proposal_id": "e11b945b-482b-4c94-9e67-aca3c8b30db1",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "CREATE_INTERNAL_ESCALATION",
+        "after": {
+          "closed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:25.366823+00:00",
+          "id": "b0e35569-c4ca-47af-bb9f-11ae11a908e3",
+          "priority": "high",
+          "resolution": null,
+          "status": "open",
+          "version": 1
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "0ef4d366-afeb-4a12-9d71-74eb3367a2d1",
+          "afd4f923-912b-40cc-b26a-178882c7dc78",
+          "78a0ffcb-23b5-48fd-a71f-e2babf81ee23"
+        ],
+        "before": {},
+        "idempotency_key": "1ad182cc-87af-4a66-b6c1-585196616262",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "escalation_id": "b0e35569-c4ca-47af-bb9f-11ae11a908e3"
+        },
+        "proposal_digest": "0b41aaf1bcdd4537c45872f8b6c7bcbb2cb926d1201fa517eade4ca346bb37d4",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:26.289091Z",
+      "finished_at": "2026-11-05T15:45:26.635503Z"
+    },
+    {
+      "id": "8da4981c-9b88-43cd-b8b7-ce44d6be9def",
+      "proposal_id": "4a2af867-79e9-4025-a795-8feb13a26388",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "CLOSE_INTERNAL_ESCALATION",
+        "after": {
+          "closed_at": "2026-11-05T15:45:26.842719+00:00",
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:25.366823+00:00",
+          "id": "b0e35569-c4ca-47af-bb9f-11ae11a908e3",
+          "priority": "high",
+          "resolution": "Review completed internally.",
+          "status": "closed",
+          "version": 2
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "7f2f6cc5-c7de-4350-b68e-5df6578ab919",
+          "3bd9f16f-41f8-4116-bd99-fb22f6bdc4c1",
+          "9d9d4338-cfaf-4a31-9d3f-21c2f9e683f0"
+        ],
+        "before": {
+          "closed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:45:25.366823+00:00",
+          "id": "b0e35569-c4ca-47af-bb9f-11ae11a908e3",
+          "priority": "high",
+          "resolution": null,
+          "status": "open",
+          "version": 1
+        },
+        "idempotency_key": "500441eb-7346-4fb9-a18b-4d3ac287eccb",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "escalation_id": "b0e35569-c4ca-47af-bb9f-11ae11a908e3"
+        },
+        "proposal_digest": "0394905dfdbba94a252268e4236fec158f9e7d210d6256a3708a420effd590be",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:45:26.808991Z",
+      "finished_at": "2026-11-05T15:45:26.850044Z"
+    }
+  ],
+  "concurrency": {
+    "requests": 6,
+    "distinct_receipts": 1,
+    "tasks": 1,
+    "execution_id": "b5a04681-cfa3-43f9-b099-cf53eb1d747a"
+  },
+  "task": {
+    "id": "3003ead9-dd59-43c7-b725-06b2909a1e4e",
+    "title": "Investigate verified supplier gap",
+    "description": "Review the verified observation; no contractual breach inferred.",
+    "status": "active",
+    "priority": "urgent",
+    "department_id": 1,
+    "employee_id": 1,
+    "subject_id": "10a5bc6a-c2f1-463c-930c-aa07613a2227",
+    "created_by": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "proposal_id": "79433474-e9e3-4a4e-9559-4e40ceea7dc6",
+    "execution_id": "34aaa7d8-60c9-4322-9e9f-46a063c8e87c",
+    "version": 6,
+    "created_at": "2026-11-05T15:45:23.898666Z",
+    "updated_at": "2026-11-05T15:45:25.348685Z",
+    "due_at": "2026-11-08T15:45:24.307907Z",
+    "completed_at": null,
+    "subject": {
+      "kind": "supplier",
+      "entity_id": 1
+    },
+    "source_type": "DETERMINISTIC_RECOMMENDATION",
+    "evidence_id": "047ab48c-71e8-43cb-915d-9627ed97969f"
+  },
+  "summary": {
+    "source": "stage5_workflow_state",
+    "as_of": "2026-11-05T15:45:28.194163Z",
+    "open_tasks": 4,
+    "overdue_tasks": 0,
+    "open_escalations": 0,
+    "pending_proposals": 0,
+    "rejected_proposals": 2,
+    "completed_actions_this_month": 18,
+    "limitations": [
+      "These operational records exclude the immutable seeded tasks and Stage 2 KPIs.",
+      "Counts are scoped to the authenticated principal's current permissions."
+    ]
+  },
+  "before_restart": {
+    "source": {
+      "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+      "integrity": {
+        "validated": true,
+        "counts": {
+          "business_roles": 6,
+          "customers": 120,
+          "departments": 6,
+          "document_versions": 44,
+          "documents": 44,
+          "employees": 48,
+          "fulfilments": 4768,
+          "goods_receipts": 5447,
+          "incidents": 1793,
+          "operational_expenses": 216,
+          "payments": 2210,
+          "products": 200,
+          "purchase_order_lines": 4799,
+          "purchase_orders": 2400,
+          "responsibilities": 48,
+          "sales_order_lines": 3599,
+          "sales_orders": 1800,
+          "shortages": 1144,
+          "stock_movements": 10215,
+          "supplier_contracts": 36,
+          "supplier_invoices": 2386,
+          "suppliers": 36,
+          "task_status_history": 3527,
+          "tasks": 1793,
+          "warehouses": 4
+        },
+        "closing_stock_units": 99213,
+        "period": "2025-10-01/2026-09-30"
+      },
+      "scenarios": {
+        "A_procurement_to_customer": {
+          "supplier_id": 1,
+          "purchase_order_id": 1,
+          "receipt_id": 185,
+          "movement_id": 332,
+          "shortage_id": 16,
+          "sales_order_id": 1,
+          "fulfilment_id": 149,
+          "incident_id": 16,
+          "task_id": 16,
+          "promised_on": "2025-10-08",
+          "received_on": "2025-10-20",
+          "customer_promise": "2025-10-10",
+          "fulfilled_on": "2025-10-20"
+        },
+        "B_warehouse_capacity": {
+          "warehouse_id": 1,
+          "sales_order_id": 822,
+          "incident_id": 1729,
+          "expense_id": 104,
+          "amount": "120.00",
+          "task_id": 1729,
+          "status": "escalated"
+        },
+        "C_contract_concern": {
+          "contract_id": 1,
+          "supplier_id": 1,
+          "on_time_target": "95.00",
+          "due_orders": 72,
+          "on_time_orders": 24,
+          "observed_percent": "33.33"
+        },
+        "D_invoice_review": {
+          "invoice_id": 37,
+          "purchase_order_id": 37,
+          "amount": "9053.43",
+          "purchase_value": "9028.43",
+          "incident_id": 1153,
+          "task_id": 1153,
+          "status": "disputed"
+        },
+        "E_overdue_workload": {
+          "department_id": 1,
+          "name": "Operations",
+          "overdue_tasks": 123,
+          "owners": 8
+        }
+      }
+    },
+    "index": {
+      "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+      "chunks": 44,
+      "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+      "ids": [
+        "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+        "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+        "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+        "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+        "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+        "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+        "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+        "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+        "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+        "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+        "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+        "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+        "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+        "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+        "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+        "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+        "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+        "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+        "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+        "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+        "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+        "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+        "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+        "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+        "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+        "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+        "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+        "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+        "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+        "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+        "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+        "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+        "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+        "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+        "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+        "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+        "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+        "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+        "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+        "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+        "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+        "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+        "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+        "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+      ]
+    },
+    "workflow": {
+      "workflow_subjects": {
+        "count": 1,
+        "digest": "1f1dd1a9c0e957c2b703387c6da701fb332b927269dd2fd589b79662df0f9d7f"
+      },
+      "workflow_evidence": {
+        "count": 2,
+        "digest": "a4f8751865cb1a81d95c5d689680236533e18bd66313c201b66453968ea3fd98"
+      },
+      "workflow_idempotency_records": {
+        "count": 100,
+        "digest": "3daf5178b87fa5a3e2523515f7371909e2cd1131f4a6cc491233c29ee5992fe7"
+      },
+      "workflow_policies": {
+        "count": 1,
+        "digest": "f29563d21d420d1f040ce129cf8cd4417d7037fdafee4bf66b0227afd54d0c34"
+      },
+      "workflow_policy_control": {
+        "count": 1,
+        "digest": "8b9d9c9a99a82587d0fdf014e2c5ba477f7badf6468c9709ad77440c8ae98e49"
+      },
+      "workflow_proposals": {
+        "count": 22,
+        "digest": "3a057e475cd406f62bbe17a9b6b4c0fc546072a57b0e3e40388ed1ebf18cc2d1"
+      },
+      "workflow_approvals": {
+        "count": 20,
+        "digest": "135ed18335dcf4fadd8741be9094a4fc95315d4c16e3f04bb61bbe04bb1c6605"
+      },
+      "workflow_executions": {
+        "count": 18,
+        "digest": "baeb8c14acc015bdeea0bf99acd5fc0f29233c878abcbb65602ebf547c6af09a"
+      },
+      "workflow_tasks": {
+        "count": 4,
+        "digest": "f0b89a79bf4ab4c0c425168b611651693c15ced4b967a719fd1b08b41074c6c1"
+      },
+      "workflow_escalations": {
+        "count": 2,
+        "digest": "e764e44c9980fe9464b6b151649ffa03da544d56a2f305cfc0ddae60193fe495"
+      },
+      "workflow_task_assignments": {
+        "count": 6,
+        "digest": "3582271b926a76d47a5ba7341db2ae3de8a40787af9a47fc82d13c258ffa25b9"
+      },
+      "workflow_task_notes": {
+        "count": 2,
+        "digest": "dd828d3c9d8c1dc1ffabce7ffa926b413e7d06d28952a384b7ea278caa773a8e"
+      }
+    },
+    "audit_count": 158,
+    "audit_digest": "c1cdcbd853151b758e34daa1143314a4664b363d08451118e7a47d8d5c49f03a",
+    "migration": "0004"
+  },
+  "after_restart": {
+    "source": {
+      "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+      "integrity": {
+        "validated": true,
+        "counts": {
+          "business_roles": 6,
+          "customers": 120,
+          "departments": 6,
+          "document_versions": 44,
+          "documents": 44,
+          "employees": 48,
+          "fulfilments": 4768,
+          "goods_receipts": 5447,
+          "incidents": 1793,
+          "operational_expenses": 216,
+          "payments": 2210,
+          "products": 200,
+          "purchase_order_lines": 4799,
+          "purchase_orders": 2400,
+          "responsibilities": 48,
+          "sales_order_lines": 3599,
+          "sales_orders": 1800,
+          "shortages": 1144,
+          "stock_movements": 10215,
+          "supplier_contracts": 36,
+          "supplier_invoices": 2386,
+          "suppliers": 36,
+          "task_status_history": 3527,
+          "tasks": 1793,
+          "warehouses": 4
+        },
+        "closing_stock_units": 99213,
+        "period": "2025-10-01/2026-09-30"
+      },
+      "scenarios": {
+        "A_procurement_to_customer": {
+          "supplier_id": 1,
+          "purchase_order_id": 1,
+          "receipt_id": 185,
+          "movement_id": 332,
+          "shortage_id": 16,
+          "sales_order_id": 1,
+          "fulfilment_id": 149,
+          "incident_id": 16,
+          "task_id": 16,
+          "promised_on": "2025-10-08",
+          "received_on": "2025-10-20",
+          "customer_promise": "2025-10-10",
+          "fulfilled_on": "2025-10-20"
+        },
+        "B_warehouse_capacity": {
+          "warehouse_id": 1,
+          "sales_order_id": 822,
+          "incident_id": 1729,
+          "expense_id": 104,
+          "amount": "120.00",
+          "task_id": 1729,
+          "status": "escalated"
+        },
+        "C_contract_concern": {
+          "contract_id": 1,
+          "supplier_id": 1,
+          "on_time_target": "95.00",
+          "due_orders": 72,
+          "on_time_orders": 24,
+          "observed_percent": "33.33"
+        },
+        "D_invoice_review": {
+          "invoice_id": 37,
+          "purchase_order_id": 37,
+          "amount": "9053.43",
+          "purchase_value": "9028.43",
+          "incident_id": 1153,
+          "task_id": 1153,
+          "status": "disputed"
+        },
+        "E_overdue_workload": {
+          "department_id": 1,
+          "name": "Operations",
+          "overdue_tasks": 123,
+          "owners": 8
+        }
+      }
+    },
+    "index": {
+      "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+      "chunks": 44,
+      "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+      "ids": [
+        "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+        "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+        "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+        "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+        "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+        "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+        "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+        "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+        "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+        "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+        "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+        "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+        "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+        "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+        "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+        "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+        "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+        "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+        "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+        "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+        "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+        "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+        "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+        "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+        "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+        "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+        "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+        "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+        "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+        "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+        "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+        "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+        "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+        "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+        "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+        "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+        "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+        "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+        "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+        "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+        "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+        "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+        "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+        "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+      ]
+    },
+    "workflow": {
+      "workflow_subjects": {
+        "count": 1,
+        "digest": "1f1dd1a9c0e957c2b703387c6da701fb332b927269dd2fd589b79662df0f9d7f"
+      },
+      "workflow_evidence": {
+        "count": 2,
+        "digest": "a4f8751865cb1a81d95c5d689680236533e18bd66313c201b66453968ea3fd98"
+      },
+      "workflow_idempotency_records": {
+        "count": 100,
+        "digest": "3daf5178b87fa5a3e2523515f7371909e2cd1131f4a6cc491233c29ee5992fe7"
+      },
+      "workflow_policies": {
+        "count": 1,
+        "digest": "f29563d21d420d1f040ce129cf8cd4417d7037fdafee4bf66b0227afd54d0c34"
+      },
+      "workflow_policy_control": {
+        "count": 1,
+        "digest": "8b9d9c9a99a82587d0fdf014e2c5ba477f7badf6468c9709ad77440c8ae98e49"
+      },
+      "workflow_proposals": {
+        "count": 22,
+        "digest": "3a057e475cd406f62bbe17a9b6b4c0fc546072a57b0e3e40388ed1ebf18cc2d1"
+      },
+      "workflow_approvals": {
+        "count": 20,
+        "digest": "135ed18335dcf4fadd8741be9094a4fc95315d4c16e3f04bb61bbe04bb1c6605"
+      },
+      "workflow_executions": {
+        "count": 18,
+        "digest": "baeb8c14acc015bdeea0bf99acd5fc0f29233c878abcbb65602ebf547c6af09a"
+      },
+      "workflow_tasks": {
+        "count": 4,
+        "digest": "f0b89a79bf4ab4c0c425168b611651693c15ced4b967a719fd1b08b41074c6c1"
+      },
+      "workflow_escalations": {
+        "count": 2,
+        "digest": "e764e44c9980fe9464b6b151649ffa03da544d56a2f305cfc0ddae60193fe495"
+      },
+      "workflow_task_assignments": {
+        "count": 6,
+        "digest": "3582271b926a76d47a5ba7341db2ae3de8a40787af9a47fc82d13c258ffa25b9"
+      },
+      "workflow_task_notes": {
+        "count": 2,
+        "digest": "dd828d3c9d8c1dc1ffabce7ffa926b413e7d06d28952a384b7ea278caa773a8e"
+      }
+    },
+    "audit_count": 158,
+    "audit_digest": "c1cdcbd853151b758e34daa1143314a4664b363d08451118e7a47d8d5c49f03a",
+    "migration": "0004"
+  },
+  "restart_persistence": "PASS",
+  "unrelated_resources_unchanged": true,
+  "unrelated_resources": {
+    "containers": {
+      "02d0e430ece14e44da5524a6a7f980f9a5f7f87bc700d7bfdd5df17a4f6a9d37": {
+        "name": "/productpulse-local-frontend-1",
+        "state": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-11-05T13:40:22.538984504Z",
+          "FinishedAt": "2026-11-05T13:40:20.640788207Z"
+        },
+        "restart_count": 0,
+        "mounts": []
+      },
+      "735813ef9b7c05d5ddae0e1ea9d5e3bb827ae7a3a9a0c0d9f24c760d30dab8e1": {
+        "name": "/productpulse-local-api-1",
+        "state": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-11-05T13:40:22.540927952Z",
+          "FinishedAt": "2026-11-05T13:40:20.644708284Z"
+        },
+        "restart_count": 0,
+        "mounts": []
+      },
+      "e9dd4263e7a06fed22fc2e0a8c8615bfa213d79329e4388b22748e30671e4b5b": {
+        "name": "/productpulse-local-seed-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-07T13:40:11.430971278Z",
+          "FinishedAt": "2026-10-07T13:40:19.68218384Z"
+        },
+        "restart_count": 0,
+        "mounts": []
+      },
+      "baa72cbfba2d27aa202261d51a860c31e02ec6be1f25109ce2a0cc7bbfd4b486": {
+        "name": "/productpulse-local-migrate-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-07T13:40:09.110247996Z",
+          "FinishedAt": "2026-10-07T13:40:11.192903945Z"
+        },
+        "restart_count": 0,
+        "mounts": []
+      },
+      "1c68557152888fcbebc9aff466dc7fb0f4df1bfa095775a6fd6bbe7d8fd3d1a5": {
+        "name": "/productpulse-local-db-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-07T13:31:52.705971078Z",
+          "FinishedAt": "2026-10-13T08:06:39.038974896Z"
+        },
+        "restart_count": 0,
+        "mounts": [
+          {
+            "Type": "volume",
+            "Name": "productpulse-local_postgres_data",
+            "Source": "/var/lib/docker/volumes/productpulse-local_postgres_data/_data",
+            "Destination": "/var/lib/postgresql/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      },
+      "dafae1e5c0db5e0c6cbd289f6e9059061fdb390abfc3ff72d033a82847bba8ca": {
+        "name": "/productpulse-stage1-smoke-api-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-06T21:56:05.630673273Z",
+          "FinishedAt": "2026-10-13T08:06:39.038820969Z"
+        },
+        "restart_count": 0,
+        "mounts": []
+      },
+      "4886065601b2a0886c0f2029a630b21d827b005e0ba222334ebc93afe4f649ae": {
+        "name": "/productpulse-stage1-smoke-seed-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-05T08:16:46.808795271Z",
+          "FinishedAt": "2026-10-05T08:16:51.005201641Z"
+        },
+        "restart_count": 0,
+        "mounts": []
+      },
+      "d260c582285d6fdf749f909fce176092002b1afe5662532af20dbd289966c165": {
+        "name": "/productpulse-stage1-smoke-migrate-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-05T08:16:45.038560575Z",
+          "FinishedAt": "2026-10-05T08:16:46.292563774Z"
+        },
+        "restart_count": 0,
+        "mounts": []
+      },
+      "7124ed61a2c8f5df14947e6e90d7da5f6c0b2376ecac59e00e20a3aa2bccdb02": {
+        "name": "/productpulse-stage1-smoke-db-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-04T21:56:31.18263479Z",
+          "FinishedAt": "2026-10-13T08:06:39.039144241Z"
+        },
+        "restart_count": 0,
+        "mounts": [
+          {
+            "Type": "volume",
+            "Name": "productpulse-stage1-smoke_postgres_data",
+            "Source": "/var/lib/docker/volumes/productpulse-stage1-smoke_postgres_data/_data",
+            "Destination": "/var/lib/postgresql/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      },
+      "9ada83538bdfeb7f4527a75f8811497a028ae1ceaf5b8b3bb679b266638a30d3": {
+        "name": "/yummy-flow-local-postgres-1",
+        "state": {
+          "Status": "exited",
+          "Running": false,
+          "Paused": false,
+          "Restarting": false,
+          "StartedAt": "2026-10-05T22:40:22.971924775Z",
+          "FinishedAt": "2026-10-05T22:41:25.88569396Z"
+        },
+        "restart_count": 0,
+        "mounts": [
+          {
+            "Type": "bind",
+            "Source": "/run/desktop/mnt/host/c/Users/kiril/.vscode/projects/yummy-flow-digital-twin/infra/postgres/init.sql",
+            "Destination": "/docker-entrypoint-initdb.d/01-test-database.sql",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "volume",
+            "Name": "yummy-flow-local_postgres_data",
+            "Source": "/var/lib/docker/volumes/yummy-flow-local_postgres_data/_data",
+            "Destination": "/var/lib/postgresql/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      }
+    },
+    "volume_names": [
+      "opspilot-stage1_opspilot_pgdata",
+      "productpulse-local_postgres_data",
+      "productpulse-stage1-smoke_postgres_data",
+      "yummy-flow-local_postgres_data"
+    ],
+    "network_ids": [
+      "13de12a1049e",
+      "14a5603dabf4",
+      "8b8e0d3fe8b9",
+      "aa1f97d1d428",
+      "aef450a591fb",
+      "bf0a4418ce6c",
+      "d3c68abd9eb4"
+    ]
+  },
+  "passed": true,
+  "latency": {
+    "samples": 73,
+    "median_ms": 53.45,
+    "max_ms": 3824.43
+  }
+}

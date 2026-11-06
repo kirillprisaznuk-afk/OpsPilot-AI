@@ -1,0 +1,11 @@
+# Case study: connecting supplier evidence to an auditable action
+
+Northstar Supply, a synthetic B2B distributor, holds purchase promises, receipts, contracts, policies and internal work in separate records. An operations team needs to know whether a supplier is missing a meaningful target, which terms govern it, and what internal response was approved. A model answer alone cannot supply this chain of custody.
+
+OpsPilot uses SQL as the metric authority. Order-level service counts preserve their original promises and populations. The document index combines full-text and local CPU embeddings, but the passage shown to a user must resolve to a registered source version. The deterministic interpreter asks for clarification where a term is ambiguous and refuses work beyond the read-only capability registry. This keeps unsupported claims, including estimated profit or legal breach, out of the action path.
+
+The UI joins the results without granting write authority to retrieval or reasoning. A proposed action carries its evidence, a version and a digest. A distinct authorized person decides whether it can proceed. Execution rechecks current authority, target state and evidence and commits the workflow change, receipt and audit record together. A lost network response can be retried with the original operation identity.
+
+For Supplier 1, the accepted scenario found 24 on-time of 72 due orders, or 33.33%, against a 95% target. The agreement and procurement procedure established how to escalate missed receipts. A real browser operator prepared an internal review task, a separate reviewer approved it, and the operator committed it. During concurrent execution tests one effective task and one receipt were produced. Scoped outage tests preserved existing records, and direct business fingerprint verification preserved the original Northstar data. [Measured release evidence](STAGE8_REPORT.md)
+
+The design separates predictable business behavior from experimental language interpretation. The application is a local portfolio system, uses synthetic records, and makes no claim about business savings, general AI reasoning, or shared production readiness. [Architecture](ARCHITECTURE.md) · [Security audit](SECURITY_AUDIT.md)

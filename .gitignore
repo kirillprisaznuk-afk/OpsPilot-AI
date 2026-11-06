@@ -1,0 +1,21 @@
+.env
+.models/
+.venv/
+.uv-cache/
+.local-tools/
+.local-pg/
+.local-pg-validated/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+reports/local-*
+
+# Stage 6 local frontend caches, sessions and private browser state
+frontend/node_modules/
+frontend/.next/
+frontend/.runtime/
+frontend/.env*
+frontend/test-results/
+frontend/playwright-report/
+frontend/*.tsbuildinfo

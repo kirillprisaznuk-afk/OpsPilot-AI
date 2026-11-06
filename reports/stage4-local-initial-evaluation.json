@@ -1,0 +1,65 @@
+{
+  "mode": "live",
+  "cases": [
+    {
+      "id": "A01",
+      "status": "provider_error",
+      "tool_selection_expected_subset": false,
+      "valid_tool_argument_fraction": null,
+      "citation_resolution": null,
+      "known_numeric_evidence": [
+        false,
+        false
+      ],
+      "expected_status_matched": null,
+      "usage": {
+        "provider_round_ms": [],
+        "input_tokens": null,
+        "output_tokens": null,
+        "total_tokens": null,
+        "cached_input_tokens": null,
+        "llm_calls": 1,
+        "tool_calls": 0,
+        "provider_usage_complete": false,
+        "estimated_cost_usd": null,
+        "cost_basis": "Unavailable: a provider attempt did not supply usage.",
+        "elapsed_ms": 20161.428
+      },
+      "elapsed_ms": 20199.337,
+      "response": {
+        "request_id": "f55eb5267ca946d08bcc9606f193a915",
+        "conversation_id": "745e8f29d98e4aa9b9dee95388f0901f",
+        "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+        "as_of": "2026-09-30",
+        "status": "provider_error",
+        "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+        "key_findings": [],
+        "evidence": [],
+        "citations": [],
+        "tool_trace": [],
+        "limitations": [
+          "Provider round exceeded its deadline.",
+          "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+        ],
+        "follow_up_questions": [],
+        "usage": {
+          "provider_round_ms": [],
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "cached_input_tokens": null,
+          "llm_calls": 1,
+          "tool_calls": 0,
+          "provider_usage_complete": false,
+          "estimated_cost_usd": null,
+          "cost_basis": "Unavailable: a provider attempt did not supply usage.",
+          "elapsed_ms": 20161.428
+        },
+        "termination_reason": "provider_timeout",
+        "model": "qwen3:4b",
+        "execution_mode": "live"
+      }
+    }
+  ],
+  "completed_investigation_fraction": 0
+}

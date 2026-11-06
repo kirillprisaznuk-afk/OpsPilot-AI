@@ -1,0 +1,12 @@
+{
+  "mode": "live",
+  "status": "BLOCKED",
+  "reason": "OPENAI_API_KEY and LLM_MODEL are not configured locally.",
+  "model": null,
+  "dataset_cases": 30,
+  "paid_calls": 0,
+  "tool_selection_correctness": null,
+  "answer_accuracy": null,
+  "actual_token_usage": null,
+  "cost": null
+}

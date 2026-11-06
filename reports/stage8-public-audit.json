@@ -1,0 +1,39 @@
+{
+  "scope": "candidate worktree plus reachable private development history",
+  "candidate_findings": {},
+  "private_history_blob_count": 675,
+  "private_history_machine_identifiers": {
+    "local_test_hostnames": [
+      "reports/pytest.xml",
+      "reports/stage2-pytest.xml",
+      "reports/stage3-pytest.xml",
+      "reports/stage4-local-pytest.xml",
+      "reports/stage4-pytest.xml",
+      "reports/stage4b-autonomous-pytest.xml",
+      "reports/stage4b-pytest.xml",
+      "reports/stage4c-pytest.xml",
+      "reports/stage5-pytest-initial.xml",
+      "reports/stage5-pytest.xml",
+      "reports/stage6-backend-pytest.xml",
+      "reports/stage7-backend-pytest.xml"
+    ],
+    "personal_absolute_paths": [
+      "reports/stage4b-autonomous-runtime-checks.json",
+      "reports/stage4b-lean-working-set-recovery.json",
+      "reports/stage4b-postfix-working-set-recovery.json",
+      "reports/stage4b-project-working-set-recovery.json",
+      "reports/stage4b-resume-verification.json",
+      "reports/stage4b-runtime-checks.json",
+      "reports/stage5-pytest-initial.xml"
+    ]
+  },
+  "publication_strategy": "parentless release ref of identical validated tree; do not push historical refs",
+  "scanned_for": [
+    "known generated credentials",
+    "high-confidence token and private-key patterns",
+    "database URI passwords",
+    "private paths and test hostnames",
+    "forbidden runtime, model, or backup files"
+  ],
+  "notes": "The exact standalone ref is audited locally after commit and before release tagging."
+}

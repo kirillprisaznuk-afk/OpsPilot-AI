@@ -1,0 +1,1013 @@
+{
+  "mode": "DETERMINISTIC",
+  "full_local_report_sha256": "9aba807f81dfb0514247581e108b559e838eded6dd24d8fb000f28c00c409368",
+  "summary": {
+    "cases": 38,
+    "automatic_passed": 38,
+    "llm_calls": 0,
+    "reported_tokens": 0,
+    "median_http_ms": 91.10830000008718,
+    "max_http_ms": 1517.4837000013213,
+    "real_model_interpretations": 0
+  },
+  "case_status_counts": {
+    "completed": 26,
+    "insufficient_evidence": 3,
+    "refused": 3,
+    "partial": 3,
+    "clarification_required": 3
+  },
+  "cases": [
+    {
+      "id": "A01",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 175.19
+    },
+    {
+      "id": "A02",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 151.93
+    },
+    {
+      "id": "A03",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 225.48
+    },
+    {
+      "id": "A06",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 52.91
+    },
+    {
+      "id": "A22",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 10.94
+    },
+    {
+      "id": "A23",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 29.06
+    },
+    {
+      "id": "A25",
+      "status": "refused",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 4.55
+    },
+    {
+      "id": "A27",
+      "status": "refused",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 4.76
+    },
+    {
+      "id": "B01",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 153.69
+    },
+    {
+      "id": "B02",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 128.34
+    },
+    {
+      "id": "B03",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 147.27
+    },
+    {
+      "id": "B04",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 161.53
+    },
+    {
+      "id": "B05",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 235.23
+    },
+    {
+      "id": "B06",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 90.89
+    },
+    {
+      "id": "B07",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 65.19
+    },
+    {
+      "id": "B08",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 140.74
+    },
+    {
+      "id": "B09",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 83.93
+    },
+    {
+      "id": "B10",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 60.62
+    },
+    {
+      "id": "B11",
+      "status": "partial",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 1517.48
+    },
+    {
+      "id": "B12",
+      "status": "partial",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 53.99
+    },
+    {
+      "id": "B13",
+      "status": "refused",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 5.48
+    },
+    {
+      "id": "B14",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 55.22
+    },
+    {
+      "id": "B15",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 212.46
+    },
+    {
+      "id": "C01",
+      "status": "partial",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 610.74
+    },
+    {
+      "id": "C02",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 122.63
+    },
+    {
+      "id": "C03",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 128.4
+    },
+    {
+      "id": "C04",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true,
+        "comparison_scopes": true
+      },
+      "http_elapsed_ms": 111.94
+    },
+    {
+      "id": "C05",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 91.0
+    },
+    {
+      "id": "C06",
+      "status": "clarification_required",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 28.26
+    },
+    {
+      "id": "C07",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 129.04
+    },
+    {
+      "id": "C08",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 91.22
+    },
+    {
+      "id": "C09",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 251.53
+    },
+    {
+      "id": "C10",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 41.68
+    },
+    {
+      "id": "C11",
+      "status": "clarification_required",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 9.96
+    },
+    {
+      "id": "C12",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 44.58
+    },
+    {
+      "id": "C13",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 55.86
+    },
+    {
+      "id": "C14",
+      "status": "clarification_required",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "http_elapsed_ms": 16.91
+    },
+    {
+      "id": "C15",
+      "status": "completed",
+      "passed": true,
+      "oracle_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true,
+        "comparison_scopes": true
+      },
+      "http_elapsed_ms": 176.27
+    }
+  ],
+  "separate_representative_source_review": "stage7-source-review.json"
+}

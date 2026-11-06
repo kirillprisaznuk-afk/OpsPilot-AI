@@ -1,0 +1,837 @@
+{
+  "request_id": "b7fbbbb5ed094457ba7a66ef155de246",
+  "conversation_id": null,
+  "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+  "as_of": "2026-09-30",
+  "status": "validation_failed",
+  "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+  "key_findings": [],
+  "evidence": [
+    {
+      "evidence_id": "ev_b7fbbbb5ed_1",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier 1 contract agreement",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "supplier 1 contract agreement",
+        "retrieval_mode": "hybrid",
+        "as_of": "2026-09-30",
+        "status": "low_confidence",
+        "insufficient_evidence": true,
+        "evidence": [],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "reciprocal_rank_fusion",
+          "rrf_k": 60,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": 0.45,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_b7fbbbb5ed_2",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal escalation procedure supplier delay",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "internal escalation procedure supplier delay",
+        "retrieval_mode": "hybrid",
+        "as_of": "2026-09-30",
+        "status": "evidence_found",
+        "insufficient_evidence": false,
+        "evidence": [
+          {
+            "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+            "document_id": 37,
+            "document_version_id": 37,
+            "title": "Procurement procedure",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nRecord promised dates against the applicable supplier contract. Escalate missed receipts after the contract escalation interval; never revise the original promise.\n",
+            "rank": 1,
+            "score": 0.01639344262295082,
+            "lexical_score": null,
+            "cosine_similarity": 0.5757861823780754,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 37,
+              "code": "POL-001",
+              "title": "Procurement procedure",
+              "document_type": "policy",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": null,
+              "contract_reference": null,
+              "supplier_id": null,
+              "supplier": null,
+              "version_id": 37,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563"
+            },
+            "citation": {
+              "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "document_id": 37,
+              "document_version_id": 37,
+              "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "title": "Procurement procedure",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 14,
+              "effective_on": "2025-10-01",
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "text_sha256": "ba353ed7c06fe52243d7543c983c59f6cddb2cec398d843a6a364c51109cc778",
+              "source_reference": "/api/v1/knowledge/documents/37/versions/37"
+            },
+            "source_provenance": {
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          },
+          {
+            "chunk_id": "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+            "document_id": 40,
+            "document_version_id": 40,
+            "title": "Incident escalation procedure",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nAssign a department and corrective task to each incident. High-severity unresolved incidents require management review after seven calendar days.\n",
+            "rank": 2,
+            "score": 0.016129032258064516,
+            "lexical_score": null,
+            "cosine_similarity": 0.4609768069372666,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 40,
+              "code": "POL-004",
+              "title": "Incident escalation procedure",
+              "document_type": "policy",
+              "department_id": 1,
+              "department": "Operations",
+              "contract_id": null,
+              "contract_reference": null,
+              "supplier_id": null,
+              "supplier": null,
+              "version_id": 40,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "4d447a0591620e2257fdcd9f771d15d97150b2b5fe554c487273cd29c7fd5213"
+            },
+            "citation": {
+              "citation_id": "kc_8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+              "document_id": 40,
+              "document_version_id": 40,
+              "chunk_id": "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+              "title": "Incident escalation procedure",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 14,
+              "effective_on": "2025-10-01",
+              "source_sha256": "4d447a0591620e2257fdcd9f771d15d97150b2b5fe554c487273cd29c7fd5213",
+              "text_sha256": "df8b6d69502cc28315067ce5dbd09eb9ecc9e1ed8e13a1a66a52cd47dff5bc75",
+              "source_reference": "/api/v1/knowledge/documents/40/versions/40"
+            },
+            "source_provenance": {
+              "source_sha256": "4d447a0591620e2257fdcd9f771d15d97150b2b5fe554c487273cd29c7fd5213",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          }
+        ],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "reciprocal_rank_fusion",
+          "rrf_k": 60,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": 0.45,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_b7fbbbb5ed_3",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "contract reference supplier 1",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "contract reference supplier 1",
+        "retrieval_mode": "hybrid",
+        "as_of": "2026-09-30",
+        "status": "evidence_found",
+        "insufficient_evidence": false,
+        "evidence": [
+          {
+            "chunk_id": "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+            "document_id": 32,
+            "document_version_id": 32,
+            "title": "Agreement \u2014 Fernholt Industrial Supply (synthetic)",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nSupplier: Fernholt Industrial Supply (synthetic)\n\nContract reference: NS-CON-032. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 3 calendar days past promise. Payment term: 30 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "rank": 1,
+            "score": 0.01639344262295082,
+            "lexical_score": null,
+            "cosine_similarity": 0.4601092362338768,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 32,
+              "code": "CON-032",
+              "title": "Agreement \u2014 Fernholt Industrial Supply (synthetic)",
+              "document_type": "supplier_agreement",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": 32,
+              "contract_reference": "NS-CON-032",
+              "supplier_id": 32,
+              "supplier": "Fernholt Industrial Supply (synthetic)",
+              "version_id": 32,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "31999ec84f6e280d4c0b6934261f7af32e244548112752e6511cc50f8da73942"
+            },
+            "citation": {
+              "citation_id": "kc_fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+              "document_id": 32,
+              "document_version_id": 32,
+              "chunk_id": "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+              "title": "Agreement \u2014 Fernholt Industrial Supply (synthetic)",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 16,
+              "effective_on": "2025-10-01",
+              "source_sha256": "31999ec84f6e280d4c0b6934261f7af32e244548112752e6511cc50f8da73942",
+              "text_sha256": "ce2f839f54d0408ff84733479542d06955d6ab233c004308a0a3f252b8c14ddb",
+              "source_reference": "/api/v1/knowledge/documents/32/versions/32"
+            },
+            "source_provenance": {
+              "source_sha256": "31999ec84f6e280d4c0b6934261f7af32e244548112752e6511cc50f8da73942",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          },
+          {
+            "chunk_id": "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+            "document_id": 12,
+            "document_version_id": 12,
+            "title": "Agreement \u2014 Brindleford Procurement House (synthetic)",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nSupplier: Brindleford Procurement House (synthetic)\n\nContract reference: NS-CON-012. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 3 calendar days past promise. Payment term: 30 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "rank": 2,
+            "score": 0.016129032258064516,
+            "lexical_score": null,
+            "cosine_similarity": 0.45421883736736635,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 12,
+              "code": "CON-012",
+              "title": "Agreement \u2014 Brindleford Procurement House (synthetic)",
+              "document_type": "supplier_agreement",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": 12,
+              "contract_reference": "NS-CON-012",
+              "supplier_id": 12,
+              "supplier": "Brindleford Procurement House (synthetic)",
+              "version_id": 12,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "5e28a120036b088ec77a92a4bc07398a0aada9cd109fc913a550524b2c02633c"
+            },
+            "citation": {
+              "citation_id": "kc_2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+              "document_id": 12,
+              "document_version_id": 12,
+              "chunk_id": "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+              "title": "Agreement \u2014 Brindleford Procurement House (synthetic)",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 16,
+              "effective_on": "2025-10-01",
+              "source_sha256": "5e28a120036b088ec77a92a4bc07398a0aada9cd109fc913a550524b2c02633c",
+              "text_sha256": "4bd73aa319a158bcfd40ce5bb17728a0cec13a5dc217aa2962f4a9ae830762d3",
+              "source_reference": "/api/v1/knowledge/documents/12/versions/12"
+            },
+            "source_provenance": {
+              "source_sha256": "5e28a120036b088ec77a92a4bc07398a0aada9cd109fc913a550524b2c02633c",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          },
+          {
+            "chunk_id": "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+            "document_id": 8,
+            "document_version_id": 8,
+            "title": "Agreement \u2014 Brindleford Industrial Supply (synthetic)",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nSupplier: Brindleford Industrial Supply (synthetic)\n\nContract reference: NS-CON-008. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 3 calendar days past promise. Payment term: 30 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "rank": 3,
+            "score": 0.015873015873015872,
+            "lexical_score": null,
+            "cosine_similarity": 0.4507397144591987,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 8,
+              "code": "CON-008",
+              "title": "Agreement \u2014 Brindleford Industrial Supply (synthetic)",
+              "document_type": "supplier_agreement",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": 8,
+              "contract_reference": "NS-CON-008",
+              "supplier_id": 8,
+              "supplier": "Brindleford Industrial Supply (synthetic)",
+              "version_id": 8,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "53a3820b01a154f5e8f7878d531152f0568d239fe9322779273debe4c4ae999e"
+            },
+            "citation": {
+              "citation_id": "kc_16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+              "document_id": 8,
+              "document_version_id": 8,
+              "chunk_id": "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+              "title": "Agreement \u2014 Brindleford Industrial Supply (synthetic)",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 16,
+              "effective_on": "2025-10-01",
+              "source_sha256": "53a3820b01a154f5e8f7878d531152f0568d239fe9322779273debe4c4ae999e",
+              "text_sha256": "70eea56948e88a20d522e6053d36d43edf828a194999bf578d8971ca359aa8de",
+              "source_reference": "/api/v1/knowledge/documents/8/versions/8"
+            },
+            "source_provenance": {
+              "source_sha256": "53a3820b01a154f5e8f7878d531152f0568d239fe9322779273debe4c4ae999e",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          },
+          {
+            "chunk_id": "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+            "document_id": 36,
+            "document_version_id": 36,
+            "title": "Agreement \u2014 Fernholt Procurement House (synthetic)",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nSupplier: Fernholt Procurement House (synthetic)\n\nContract reference: NS-CON-036. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 3 calendar days past promise. Payment term: 30 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "rank": 4,
+            "score": 0.015625,
+            "lexical_score": null,
+            "cosine_similarity": 0.45058472601817057,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 36,
+              "code": "CON-036",
+              "title": "Agreement \u2014 Fernholt Procurement House (synthetic)",
+              "document_type": "supplier_agreement",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": 36,
+              "contract_reference": "NS-CON-036",
+              "supplier_id": 36,
+              "supplier": "Fernholt Procurement House (synthetic)",
+              "version_id": 36,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "48a0aed97eae2df5564104b4ba41c2be3e8ca5a3ce0efaa26bd43467660a1544"
+            },
+            "citation": {
+              "citation_id": "kc_6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+              "document_id": 36,
+              "document_version_id": 36,
+              "chunk_id": "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+              "title": "Agreement \u2014 Fernholt Procurement House (synthetic)",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 16,
+              "effective_on": "2025-10-01",
+              "source_sha256": "48a0aed97eae2df5564104b4ba41c2be3e8ca5a3ce0efaa26bd43467660a1544",
+              "text_sha256": "4ddcf4411f25e9883d86f132ed8d6dcfe692ce1c38783c6e6386a8453262bfb4",
+              "source_reference": "/api/v1/knowledge/documents/36/versions/36"
+            },
+            "source_provenance": {
+              "source_sha256": "48a0aed97eae2df5564104b4ba41c2be3e8ca5a3ce0efaa26bd43467660a1544",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          }
+        ],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "reciprocal_rank_fusion",
+          "rrf_k": 60,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": 0.45,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    },
+    {
+      "evidence_id": "ev_b7fbbbb5ed_4",
+      "tool_name": "search_corporate_knowledge",
+      "arguments": {
+        "query": "NS-CON-001",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "as_of": "2026-09-30",
+      "payload": {
+        "query": "NS-CON-001",
+        "retrieval_mode": "hybrid",
+        "as_of": "2026-09-30",
+        "status": "evidence_found",
+        "insufficient_evidence": false,
+        "evidence": [
+          {
+            "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+            "document_id": 1,
+            "document_version_id": 1,
+            "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+            "section": [
+              "Instructions and terms"
+            ],
+            "text": "## Instructions and terms\n\nSupplier: Amberwick Office Works (synthetic)\n\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "rank": 1,
+            "score": 0.03252247488101534,
+            "lexical_score": 0.2,
+            "cosine_similarity": 0.3347492218017578,
+            "retrieval_method": "hybrid",
+            "effective_date": "2025-10-01",
+            "metadata": {
+              "document_id": 1,
+              "code": "CON-001",
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "document_type": "supplier_agreement",
+              "department_id": 2,
+              "department": "Procurement",
+              "contract_id": 1,
+              "contract_reference": "NS-CON-001",
+              "supplier_id": 1,
+              "supplier": "Amberwick Office Works (synthetic)",
+              "version_id": 1,
+              "version": 1,
+              "effective_on": "2025-10-01",
+              "sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326"
+            },
+            "citation": {
+              "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "document_id": 1,
+              "document_version_id": 1,
+              "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "version": 1,
+              "section": [
+                "Instructions and terms"
+              ],
+              "line_start": 12,
+              "line_end": 16,
+              "effective_on": "2025-10-01",
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "text_sha256": "0069cdace0d826543637a924a0b0dbda7755e3db1145a59a9b0445e73ba09085",
+              "source_reference": "/api/v1/knowledge/documents/1/versions/1"
+            },
+            "source_provenance": {
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "content_role": "untrusted_evidence"
+            },
+            "suspicious_content": false,
+            "trust": "untrusted_source_data"
+          }
+        ],
+        "eligible_versions": 44,
+        "model_configuration": {
+          "model": "sentence-transformers/all-MiniLM-L6-v2",
+          "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+          "dimension": 384,
+          "pooling": "attention_mask_mean",
+          "normalization": "L2",
+          "distance": "cosine",
+          "max_tokens": 256,
+          "backend": "onnx-cpu-float32",
+          "parser": "markdown-sections-v1",
+          "tokenizer_truncation": "reject_over_256"
+        },
+        "ranking": {
+          "method": "reciprocal_rank_fusion",
+          "rrf_k": 60,
+          "candidate_limit_per_method": 100,
+          "minimum_cosine_similarity": 0.45,
+          "semantic_gate_applies_to": "vector_only_candidates"
+        },
+        "limitations": [
+          "Ranking is relevance evidence, not answer completeness or probability.",
+          "No answer generation, legal interpretation, authorization or tool execution.",
+          "Keyword mode requires lexical matches; vector relevance gate is a heuristic."
+        ]
+      },
+      "trust": "untrusted_tool_data"
+    }
+  ],
+  "citations": [],
+  "tool_trace": [
+    {
+      "call_id": "e22d84e8879c46fb9ce71d1e6eeb4c73",
+      "tool": "get_supplier_performance",
+      "arguments": null,
+      "status": "error",
+      "elapsed_ms": 0.0,
+      "evidence_id": null,
+      "error_code": "invalid_arguments",
+      "duplicate": false
+    },
+    {
+      "call_id": "c1a1526489ca431f8e6522358d0bf719",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "supplier 1 contract agreement",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 1437.0,
+      "evidence_id": "ev_b7fbbbb5ed_1",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "98135509f35d48c684768b99f482005b",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "internal escalation procedure supplier delay",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 63.0,
+      "evidence_id": "ev_b7fbbbb5ed_2",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "31f6cd61551442be99390894192226d1",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "contract reference supplier 1",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 62.0,
+      "evidence_id": "ev_b7fbbbb5ed_3",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "c92c025e6fce49bbade50bbbb907e69f",
+      "tool": "get_supplier_performance",
+      "arguments": null,
+      "status": "error",
+      "elapsed_ms": 0.0,
+      "evidence_id": null,
+      "error_code": "invalid_arguments",
+      "duplicate": false
+    },
+    {
+      "call_id": "ecd49ed8ade9465f91a9558314f9128d",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "NS-CON-001",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 31.0,
+      "evidence_id": "ev_b7fbbbb5ed_4",
+      "error_code": null,
+      "duplicate": false
+    },
+    {
+      "call_id": "7c0850851c534523a3abc0ee2398796c",
+      "tool": "get_supplier_performance",
+      "arguments": null,
+      "status": "error",
+      "elapsed_ms": 0.0,
+      "evidence_id": null,
+      "error_code": "invalid_arguments",
+      "duplicate": false
+    },
+    {
+      "call_id": "a610aa1c627a4eefb077d4bc6aa80b28",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "NS-CON-001",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 0.0,
+      "evidence_id": "ev_b7fbbbb5ed_4",
+      "error_code": null,
+      "duplicate": true
+    },
+    {
+      "call_id": "29aaf974352d4258a73dce25c5c2b04b",
+      "tool": "get_supplier_performance",
+      "arguments": null,
+      "status": "error",
+      "elapsed_ms": 0.0,
+      "evidence_id": null,
+      "error_code": "invalid_arguments",
+      "duplicate": false
+    },
+    {
+      "call_id": "a07eac550f5b436188479d80261176e5",
+      "tool": "search_corporate_knowledge",
+      "arguments": {
+        "query": "NS-CON-001",
+        "mode": "hybrid",
+        "top_k": 5,
+        "as_of": "2026-09-30",
+        "filters": {
+          "supplier_id": null,
+          "document_type": null,
+          "department_id": null,
+          "document_id": null,
+          "version_id": null,
+          "contract_id": null,
+          "contract_reference": null
+        }
+      },
+      "status": "success",
+      "elapsed_ms": 0.0,
+      "evidence_id": "ev_b7fbbbb5ed_4",
+      "error_code": null,
+      "duplicate": true
+    }
+  ],
+  "limitations": [
+    "Finding must cite evidence returned in this run.",
+    "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+  ],
+  "follow_up_questions": [],
+  "usage": {
+    "provider_round_ms": [
+      8719.0,
+      3453.0,
+      6125.0,
+      6985.0,
+      8000.0,
+      19031.0
+    ],
+    "input_tokens": 73906,
+    "output_tokens": 922,
+    "total_tokens": 74828,
+    "cached_input_tokens": 35839,
+    "llm_calls": 6,
+    "tool_calls": 10,
+    "provider_usage_complete": true,
+    "estimated_cost_usd": 0.0,
+    "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+    "elapsed_ms": 54000.0
+  },
+  "termination_reason": "invalid_evidence_reference",
+  "model": "qwen3.5:4b",
+  "execution_mode": "live"
+}

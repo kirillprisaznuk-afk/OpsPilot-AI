@@ -1,0 +1,832 @@
+{
+  "baseline_commit": "4d50c986db61063115c72fd9809b1e85ce3aa519",
+  "business_before": {
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": {
+      "A_procurement_to_customer": {
+        "supplier_id": 1,
+        "purchase_order_id": 1,
+        "receipt_id": 185,
+        "movement_id": 332,
+        "shortage_id": 16,
+        "sales_order_id": 1,
+        "fulfilment_id": 149,
+        "incident_id": 16,
+        "task_id": 16,
+        "promised_on": "2025-10-08",
+        "received_on": "2025-10-20",
+        "customer_promise": "2025-10-10",
+        "fulfilled_on": "2025-10-20"
+      },
+      "B_warehouse_capacity": {
+        "warehouse_id": 1,
+        "sales_order_id": 822,
+        "incident_id": 1729,
+        "expense_id": 104,
+        "amount": "120.00",
+        "task_id": 1729,
+        "status": "escalated"
+      },
+      "C_contract_concern": {
+        "contract_id": 1,
+        "supplier_id": 1,
+        "on_time_target": "95.00",
+        "due_orders": 72,
+        "on_time_orders": 24,
+        "observed_percent": "33.33"
+      },
+      "D_invoice_review": {
+        "invoice_id": 37,
+        "purchase_order_id": 37,
+        "amount": "9053.43",
+        "purchase_value": "9028.43",
+        "incident_id": 1153,
+        "task_id": 1153,
+        "status": "disputed"
+      },
+      "E_overdue_workload": {
+        "department_id": 1,
+        "name": "Operations",
+        "overdue_tasks": 123,
+        "owners": 8
+      }
+    }
+  },
+  "index_before": {
+    "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+    "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+    "chunks": 44,
+    "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+    "ids": [
+      "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+      "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+      "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+      "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+      "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+      "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+      "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+      "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+      "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+      "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+      "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+      "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+      "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+      "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+      "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+      "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+      "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+      "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+      "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+      "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+      "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+      "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+      "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+      "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+      "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+      "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+      "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+      "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+      "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+      "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+      "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+      "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+      "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+      "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+      "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+      "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+      "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+      "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+      "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+      "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+      "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+      "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+      "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+      "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+    ]
+  },
+  "migration": "0003",
+  "pgvector": "0.8.7",
+  "retrieval_quality_unchanged": true,
+  "reader_role": "opspilot_agent_reader",
+  "reader_isolation": "repeatable read",
+  "reader_transaction": "on",
+  "prior_live_before": {
+    "status": {
+      "state": "ready",
+      "documents": 44,
+      "versions": 44,
+      "chunks": 44,
+      "configuration": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "parser": "markdown-sections-v1",
+        "backend": "onnx-cpu-float32",
+        "pooling": "attention_mask_mean",
+        "distance": "cosine",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "max_tokens": 256,
+        "normalization": "L2",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "configured_model": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "pooling": "attention_mask_mean",
+        "normalization": "L2",
+        "distance": "cosine",
+        "max_tokens": 256,
+        "backend": "onnx-cpu-float32",
+        "parser": "markdown-sections-v1",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "model_cached": true,
+      "index_bytes": 778240,
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00"
+    },
+    "search_median_ms": {
+      "keyword": 17.75,
+      "vector": 20.417,
+      "hybrid": 18.493
+    },
+    "retrieved_citations": {
+      "keyword": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "vector": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "hybrid": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ]
+    },
+    "context_median_ms": 97.883,
+    "context_tokens": 5395,
+    "all_retrieval_modes": true,
+    "policy_and_supplier_sources": true,
+    "multi_document": true,
+    "effective_date_filtering": true,
+    "no_answer": true,
+    "citation_resolution": true,
+    "analytics_domains_identical": 10
+  },
+  "agent_before": {
+    "status": {
+      "state": "provider_not_configured",
+      "provider": "openai",
+      "model": null,
+      "read_only": true,
+      "live_validation": "not_performed_by_status",
+      "limits": {
+        "llm_calls": 6,
+        "tool_calls": 12,
+        "request_seconds": 90.0
+      },
+      "conversation_storage": "single-process memory, bounded history; lost on restart",
+      "authentication": "not_implemented_local_demo_only"
+    },
+    "tools": 17,
+    "query_invoked": true,
+    "unconfigured_response": {
+      "request_id": "75e208676ddc49e0972e38d447c69ffc",
+      "conversation_id": null,
+      "question": "Compare supplier performance with its applicable contract and escalation policy.",
+      "as_of": "2026-09-30",
+      "status": "provider_not_configured",
+      "answer": "The LLM provider is not configured. Existing analytics and knowledge endpoints remain available.",
+      "key_findings": [],
+      "evidence": [],
+      "citations": [],
+      "tool_trace": [],
+      "limitations": [
+        "Set OPENAI_API_KEY and an account-available LLM_MODEL only in the local environment or ignored .env."
+      ],
+      "follow_up_questions": [],
+      "usage": {
+        "provider_round_ms": [],
+        "input_tokens": null,
+        "output_tokens": null,
+        "total_tokens": null,
+        "cached_input_tokens": null,
+        "llm_calls": 0,
+        "tool_calls": 0,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": null,
+        "cost_basis": null,
+        "elapsed_ms": 0.0
+      },
+      "termination_reason": "provider_not_configured",
+      "model": null,
+      "execution_mode": "live"
+    }
+  },
+  "all_citations_resolved": 44,
+  "prior_live_after": {
+    "status": {
+      "state": "ready",
+      "documents": 44,
+      "versions": 44,
+      "chunks": 44,
+      "configuration": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "parser": "markdown-sections-v1",
+        "backend": "onnx-cpu-float32",
+        "pooling": "attention_mask_mean",
+        "distance": "cosine",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "max_tokens": 256,
+        "normalization": "L2",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "configured_model": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "pooling": "attention_mask_mean",
+        "normalization": "L2",
+        "distance": "cosine",
+        "max_tokens": 256,
+        "backend": "onnx-cpu-float32",
+        "parser": "markdown-sections-v1",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "model_cached": true,
+      "index_bytes": 778240,
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00"
+    },
+    "search_median_ms": {
+      "keyword": 13.281,
+      "vector": 20.848,
+      "hybrid": 24.326
+    },
+    "retrieved_citations": {
+      "keyword": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "vector": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "hybrid": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ]
+    },
+    "context_median_ms": 87.5,
+    "context_tokens": 5395,
+    "all_retrieval_modes": true,
+    "policy_and_supplier_sources": true,
+    "multi_document": true,
+    "effective_date_filtering": true,
+    "no_answer": true,
+    "citation_resolution": true,
+    "analytics_domains_identical": 10
+  },
+  "agent_after": {
+    "status": {
+      "state": "provider_not_configured",
+      "provider": "openai",
+      "model": null,
+      "read_only": true,
+      "live_validation": "not_performed_by_status",
+      "limits": {
+        "llm_calls": 6,
+        "tool_calls": 12,
+        "request_seconds": 90.0
+      },
+      "conversation_storage": "single-process memory, bounded history; lost on restart",
+      "authentication": "not_implemented_local_demo_only"
+    },
+    "tools": 17,
+    "query_invoked": true,
+    "unconfigured_response": {
+      "request_id": "c18eedf9349d4a23bc3aac38bb1c24a2",
+      "conversation_id": null,
+      "question": "Compare supplier performance with its applicable contract and escalation policy.",
+      "as_of": "2026-09-30",
+      "status": "provider_not_configured",
+      "answer": "The LLM provider is not configured. Existing analytics and knowledge endpoints remain available.",
+      "key_findings": [],
+      "evidence": [],
+      "citations": [],
+      "tool_trace": [],
+      "limitations": [
+        "Set OPENAI_API_KEY and an account-available LLM_MODEL only in the local environment or ignored .env."
+      ],
+      "follow_up_questions": [],
+      "usage": {
+        "provider_round_ms": [],
+        "input_tokens": null,
+        "output_tokens": null,
+        "total_tokens": null,
+        "cached_input_tokens": null,
+        "llm_calls": 0,
+        "tool_calls": 0,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": null,
+        "cost_basis": null,
+        "elapsed_ms": 0.0
+      },
+      "termination_reason": "provider_not_configured",
+      "model": null,
+      "execution_mode": "live"
+    }
+  },
+  "business_after": {
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": {
+      "A_procurement_to_customer": {
+        "supplier_id": 1,
+        "purchase_order_id": 1,
+        "receipt_id": 185,
+        "movement_id": 332,
+        "shortage_id": 16,
+        "sales_order_id": 1,
+        "fulfilment_id": 149,
+        "incident_id": 16,
+        "task_id": 16,
+        "promised_on": "2025-10-08",
+        "received_on": "2025-10-20",
+        "customer_promise": "2025-10-10",
+        "fulfilled_on": "2025-10-20"
+      },
+      "B_warehouse_capacity": {
+        "warehouse_id": 1,
+        "sales_order_id": 822,
+        "incident_id": 1729,
+        "expense_id": 104,
+        "amount": "120.00",
+        "task_id": 1729,
+        "status": "escalated"
+      },
+      "C_contract_concern": {
+        "contract_id": 1,
+        "supplier_id": 1,
+        "on_time_target": "95.00",
+        "due_orders": 72,
+        "on_time_orders": 24,
+        "observed_percent": "33.33"
+      },
+      "D_invoice_review": {
+        "invoice_id": 37,
+        "purchase_order_id": 37,
+        "amount": "9053.43",
+        "purchase_value": "9028.43",
+        "incident_id": 1153,
+        "task_id": 1153,
+        "status": "disputed"
+      },
+      "E_overdue_workload": {
+        "department_id": 1,
+        "name": "Operations",
+        "overdue_tasks": 123,
+        "owners": 8
+      }
+    }
+  },
+  "index_after": {
+    "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+    "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+    "chunks": 44,
+    "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+    "ids": [
+      "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+      "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+      "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+      "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+      "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+      "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+      "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+      "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+      "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+      "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+      "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+      "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+      "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+      "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+      "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+      "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+      "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+      "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+      "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+      "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+      "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+      "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+      "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+      "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+      "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+      "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+      "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+      "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+      "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+      "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+      "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+      "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+      "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+      "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+      "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+      "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+      "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+      "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+      "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+      "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+      "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+      "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+      "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+      "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+    ]
+  },
+  "unrelated_containers_preserved": [
+    "/productpulse-local-frontend-1",
+    "/productpulse-local-api-1",
+    "/productpulse-local-seed-1",
+    "/productpulse-local-migrate-1",
+    "/productpulse-local-db-1",
+    "/productpulse-stage1-smoke-api-1",
+    "/productpulse-stage1-smoke-seed-1",
+    "/productpulse-stage1-smoke-migrate-1",
+    "/productpulse-stage1-smoke-db-1",
+    "/yummy-flow-local-postgres-1"
+  ],
+  "restart_executed": true,
+  "prior_stages_runtime_passed": true,
+  "test_database_cleanup": true,
+  "live_llm_acceptance": "BLOCKED",
+  "ready_for_stage5": false,
+  "final_prior_routes": {
+    "status": {
+      "state": "ready",
+      "documents": 44,
+      "versions": 44,
+      "chunks": 44,
+      "configuration": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "parser": "markdown-sections-v1",
+        "backend": "onnx-cpu-float32",
+        "pooling": "attention_mask_mean",
+        "distance": "cosine",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "max_tokens": 256,
+        "normalization": "L2",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "configured_model": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+        "dimension": 384,
+        "pooling": "attention_mask_mean",
+        "normalization": "L2",
+        "distance": "cosine",
+        "max_tokens": 256,
+        "backend": "onnx-cpu-float32",
+        "parser": "markdown-sections-v1",
+        "tokenizer_truncation": "reject_over_256"
+      },
+      "model_cached": true,
+      "index_bytes": 778240,
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00"
+    },
+    "search_median_ms": {
+      "keyword": 15.814,
+      "vector": 22.012,
+      "hybrid": 26.413
+    },
+    "retrieved_citations": {
+      "keyword": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "vector": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ],
+      "hybrid": [
+        "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1"
+      ]
+    },
+    "context_median_ms": 102.8,
+    "context_tokens": 5395,
+    "all_retrieval_modes": true,
+    "policy_and_supplier_sources": true,
+    "multi_document": true,
+    "effective_date_filtering": true,
+    "no_answer": true,
+    "citation_resolution": true,
+    "analytics_domains_identical": 10
+  },
+  "final_agent_routes": {
+    "status": {
+      "state": "provider_not_configured",
+      "provider": "openai",
+      "model": null,
+      "read_only": true,
+      "live_validation": "not_performed_by_status",
+      "limits": {
+        "llm_calls": 6,
+        "tool_calls": 12,
+        "request_seconds": 90.0
+      },
+      "conversation_storage": "single-process memory, bounded history; lost on restart",
+      "authentication": "not_implemented_local_demo_only"
+    },
+    "tools": 17,
+    "query_invoked": true,
+    "unconfigured_response": {
+      "request_id": "050dd33f1c894ae397a22b2390ef2201",
+      "conversation_id": null,
+      "question": "Compare supplier performance with its applicable contract and escalation policy.",
+      "as_of": "2026-09-30",
+      "status": "provider_not_configured",
+      "answer": "The LLM provider is not configured. Existing analytics and knowledge endpoints remain available.",
+      "key_findings": [],
+      "evidence": [],
+      "citations": [],
+      "tool_trace": [],
+      "limitations": [
+        "Set OPENAI_API_KEY and an account-available LLM_MODEL only in the local environment or ignored .env."
+      ],
+      "follow_up_questions": [],
+      "usage": {
+        "provider_round_ms": [],
+        "input_tokens": null,
+        "output_tokens": null,
+        "total_tokens": null,
+        "cached_input_tokens": null,
+        "llm_calls": 0,
+        "tool_calls": 0,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": null,
+        "cost_basis": null,
+        "elapsed_ms": 0.0
+      },
+      "termination_reason": "provider_not_configured",
+      "model": null,
+      "execution_mode": "live"
+    }
+  },
+  "final_business": {
+    "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+    "integrity": {
+      "validated": true,
+      "counts": {
+        "business_roles": 6,
+        "customers": 120,
+        "departments": 6,
+        "document_versions": 44,
+        "documents": 44,
+        "employees": 48,
+        "fulfilments": 4768,
+        "goods_receipts": 5447,
+        "incidents": 1793,
+        "operational_expenses": 216,
+        "payments": 2210,
+        "products": 200,
+        "purchase_order_lines": 4799,
+        "purchase_orders": 2400,
+        "responsibilities": 48,
+        "sales_order_lines": 3599,
+        "sales_orders": 1800,
+        "shortages": 1144,
+        "stock_movements": 10215,
+        "supplier_contracts": 36,
+        "supplier_invoices": 2386,
+        "suppliers": 36,
+        "task_status_history": 3527,
+        "tasks": 1793,
+        "warehouses": 4
+      },
+      "closing_stock_units": 99213,
+      "period": "2025-10-01/2026-09-30"
+    },
+    "scenarios": {
+      "A_procurement_to_customer": {
+        "supplier_id": 1,
+        "purchase_order_id": 1,
+        "receipt_id": 185,
+        "movement_id": 332,
+        "shortage_id": 16,
+        "sales_order_id": 1,
+        "fulfilment_id": 149,
+        "incident_id": 16,
+        "task_id": 16,
+        "promised_on": "2025-10-08",
+        "received_on": "2025-10-20",
+        "customer_promise": "2025-10-10",
+        "fulfilled_on": "2025-10-20"
+      },
+      "B_warehouse_capacity": {
+        "warehouse_id": 1,
+        "sales_order_id": 822,
+        "incident_id": 1729,
+        "expense_id": 104,
+        "amount": "120.00",
+        "task_id": 1729,
+        "status": "escalated"
+      },
+      "C_contract_concern": {
+        "contract_id": 1,
+        "supplier_id": 1,
+        "on_time_target": "95.00",
+        "due_orders": 72,
+        "on_time_orders": 24,
+        "observed_percent": "33.33"
+      },
+      "D_invoice_review": {
+        "invoice_id": 37,
+        "purchase_order_id": 37,
+        "amount": "9053.43",
+        "purchase_value": "9028.43",
+        "incident_id": 1153,
+        "task_id": 1153,
+        "status": "disputed"
+      },
+      "E_overdue_workload": {
+        "department_id": 1,
+        "name": "Operations",
+        "overdue_tasks": 123,
+        "owners": 8
+      }
+    }
+  },
+  "tests": {
+    "tests": "262",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "97.193",
+    "prior_stage1_to_stage3_cases": 182,
+    "new_agent_cases": 80
+  },
+  "deployed_application_and_maintenance_source_hashes": {
+    "backend/app/__init__.py": "9d641091ac94af0392c577250a5e16c30a5b06a3deb2f7336576be917933bdb6",
+    "backend/app/agent/config.py": "50f67580c67557b79a680c36e796cb83851d597f325456b672bae311ea179715",
+    "backend/app/agent/contracts.py": "2360292dd818f8e5b54060d81e1b413ef7b5e0fa9d7e338a94ade448db2516a3",
+    "backend/app/agent/conversation.py": "a8d6f65f2d1b73df815418f559a653d64ce94bc0e55cad891f2f4a2bd5c53081",
+    "backend/app/agent/database.py": "60bf14e2a6cbb2894c9488f46ff1c7e79d78171850f22a301048f472d0aab33d",
+    "backend/app/agent/execution.py": "11be75b37f2621102f485420abd68c905ebcdf34b651009bd1357af6334102a8",
+    "backend/app/agent/grounding.py": "540abd0357d6c79d0a8443f32753488525a4ec4848f3b0024f97e8a7a8119a9b",
+    "backend/app/agent/orchestrator.py": "79e2a07e99d0aff26e0b59c7cfec94cafbd085cf9e33aee40867417ca5d6397f",
+    "backend/app/agent/prompts.py": "c3b8e49c05d07fdfccdc5e557583033cbe5e1b007635e325a05750af747edc00",
+    "backend/app/agent/provider.py": "0e384684d4fcd31bff4c2e70c0492bcaa60625bbd6fe1b1f0c593b1ade614772",
+    "backend/app/agent/service.py": "2f7890f49bad96ec0456e832be5fa162827ab79ec4cf9f6215a61aa3e441e8d1",
+    "backend/app/agent/tools.py": "5701d7e8ffa120b100e082b461803e80403f9617d1c5e307045dddf4df79ebf0",
+    "backend/app/analytics/common.py": "92879ea7591aba8f8fbcc559aabde34f5a4f588655e4acbbb5ce924304e92410",
+    "backend/app/analytics/contracts.py": "704e53fb7251e2cf429daf8189577c8f61310f8859cf9cca986f84d474c0c2c6",
+    "backend/app/analytics/facts.py": "d6b04d5e1cd768e8b4bc68c8b1d15a0c6d67986e2658e51a35137a8781816f77",
+    "backend/app/analytics/finance.py": "608b819d40838fa3bfebeeea7f804731e23bb968846ee0b26b55c89f6cc9ed39",
+    "backend/app/analytics/fulfilment.py": "15d4852b32e45a368afb3e5bfe8b561fddfb39c7e8a8047adc83e50777f27908",
+    "backend/app/analytics/incidents.py": "b93f327aac54ab2985a0ff9e4107416100104d7da614e6f066d7b6f82bb05d79",
+    "backend/app/analytics/insights.py": "55b816e014c19c24abe78724a48f43062153f6d257fe78648ac1cbf3afd62196",
+    "backend/app/analytics/inventory.py": "b9b722c3c904b5083dc6e73ae8ca65a7783eae9215627e31f432ec69d2537f83",
+    "backend/app/analytics/order_queries.py": "0b8be28b7e01492c8c826c57d56b2fcf6c72e79547ee676217dfd35b251ac888",
+    "backend/app/analytics/overview.py": "4f852797c2f1a1bd456a21a5466e3208bc04f63cad0fc725ee1f942f88df5ff9",
+    "backend/app/analytics/procurement.py": "59a294e0d5c4cac0193346901c928e14ccd9a92127ed472478795c71ec6197fc",
+    "backend/app/analytics/registry.py": "389f5e9cffccb24d02e60d0302b2487bab36470b6588b189cacdda0a3f59ae15",
+    "backend/app/analytics/relationships.py": "a368544348f77f81779f76ff828aea30898a70e52beced02c388753566a3cadd",
+    "backend/app/analytics/suppliers.py": "55a1dda95609450975679bc77992de3aa531242361a9192fc55502e98742d582",
+    "backend/app/analytics/warehouses.py": "ffa0dcef52279e59ceb4b0c253220f2211f5282905ca38415a2fb636551248ca",
+    "backend/app/analytics/workforce.py": "7f7c6d6d7735413494a805c754256a7cc80f4a59dc616a0e3cbaf36b62767846",
+    "backend/app/api/agent.py": "d70fd7961ac2ce7a78c92b94bdc296d8463960d8b8cce0af408f58243a0e00c5",
+    "backend/app/api/analytics.py": "6cf71d8a9a39418522c55caa80d5db0591f220cf169c76f4288f53f94a6f2695",
+    "backend/app/api/knowledge.py": "dbdc01b24a241a2809add641b88212a289d520122a730b8656aa42335244be5a",
+    "backend/app/api/routes.py": "3fbae9a35b6fd6074b3dc0c6c9fa1281ca829f96447924e9cee23679b43629c3",
+    "backend/app/core/config.py": "d0dc86b6a3488b40148b2affca21fca974d3f04ef2aa613e6d682cf57fbfbace",
+    "backend/app/db/session.py": "2dd22007dacbb8d1469f1aabf4b4053fb7cc7e64f730de26e6c88b0d24cb18dd",
+    "backend/app/knowledge/chunking.py": "17bb5c8b3a7086c566d345bc363d13b9715a21fa525bc3a715ceebc667fbf045",
+    "backend/app/knowledge/citations.py": "91dee0b23c50873254660847e5bd855a1cbfe8277985fafb214d421059876520",
+    "backend/app/knowledge/context.py": "15b6297a940b429613aca5e47425833b3e7da4831d9be18b2f54954029f0e9a0",
+    "backend/app/knowledge/contracts.py": "7f56daf87185d627aaf4f00b23b92cd326443f0c8fa0c1814bee251b7a7702d3",
+    "backend/app/knowledge/corpus.py": "f869654f106215f8ca43f33a86093485539525c043a324b0de48241e568e36cf",
+    "backend/app/knowledge/embeddings.py": "c65e5e1d98b27c12ba2cacfb26fe4ff56a541e9df3aa3629d23e6d1992bc8ad1",
+    "backend/app/knowledge/evaluation.py": "63f8de2833495b8119d881886d9bd6be6b52950155d9a0ebe3ddf0446fa9b216",
+    "backend/app/knowledge/indexing.py": "a1a5e66a47fca0fc7e8f1b2bd7aeee97b29d797fa1d54edcad544b82545d5117",
+    "backend/app/knowledge/schema.py": "8cbe0d891beef1ccf3cfc26148396e8d9d5736b67bd614548c9641878d76d698",
+    "backend/app/knowledge/search.py": "dd5d3f065d01130f79a9ebe7b38be61e8c548846ae7abf756a6a8a24a321c279",
+    "backend/app/knowledge/service.py": "0c917ede767c0b7707c94e2671793b7831643a2696f34e80cda5a9548dcdc9b7",
+    "backend/app/main.py": "9b8ebf9b17e32f5e078c6c36674cf0ea0aa6477c5439087ff50720151b67cc5e",
+    "backend/app/models/__init__.py": "0a55152a80c3f9f31de27495449876aa4c9f250f946c3acf4d5602c0b90bbbe9",
+    "backend/app/models/base.py": "2cf7152563244dc56b4f5c2cc954750e92f743e00cdc84e1395e68d955f141b3",
+    "backend/app/models/finance.py": "cd7dea75d9e22f1a6d93e838af7cdd078326591394dd5a84923af03336538c8b",
+    "backend/app/models/inventory.py": "eae36947261b0b19fe6a1b8f0f5bfebe0647e837494bfd5543fe30a1979f1a32",
+    "backend/app/models/knowledge.py": "299eddeb24182874689f382e2ee93835d4120d32298d445dae062d1ef7a5b074",
+    "backend/app/models/operations.py": "503b802ebf0280d2ee98d6d4ded73f8511abc18f233ea0cd6db5444d63828e7a",
+    "backend/app/models/organisation.py": "e0cf062bbc8b8263a3c1ddb405b4a42b0954e6e49602b5db91fe67436b51f10a",
+    "backend/app/models/procurement.py": "da0563a7ed052ddf90886c5fa86bf7fda51228214cdb0929ad4950924f7a9ff1",
+    "backend/app/models/sales.py": "9e2f0d13c345ab5f0e70ae3ad59b3a75eac37ead7373380bcf65db482db93f73",
+    "backend/app/repositories/catalog.py": "6f0580749dcb74e51736ac74f162d5a032f5794b75e18adabbe3d7c5df6de86f",
+    "backend/app/repositories/orders.py": "9e64000606680268f1979e8c2061cd659b96c93be5d74c30f9bf10cd71a92d85",
+    "backend/app/schemas/responses.py": "a082da4b72502ded8581a1663b61072de34fbd82a28646cd1feee90c4f0117ba",
+    "backend/app/services/demo.py": "4f3b33182c89d54901d9105a62a417087d1b580c27a5eb7fd9dcd7d55c7c1345",
+    "backend/app/services/integrity.py": "586a46be2e0e4d2863f88c02de28d334ba3894de6bf86502c23b6a8336fe3344",
+    "backend/app/services/scenarios.py": "353bf0f3ad4a5aa54ff41c760955405fd8e2120df5fcb1874ac1a7159086967e",
+    "backend/app/services/seeding.py": "121735db772bf992fc1fc91825164688b2eab4a0c453a7c627be9fe9bfc6e79f",
+    "scripts/evaluate_agent.py": "5d2d5cae0baf697664ac18d12c17dd117f7a209e6f4c55bf56c47f6bad873a3e",
+    "scripts/evaluate_retrieval.py": "55bf2978c1ed3a7b02e12cdf12b3ce373996046a93844ec5f25794e8a92ce706",
+    "scripts/knowledge.py": "1731fbb13e03340642f161534b3cdf942961dab7599b59f9b574ae51b26e4199",
+    "scripts/manage.py": "7874e8337b31233e9a8aeb8afadf0221ae44e29fdd8a9da31167c257381fdd71",
+    "scripts/prepare_agent_reader.py": "f7aaea2006614c7f6842642e55bd54e36145f72c9b914f953e1b8c92245a7e19",
+    "scripts/prepare_knowledge_upgrade.py": "f1153152332b02fcffe5f89759a7eb538056b031ee29311dd0e700313a995a70",
+    "scripts/validate.py": "76f707061af5f699b9c6d8ec0715f5aaa8f68d8f60b15908450a4a41b54667e9",
+    "scripts/validate_agent.py": "cffff59f90ed448a8a37b83781a47d029d21f38539df1773f6a115890657e9a4",
+    "scripts/validate_analytics.py": "770c83bee92940e9fc28b342f1efe1e707454e74b806489692a5e2e9d73049b7",
+    "scripts/validate_knowledge.py": "e7482c74d4e836eabb645ebcba88463fc9f53fd473cc31b0cad549ae3e21727e",
+    "scripts/write_metrics.py": "21dc7be564c2b7056577cfa4b8fa9907d59cfa02f3a2d23bbc0cc0de78bd7efe",
+    "data/generator/company.py": "bad4f03bd715a30ffca7855972846a1af1f285f301a5e7e567fe3a815b6a75f0"
+  },
+  "container_tool_probe": {
+    "execution_mode": "offline_real_container_tools",
+    "supplier_on_time_percent": "33.33",
+    "contract_target_percent": "95.00",
+    "document_id": 1,
+    "live_llm": false
+  },
+  "docker_runtime": {
+    "api": {
+      "id": "72f74d319827f40a5f6d8e16eaba052c679e0da3d0c1691c872b418949495f47",
+      "image": "sha256:c2b787b45f896889116a1b4ed149674cacafb5c3032f9c65708e370991e3964d",
+      "health": "healthy",
+      "started_at": "2026-10-28T13:07:43.940492044Z"
+    },
+    "db": {
+      "id": "99a52947b2d410f9ae937282c05193e5ce1e9987be7550d2f7ba36b702d994a5",
+      "image": "sha256:ac08538c6f8b9904c33c8224c5e5706dbe760aca29db1d096972b4052c22a75d",
+      "health": "healthy",
+      "started_at": "2026-10-28T13:01:13.257714838Z"
+    }
+  },
+  "preservation_comparison": "Git-normalized tracked content; runtime byte hashes checked independently; corpus hashes validated against the database.",
+  "preserved_source_and_prior_acceptance_artifacts": 102,
+  "ruff_lint_passed": true,
+  "ruff_format_passed": true,
+  "alembic_check": "No new upgrade operations detected.",
+  "all_independent_gates_passed": true,
+  "missing_live_configuration": [
+    "OPENAI_API_KEY",
+    "LLM_MODEL"
+  ],
+  "deliverable_secret_scan_passed": true,
+  "files_created": 31,
+  "files_modified": 7
+}

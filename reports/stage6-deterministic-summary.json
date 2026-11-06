@@ -1,0 +1,1205 @@
+{
+  "mode": "DETERMINISTIC",
+  "full_local_report_sha256": "6765c797d60dc87f1efe1d5d114e516420759759fc1b188a737614a65e8a9bb5",
+  "summary": {
+    "cases": 38,
+    "automatic_passed": 38,
+    "llm_calls": 0,
+    "reported_tokens": 0,
+    "median_http_ms": 111.30879999973331,
+    "max_http_ms": 1420.6416000006357,
+    "real_model_interpretations": 0,
+    "semantic_review": "pending_human_or_agent_source_review"
+  },
+  "cases": [
+    {
+      "id": "A01",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_supplier_performance",
+        "search_corporate_knowledge",
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 331.3
+    },
+    {
+      "id": "A02",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "compare_suppliers"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 161.2
+    },
+    {
+      "id": "A03",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 241.0
+    },
+    {
+      "id": "A06",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 55.3
+    },
+    {
+      "id": "A22",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [],
+      "llm_calls": 0,
+      "http_elapsed_ms": 10.7
+    },
+    {
+      "id": "A23",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 29.9
+    },
+    {
+      "id": "A25",
+      "status": "refused",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [],
+      "llm_calls": 0,
+      "http_elapsed_ms": 9.3
+    },
+    {
+      "id": "A27",
+      "status": "refused",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [],
+      "llm_calls": 0,
+      "http_elapsed_ms": 4.2
+    },
+    {
+      "id": "B01",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_supplier_performance",
+        "search_corporate_knowledge",
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 149.9
+    },
+    {
+      "id": "B02",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "compare_suppliers"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 115.2
+    },
+    {
+      "id": "B03",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "compare_suppliers"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 168.5
+    },
+    {
+      "id": "B04",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "compare_suppliers"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 175.3
+    },
+    {
+      "id": "B05",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "resolve_business_entity",
+        "get_supplier_performance",
+        "search_corporate_knowledge",
+        "get_supplier_performance",
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 216.6
+    },
+    {
+      "id": "B06",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "investigate_business_entity"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 99.7
+    },
+    {
+      "id": "B07",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_inventory_status"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 64.0
+    },
+    {
+      "id": "B08",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_operational_costs",
+        "get_operational_incidents"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 140.6
+    },
+    {
+      "id": "B09",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_customer_fulfilment"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 90.1
+    },
+    {
+      "id": "B10",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_workforce_tasks"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 61.1
+    },
+    {
+      "id": "B11",
+      "status": "partial",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "resolve_business_entity",
+        "get_inventory_status",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 1420.6
+    },
+    {
+      "id": "B12",
+      "status": "partial",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 55.9
+    },
+    {
+      "id": "B13",
+      "status": "refused",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [],
+      "llm_calls": 0,
+      "http_elapsed_ms": 5.0
+    },
+    {
+      "id": "B14",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 53.5
+    },
+    {
+      "id": "B15",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "resolve_business_entity",
+        "get_supplier_performance",
+        "search_corporate_knowledge",
+        "get_supplier_performance",
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 197.5
+    },
+    {
+      "id": "C01",
+      "status": "partial",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_supplier_performance",
+        "search_corporate_knowledge",
+        "search_corporate_knowledge",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity",
+        "investigate_business_entity"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 608.2
+    },
+    {
+      "id": "C02",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_supplier_performance",
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 110.1
+    },
+    {
+      "id": "C03",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "compare_suppliers"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 124.3
+    },
+    {
+      "id": "C04",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true,
+        "comparison_scopes": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "resolve_business_entity",
+        "get_inventory_status",
+        "get_inventory_status"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 120.4
+    },
+    {
+      "id": "C05",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_operational_costs"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 112.5
+    },
+    {
+      "id": "C06",
+      "status": "clarification_required",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [],
+      "llm_calls": 0,
+      "http_elapsed_ms": 26.1
+    },
+    {
+      "id": "C07",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_supplier_performance",
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 145.5
+    },
+    {
+      "id": "C08",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "investigate_business_entity"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 129.3
+    },
+    {
+      "id": "C09",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "compare_suppliers",
+        "get_supplier_performance",
+        "search_corporate_knowledge"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 240.0
+    },
+    {
+      "id": "C10",
+      "status": "insufficient_evidence",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 16.3
+    },
+    {
+      "id": "C11",
+      "status": "clarification_required",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [],
+      "llm_calls": 0,
+      "http_elapsed_ms": 14.4
+    },
+    {
+      "id": "C12",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "get_workforce_tasks"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 63.6
+    },
+    {
+      "id": "C13",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "resolve_business_entity",
+        "get_inventory_status"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 61.6
+    },
+    {
+      "id": "C14",
+      "status": "clarification_required",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 22.4
+    },
+    {
+      "id": "C15",
+      "status": "completed",
+      "passed": true,
+      "deterministic_checks": {
+        "observation_window": true,
+        "status": true,
+        "required_tools": true,
+        "required_entities": true,
+        "numeric_references": true,
+        "independent_metrics": true,
+        "required_sources_cited": true,
+        "argument_errors_within_limit": true,
+        "prompt_refusal": true,
+        "ranking": true,
+        "not_false_refusal": true
+      },
+      "hybrid_checks": {
+        "every_graph_fact_verified": true,
+        "tool_budget": true,
+        "mode_honest": true,
+        "expected_status": true,
+        "fresh_oracle_metrics": true,
+        "comparison_scopes": true
+      },
+      "read_only_tools": [
+        "resolve_business_entity",
+        "resolve_business_entity",
+        "get_operational_costs",
+        "get_operational_costs"
+      ],
+      "llm_calls": 0,
+      "http_elapsed_ms": 186.4
+    }
+  ]
+}

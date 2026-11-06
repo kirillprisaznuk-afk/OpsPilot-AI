@@ -1,0 +1,341 @@
+{
+  "description": "Additional independent Stage 4C generalization and scope cases. Evaluation only.",
+  "cases": [
+    {
+      "id": "C01",
+      "question": "Compare Supplier 1's delivery performance against its contractual SLA, investigate related operational impact and identify the applicable escalation policy.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "get_supplier_performance",
+          "arguments": {
+            "supplier_id": 1,
+            "query": {
+              "as_of": "2026-09-30"
+            }
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "expected_codes": [
+        "CON-001",
+        "POL-001"
+      ],
+      "hybrid_status": [
+        "partial"
+      ],
+      "expected_statuses": [
+        "partial"
+      ]
+    },
+    {
+      "id": "C02",
+      "question": "Compare Supplier 12 delivery performance against its contractual SLA.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "get_supplier_performance",
+          "arguments": {
+            "supplier_id": 12,
+            "query": {
+              "as_of": "2026-09-30"
+            }
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ]
+    },
+    {
+      "id": "C03",
+      "question": "Show the five suppliers with the lowest on-time rate during August 2026.",
+      "calls": [
+        {
+          "tool": "compare_suppliers",
+          "arguments": {
+            "as_of": "2026-08-31",
+            "start_date": "2026-08-01",
+            "end_date": "2026-08-31",
+            "sort": "on_time_rate",
+            "direction": "asc",
+            "limit": 5
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed"
+      ],
+      "ranking": {
+        "sort": "on_time_rate",
+        "direction": "asc",
+        "minimum_rows": 5
+      },
+      "expected_statuses": [
+        "completed"
+      ],
+      "as_of": "2026-08-31"
+    },
+    {
+      "id": "C04",
+      "question": "Compare inventory in warehouses 2 and 3.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "get_inventory_status",
+          "arguments": {
+            "as_of": "2026-09-30",
+            "warehouse_id": 2
+          }
+        },
+        {
+          "tool": "get_inventory_status",
+          "arguments": {
+            "as_of": "2026-09-30",
+            "warehouse_id": 3
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "scope_tool": "get_inventory_status",
+      "scope_field": "warehouse_id",
+      "expected_scopes": [
+        2,
+        3
+      ],
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ]
+    },
+    {
+      "id": "C05",
+      "question": "Show recorded costs for Supplier 18 at June 2026.",
+      "calls": [
+        {
+          "tool": "get_operational_costs",
+          "arguments": {
+            "as_of": "2026-06-30",
+            "supplier_id": 18
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "id": "C06",
+      "question": "Which supplier is riskiest?",
+      "as_of": "2026-09-30",
+      "calls": [],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "clarification_required"
+      ],
+      "expected_statuses": [
+        "clarification_required"
+      ]
+    },
+    {
+      "id": "C07",
+      "question": "Compare vendor 3 delivery against its agreement.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "get_supplier_performance",
+          "arguments": {
+            "supplier_id": 3,
+            "query": {
+              "as_of": "2026-09-30"
+            }
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ]
+    },
+    {
+      "id": "C08",
+      "question": "Investigate invoice 7.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "investigate_business_entity",
+          "arguments": {
+            "entity_type": "invoice",
+            "entity_id": 7,
+            "query": {
+              "as_of": "2026-09-30"
+            }
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed",
+        "partial"
+      ],
+      "expected_statuses": [
+        "completed",
+        "partial"
+      ]
+    },
+    {
+      "id": "C09",
+      "question": "Compare the supplier with the worst on-time delivery against its SLA.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "compare_suppliers",
+          "arguments": {
+            "as_of": "2026-09-30",
+            "sort": "on_time_rate",
+            "direction": "asc",
+            "limit": 1
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ]
+    },
+    {
+      "id": "C10",
+      "question": "Show delivery performance for Supplier 9999.",
+      "as_of": "2026-09-30",
+      "calls": [],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "insufficient_evidence"
+      ],
+      "expected_statuses": [
+        "insufficient_evidence"
+      ]
+    },
+    {
+      "id": "C11",
+      "question": "Show Supplier 2 performance at 2026-02-31.",
+      "as_of": "2026-09-30",
+      "calls": [],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "clarification_required"
+      ],
+      "expected_statuses": [
+        "clarification_required"
+      ]
+    },
+    {
+      "id": "C12",
+      "question": "Show workforce backlog for employee 2 at June 2026.",
+      "calls": [
+        {
+          "tool": "get_workforce_tasks",
+          "arguments": {
+            "as_of": "2026-06-30",
+            "employee_id": 2
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ],
+      "as_of": "2026-06-30"
+    },
+    {
+      "id": "C13",
+      "question": "Show inventory for product 44 in warehouse 3.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "get_inventory_status",
+          "arguments": {
+            "as_of": "2026-09-30",
+            "product_id": 44,
+            "warehouse_id": 3
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ]
+    },
+    {
+      "id": "C14",
+      "question": "Show fulfilment for customer 2.",
+      "as_of": "2026-09-30",
+      "calls": [],
+      "must_not_refuse": true,
+      "hybrid_status": [
+        "clarification_required"
+      ],
+      "expected_statuses": [
+        "clarification_required"
+      ]
+    },
+    {
+      "id": "C15",
+      "question": "Compare recorded costs for suppliers 5 and 8.",
+      "as_of": "2026-09-30",
+      "calls": [
+        {
+          "tool": "get_operational_costs",
+          "arguments": {
+            "as_of": "2026-09-30",
+            "supplier_id": 5
+          }
+        },
+        {
+          "tool": "get_operational_costs",
+          "arguments": {
+            "as_of": "2026-09-30",
+            "supplier_id": 8
+          }
+        }
+      ],
+      "must_not_refuse": true,
+      "scope_tool": "get_operational_costs",
+      "scope_field": "supplier_id",
+      "expected_scopes": [
+        5,
+        8
+      ],
+      "hybrid_status": [
+        "completed"
+      ],
+      "expected_statuses": [
+        "completed"
+      ]
+    }
+  ]
+}

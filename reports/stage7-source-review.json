@@ -1,0 +1,75 @@
+{
+  "reviewed_cases": [
+    "A01",
+    "A03",
+    "A06",
+    "A23",
+    "B08",
+    "B11",
+    "B12",
+    "B13",
+    "B14",
+    "C08",
+    "C10",
+    "C13"
+  ],
+  "registered_source_passages": [
+    {
+      "case": "A01",
+      "code": "CON-001",
+      "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+      "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+      "excerpt_matches_registered_passage": true
+    },
+    {
+      "case": "A01",
+      "code": "POL-001",
+      "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+      "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+      "excerpt_matches_registered_passage": true
+    },
+    {
+      "case": "A06",
+      "code": "POL-001",
+      "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+      "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+      "excerpt_matches_registered_passage": true
+    },
+    {
+      "case": "B12",
+      "code": "POL-001",
+      "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+      "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+      "excerpt_matches_registered_passage": true
+    },
+    {
+      "case": "B14",
+      "code": "POL-004",
+      "citation_id": "kc_8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+      "source_sha256": "4d447a0591620e2257fdcd9f771d15d97150b2b5fe554c487273cd29c7fd5213",
+      "excerpt_matches_registered_passage": true
+    }
+  ],
+  "independent_sql_examples": {
+    "sales_order_1": {
+      "dispatch_days_late": 10,
+      "dispatched_units": 30
+    },
+    "invoice_7": {
+      "invoiced_gbp": "8306.42",
+      "paid_gbp": "8306.42",
+      "outstanding_gbp": "0.00"
+    },
+    "product_44_warehouse_3": {
+      "stock_units": 36
+    }
+  },
+  "semantic_boundaries": [
+    "Operational SLA gap does not establish legal breach.",
+    "Customer dispatch promise is distinct from procurement obligations.",
+    "A linked or simulated relationship does not prove universal causation.",
+    "Recorded costs and unpaid exposure do not establish unrecorded loss.",
+    "Missing policy or supplier is insufficient evidence.",
+    "The read-only response refuses approval and execution."
+  ]
+}

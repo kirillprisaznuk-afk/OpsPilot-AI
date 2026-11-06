@@ -1,0 +1,26 @@
+{
+  "npm_production_counts": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0
+  },
+  "npm_all_counts": {
+    "info": 0,
+    "low": 0,
+    "moderate": 1,
+    "high": 0,
+    "critical": 0
+  },
+  "npm_findings": [
+    {
+      "package": "minimatch",
+      "severity": "moderate",
+      "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+      "development_only": true
+    }
+  ],
+  "python_runtime_distributions": 49,
+  "python_runtime_known_vulnerabilities": 0
+}

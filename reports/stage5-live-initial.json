@@ -1,0 +1,1948 @@
+{
+  "started_at": "2026-11-05T15:33:13.258491+00:00",
+  "checks": [
+    {
+      "check": "anonymous_denied",
+      "status": 401,
+      "expected": 401,
+      "elapsed_ms": 12.96,
+      "passed": true
+    },
+    {
+      "check": "viewer_write_denied",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 35.31,
+      "passed": true
+    },
+    {
+      "check": "draft",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 74.22,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 48.04,
+      "passed": true
+    },
+    {
+      "check": "immutable",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 41.28,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 58.25,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 33.47,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 28.0,
+      "passed": true
+    },
+    {
+      "check": "reject",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 53.91,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 64.13,
+      "passed": true
+    },
+    {
+      "check": "real_supplier_contract_policy_investigation",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 2732.5,
+      "passed": true
+    },
+    {
+      "check": "recommendation_no_write",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 57.64,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 76.29,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 84.08,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 52.8,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 82.62,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 71.49,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 52.44,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 65.29,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 73.52,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 68.81,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.78,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 74.76,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 72.59,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 50.26,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 45.31,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 57.06,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 60.02,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 44.9,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 50.6,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 66.6,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 82.82,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 46.89,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 57.53,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 53.0,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 68.22,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 76.52,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 69.07,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 67.89,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 92.99,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 57.35,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 54.5,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 63.89,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 78.22,
+      "passed": true
+    },
+    {
+      "check": "cross_scope_task_denied",
+      "status": 403,
+      "expected": 403,
+      "elapsed_ms": 36.84,
+      "passed": true
+    },
+    {
+      "check": "forged_fact_denied",
+      "status": 422,
+      "expected": 422,
+      "elapsed_ms": 52.1,
+      "passed": true
+    },
+    {
+      "check": "create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 55.61,
+      "passed": true
+    },
+    {
+      "check": "submit",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 46.71,
+      "passed": true
+    },
+    {
+      "check": "approve",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 49.25,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 205.83,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 222.56,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 248.59,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 271.36,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 286.51,
+      "passed": true
+    },
+    {
+      "check": "execute",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 297.49,
+      "passed": true
+    },
+    {
+      "check": "idempotent_create",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 65.46,
+      "passed": true
+    },
+    {
+      "check": "idempotent_create_retry",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 29.86,
+      "passed": true
+    },
+    {
+      "check": "key_conflict",
+      "status": 409,
+      "expected": 409,
+      "elapsed_ms": 29.5,
+      "passed": true
+    },
+    {
+      "check": "read_persisted_task",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 33.59,
+      "passed": true
+    },
+    {
+      "check": "operational_summary",
+      "status": 200,
+      "expected": 200,
+      "elapsed_ms": 48.43,
+      "passed": true
+    }
+  ],
+  "llm_calls": 0,
+  "approvals": "Explicit HTTP decisions by distinct authenticated synthetic demo human identities; no model approvals.",
+  "before": {
+    "source": {
+      "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+      "integrity": {
+        "validated": true,
+        "counts": {
+          "business_roles": 6,
+          "customers": 120,
+          "departments": 6,
+          "document_versions": 44,
+          "documents": 44,
+          "employees": 48,
+          "fulfilments": 4768,
+          "goods_receipts": 5447,
+          "incidents": 1793,
+          "operational_expenses": 216,
+          "payments": 2210,
+          "products": 200,
+          "purchase_order_lines": 4799,
+          "purchase_orders": 2400,
+          "responsibilities": 48,
+          "sales_order_lines": 3599,
+          "sales_orders": 1800,
+          "shortages": 1144,
+          "stock_movements": 10215,
+          "supplier_contracts": 36,
+          "supplier_invoices": 2386,
+          "suppliers": 36,
+          "task_status_history": 3527,
+          "tasks": 1793,
+          "warehouses": 4
+        },
+        "closing_stock_units": 99213,
+        "period": "2025-10-01/2026-09-30"
+      },
+      "scenarios": {
+        "A_procurement_to_customer": {
+          "supplier_id": 1,
+          "purchase_order_id": 1,
+          "receipt_id": 185,
+          "movement_id": 332,
+          "shortage_id": 16,
+          "sales_order_id": 1,
+          "fulfilment_id": 149,
+          "incident_id": 16,
+          "task_id": 16,
+          "promised_on": "2025-10-08",
+          "received_on": "2025-10-20",
+          "customer_promise": "2025-10-10",
+          "fulfilled_on": "2025-10-20"
+        },
+        "B_warehouse_capacity": {
+          "warehouse_id": 1,
+          "sales_order_id": 822,
+          "incident_id": 1729,
+          "expense_id": 104,
+          "amount": "120.00",
+          "task_id": 1729,
+          "status": "escalated"
+        },
+        "C_contract_concern": {
+          "contract_id": 1,
+          "supplier_id": 1,
+          "on_time_target": "95.00",
+          "due_orders": 72,
+          "on_time_orders": 24,
+          "observed_percent": "33.33"
+        },
+        "D_invoice_review": {
+          "invoice_id": 37,
+          "purchase_order_id": 37,
+          "amount": "9053.43",
+          "purchase_value": "9028.43",
+          "incident_id": 1153,
+          "task_id": 1153,
+          "status": "disputed"
+        },
+        "E_overdue_workload": {
+          "department_id": 1,
+          "name": "Operations",
+          "overdue_tasks": 123,
+          "owners": 8
+        }
+      }
+    },
+    "index": {
+      "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+      "chunks": 44,
+      "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+      "ids": [
+        "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+        "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+        "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+        "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+        "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+        "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+        "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+        "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+        "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+        "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+        "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+        "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+        "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+        "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+        "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+        "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+        "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+        "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+        "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+        "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+        "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+        "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+        "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+        "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+        "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+        "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+        "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+        "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+        "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+        "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+        "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+        "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+        "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+        "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+        "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+        "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+        "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+        "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+        "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+        "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+        "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+        "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+        "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+        "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+      ]
+    },
+    "workflow": {
+      "workflow_subjects": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_evidence": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_idempotency_records": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_policies": {
+        "count": 1,
+        "digest": "f29563d21d420d1f040ce129cf8cd4417d7037fdafee4bf66b0227afd54d0c34"
+      },
+      "workflow_policy_control": {
+        "count": 1,
+        "digest": "8b9d9c9a99a82587d0fdf014e2c5ba477f7badf6468c9709ad77440c8ae98e49"
+      },
+      "workflow_proposals": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_approvals": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_executions": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_tasks": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_escalations": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_task_assignments": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "workflow_task_notes": {
+        "count": 0,
+        "digest": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    "audit_count": 6,
+    "audit_digest": "83c1981ef3e58a7bf06936efb2e98069dc7fcc8b08e669a693627f1cb1a74d0d",
+    "migration": "0004"
+  },
+  "rejection_proposal_id": "152b3502-cbda-46e1-9d2d-6b1081ad4bd0",
+  "investigation": {
+    "id": "1e96874a-d903-4108-a751-a53b36637152",
+    "created_by": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "subject_id": "10a5bc6a-c2f1-463c-930c-aa07613a2227",
+    "department_id": 1,
+    "payload": {
+      "answer": "Evidence-based analytical response; local language synthesis is limited.\n\nSupplier: Amberwick Office Works (synthetic) (ID 1)\n\nProcurement: due orders: 72 count; period 2025-10-01 to 2026-09-30, as of 2026-09-30 [ev_9f40ffcc881b4fd2:/metrics/due_orders]\n\nProcurement: on time orders: 24 count; period 2025-10-01 to 2026-09-30, as of 2026-09-30 [ev_9f40ffcc881b4fd2:/metrics/on_time_orders]\n\nProcurement: on time rate: 33.33%; numerator 24, denominator 72; period 2025-10-01 to 2026-09-30, as of 2026-09-30 [ev_9f40ffcc881b4fd2:/metrics/on_time_rate]\n\nObserved percent: 33.33%; numerator 24, denominator 72; period 2025-10-01 to 2026-09-30, as of 2026-09-30; Operational target comparison is not legal breach. [ev_9f40ffcc881b4fd2:/contracts/0/observed_percent]\n\nTarget percent: 95.00%; period 2025-10-01 to 2026-09-30, as of 2026-09-30; Operational target comparison is not legal breach. [ev_9f40ffcc881b4fd2:/contracts/0/target_percent]\n\nGap percentage points: -61.67 percentage points; period 2025-10-01 to 2026-09-30, as of 2026-09-30; Operational target comparison is not legal breach. [ev_9f40ffcc881b4fd2:/contracts/0/gap_percentage_points]\n\nAmberwick Office Works (synthetic): observed supplier delivery performance is below the applicable target. This is an operational comparison; legal breach is not established.\n\nSource CON-001: Agreement \u2014 Amberwick Office Works (synthetic); supplier_agreement; effective 2025-10-01. Citation kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1.\n\nVerified source excerpt (untrusted document content):\n## Instructions and terms\n\nSupplier: Amberwick Office Works (synthetic)\n\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n\n\nSource POL-001: Procurement procedure; policy; effective 2025-10-01. Citation kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712.\n\nVerified source excerpt (untrusted document content):\n## Instructions and terms\n\nRecord promised dates against the applicable supplier contract. Escalate missed receipts after the contract escalation interval; never revise the original promise.\n",
+      "as_of": "2026-09-30",
+      "authority": "Verified historical evidence; never an approval or execution instruction.",
+      "citations": [
+        {
+          "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+          "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+          "document_id": 1,
+          "document_version_id": 1,
+          "effective_on": "2025-10-01",
+          "line_end": 16,
+          "line_start": 12,
+          "section": [
+            "Instructions and terms"
+          ],
+          "source_reference": "/api/v1/knowledge/documents/1/versions/1",
+          "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+          "text_sha256": "0069cdace0d826543637a924a0b0dbda7755e3db1145a59a9b0445e73ba09085",
+          "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+          "version": 1
+        },
+        {
+          "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+          "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+          "document_id": 37,
+          "document_version_id": 37,
+          "effective_on": "2025-10-01",
+          "line_end": 14,
+          "line_start": 12,
+          "section": [
+            "Instructions and terms"
+          ],
+          "source_reference": "/api/v1/knowledge/documents/37/versions/37",
+          "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+          "text_sha256": "ba353ed7c06fe52243d7543c983c59f6cddb2cec398d843a6a364c51109cc778",
+          "title": "Procurement procedure",
+          "version": 1
+        }
+      ],
+      "facts": [
+        {
+          "evidence_id": "ev_9f40ffcc881b4fd2",
+          "fact_id": "fact_7e0976a2fb4b5aed",
+          "kind": "metric",
+          "pointer": "/metrics/due_orders",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_9f40ffcc881b4fd2",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "comparison": null,
+            "denominator": null,
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "metric": "procurement.due_orders",
+            "numerator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "unit": "count",
+            "value": 72
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_9f40ffcc881b4fd2",
+          "fact_id": "fact_34b4a45494f811e5",
+          "kind": "metric",
+          "pointer": "/metrics/on_time_orders",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_9f40ffcc881b4fd2",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "comparison": null,
+            "denominator": null,
+            "grain": "purchase order (money/units: selected lines)",
+            "limitations": [],
+            "metric": "procurement.on_time_orders",
+            "numerator": null,
+            "status": "available",
+            "time_basis": "Order-date cohort; outcomes censored at as_of",
+            "unit": "count",
+            "value": 24
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_9f40ffcc881b4fd2",
+          "fact_id": "fact_561a74de47548fb8",
+          "kind": "metric",
+          "pointer": "/metrics/on_time_rate",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_9f40ffcc881b4fd2",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "comparison": null,
+            "denominator": 72,
+            "grain": "purchase order",
+            "limitations": [],
+            "metric": "procurement.on_time_rate",
+            "numerator": 24,
+            "status": "available",
+            "time_basis": "Order-date cohort; mature promises at as_of",
+            "unit": "percent",
+            "value": "33.33"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_9f40ffcc881b4fd2",
+          "fact_id": "fact_c042415fe9e5c728",
+          "kind": "metric",
+          "pointer": "/contracts/0/observed_percent",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_9f40ffcc881b4fd2",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "denominator": 72,
+            "grain": "supplier contract",
+            "limitations": [
+              "Operational target comparison is not legal breach."
+            ],
+            "metric": "observed_percent",
+            "numerator": 24,
+            "status": "available",
+            "time_basis": "Effective agreement within the observation window.",
+            "unit": "percent",
+            "value": "33.33"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_9f40ffcc881b4fd2",
+          "fact_id": "fact_e74719bb8378d5f1",
+          "kind": "metric",
+          "pointer": "/contracts/0/target_percent",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_9f40ffcc881b4fd2",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "grain": "supplier contract",
+            "limitations": [
+              "Operational target comparison is not legal breach."
+            ],
+            "metric": "target_percent",
+            "status": "available",
+            "time_basis": "Effective agreement within the observation window.",
+            "unit": "percent",
+            "value": "95.00"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_9f40ffcc881b4fd2",
+          "fact_id": "fact_0ede26a7ac072248",
+          "kind": "metric",
+          "pointer": "/contracts/0/gap_percentage_points",
+          "scope": {
+            "query": {
+              "as_of": "2026-09-30",
+              "department_id": null,
+              "direction": "asc",
+              "employee_id": null,
+              "end_date": "2026-09-30",
+              "group_by": null,
+              "incident_category": null,
+              "include_comparison": false,
+              "include_trends": false,
+              "limit": 5,
+              "offset": 0,
+              "priority": null,
+              "product_category": null,
+              "product_id": null,
+              "sort": "id",
+              "start_date": "2025-10-01",
+              "supplier_category": null,
+              "supplier_id": null,
+              "warehouse_id": null
+            },
+            "supplier_id": 1
+          },
+          "source_tool": "get_supplier_performance",
+          "subject": {
+            "entity_id": 1,
+            "entity_type": "supplier",
+            "label": "Amberwick Office Works (synthetic)",
+            "provenance": "database_lookup"
+          },
+          "subject_evidence_id": "ev_9f40ffcc881b4fd2",
+          "subject_pointer": "/breakdowns/0",
+          "value": {
+            "grain": "supplier contract",
+            "limitations": [
+              "Operational target comparison is not legal breach."
+            ],
+            "metric": "gap_percentage_points",
+            "status": "available",
+            "time_basis": "Effective agreement within the observation window.",
+            "unit": "percentage_points",
+            "value": "-61.67"
+          },
+          "verified": true,
+          "window": {
+            "as_of": "2026-09-30",
+            "observation_end": "2026-09-30",
+            "observation_start": "2025-10-01",
+            "timezone": "UTC"
+          }
+        },
+        {
+          "evidence_id": "ev_51c82a32874d4a56",
+          "fact_id": "fact_4698700c6c78e2ee",
+          "kind": "document",
+          "pointer": "/evidence/0",
+          "scope": {
+            "as_of": "2026-09-30",
+            "filters": {
+              "contract_id": 1,
+              "contract_reference": null,
+              "department_id": null,
+              "document_id": null,
+              "document_type": "supplier_agreement",
+              "supplier_id": 1,
+              "version_id": null
+            },
+            "mode": "hybrid",
+            "query": "NS-CON-001",
+            "top_k": 2
+          },
+          "source_tool": "search_corporate_knowledge",
+          "subject": null,
+          "subject_evidence_id": null,
+          "subject_pointer": null,
+          "value": {
+            "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+            "citation": {
+              "chunk_id": "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "citation_id": "kc_e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+              "document_id": 1,
+              "document_version_id": 1,
+              "effective_on": "2025-10-01",
+              "line_end": 16,
+              "line_start": 12,
+              "section": [
+                "Instructions and terms"
+              ],
+              "source_reference": "/api/v1/knowledge/documents/1/versions/1",
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "text_sha256": "0069cdace0d826543637a924a0b0dbda7755e3db1145a59a9b0445e73ba09085",
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "version": 1
+            },
+            "cosine_similarity": 0.3347492218017578,
+            "document_id": 1,
+            "document_version_id": 1,
+            "effective_date": "2025-10-01",
+            "lexical_score": 0.2,
+            "metadata": {
+              "code": "CON-001",
+              "contract_id": 1,
+              "contract_reference": "NS-CON-001",
+              "department": "Procurement",
+              "department_id": 2,
+              "document_id": 1,
+              "document_type": "supplier_agreement",
+              "effective_on": "2025-10-01",
+              "sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326",
+              "supplier": "Amberwick Office Works (synthetic)",
+              "supplier_id": 1,
+              "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+              "version": 1,
+              "version_id": 1
+            },
+            "rank": 1,
+            "retrieval_method": "hybrid",
+            "score": 0.03278688524590164,
+            "section": [
+              "Instructions and terms"
+            ],
+            "source_provenance": {
+              "content_role": "untrusted_evidence",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "source_sha256": "7fd675e94e9685a4df93cc10e8b844722d990dd37ab28f0bc10b410eb947a326"
+            },
+            "suspicious_content": false,
+            "text": "## Instructions and terms\n\nSupplier: Amberwick Office Works (synthetic)\n\nContract reference: NS-CON-001. Target: 95.00% of fully received purchase orders received on or before the original promised date. Open overdue orders remain failures at the cutoff. Escalate after 2 calendar days past promise. Payment term: 45 calendar days from invoice issue. All prices are GBP net of VAT. Partial receipts are allowed; over-receipts require rejection. Review below-target delivery performance; no automatic penalties are assumed.\n",
+            "title": "Agreement \u2014 Amberwick Office Works (synthetic)",
+            "trust": "untrusted_source_data"
+          },
+          "verified": true,
+          "window": null
+        },
+        {
+          "evidence_id": "ev_f2c1447890f044c8",
+          "fact_id": "fact_69bbf00caca0e996",
+          "kind": "document",
+          "pointer": "/evidence/0",
+          "scope": {
+            "as_of": "2026-09-30",
+            "filters": {
+              "contract_id": null,
+              "contract_reference": null,
+              "department_id": null,
+              "document_id": 37,
+              "document_type": "policy",
+              "supplier_id": null,
+              "version_id": null
+            },
+            "mode": "hybrid",
+            "query": "procurement procedure escalation",
+            "top_k": 2
+          },
+          "source_tool": "search_corporate_knowledge",
+          "subject": null,
+          "subject_evidence_id": null,
+          "subject_pointer": null,
+          "value": {
+            "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+            "citation": {
+              "chunk_id": "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "citation_id": "kc_6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+              "document_id": 37,
+              "document_version_id": 37,
+              "effective_on": "2025-10-01",
+              "line_end": 14,
+              "line_start": 12,
+              "section": [
+                "Instructions and terms"
+              ],
+              "source_reference": "/api/v1/knowledge/documents/37/versions/37",
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "text_sha256": "ba353ed7c06fe52243d7543c983c59f6cddb2cec398d843a6a364c51109cc778",
+              "title": "Procurement procedure",
+              "version": 1
+            },
+            "cosine_similarity": 0.6534668207168626,
+            "document_id": 37,
+            "document_version_id": 37,
+            "effective_date": "2025-10-01",
+            "lexical_score": 0.008333334,
+            "metadata": {
+              "code": "POL-001",
+              "contract_id": null,
+              "contract_reference": null,
+              "department": "Procurement",
+              "department_id": 2,
+              "document_id": 37,
+              "document_type": "policy",
+              "effective_on": "2025-10-01",
+              "sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563",
+              "supplier": null,
+              "supplier_id": null,
+              "title": "Procurement procedure",
+              "version": 1,
+              "version_id": 37
+            },
+            "rank": 1,
+            "retrieval_method": "hybrid",
+            "score": 0.03278688524590164,
+            "section": [
+              "Instructions and terms"
+            ],
+            "source_provenance": {
+              "content_role": "untrusted_evidence",
+              "index_configuration": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+              "source_sha256": "3519354d99589be9351b4e14aeb1f956ebe53fe8715a6e695b7224be597b0563"
+            },
+            "suspicious_content": false,
+            "text": "## Instructions and terms\n\nRecord promised dates against the applicable supplier contract. Escalate missed receipts after the contract escalation interval; never revise the original promise.\n",
+            "title": "Procurement procedure",
+            "trust": "untrusted_source_data"
+          },
+          "verified": true,
+          "window": null
+        }
+      ],
+      "limitations": [],
+      "llm_calls": 0,
+      "mode": "DETERMINISTIC",
+      "question": "Compare Supplier 1 delivery performance against its contractual SLA and escalation policy.",
+      "status": "completed",
+      "subject": {
+        "entity_id": 1,
+        "kind": "supplier"
+      },
+      "tool_calls": 4
+    },
+    "digest": "d4415f67ea0dee510495d53d429695a679c87fab2bb3e80a879d086db97eeddd",
+    "created_at": "2026-11-05T15:33:24.428484Z",
+    "expires_at": "2026-11-06T15:33:24.445286Z"
+  },
+  "happy_proposal": {
+    "id": "8427f9f0-642f-4008-9e23-011fd35420d1",
+    "proposer_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "department_id": 1,
+    "subject_id": "10a5bc6a-c2f1-463c-930c-aa07613a2227",
+    "evidence_id": "1e96874a-d903-4108-a751-a53b36637152",
+    "previous_id": null,
+    "version": 1,
+    "action_type": "CREATE_WORKFLOW_TASK",
+    "source_type": "DETERMINISTIC_RECOMMENDATION",
+    "material": {
+      "action": {
+        "description": "Review the verified observation; no contractual breach inferred.",
+        "due_at": "2026-11-07T15:33:24.470346Z",
+        "employee_id": null,
+        "priority": "high",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        },
+        "title": "Investigate verified supplier gap",
+        "type": "CREATE_WORKFLOW_TASK"
+      },
+      "business_context": "Due date, priority and assignment are proposed settings; they are not inferred contractual requirements.",
+      "department_id": 1,
+      "evidence": {
+        "as_of": "2026-09-30",
+        "digest": "d4415f67ea0dee510495d53d429695a679c87fab2bb3e80a879d086db97eeddd",
+        "fact_ids": [
+          "fact_0ede26a7ac072248"
+        ],
+        "id": "1e96874a-d903-4108-a751-a53b36637152",
+        "limitations": []
+      },
+      "expires_at": "2026-11-05T17:33:24.585994+00:00",
+      "policy": {
+        "approval_validity_minutes": 60,
+        "max_validity_hours": 24,
+        "origin": "Stage 5 local-demo application governance, not corporate contract law",
+        "proposer_authz_version": 3,
+        "required_approvals": 1,
+        "reviewer_roles": [
+          "WORKFLOW_APPROVER",
+          "WORKFLOW_ADMIN"
+        ],
+        "risk": "moderate_internal",
+        "scopes": [
+          1
+        ],
+        "separation_of_duties": true,
+        "version": 1
+      },
+      "preconditions": {
+        "business_state": "4c51247b60fdcbf56881840fb3aa366e6f16489855717277166dac07f7b4bdcb"
+      },
+      "proposer_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+      "reason": "Review the identified verified operational concern.",
+      "revision": 1,
+      "source_type": "DETERMINISTIC_RECOMMENDATION",
+      "subject": {
+        "entity_id": 1,
+        "kind": "supplier"
+      }
+    },
+    "digest": "06ec67ca4869ffd5010121927f66271cd5b0accee558d8c94ab1fbde9627744a",
+    "status": "DRAFT",
+    "effective_status": "DRAFT",
+    "stale": false,
+    "approval_policy_current": true,
+    "created_at": "2026-11-05T15:33:24.544449Z",
+    "updated_at": "2026-11-05T15:33:24.544449Z",
+    "expires_at": "2026-11-05T17:33:24.585994Z",
+    "approvals": [],
+    "executions": [],
+    "limitations": [
+      "Internal demo governance; this is not a contractual penalty or external commitment.",
+      "Proposed due dates and priorities are operational settings requiring human review."
+    ]
+  },
+  "happy_receipt": {
+    "id": "f834e317-03f1-493f-bd6d-af455989db4d",
+    "proposal_id": "8427f9f0-642f-4008-9e23-011fd35420d1",
+    "actor_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+    "status": "COMPLETED",
+    "result": {
+      "action": "CREATE_WORKFLOW_TASK",
+      "after": {
+        "completed_at": null,
+        "department_id": 1,
+        "due_at": "2026-11-07T15:33:24.470346+00:00",
+        "employee_id": null,
+        "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+        "priority": "high",
+        "status": "open",
+        "version": 1
+      },
+      "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+      "audit_events": [
+        "12651c48-6a0e-47a4-acc2-04ea2f23d811",
+        "d7d26cfc-415b-424b-a166-999e58365b83",
+        "2ea7c079-eabc-42ed-81ae-e56c6c0b0f77"
+      ],
+      "before": {},
+      "idempotency_key": "822d066a-e1cc-4f93-93f4-deceb0e19a30",
+      "limitations": [
+        "Internal workflow state only; no external side effects."
+      ],
+      "objects": {
+        "task_id": "a7704d88-a828-4e40-bdd4-8969378e5e3f"
+      },
+      "proposal_digest": "06ec67ca4869ffd5010121927f66271cd5b0accee558d8c94ab1fbde9627744a",
+      "subject": {
+        "entity_id": 1,
+        "kind": "supplier"
+      }
+    },
+    "error_code": null,
+    "created_at": "2026-11-05T15:33:24.753242Z",
+    "finished_at": "2026-11-05T15:33:24.811844Z"
+  },
+  "action_receipts": [
+    {
+      "id": "f834e317-03f1-493f-bd6d-af455989db4d",
+      "proposal_id": "8427f9f0-642f-4008-9e23-011fd35420d1",
+      "actor_id": "1078123d-74ac-4868-ab6e-473d4911e612",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "CREATE_WORKFLOW_TASK",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:33:24.470346+00:00",
+          "employee_id": null,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "high",
+          "status": "open",
+          "version": 1
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "12651c48-6a0e-47a4-acc2-04ea2f23d811",
+          "d7d26cfc-415b-424b-a166-999e58365b83",
+          "2ea7c079-eabc-42ed-81ae-e56c6c0b0f77"
+        ],
+        "before": {},
+        "idempotency_key": "822d066a-e1cc-4f93-93f4-deceb0e19a30",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "a7704d88-a828-4e40-bdd4-8969378e5e3f"
+        },
+        "proposal_digest": "06ec67ca4869ffd5010121927f66271cd5b0accee558d8c94ab1fbde9627744a",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:24.753242Z",
+      "finished_at": "2026-11-05T15:33:24.811844Z"
+    },
+    {
+      "id": "e8b500f9-5d78-41ae-bf9f-de94c1cc881e",
+      "proposal_id": "7b27930a-10df-4814-a568-fe44e8056b64",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "ASSIGN_WORKFLOW_TASK",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:33:24.470346+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "high",
+          "status": "open",
+          "version": 2
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "cb6dfc70-4ad8-4b6c-89cf-442b5a4fc038",
+          "fb8cddbe-a467-4513-8676-a6ad1add88b9",
+          "93e2da51-43e5-47a1-9387-868939ee6423"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:33:24.470346+00:00",
+          "employee_id": null,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "high",
+          "status": "open",
+          "version": 1
+        },
+        "idempotency_key": "afa27129-c76b-4804-ae76-31fee8c500ed",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "a7704d88-a828-4e40-bdd4-8969378e5e3f"
+        },
+        "proposal_digest": "be0d5df9da519680270baad03c7b130f2002c147e38884e926c9c5bac6d87f3e",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:25.034830Z",
+      "finished_at": "2026-11-05T15:33:25.080989Z"
+    },
+    {
+      "id": "8d0746bc-114d-466d-a3e5-72b42d0fe868",
+      "proposal_id": "34cc9efa-a8d8-4774-9a89-9b3f1ecbd7df",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "UPDATE_WORKFLOW_TASK_PRIORITY",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:33:24.470346+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "urgent",
+          "status": "open",
+          "version": 3
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "fe9efb70-d8d0-4972-98e7-cfeb3c5f996f",
+          "2c68b087-8db1-4c47-83b3-72154b77e844",
+          "b1b508cc-25f1-4dc9-8821-409fa72ebb9e"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:33:24.470346+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "high",
+          "status": "open",
+          "version": 2
+        },
+        "idempotency_key": "13a39a0b-c610-40fe-9bc0-e17c48474511",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "a7704d88-a828-4e40-bdd4-8969378e5e3f"
+        },
+        "proposal_digest": "a8f2ed083d7dd2997ee1957f9d01e04c7cdd1ddc9850c934fd2f098421aa92c0",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:25.299531Z",
+      "finished_at": "2026-11-05T15:33:25.342342Z"
+    },
+    {
+      "id": "0c3c1550-3ce6-4298-bf69-1a394efb2e10",
+      "proposal_id": "e194384b-5d93-404d-89b7-0e0adfd735b2",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "UPDATE_WORKFLOW_TASK_DUE_DATE",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:24.830019+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "urgent",
+          "status": "open",
+          "version": 4
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "53652018-dcd4-4597-9b6a-f9aa3f75e558",
+          "7d64bda2-148c-4119-88c9-e49725c3661f",
+          "0bad7321-5804-43c9-9e8c-3fae11784117"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-07T15:33:24.470346+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "urgent",
+          "status": "open",
+          "version": 3
+        },
+        "idempotency_key": "21466ec4-bfea-4e9f-8282-b713fbe6de45",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "a7704d88-a828-4e40-bdd4-8969378e5e3f"
+        },
+        "proposal_digest": "612083ddfff568f89f50f223cdca720b33325fd6c63cde2babff98747182af19",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:25.518401Z",
+      "finished_at": "2026-11-05T15:33:25.556478Z"
+    },
+    {
+      "id": "63d9a488-8ba0-47e7-a31f-701e95972285",
+      "proposal_id": "21c2cdc4-14e9-4dc4-98fe-856ef0e52836",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "ADD_WORKFLOW_TASK_NOTE",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:24.830019+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "urgent",
+          "status": "open",
+          "version": 5
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "66564ac7-a672-44cb-a59c-afecbe76a631",
+          "f3ba4031-f765-41b5-848d-7780e07e843e",
+          "71ad581b-a3bd-4d40-9989-88b57503bdb9"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:24.830019+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "urgent",
+          "status": "open",
+          "version": 4
+        },
+        "idempotency_key": "8879084b-217f-4084-9fb7-f54954db8624",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "note_id": "1de17eb6-0a3d-4152-903c-0d0ab1bee591",
+          "task_id": "a7704d88-a828-4e40-bdd4-8969378e5e3f"
+        },
+        "proposal_digest": "58221ee0bce785653a4e065c6ca6706189021910f28275378ea3b4cb9386f9d5",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:25.744308Z",
+      "finished_at": "2026-11-05T15:33:25.800893Z"
+    },
+    {
+      "id": "6708f88a-f891-4d88-9e2d-ca1af9e1be05",
+      "proposal_id": "9a6919c8-268a-4db5-a33c-af1f36ded6cf",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "UPDATE_WORKFLOW_TASK_STATUS",
+        "after": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:24.830019+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "urgent",
+          "status": "active",
+          "version": 6
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "5b9a8731-4b4a-4ca0-b5cf-60d621dae177",
+          "e44fc8bb-c035-4884-85ce-4649f836e7e9",
+          "8bf83df3-bf24-4e37-9408-1ba4995a7299"
+        ],
+        "before": {
+          "completed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:24.830019+00:00",
+          "employee_id": 1,
+          "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+          "priority": "urgent",
+          "status": "open",
+          "version": 5
+        },
+        "idempotency_key": "ad05d8f7-e7c4-43c8-bacc-6f594cd0d3b2",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "task_id": "a7704d88-a828-4e40-bdd4-8969378e5e3f"
+        },
+        "proposal_digest": "be2f033e3dc31991f45a1a558d082df2ea331b87f23323e9ec3feb4cfdfedd01",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:25.985258Z",
+      "finished_at": "2026-11-05T15:33:26.028450Z"
+    },
+    {
+      "id": "5ac58afa-efac-4c3d-a82c-4d3b9e2212d1",
+      "proposal_id": "ca817fe1-0275-400c-93cd-7ce3e6eaa403",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "CREATE_INTERNAL_ESCALATION",
+        "after": {
+          "closed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:26.039217+00:00",
+          "id": "3f4904e6-d063-43d8-8262-92cd56a56806",
+          "priority": "high",
+          "resolution": null,
+          "status": "open",
+          "version": 1
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "751a48dd-747c-4765-bf57-a3a51836f7a4",
+          "8811e40d-fa4a-41dc-a068-f8061cf02c0b",
+          "ae87328e-98c2-466d-87b5-de0c36f12950"
+        ],
+        "before": {},
+        "idempotency_key": "1f44c149-dfe6-4894-80ef-4fc5c36de8c7",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "escalation_id": "3f4904e6-d063-43d8-8262-92cd56a56806"
+        },
+        "proposal_digest": "55e3908e3bd05e4b897c7aedb3e4aa300876a61f32aca5b8957f28c283e08d66",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:26.264905Z",
+      "finished_at": "2026-11-05T15:33:26.327145Z"
+    },
+    {
+      "id": "db3f2f75-3dd8-45b9-ac74-318ba064bb8d",
+      "proposal_id": "cebb9bc6-daff-41b9-a5f0-4a1007867a63",
+      "actor_id": "ea97f792-71a7-42cc-872e-cbc3a09bcf7a",
+      "approver_id": "049a081c-419c-494d-990c-6552ee1ace17",
+      "status": "COMPLETED",
+      "result": {
+        "action": "CLOSE_INTERNAL_ESCALATION",
+        "after": {
+          "closed_at": "2026-11-05T15:33:26.579817+00:00",
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:26.039217+00:00",
+          "id": "3f4904e6-d063-43d8-8262-92cd56a56806",
+          "priority": "high",
+          "resolution": "Review completed internally.",
+          "status": "closed",
+          "version": 2
+        },
+        "approved_by": "049a081c-419c-494d-990c-6552ee1ace17",
+        "audit_events": [
+          "2f6ec7f6-7c18-4dd1-bf23-f9c7729e277d",
+          "6ef62a79-2058-4043-a853-35e11c9861a9",
+          "e79f1c1b-2440-47e2-afc4-ad3de4a867f3"
+        ],
+        "before": {
+          "closed_at": null,
+          "department_id": 1,
+          "due_at": "2026-11-08T15:33:26.039217+00:00",
+          "id": "3f4904e6-d063-43d8-8262-92cd56a56806",
+          "priority": "high",
+          "resolution": null,
+          "status": "open",
+          "version": 1
+        },
+        "idempotency_key": "d9f269ad-dec9-4a41-9b79-c23adf0c34fb",
+        "limitations": [
+          "Internal workflow state only; no external side effects."
+        ],
+        "objects": {
+          "escalation_id": "3f4904e6-d063-43d8-8262-92cd56a56806"
+        },
+        "proposal_digest": "7587402a4b2751e9461029da2df28705fc559e8c78c2867e0def8bbbabd5de3b",
+        "subject": {
+          "entity_id": 1,
+          "kind": "supplier"
+        }
+      },
+      "error_code": null,
+      "created_at": "2026-11-05T15:33:26.540056Z",
+      "finished_at": "2026-11-05T15:33:26.587707Z"
+    }
+  ],
+  "concurrency": {
+    "requests": 6,
+    "distinct_receipts": 1,
+    "tasks": 1,
+    "execution_id": "5b32ad63-5e3d-4efc-ba8e-cd1eb059f02b"
+  },
+  "task": {
+    "id": "a7704d88-a828-4e40-bdd4-8969378e5e3f",
+    "title": "Investigate verified supplier gap",
+    "description": "Review the verified observation; no contractual breach inferred.",
+    "status": "active",
+    "priority": "urgent",
+    "department_id": 1,
+    "employee_id": 1,
+    "subject_id": "10a5bc6a-c2f1-463c-930c-aa07613a2227",
+    "created_by": "1078123d-74ac-4868-ab6e-473d4911e612",
+    "proposal_id": "8427f9f0-642f-4008-9e23-011fd35420d1",
+    "execution_id": "f834e317-03f1-493f-bd6d-af455989db4d",
+    "version": 6,
+    "created_at": "2026-11-05T15:33:24.753242Z",
+    "updated_at": "2026-11-05T15:33:26.022100Z",
+    "due_at": "2026-11-08T15:33:24.830019Z",
+    "completed_at": null,
+    "subject": {
+      "kind": "supplier",
+      "entity_id": 1
+    },
+    "source_type": "DETERMINISTIC_RECOMMENDATION",
+    "evidence_id": "1e96874a-d903-4108-a751-a53b36637152"
+  },
+  "summary": {
+    "source": "stage5_workflow_state",
+    "as_of": "2026-11-05T15:33:27.330716Z",
+    "open_tasks": 2,
+    "overdue_tasks": 0,
+    "open_escalations": 0,
+    "pending_proposals": 0,
+    "rejected_proposals": 1,
+    "completed_actions_this_month": 9,
+    "limitations": [
+      "These operational records exclude the immutable seeded tasks and Stage 2 KPIs.",
+      "Counts are scoped to the authenticated principal's current permissions."
+    ]
+  },
+  "before_restart": {
+    "source": {
+      "fingerprint": "7ed73422d07ddb0528f0ce5641e1767cdef95aa698dfcddf8dc26aad68dae0b7",
+      "integrity": {
+        "validated": true,
+        "counts": {
+          "business_roles": 6,
+          "customers": 120,
+          "departments": 6,
+          "document_versions": 44,
+          "documents": 44,
+          "employees": 48,
+          "fulfilments": 4768,
+          "goods_receipts": 5447,
+          "incidents": 1793,
+          "operational_expenses": 216,
+          "payments": 2210,
+          "products": 200,
+          "purchase_order_lines": 4799,
+          "purchase_orders": 2400,
+          "responsibilities": 48,
+          "sales_order_lines": 3599,
+          "sales_orders": 1800,
+          "shortages": 1144,
+          "stock_movements": 10215,
+          "supplier_contracts": 36,
+          "supplier_invoices": 2386,
+          "suppliers": 36,
+          "task_status_history": 3527,
+          "tasks": 1793,
+          "warehouses": 4
+        },
+        "closing_stock_units": 99213,
+        "period": "2025-10-01/2026-09-30"
+      },
+      "scenarios": {
+        "A_procurement_to_customer": {
+          "supplier_id": 1,
+          "purchase_order_id": 1,
+          "receipt_id": 185,
+          "movement_id": 332,
+          "shortage_id": 16,
+          "sales_order_id": 1,
+          "fulfilment_id": 149,
+          "incident_id": 16,
+          "task_id": 16,
+          "promised_on": "2025-10-08",
+          "received_on": "2025-10-20",
+          "customer_promise": "2025-10-10",
+          "fulfilled_on": "2025-10-20"
+        },
+        "B_warehouse_capacity": {
+          "warehouse_id": 1,
+          "sales_order_id": 822,
+          "incident_id": 1729,
+          "expense_id": 104,
+          "amount": "120.00",
+          "task_id": 1729,
+          "status": "escalated"
+        },
+        "C_contract_concern": {
+          "contract_id": 1,
+          "supplier_id": 1,
+          "on_time_target": "95.00",
+          "due_orders": 72,
+          "on_time_orders": 24,
+          "observed_percent": "33.33"
+        },
+        "D_invoice_review": {
+          "invoice_id": 37,
+          "purchase_order_id": 37,
+          "amount": "9053.43",
+          "purchase_value": "9028.43",
+          "incident_id": 1153,
+          "task_id": 1153,
+          "status": "disputed"
+        },
+        "E_overdue_workload": {
+          "department_id": 1,
+          "name": "Operations",
+          "overdue_tasks": 123,
+          "owners": 8
+        }
+      }
+    },
+    "index": {
+      "configuration_id": "5cf20bdbd6da52237338fc3ddd6bcac94224669b01bb9d26f0eb72d8a3c4061e",
+      "indexed_at": "2026-10-27T23:37:44.214291+00:00",
+      "chunks": 44,
+      "stored_vector_digest": "e9508f527f69add1980128a0feaf2bd4",
+      "ids": [
+        "016dc4400c80e9d490f808ffffc09729bfaf4b4ea5f7f8e7b37f79a21f0d92bd",
+        "03e47a7f8d2fb7a892b5aadf8962062e1800a836a7e3711a4d2c0a77a1465941",
+        "0d430c58cc62016a18f63857b8a038f789cabd2d60533872e6323d89f14029ba",
+        "16457721898effffb80dd6e659373e426c669729fa51e7627ae408592e8ae52c",
+        "2788904ee966e9c0ae4b5cd11694f962ac801f7c833221c987a97457e65fcf19",
+        "28b5712be8e8ad6ec039177d2dfcea80d59561fc6d54ad0200dc98a525c0f798",
+        "29b05b73dc78e92b9269640bdf6ad4c27865e0c11beebe33aab9f882cb5f5042",
+        "2b1c44b286d770bb82dc422bfe421d9f1881410a0d8c5886a9b7e88ad584410f",
+        "2ce8bed5cfb9208d0f44094db499134f5cbe43afecc76ef74d63d99f96a78415",
+        "32c01b62e7ce957e3ba2d06f80223f7c66ba7af32ea584768cdf6ca02dab011f",
+        "3ad7fb49494065ae104d4408f6008deb70e2246fe808792b55c53e11b3aaa7a2",
+        "451bc254bd55fa824d08ed994bc2c69712eb20d8788be88b76e1a96296d07e98",
+        "461610f7fa60f48420d0cda714ac048414ce6c20258d4108abc93ae723a51979",
+        "46f686b4339a5273ad55a8548ad3eaf2cd7c5ffa34866d673e22d5d42c93e89b",
+        "4b9f57340ae7f4fcc3e820e88955dcfbeb5b94f96b4ca9a083243718009ec510",
+        "50ad4c003858bf925fa98d9624b7af22ac397d6a158b0a47736981eaa4392b24",
+        "59724a581cc1068fc406fc5e3ac6f11bf1f3e262cf18674385ab2ae3cd72ff37",
+        "5b4bd907cfaaabe8060f265564dd1360b55e2d899ae501194943e16285d11b6c",
+        "5ec12f1e973b7cd66b69541869d0744dd3aff24c9183e130d45a9eac528dd3a1",
+        "683eb51467c18dd3091b67c27be83be85ea0bcc4a114e7245b84126bb6f1eac5",
+        "695f5634784974b23fc3bea8fa7705a76a19b53d913ff072dd185998de1ad64d",
+        "6bdfdaa24dab94bc0042d1fb529c037b85f8e59db9d66481b5aacebc16306712",
+        "6ea42a66b5b0211cd2cefb4d5f17d06201cfd8b600d1cf650024763399a5468d",
+        "6ec96a685a520d924ad62abd5beb7691edc05c07effa414fa854d4197728fd37",
+        "74940796a1c82ae0f74668ac6cac1470a041dca0dd51a8e42d0b376b3fd6fa0c",
+        "77b0026c0d75392a498fa75a927039dab3f4b602460012e788c4412a08c8d625",
+        "81c6848bdd077b2f77c07d4a83cf34722e89c59ff81b5b142d0ee4d9583d1e61",
+        "86d93943fe627a6e28a9ce0037815827ab6c7f3eabf81e92dfa6ee5a815f333b",
+        "8a93aa2c3fbb039ef9edc48036efac36e1932ff99354e4f7b99daf17617acd91",
+        "960510208fe8440fec2ec575dcecfe24c02bb462583700f80cd9e80df2298b7e",
+        "abb64fe59e190fb8d5347c32476fe7196d357e2aa39f6a632781b975dd9fd94b",
+        "b38f7b36f495c6432902b810253a7be97f55ab5e4f4a601a656474d1c285c07a",
+        "ca369cbb7a85c6c03844b1eda863d97269fb5ed50e8f9228e76ea93faf0fc800",
+        "cb49f63b8b882a61b145250a4a51fa0ab143ce3a16aa8421bf64c240c5123cff",
+        "cb5c02be58fa831956647c8f5ab45bb590cb3e64ccf38795b5359a6856cb8916",
+        "d05e0486d7d3ebd07afbed66d62d5879f2c13e3aef4089b90c764e81a85b98ff",
+        "dbab1ba1e742e0398dc7d1f54c186f6223c1bed8703b57a570c91b3ca15a76b8",
+        "de08f62caf7331a3fe61e7e561052a95cb242884752dcbceb5c44c3eee62a09f",
+        "e095c20b910d45ef1b997825a64db4f5dfdbf0b9a26590f062b39bc32be3bef1",
+        "e8e46c9fe60b3fe25bd387dd813fdaa2aab76506f4877460a5076fc98c3177f3",
+        "f548dbe40a92cddb588cd5b0f3237346bae5b4ee559c1353ed498a0e7258297d",
+        "fc7a608966c289ae4a97fabeff32c61ca840b137e34c0f05c8c29fbabd913749",
+        "fd9cdd59b6b7263964d3fe5f4e970702784670f37284f8f469339ec0c6c4caac",
+        "fdee1180e83f81ede355cdf2c58dd21647083dfbe08c0182d9094b1b3e4ef247"
+      ]
+    },
+    "workflow": {
+      "workflow_subjects": {
+        "count": 1,
+        "digest": "1f1dd1a9c0e957c2b703387c6da701fb332b927269dd2fd589b79662df0f9d7f"
+      },
+      "workflow_evidence": {
+        "count": 1,
+        "digest": "f2ddb268af97511a6f422521a05e2bfdfb5a4c5c00efa3d3fb0cf9ac66dc791f"
+      },
+      "workflow_idempotency_records": {
+        "count": 50,
+        "digest": "52f86da04f103b07c45d4097d25f2bed079106a03a77f54a434505ba01144793"
+      },
+      "workflow_policies": {
+        "count": 1,
+        "digest": "f29563d21d420d1f040ce129cf8cd4417d7037fdafee4bf66b0227afd54d0c34"
+      },
+      "workflow_policy_control": {
+        "count": 1,
+        "digest": "8b9d9c9a99a82587d0fdf014e2c5ba477f7badf6468c9709ad77440c8ae98e49"
+      },
+      "workflow_proposals": {
+        "count": 11,
+        "digest": "9fd131371815809d42aceed4afbf3ea308c7c9e01ea40bafe61a5564733d3043"
+      },
+      "workflow_approvals": {
+        "count": 10,
+        "digest": "1573e11a3e9b0f42fa7efbc2e26c98ec59eb0b6a0180e90eeba01ed344deb95b"
+      },
+      "workflow_executions": {
+        "count": 9,
+        "digest": "e9bc49ca253c8e97a0c8e91ec73b1b2473fd524323bb7aa8f5b76a2c68fabe09"
+      },
+      "workflow_tasks": {
+        "count": 2,
+        "digest": "c223dda96d3305f8f96c492f83ba4325fff187221323e20dba915ed9f370c4c9"
+      },
+      "workflow_escalations": {
+        "count": 1,
+        "digest": "87c931d58e5b19865ea44a99d8388fe60cf7741c72524b652e7e702d61b2619b"
+      },
+      "workflow_task_assignments": {
+        "count": 3,
+        "digest": "2a2dc035be33cbdd2902b35b02b97ce43d47f0a515390754235b909740256645"
+      },
+      "workflow_task_notes": {
+        "count": 1,
+        "digest": "b45069bd4d7ade252704d0c8f890857b009c3451d2c95fe26f8355066456d8a6"
+      }
+    },
+    "audit_count": 82,
+    "audit_digest": "aad953a8b76c1baa13440c0a137a8cb94b6c3caf82786bf263db4700d28a08ad",
+    "migration": "0004"
+  },
+  "latency": {
+    "samples": 60,
+    "median_ms": 57.945,
+    "max_ms": 2732.5
+  }
+}

@@ -1,0 +1,465 @@
+{
+  "routes": 18,
+  "viewports": [
+    1440,
+    1280,
+    1024,
+    768,
+    390
+  ],
+  "reduced_motion": true,
+  "mobile_navigation": "passed",
+  "measurements": [
+    {
+      "route": "/",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/suppliers",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/suppliers",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/suppliers",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/suppliers",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/suppliers",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/analytics/procurement",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/analytics/procurement",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/analytics/procurement",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/analytics/procurement",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/analytics/procurement",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/analytics/inventory",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/analytics/inventory",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/analytics/inventory",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/analytics/inventory",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/analytics/inventory",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/analytics/fulfilment",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/analytics/fulfilment",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/analytics/fulfilment",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/analytics/fulfilment",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/analytics/fulfilment",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/analytics/finance",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/analytics/finance",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/analytics/finance",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/analytics/finance",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/analytics/finance",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/analytics/workforce",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/analytics/workforce",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/analytics/workforce",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/analytics/workforce",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/analytics/workforce",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/analytics/incidents",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/analytics/incidents",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/analytics/incidents",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/analytics/incidents",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/analytics/incidents",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/knowledge",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/knowledge",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/knowledge",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/knowledge",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/knowledge",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/investigations",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/investigations",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/investigations",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/investigations",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/investigations",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/copilot",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/copilot",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/copilot",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/copilot",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/copilot",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/tasks",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/tasks",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/tasks",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/tasks",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/tasks",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/escalations",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/escalations",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/escalations",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/escalations",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/escalations",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/proposals/new",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/proposals/new",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/proposals/new",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/proposals/new",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/proposals/new",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/approvals",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/approvals",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/approvals",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/approvals",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/approvals",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/audit",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/audit",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/audit",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/audit",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/audit",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/settings",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/settings",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/settings",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/settings",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/settings",
+      "width": 390,
+      "rendered": 390
+    },
+    {
+      "route": "/status",
+      "width": 1440,
+      "rendered": 1440
+    },
+    {
+      "route": "/status",
+      "width": 1280,
+      "rendered": 1280
+    },
+    {
+      "route": "/status",
+      "width": 1024,
+      "rendered": 1024
+    },
+    {
+      "route": "/status",
+      "width": 768,
+      "rendered": 768
+    },
+    {
+      "route": "/status",
+      "width": 390,
+      "rendered": 390
+    }
+  ],
+  "page_wide_overflow": []
+}

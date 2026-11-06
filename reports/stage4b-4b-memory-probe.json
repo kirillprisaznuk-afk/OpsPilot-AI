@@ -1,0 +1,462 @@
+{
+  "profile": "qwen3.5:4b / 32768 / q8 KV / one slot",
+  "purpose": "bounded empirical memory experiment, not business acceptance",
+  "start_ram_mib": 2572.969,
+  "samples": [
+    {
+      "seconds": 0.265,
+      "free_ram_mib": 2565.574,
+      "commit_free_gib": 15.819,
+      "Pages Input/sec": 3316.8547809901424,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 0.515,
+      "free_ram_mib": 2301.141,
+      "commit_free_gib": 15.42,
+      "Pages Input/sec": 1205.6847251880458,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 0.765,
+      "free_ram_mib": 2388.891,
+      "commit_free_gib": 15.51,
+      "Pages Input/sec": 8713.164339917565,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 1.031,
+      "free_ram_mib": 2545.547,
+      "commit_free_gib": 15.819,
+      "Pages Input/sec": 10153.229681851062,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 1.281,
+      "free_ram_mib": 2373.148,
+      "commit_free_gib": 15.536,
+      "Pages Input/sec": 16326.119548895549,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 1.531,
+      "free_ram_mib": 2526.965,
+      "commit_free_gib": 15.812,
+      "Pages Input/sec": 1375.3741969699029,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 1.796,
+      "free_ram_mib": 2523.945,
+      "commit_free_gib": 15.809,
+      "Pages Input/sec": 987.9065685448251,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 2.062,
+      "free_ram_mib": 2269.145,
+      "commit_free_gib": 15.407,
+      "Pages Input/sec": 1254.0472837374302,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 2.312,
+      "free_ram_mib": 2358.594,
+      "commit_free_gib": 15.538,
+      "Pages Input/sec": 4089.200632309446,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 2.578,
+      "free_ram_mib": 2488.168,
+      "commit_free_gib": 15.802,
+      "Pages Input/sec": 14109.075384221052,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 2.828,
+      "free_ram_mib": 2493.051,
+      "commit_free_gib": 15.8,
+      "Pages Input/sec": 11017.149388149832,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 3.093,
+      "free_ram_mib": 2247.934,
+      "commit_free_gib": 15.48,
+      "Pages Input/sec": 1082.4050421519448,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 3.343,
+      "free_ram_mib": 2147.246,
+      "commit_free_gib": 15.136,
+      "Pages Input/sec": 8174.585122485998,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 3.609,
+      "free_ram_mib": 2121.48,
+      "commit_free_gib": 15.13,
+      "Pages Input/sec": 619.4736678085758,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 3.875,
+      "free_ram_mib": 2126.008,
+      "commit_free_gib": 15.132,
+      "Pages Input/sec": 18491.298884277065,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 4.14,
+      "free_ram_mib": 1989.332,
+      "commit_free_gib": 12.172,
+      "Pages Input/sec": 148.69162805132376,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 4.406,
+      "free_ram_mib": 1592.898,
+      "commit_free_gib": 12.167,
+      "Pages Input/sec": 164530.34454841868,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 4.656,
+      "free_ram_mib": 1587.059,
+      "commit_free_gib": 12.165,
+      "Pages Input/sec": 297168.1403741792,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 4.921,
+      "free_ram_mib": 1535.676,
+      "commit_free_gib": 12.174,
+      "Pages Input/sec": 314618.1279896089,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 5.187,
+      "free_ram_mib": 1517.242,
+      "commit_free_gib": 12.176,
+      "Pages Input/sec": 319570.2500772314,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 5.453,
+      "free_ram_mib": 1483.664,
+      "commit_free_gib": 12.173,
+      "Pages Input/sec": 290597.78242250445,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 5.703,
+      "free_ram_mib": 1483.027,
+      "commit_free_gib": 12.172,
+      "Pages Input/sec": 284428.9220270064,
+      "Pages Output/sec": 5874.449700598115
+    },
+    {
+      "seconds": 5.968,
+      "free_ram_mib": 1462.324,
+      "commit_free_gib": 12.175,
+      "Pages Input/sec": 306883.8157573367,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 6.234,
+      "free_ram_mib": 1410.688,
+      "commit_free_gib": 12.181,
+      "Pages Input/sec": 302766.12417234795,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 6.5,
+      "free_ram_mib": 1409.336,
+      "commit_free_gib": 12.317,
+      "Pages Input/sec": 253920.77696033163,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 6.75,
+      "free_ram_mib": 1407.719,
+      "commit_free_gib": 12.315,
+      "Pages Input/sec": 258993.72938819596,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 7.015,
+      "free_ram_mib": 1640.785,
+      "commit_free_gib": 11.829,
+      "Pages Input/sec": 226009.87019023148,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 7.281,
+      "free_ram_mib": 1528.762,
+      "commit_free_gib": 10.975,
+      "Pages Input/sec": 29823.686818331964,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 7.546,
+      "free_ram_mib": 1499.375,
+      "commit_free_gib": 10.16,
+      "Pages Input/sec": 80163.7412881578,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 7.812,
+      "free_ram_mib": 1426.574,
+      "commit_free_gib": 9.697,
+      "Pages Input/sec": 233410.25055472428,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 8.078,
+      "free_ram_mib": 1257.766,
+      "commit_free_gib": 9.682,
+      "Pages Input/sec": 319328.03774446994,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 8.343,
+      "free_ram_mib": 1114.598,
+      "commit_free_gib": 9.618,
+      "Pages Input/sec": 383007.51919627335,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 8.593,
+      "free_ram_mib": 1044.094,
+      "commit_free_gib": 9.594,
+      "Pages Input/sec": 239434.4996039632,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 8.859,
+      "free_ram_mib": 988.559,
+      "commit_free_gib": 9.052,
+      "Pages Input/sec": 138340.32702151072,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 9.125,
+      "free_ram_mib": 1128.293,
+      "commit_free_gib": 9.042,
+      "Pages Input/sec": 234132.20714535966,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 9.39,
+      "free_ram_mib": 1049.094,
+      "commit_free_gib": 8.95,
+      "Pages Input/sec": 11944.959026056793,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 9.656,
+      "free_ram_mib": 1047.176,
+      "commit_free_gib": 8.964,
+      "Pages Input/sec": 18770.90460637621,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 9.921,
+      "free_ram_mib": 1029.73,
+      "commit_free_gib": 8.893,
+      "Pages Input/sec": 3279.6155800130414,
+      "Pages Output/sec": 16643.282803243754
+    },
+    {
+      "seconds": 10.187,
+      "free_ram_mib": 1071.574,
+      "commit_free_gib": 8.93,
+      "Pages Input/sec": 3212.9076776817046,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 10.437,
+      "free_ram_mib": 1072.379,
+      "commit_free_gib": 8.925,
+      "Pages Input/sec": 655.1327748453391,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 10.703,
+      "free_ram_mib": 1017.523,
+      "commit_free_gib": 8.869,
+      "Pages Input/sec": 2386.2838834262325,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 10.968,
+      "free_ram_mib": 1010.023,
+      "commit_free_gib": 8.864,
+      "Pages Input/sec": 298.8299483591588,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 11.234,
+      "free_ram_mib": 1012.336,
+      "commit_free_gib": 8.865,
+      "Pages Input/sec": 2316.461391865639,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 11.5,
+      "free_ram_mib": 1014.488,
+      "commit_free_gib": 8.872,
+      "Pages Input/sec": 60.2350219970771,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 11.765,
+      "free_ram_mib": 1016.547,
+      "commit_free_gib": 8.875,
+      "Pages Input/sec": 1139.6373832865552,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 12.031,
+      "free_ram_mib": 1017.992,
+      "commit_free_gib": 8.877,
+      "Pages Input/sec": 1120.3192492114092,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 12.296,
+      "free_ram_mib": 1023.734,
+      "commit_free_gib": 8.884,
+      "Pages Input/sec": 244.67516122755057,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 12.546,
+      "free_ram_mib": 1020.008,
+      "commit_free_gib": 8.872,
+      "Pages Input/sec": 6373.709842327996,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 12.812,
+      "free_ram_mib": 1012.887,
+      "commit_free_gib": 8.867,
+      "Pages Input/sec": 14894.385268098937,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 13.078,
+      "free_ram_mib": 1017.738,
+      "commit_free_gib": 8.871,
+      "Pages Input/sec": 4136.152964128064,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 13.343,
+      "free_ram_mib": 1014.23,
+      "commit_free_gib": 8.874,
+      "Pages Input/sec": 30051.600463895982,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 13.609,
+      "free_ram_mib": 944.812,
+      "commit_free_gib": 8.871,
+      "Pages Input/sec": 225265.49282650428,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 13.875,
+      "free_ram_mib": 867.914,
+      "commit_free_gib": 8.847,
+      "Pages Input/sec": 142829.19788432136,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 14.125,
+      "free_ram_mib": 841.793,
+      "commit_free_gib": 8.838,
+      "Pages Input/sec": 44559.0212572089,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 14.39,
+      "free_ram_mib": 821.188,
+      "commit_free_gib": 8.85,
+      "Pages Input/sec": 31002.194631035236,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 14.656,
+      "free_ram_mib": 790.953,
+      "commit_free_gib": 8.845,
+      "Pages Input/sec": 39715.87229831271,
+      "Pages Output/sec": 0.0
+    },
+    {
+      "seconds": 14.921,
+      "free_ram_mib": 756.227,
+      "commit_free_gib": 8.835,
+      "Pages Input/sec": 27786.53544744317,
+      "Pages Output/sec": 0.0
+    }
+  ],
+  "requests": [
+    {
+      "elapsed_seconds": 9.561,
+      "input_tokens": 407,
+      "output_tokens": 12,
+      "load_ms": 8705.3386
+    },
+    {
+      "elapsed_seconds": 0.699,
+      "input_tokens": 599,
+      "output_tokens": 12,
+      "load_ms": 13.1374
+    },
+    {
+      "elapsed_seconds": 0.698,
+      "input_tokens": 791,
+      "output_tokens": 12,
+      "load_ms": 12.5641
+    }
+  ],
+  "resident_model": {
+    "models": [
+      {
+        "name": "qwen3.5:4b",
+        "model": "qwen3.5:4b",
+        "size": 3725884128,
+        "digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "4.2B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-11-03T15:28:11.8197157Z",
+        "size_vram": 3725884128,
+        "context_length": 32768,
+        "runner": "llamacpp"
+      }
+    ]
+  },
+  "aborted": true,
+  "unsafe_samples": [
+    {
+      "seconds": 14.921,
+      "free_ram_mib": 756.227,
+      "commit_free_gib": 8.835,
+      "Pages Input/sec": 27786.53544744317,
+      "Pages Output/sec": 0.0
+    }
+  ],
+  "minimum_free_ram_mib": 756.227,
+  "elapsed_seconds": 26.14
+}

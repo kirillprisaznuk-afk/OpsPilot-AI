@@ -1,0 +1,496 @@
+{
+  "version": 1,
+  "label_basis": "Manually read source sections: every label resolves to section Instructions and terms at line 12. Negative requests are absent from the 44-document corpus.",
+  "cases": [
+    {
+      "id": "Q01",
+      "query": "Procurement procedure",
+      "relevant": [
+        {
+          "code": "POL-001",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q02",
+      "query": "When should procurement escalate missed receipts and preserve the original promise?",
+      "relevant": [
+        {
+          "code": "POL-001",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q03",
+      "query": "How do buyers retain promised supplier dates?",
+      "relevant": [
+        {
+          "code": "POL-001",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q04",
+      "query": "Warehouse receiving procedure",
+      "relevant": [
+        {
+          "code": "POL-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q05",
+      "query": "How should warehouse staff record partial receipts and reject over-receipts?",
+      "relevant": [
+        {
+          "code": "POL-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q06",
+      "query": "What ledger entry is required for an accepted receipt?",
+      "relevant": [
+        {
+          "code": "POL-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q07",
+      "query": "Inventory control policy",
+      "relevant": [
+        {
+          "code": "POL-003",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q08",
+      "query": "Can inventory issues exceed the units physically available?",
+      "relevant": [
+        {
+          "code": "POL-003",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q09",
+      "query": "How are backorders and outstanding quantities recorded?",
+      "relevant": [
+        {
+          "code": "POL-003",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q10",
+      "query": "Incident escalation procedure",
+      "relevant": [
+        {
+          "code": "POL-004",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q11",
+      "query": "Who reviews high severity incidents unresolved for seven days?",
+      "relevant": [
+        {
+          "code": "POL-004",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q12",
+      "query": "How should an incident be assigned to a department and corrective task?",
+      "relevant": [
+        {
+          "code": "POL-004",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q13",
+      "query": "Payment review policy",
+      "relevant": [
+        {
+          "code": "POL-005",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q14",
+      "query": "How should discrepant supplier bills be handled?",
+      "relevant": [
+        {
+          "code": "POL-005",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q15",
+      "query": "How should partial payments and invoice discrepancies be recorded?",
+      "relevant": [
+        {
+          "code": "POL-005",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q16",
+      "query": "Incident response instructions",
+      "relevant": [
+        {
+          "code": "POL-006",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q17",
+      "query": "What evidence must be preserved when closing operational incidents?",
+      "relevant": [
+        {
+          "code": "POL-006",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q18",
+      "query": "How often are overdue corrective tasks reviewed?",
+      "relevant": [
+        {
+          "code": "POL-006",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q19",
+      "query": "Customer fulfilment policy",
+      "relevant": [
+        {
+          "code": "POL-007",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q20",
+      "query": "Are customer promises dispatch commitments or arrival estimates?",
+      "relevant": [
+        {
+          "code": "POL-007",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q21",
+      "query": "Which customer policy covers FIFO backorders and partial dispatches?",
+      "relevant": [
+        {
+          "code": "POL-007",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q22",
+      "query": "Capacity pressure instruction",
+      "relevant": [
+        {
+          "code": "POL-008",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "exact"
+    },
+    {
+      "id": "Q23",
+      "query": "How long is the Midlands handling queue during declared pressure?",
+      "relevant": [
+        {
+          "code": "POL-008",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q24",
+      "query": "How is approved warehouse overtime recorded?",
+      "relevant": [
+        {
+          "code": "POL-008",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "paraphrase"
+    },
+    {
+      "id": "Q25",
+      "query": "Amberwick Office Works delivery target",
+      "relevant": [
+        {
+          "code": "CON-001",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "supplier_name"
+    },
+    {
+      "id": "Q26",
+      "query": "Amberwick Industrial Supply payment terms",
+      "relevant": [
+        {
+          "code": "CON-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "supplier_name"
+    },
+    {
+      "id": "Q27",
+      "query": "Amberwick Technology Trade escalation interval",
+      "relevant": [
+        {
+          "code": "CON-003",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "supplier_name"
+    },
+    {
+      "id": "Q28",
+      "query": "What receipt target applies to this supplier?",
+      "relevant": [
+        {
+          "code": "CON-001",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "supplier_filtered",
+      "filters": {
+        "supplier_id": 1
+      }
+    },
+    {
+      "id": "Q29",
+      "query": "How many days from invoice issue until payment?",
+      "relevant": [
+        {
+          "code": "CON-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "supplier_filtered",
+      "filters": {
+        "contract_reference": "NS-CON-002"
+      }
+    },
+    {
+      "id": "Q30",
+      "query": "NS-CON-003",
+      "relevant": [
+        {
+          "code": "CON-003",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "identifier"
+    },
+    {
+      "id": "Q31",
+      "query": "\"NS-CON-001\" OR \"Procurement procedure\"",
+      "relevant": [
+        {
+          "code": "CON-001",
+          "section": "Instructions and terms",
+          "line_start": 12
+        },
+        {
+          "code": "POL-001",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "cross_document"
+    },
+    {
+      "id": "Q32",
+      "query": "\"Warehouse receiving procedure\" OR \"Inventory control policy\"",
+      "relevant": [
+        {
+          "code": "POL-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        },
+        {
+          "code": "POL-003",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "cross_document"
+    },
+    {
+      "id": "Q33",
+      "query": "\"Incident escalation procedure\" OR \"Incident response instructions\"",
+      "relevant": [
+        {
+          "code": "POL-004",
+          "section": "Instructions and terms",
+          "line_start": 12
+        },
+        {
+          "code": "POL-006",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "cross_document"
+    },
+    {
+      "id": "Q34",
+      "query": "\"Payment review policy\" OR \"NS-CON-002\"",
+      "relevant": [
+        {
+          "code": "POL-005",
+          "section": "Instructions and terms",
+          "line_start": 12
+        },
+        {
+          "code": "CON-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "cross_document"
+    },
+    {
+      "id": "Q35",
+      "query": "What is the annual leave allowance?",
+      "relevant": [],
+      "kind": "no_answer"
+    },
+    {
+      "id": "Q36",
+      "query": "Quantum entanglement teleportation",
+      "relevant": [],
+      "kind": "no_answer"
+    },
+    {
+      "id": "Q37",
+      "query": "Who won the football world cup?",
+      "relevant": [],
+      "kind": "no_answer"
+    },
+    {
+      "id": "Q38",
+      "query": "What are the employee pension contribution percentages?",
+      "relevant": [],
+      "kind": "no_answer"
+    },
+    {
+      "id": "Q39",
+      "query": "What monetary approval limit applies to purchasing managers?",
+      "relevant": [],
+      "kind": "no_answer"
+    },
+    {
+      "id": "Q40",
+      "query": "Which cybersecurity password rotation policy applies?",
+      "relevant": [],
+      "kind": "no_answer"
+    },
+    {
+      "id": "Q41",
+      "query": "Procurement procedure",
+      "relevant": [],
+      "kind": "historical_not_effective",
+      "as_of": "2025-09-30"
+    },
+    {
+      "id": "Q42",
+      "query": "Warehouse receiving procedure",
+      "relevant": [
+        {
+          "code": "POL-002",
+          "section": "Instructions and terms",
+          "line_start": 12
+        }
+      ],
+      "kind": "historical_effective",
+      "as_of": "2025-10-01"
+    }
+  ]
+}

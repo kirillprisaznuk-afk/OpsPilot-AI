@@ -1,0 +1,53 @@
+{
+  "official_identifier": "qwen3.5:2b-q4_K_M",
+  "model": {
+    "name": "qwen3.5:2b-q4_K_M",
+    "model": "qwen3.5:2b-q4_K_M",
+    "modified_at": "2026-11-03T15:14:20.8563169Z",
+    "size": 1945781358,
+    "digest": "1e2d21a4f03ab9e4a9c1976a4b7e88f21de61d65f2c5485d8fde8942be73f1e7",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "1.9B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2048,
+      "runner": "llamacpp"
+    },
+    "capabilities": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ]
+  },
+  "details": {
+    "parent_model": "model.gguf",
+    "format": "gguf",
+    "family": "qwen35",
+    "families": [
+      "qwen35"
+    ],
+    "parameter_size": "1.9B",
+    "quantization_level": "Q4_K_M",
+    "runner": "llamacpp"
+  },
+  "capabilities": [
+    "completion",
+    "vision",
+    "tools",
+    "thinking"
+  ],
+  "remote_host": null,
+  "remote_model": null,
+  "elapsed_seconds": 89.126,
+  "status": {
+    "status": "success"
+  },
+  "inference_executed": false
+}

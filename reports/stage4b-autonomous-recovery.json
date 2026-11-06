@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-11-03T15:10:37.028869+00:00",
+  "checkpoint": "523d1ccb4f35b734960bd9dab37168e2d3b11418",
+  "diagnosis": {
+    "total_ram_gib": 15.265,
+    "free_ram_gib_initial": 1.211,
+    "vram_free_mib": 5920,
+    "project_ollama_private_mib": 96.316,
+    "project_api_container_mib": 407.7,
+    "project_db_container_mib": 70.41,
+    "wsl_private_gib": 4.314,
+    "wsl_working_set_gib": 0.747,
+    "wsl_guest_memavailable_kib": 6112820,
+    "largest_interactive_private_gib": {
+      "Telegram": 0.915,
+      "ChatGPT": 0.878,
+      "Opera_largest_process": 0.732,
+      "Discord_largest_process": 0.698
+    },
+    "stale_project_python_processes": 0,
+    "duplicate_project_ollama_servers": 0,
+    "loaded_local_models": 0,
+    "FC26_active": false,
+    "project_api_workers": 1
+  },
+  "actions": [
+    {
+      "action": "restart_only_OpsPilot_api",
+      "container_mib_before": 407.7,
+      "container_mib_after": 118.1
+    },
+    {
+      "action": "lean_evaluator_imports_and_isolated_oracles",
+      "native_onnx_parent_import": false,
+      "regression_test": "test_live_evaluator_import_does_not_load_a_second_embedding_runtime"
+    },
+    {
+      "action": "one_off_owned_GPU_runner_working_set_release",
+      "evidence": [
+        "stage4b-project-working-set-recovery.json",
+        "stage4b-lean-working-set-recovery.json",
+        "stage4b-postfix-working-set-recovery.json"
+      ]
+    },
+    {
+      "action": "one_official_alternative_download",
+      "model": "qwen3.5:2b-q4_K_M",
+      "evidence": "stage4b-alternative-model.json"
+    },
+    {
+      "action": "context_batch_and_cache_trials",
+      "batch_tokens": 128,
+      "ctx_checkpoints": 1,
+      "prompt_cache_mib": 0
+    },
+    {
+      "action": "scoped_protective_model_stops",
+      "unrelated_processes_stopped": 0,
+      "global_settings_changed": false
+    },
+    {
+      "action": "revert_failed_lower_admission_trial",
+      "final_ram_margin_gib": 1.5
+    },
+    {
+      "action": "restore_preferred_4B_unloaded_and_verify_all_prior_stages",
+      "model": "qwen3.5:4b",
+      "loaded_models": 0
+    }
+  ],
+  "unrelated_apps_terminated": false,
+  "global_settings_changed": false,
+  "final_hardware": {
+    "model": "qwen3.5:4b",
+    "admitted": false,
+    "reasons": [
+      "Free physical RAM is below the measured profile's RAM margin"
+    ],
+    "free_ram_gib": 0.856,
+    "total_ram_gib": 15.265,
+    "free_vram_mib": 5913,
+    "total_vram_mib": 6141,
+    "loaded_model": null,
+    "minimum_free_ram_gib": 1.5,
+    "minimum_free_vram_mib": 4096
+  },
+  "sustained_memory_acceptance": false,
+  "routine_user_action_delegated": false
+}

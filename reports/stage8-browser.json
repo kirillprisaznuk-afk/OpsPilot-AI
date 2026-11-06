@@ -1,0 +1,213 @@
+{
+  "scope": "real Microsoft Edge against isolated Compose release candidate",
+  "primary": [
+    {
+      "title": "real dashboard, historical filters, supplier terms, knowledge citation and deterministic investigation",
+      "status": "passed",
+      "duration_ms": 11900
+    },
+    {
+      "title": "real operator → distinct reviewer → execute, receipt, audit, safe replay and role denial",
+      "status": "passed",
+      "duration_ms": 21594
+    },
+    {
+      "title": "real task change, evidence-bound escalation and stale/rejected/expired guards",
+      "status": "passed",
+      "duration_ms": 35683
+    },
+    {
+      "title": "historical inventory, financial exposure, customer promises and separate workforce counts",
+      "status": "passed",
+      "duration_ms": 5208
+    },
+    {
+      "title": "authenticated gateway rejects anonymous, forged origins, missing CSRF and local model mode",
+      "status": "passed",
+      "duration_ms": 2031
+    },
+    {
+      "title": "responsive dashboard and keyboard/accessibility measurements",
+      "status": "passed",
+      "duration_ms": 5135
+    },
+    {
+      "title": "a verified Copilot conversation cannot be reused outside its exact browser session",
+      "status": "passed",
+      "duration_ms": 3700
+    },
+    {
+      "title": "finance drill-down, historical scope and remaining navigation load real views",
+      "status": "passed",
+      "duration_ms": 11585
+    }
+  ],
+  "restart_and_outages": [
+    {
+      "title": "temporary project API and PostgreSQL outages produce recoverable, truthful browser states",
+      "status": "passed",
+      "duration_ms": 30716
+    },
+    {
+      "title": "scoped Compose restart preserves the browser session and committed workflow record",
+      "status": "passed",
+      "duration_ms": 12686
+    }
+  ],
+  "workflow": {
+    "proposal_id": "83f45fb0-b2d6-40a1-bdb9-88148f7d7c08",
+    "receipt_id": "7bcce732-4c4a-4243-b3e4-d59ad285c26c",
+    "task_id": "27cb7660-1cce-43e8-ac4a-096f859d87a5",
+    "title": "Review Amberwick supplier delivery",
+    "distinct_reviewer": true,
+    "one_effect": true,
+    "same_operation_key": true,
+    "first_execution_response_lost": true,
+    "xss_inert": true
+  },
+  "extended_workflow": {
+    "task_id": "2c40aa57-dabf-49fd-9c81-1ec071864de3",
+    "update_proposal_id": "a623fa68-0af3-4175-9e4a-a59fc13decc2",
+    "escalation_id": "7738205f-8905-4b92-98a1-c7278e4c64b2",
+    "stale_proposal_id": "58164c2b-9379-4448-9299-45804a160725",
+    "revision_proposal_id": "69124266-a5bf-4a78-bf9f-a33e9c731df0",
+    "rejected_proposal_id": "ca968664-ac28-4962-bf0f-0d46c21cc071",
+    "expired_proposal_id": "8ce76fdc-d94f-473a-83d4-3ffe77d083c8"
+  },
+  "restart": {
+    "passed": true,
+    "services": [
+      "db",
+      "api",
+      "frontend"
+    ],
+    "same_principal": true,
+    "same_original_session_expiry": true,
+    "task_id": "27cb7660-1cce-43e8-ac4a-096f859d87a5",
+    "task_version": 1,
+    "elapsed_ms": 9985.356099999997
+  },
+  "recovery": {
+    "api_stop_to_authenticated_ms": 14555,
+    "db_stop_to_authenticated_ms": 11853,
+    "workflow_and_knowledge_recovered": true,
+    "preserved_original_session_expiry": true,
+    "previous_answer_and_unsent_prompt_visible_during_api_failure": true,
+    "expired_conversation_requires_explicit_reset": true
+  },
+  "accessibility": {
+    "sizes": [
+      {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "width": 1280,
+        "scrollWidth": 1280
+      },
+      {
+        "width": 1024,
+        "scrollWidth": 1024
+      },
+      {
+        "width": 768,
+        "scrollWidth": 768
+      },
+      {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    ],
+    "desktop_dashboard_violations": 0,
+    "tested": [
+      "loaded desktop dashboard",
+      "loaded mobile task list"
+    ],
+    "violations": []
+  },
+  "loaded_admin_settings_violations": [],
+  "timing_and_heap": {
+    "initialDocumentMs": 223,
+    "dashboardMs": 1826.3788000000002,
+    "supplierNavigationMs": 938.7222000000002,
+    "tableSearchMs": 133.1266999999998,
+    "searchMs": 178.0643999999993,
+    "inquiryMs": 2974.7965000000004,
+    "browserHeapUsedBytes": 17095024,
+    "browserHeapAllocatedBytes": 36507648
+  },
+  "screenshots": [
+    {
+      "file": "01_dashboard.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 127280
+    },
+    {
+      "file": "02_supplier_intelligence.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 116188
+    },
+    {
+      "file": "03_procurement_analytics.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 96986
+    },
+    {
+      "file": "04_inventory_warehouses.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 103132
+    },
+    {
+      "file": "05_financial_intelligence.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 102910
+    },
+    {
+      "file": "06_knowledge_base.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 92873
+    },
+    {
+      "file": "07_business_investigation.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 170853
+    },
+    {
+      "file": "08_ops_pilot_copilot.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 175372
+    },
+    {
+      "file": "09_workflow_tasks.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 80504
+    },
+    {
+      "file": "10_approval_inbox.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 77524
+    },
+    {
+      "file": "11_workflow_execution_receipt.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 94105
+    },
+    {
+      "file": "12_audit_trail.png",
+      "width": 1440,
+      "height": 980,
+      "bytes": 108967
+    }
+  ]
+}

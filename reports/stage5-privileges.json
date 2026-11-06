@@ -1,0 +1,57 @@
+{
+  "login": "opspilot_wf_app",
+  "roles": [
+    {
+      "rolname": "opspilot_wf_admin",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolinherit": false,
+      "rolbypassrls": false
+    },
+    {
+      "rolname": "opspilot_wf_app",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolinherit": false,
+      "rolbypassrls": false
+    },
+    {
+      "rolname": "opspilot_wf_auth",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolinherit": false,
+      "rolbypassrls": false
+    },
+    {
+      "rolname": "opspilot_wf_executor",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolinherit": false,
+      "rolbypassrls": false
+    },
+    {
+      "rolname": "opspilot_wf_read",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolinherit": false,
+      "rolbypassrls": false
+    },
+    {
+      "rolname": "opspilot_wf_review",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false,
+      "rolinherit": false,
+      "rolbypassrls": false
+    }
+  ],
+  "business_write_checks": 130,
+  "business_write_denied": true,
+  "audit_rewrite_denied": true,
+  "reader_workflow_write_denied": true
+}

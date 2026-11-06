@@ -1,0 +1,33 @@
+{
+  "request_id": "5cc3f2e0123b444388f4db157f81654e",
+  "conversation_id": null,
+  "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+  "as_of": "2026-09-30",
+  "status": "provider_error",
+  "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+  "key_findings": [],
+  "evidence": [],
+  "citations": [],
+  "tool_trace": [],
+  "limitations": [
+    "Provider round exceeded its deadline.",
+    "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+  ],
+  "follow_up_questions": [],
+  "usage": {
+    "provider_round_ms": [],
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "cached_input_tokens": null,
+    "llm_calls": 1,
+    "tool_calls": 0,
+    "provider_usage_complete": false,
+    "estimated_cost_usd": null,
+    "cost_basis": "Unavailable: a provider attempt did not supply usage.",
+    "elapsed_ms": 30063.0
+  },
+  "termination_reason": "provider_timeout",
+  "model": "qwen3.5:4b",
+  "execution_mode": "live"
+}

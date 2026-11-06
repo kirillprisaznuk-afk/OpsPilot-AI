@@ -1,0 +1,254 @@
+{
+  "mode": "live",
+  "cases": [
+    {
+      "id": "A01",
+      "status": "limited",
+      "tool_selection_expected_subset": false,
+      "valid_tool_argument_fraction": 0.2,
+      "citation_resolution": null,
+      "known_numeric_evidence": [
+        false,
+        false
+      ],
+      "required_document_codes_found": false,
+      "required_document_codes_cited": false,
+      "expected_status_matched": null,
+      "usage": {
+        "provider_round_ms": [
+          4271.173,
+          2406.242,
+          2169.367,
+          2016.344,
+          1873.485,
+          3453.294
+        ],
+        "input_tokens": 47182,
+        "output_tokens": 534,
+        "total_tokens": 47716,
+        "cached_input_tokens": 39320,
+        "llm_calls": 6,
+        "tool_calls": 5,
+        "provider_usage_complete": true,
+        "estimated_cost_usd": 0.0,
+        "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+        "elapsed_ms": 16475.367
+      },
+      "elapsed_ms": 16508.005,
+      "response": {
+        "request_id": "bdfbd51a4e944cf3870f40e342b9f3af",
+        "conversation_id": "fb2125d58b904e87bf44e7878f7f2293",
+        "question": "Compare supplier 1's actual on-time performance against its contract and the internal escalation procedure.",
+        "as_of": "2026-09-30",
+        "status": "limited",
+        "answer": "Analysis is incomplete; see the validated partial evidence and termination reason.",
+        "key_findings": [],
+        "evidence": [
+          {
+            "evidence_id": "ev_bdfbd51a4e_1",
+            "tool_name": "resolve_business_entity",
+            "arguments": {
+              "entity_type": "supplier",
+              "term": "1",
+              "as_of": "2026-09-30"
+            },
+            "as_of": "2026-09-30",
+            "payload": {
+              "status": "resolved",
+              "matches": [
+                {
+                  "entity_type": "supplier",
+                  "entity_id": 1,
+                  "name": "Amberwick Office Works (synthetic)"
+                }
+              ],
+              "total_matches": 1,
+              "truncated": false
+            },
+            "trust": "untrusted_tool_data"
+          }
+        ],
+        "citations": [],
+        "tool_trace": [
+          {
+            "call_id": "72f34ce588964effbca1dc85bac3f3d7",
+            "tool": "resolve_business_entity",
+            "arguments": {
+              "entity_type": "supplier",
+              "term": "1",
+              "as_of": "2026-09-30"
+            },
+            "status": "success",
+            "elapsed_ms": 30.895,
+            "evidence_id": "ev_bdfbd51a4e_1",
+            "error_code": null,
+            "duplicate": false
+          },
+          {
+            "call_id": "dfb1b2c229f948aba9848b9cb2b245af",
+            "tool": "get_supplier_performance",
+            "arguments": {
+              "supplier_id": 1,
+              "query": {
+                "start_date": "2025-10-01",
+                "end_date": "2026-09-30",
+                "as_of": "2026-09-30",
+                "supplier_id": null,
+                "warehouse_id": null,
+                "product_id": null,
+                "product_category": "office",
+                "supplier_category": null,
+                "department_id": null,
+                "employee_id": null,
+                "incident_category": "supplier_delay",
+                "priority": "normal",
+                "group_by": "product",
+                "sort": "on_time_performance",
+                "direction": "desc",
+                "limit": 5,
+                "offset": 0,
+                "include_trends": true,
+                "include_comparison": true
+              }
+            },
+            "status": "error",
+            "elapsed_ms": 14.391,
+            "evidence_id": null,
+            "error_code": "tool_input_or_source_error",
+            "duplicate": false
+          },
+          {
+            "call_id": "f7789d61d76a4908bd21dbc2a5eba66b",
+            "tool": "get_supplier_performance",
+            "arguments": {
+              "supplier_id": 1,
+              "query": {
+                "start_date": "2025-10-01",
+                "end_date": "2026-09-30",
+                "as_of": "2026-09-30",
+                "supplier_id": null,
+                "warehouse_id": null,
+                "product_id": null,
+                "product_category": "office",
+                "supplier_category": null,
+                "department_id": null,
+                "employee_id": null,
+                "incident_category": null,
+                "priority": "normal",
+                "group_by": "product",
+                "sort": "on_time_performance",
+                "direction": "desc",
+                "limit": 5,
+                "offset": 0,
+                "include_trends": true,
+                "include_comparison": true
+              }
+            },
+            "status": "error",
+            "elapsed_ms": 6.843,
+            "evidence_id": null,
+            "error_code": "tool_input_or_source_error",
+            "duplicate": false
+          },
+          {
+            "call_id": "5f24f9bc890845c1a131f72b393ffcb4",
+            "tool": "get_supplier_performance",
+            "arguments": {
+              "supplier_id": 1,
+              "query": {
+                "start_date": "2025-10-01",
+                "end_date": "2026-09-30",
+                "as_of": "2026-09-30",
+                "supplier_id": null,
+                "warehouse_id": null,
+                "product_id": null,
+                "product_category": "office",
+                "supplier_category": null,
+                "department_id": null,
+                "employee_id": null,
+                "incident_category": null,
+                "priority": null,
+                "group_by": "product",
+                "sort": "on_time_performance",
+                "direction": "desc",
+                "limit": 5,
+                "offset": 0,
+                "include_trends": true,
+                "include_comparison": true
+              }
+            },
+            "status": "error",
+            "elapsed_ms": 7.045,
+            "evidence_id": null,
+            "error_code": "tool_input_or_source_error",
+            "duplicate": false
+          },
+          {
+            "call_id": "19db0fcc0f8e488eae5de46b97f5cae1",
+            "tool": "get_supplier_performance",
+            "arguments": {
+              "supplier_id": 1,
+              "query": {
+                "start_date": "2025-10-01",
+                "end_date": "2026-09-30",
+                "as_of": "2026-09-30",
+                "supplier_id": null,
+                "warehouse_id": null,
+                "product_id": null,
+                "product_category": null,
+                "supplier_category": null,
+                "department_id": null,
+                "employee_id": null,
+                "incident_category": null,
+                "priority": null,
+                "group_by": "product",
+                "sort": "on_time_performance",
+                "direction": "desc",
+                "limit": 5,
+                "offset": 0,
+                "include_trends": true,
+                "include_comparison": true
+              }
+            },
+            "status": "error",
+            "elapsed_ms": 5.984,
+            "evidence_id": null,
+            "error_code": "tool_input_or_source_error",
+            "duplicate": false
+          }
+        ],
+        "limitations": [
+          "Maximum LLM rounds reached before a verified final answer.",
+          "Source verification proves provenance and numeric projection, not complete semantic entailment. Interpretations require review."
+        ],
+        "follow_up_questions": [],
+        "usage": {
+          "provider_round_ms": [
+            4271.173,
+            2406.242,
+            2169.367,
+            2016.344,
+            1873.485,
+            3453.294
+          ],
+          "input_tokens": 47182,
+          "output_tokens": 534,
+          "total_tokens": 47716,
+          "cached_input_tokens": 39320,
+          "llm_calls": 6,
+          "tool_calls": 5,
+          "provider_usage_complete": true,
+          "estimated_cost_usd": 0.0,
+          "cost_basis": "Local inference: no external API charges; hardware/electricity excluded.",
+          "elapsed_ms": 16475.367
+        },
+        "termination_reason": "round_limit",
+        "model": "qwen3:4b-instruct",
+        "execution_mode": "live"
+      }
+    }
+  ],
+  "completed_investigation_fraction": 0,
+  "provider": "ollama",
+  "model": "qwen3:4b-instruct"
+}

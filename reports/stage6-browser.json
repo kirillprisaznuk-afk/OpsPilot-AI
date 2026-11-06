@@ -1,0 +1,128 @@
+{
+  "browser": "Microsoft Edge (Playwright 1.64.1)",
+  "url": "http://127.0.0.1:3106",
+  "production_compose_application": true,
+  "test_duration_ms": 79774,
+  "tests": [
+    {
+      "title": "real dashboard, historical filters, supplier terms, knowledge citation and deterministic investigation",
+      "status": "passed",
+      "duration_ms": 9159
+    },
+    {
+      "title": "real operator → distinct reviewer → execute, receipt, audit, safe replay and role denial",
+      "status": "passed",
+      "duration_ms": 20660
+    },
+    {
+      "title": "real task change, evidence-bound escalation and stale/rejected/expired guards",
+      "status": "passed",
+      "duration_ms": 35633
+    },
+    {
+      "title": "historical inventory, financial exposure, customer promises and separate workforce counts",
+      "status": "passed",
+      "duration_ms": 5152
+    },
+    {
+      "title": "authenticated gateway rejects anonymous, forged origins, missing CSRF and local model mode",
+      "status": "passed",
+      "duration_ms": 1988
+    },
+    {
+      "title": "responsive dashboard and keyboard/accessibility measurements",
+      "status": "passed",
+      "duration_ms": 5194
+    }
+  ],
+  "restart_test": {
+    "title": "scoped Compose restart preserves the browser session and committed workflow record",
+    "status": "passed",
+    "duration_ms": 14758
+  },
+  "primary_workflow": {
+    "proposal_id": "6d3c73c3-eb5d-4896-beed-c75a1d7f6801",
+    "receipt_id": "6994a3a1-8e14-4e2f-873b-2b2000c4dd0f",
+    "task_id": "935e56af-b451-4978-8a54-06a89497481b",
+    "title": "Stage 6 browser review 1793906568022",
+    "distinct_reviewer": true,
+    "one_effect": true,
+    "same_operation_key": true,
+    "xss_inert": true
+  },
+  "extended_workflow": {
+    "task_id": "f2ca7ddd-03e7-454b-8271-84ee05d024d4",
+    "update_proposal_id": "40606ce8-158f-4ebf-9a3e-1e7f0bbd84f6",
+    "escalation_id": "7b87025c-7c9b-4121-94b5-7d90e4c1c394",
+    "stale_proposal_id": "7c36154a-9f80-4f69-a8be-1db0e66d375a",
+    "revision_proposal_id": "750d1bb5-b196-4654-8a30-2425bb6d582a",
+    "rejected_proposal_id": "86255d70-3974-41c4-af40-1928d02f80c7",
+    "expired_proposal_id": "15fe5f24-d58e-4a61-9eda-75bba0b3e0b1"
+  },
+  "accessibility": {
+    "sizes": [
+      {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "width": 1280,
+        "scrollWidth": 1280
+      },
+      {
+        "width": 1024,
+        "scrollWidth": 1024
+      },
+      {
+        "width": 768,
+        "scrollWidth": 768
+      },
+      {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    ],
+    "desktop_dashboard_violations": 0,
+    "tested": [
+      "loaded desktop dashboard",
+      "loaded mobile task list"
+    ],
+    "violations": []
+  },
+  "single_sample_performance_ms": {
+    "initialDocumentMs": 284.5,
+    "dashboardMs": 2308.1,
+    "supplierNavigationMs": 938.7,
+    "tableSearchMs": 138.6,
+    "searchMs": 164.3,
+    "inquiryMs": 556.4
+  },
+  "restart": {
+    "passed": true,
+    "services": [
+      "db",
+      "api",
+      "frontend"
+    ],
+    "same_principal": true,
+    "same_original_session_expiry": true,
+    "task_id": "935e56af-b451-4978-8a54-06a89497481b",
+    "task_version": 1,
+    "elapsed_ms": 11928.7076
+  },
+  "screenshots": [
+    "stage6-screenshots/dashboard-1440.png",
+    "stage6-screenshots/dashboard-1280.png",
+    "stage6-screenshots/dashboard-1024.png",
+    "stage6-screenshots/dashboard-768.png",
+    "stage6-screenshots/dashboard-390.png",
+    "stage6-screenshots/tasks-390.png",
+    "stage6-screenshots/supplier-1440.png",
+    "stage6-screenshots/inventory-1440.png",
+    "stage6-screenshots/citation-1440.png",
+    "stage6-screenshots/investigation-1440.png",
+    "stage6-screenshots/copilot-1440.png",
+    "stage6-screenshots/approval-1440.png",
+    "stage6-screenshots/receipt-1440.png"
+  ]
+}

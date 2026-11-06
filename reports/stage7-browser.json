@@ -1,0 +1,153 @@
+{
+  "engine": "Microsoft Edge through Playwright",
+  "primary_tests": [
+    {
+      "title": "real dashboard, historical filters, supplier terms, knowledge citation and deterministic investigation",
+      "status": "passed",
+      "duration_ms": 8634
+    },
+    {
+      "title": "real operator → distinct reviewer → execute, receipt, audit, safe replay and role denial",
+      "status": "passed",
+      "duration_ms": 19712
+    },
+    {
+      "title": "real task change, evidence-bound escalation and stale/rejected/expired guards",
+      "status": "passed",
+      "duration_ms": 34235
+    },
+    {
+      "title": "historical inventory, financial exposure, customer promises and separate workforce counts",
+      "status": "passed",
+      "duration_ms": 5115
+    },
+    {
+      "title": "authenticated gateway rejects anonymous, forged origins, missing CSRF and local model mode",
+      "status": "passed",
+      "duration_ms": 1951
+    },
+    {
+      "title": "responsive dashboard and keyboard/accessibility measurements",
+      "status": "passed",
+      "duration_ms": 5063
+    },
+    {
+      "title": "a verified Copilot conversation cannot be reused outside its exact browser session",
+      "status": "passed",
+      "duration_ms": 3590
+    },
+    {
+      "title": "finance drill-down, historical scope and remaining navigation load real views",
+      "status": "passed",
+      "duration_ms": 12034
+    }
+  ],
+  "recovery_tests": [
+    {
+      "title": "temporary project API and PostgreSQL outages produce recoverable, truthful browser states",
+      "status": "passed",
+      "duration_ms": 33439
+    },
+    {
+      "title": "scoped Compose restart preserves the browser session and committed workflow record",
+      "status": "passed",
+      "duration_ms": 12638
+    }
+  ],
+  "workflow": {
+    "proposal_id": "51353684-43f6-402d-961f-aac379c8d8c7",
+    "receipt_id": "19849785-af4b-4553-bb0c-f36244adfb10",
+    "task_id": "4a0fcbfa-c11a-49db-adcb-e8b1b3ea5bcb",
+    "title": "Stage 6 browser review 1793909093728",
+    "distinct_reviewer": true,
+    "one_effect": true,
+    "same_operation_key": true,
+    "first_execution_response_lost": true,
+    "xss_inert": true
+  },
+  "extended_workflow": {
+    "task_id": "d2dc8b8d-ad53-414a-9799-7bd1d2e94864",
+    "update_proposal_id": "176028ec-c395-4348-9f95-018f71b9f4aa",
+    "escalation_id": "0e4b880c-a221-407b-b0b2-0edb5fcfa621",
+    "stale_proposal_id": "853b9b0d-4a4a-4b9e-b0e3-dd88366a920b",
+    "revision_proposal_id": "c0473fb9-d9b1-4f0a-ae7e-50f99b8ff17b",
+    "rejected_proposal_id": "dd458913-d174-4bbc-9e52-e0654454ff9b",
+    "expired_proposal_id": "e8c215c5-5684-4c20-ae07-33e0f904657f"
+  },
+  "restart": {
+    "passed": true,
+    "services": [
+      "db",
+      "api",
+      "frontend"
+    ],
+    "same_principal": true,
+    "same_original_session_expiry": true,
+    "task_id": "4a0fcbfa-c11a-49db-adcb-e8b1b3ea5bcb",
+    "task_version": 1,
+    "elapsed_ms": 9868.0066
+  },
+  "outage_recovery": {
+    "api_stop_to_authenticated_ms": 13918,
+    "db_stop_to_authenticated_ms": 15502,
+    "workflow_and_knowledge_recovered": true,
+    "preserved_original_session_expiry": true,
+    "previous_answer_and_unsent_prompt_visible_during_api_failure": true,
+    "expired_conversation_requires_explicit_reset": true
+  },
+  "accessibility": {
+    "sizes": [
+      {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      {
+        "width": 1280,
+        "scrollWidth": 1280
+      },
+      {
+        "width": 1024,
+        "scrollWidth": 1024
+      },
+      {
+        "width": 768,
+        "scrollWidth": 768
+      },
+      {
+        "width": 390,
+        "scrollWidth": 390
+      }
+    ],
+    "desktop_dashboard_violations": 0,
+    "tested": [
+      "loaded desktop dashboard",
+      "loaded mobile task list"
+    ],
+    "violations": []
+  },
+  "loaded_admin_settings_violations": [],
+  "observed_browser_timings_and_heap": {
+    "initialDocumentMs": 405.40000000037253,
+    "dashboardMs": 1959.4896,
+    "supplierNavigationMs": 935.8083999999999,
+    "tableSearchMs": 119.45919999999933,
+    "searchMs": 173.35009999999966,
+    "inquiryMs": 385.8693999999996,
+    "browserHeapUsedBytes": 18160096,
+    "browserHeapAllocatedBytes": 38342656
+  },
+  "screenshots": [
+    "stage7-screenshots/login-1440.png",
+    "stage7-screenshots/dashboard-1440.png",
+    "stage7-screenshots/dashboard-768.png",
+    "stage7-screenshots/tasks-390.png",
+    "stage7-screenshots/supplier-1440.png",
+    "stage7-screenshots/finance-1440.png",
+    "stage7-screenshots/citation-1440.png",
+    "stage7-screenshots/copilot-1440.png",
+    "stage7-screenshots/approval-1440.png",
+    "stage7-screenshots/receipt-1440.png",
+    "stage7-screenshots/audit-1440.png",
+    "stage7-screenshots/api-recovery-1440.png"
+  ]
+}
