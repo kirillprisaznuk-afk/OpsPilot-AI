@@ -413,7 +413,7 @@ def test_live_evaluator_import_does_not_load_a_second_embedding_runtime():
             "assert 'onnxruntime' not in sys.modules; "
             "assert 'app.agent.execution' not in sys.modules",
         ],
-        env={**os.environ, "PYTHONPATH": "backend;."},
+        env={**os.environ, "PYTHONPATH": os.pathsep.join(("backend", "."))},
         capture_output=True,
         text=True,
         timeout=20,
